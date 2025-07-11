@@ -1,0 +1,229 @@
+.work-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: $backgroundColor-day;
+  z-index: 3;
+
+  @include respond($breakpoint-xs) {
+    padding: 4px;
+  }
+  
+
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 0px;
+  overflow-x: visible;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  
+  
+  animation: appear 2s  ;
+  
+  h1{
+    font-family: "Monoton", sans-serif;
+    font-size: 48px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    color: $fontColorPurple;
+    @include respond($breakpoint-md) {
+      font-size: 38px;
+    }
+  }
+
+  @include respond($breakpoint-sm) {
+    padding: 4px;
+    width: 100%;
+  }
+  
+
+}
+
+
+.cardsDetail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  gap: 0rem;
+  
+  color: var(--font-color);
+  z-index: 3;
+  background-color:$backgroundColor-day;
+  
+}
+
+
+
+
+.erischatbot-content,
+.justgoodstuff-content,
+.tuvinilo-content,
+.destinea-content,
+.readmeapp-content,
+.saffvision-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: solid 0px rgba(255, 255, 255, 0.962);
+  width: 70%;
+  height:100%;
+  padding: 20px;
+  gap: 20px;
+  color: #eaeaed;
+  color: inherit;
+  border-radius: 2px;
+  
+  overflow-y: auto;
+  background-color:transparent;
+  h1{
+    font-family: "Advent Pro", serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color:$fontColor-day;
+    border: solid 0rem rgb(250, 250, 250);
+  }
+  h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+    
+  }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+    border-bottom: solid 2px var(--font-color);
+    
+    
+    
+  }
+  #icon-box {
+    display: flex;
+    padding: 10px;
+    align-self: flex-start;
+    gap: .5rem;
+    
+    
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+
+  }
+  p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    color: var(--font-color-text);
+  }
+  
+
+  @include respond($breakpoint-lg) {
+    width: 80%;
+    padding: 20px;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @include respond($breakpoint-sm) {
+    width: 100%;
+    padding: 10px;
+    h1 {
+      font-size: 1.75rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.img-box{
+  
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+  
+  border: solid 0px rgba(44, 44, 44, 0.774);
+  
+  @include respond($breakpoint-xs) {
+    flex-direction: column;
+  }
+}
+
+#img1-eris{
+  
+  width: 48%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.88);
+  @include respond($breakpoint-xs) {
+    width: 100%;
+  }
+}
+#img2-eris{
+  width: 48%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
+  @include respond($breakpoint-xs) {
+    width: 100%;
+  }
+}
+
+
+#img1-readme{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.88);
+}
+
+
+.nextAndBack{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: solid 0px rgba(255, 255, 255, 0.774);
+  margin-bottom: 20px;
+  
+  
+  
+}

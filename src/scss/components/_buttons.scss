@@ -1,0 +1,172 @@
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  width:100%;
+  height: 50%;
+  border: solid 0px rgba(193, 193, 193, 0.901);
+  font-family: "Advent Pro", serif;
+  padding: 0px;
+  z-index: 4;
+  gap: 10px;
+  transition: 1s;
+  animation: appear 2.5s  ;
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @include respond($breakpoint-md) {
+    flex-wrap: wrap;
+    height: 30%;
+  }
+  @include respond($breakpoint-sm) {
+    height: 50%;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+}
+
+#work-btn {
+  font-family: "Monoton", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-size: 60px;
+  font-weight: 400;
+  
+  // background: linear-gradient(#0b0b0b, #f3f3f300);
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
+  border-radius: 12px;
+  
+
+   @include respond($breakpoint-md) {
+     font-size: 60px;
+    }
+
+    @include respond($breakpoint-sm) {
+      height: 50%;
+    }
+
+  @include respond($breakpoint-xs) {
+    font-size: 40px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+
+  @include hover {
+    
+    letter-spacing: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.332);
+    
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
+#about-btn {
+  font-family: "Monoton", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: 400;
+ 
+  cursor: pointer;
+  
+  
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: 0.1s ease-in;
+  text-overflow: ellipsis;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
+  
+  @include respond($breakpoint-md) {
+      font-size: 60px;
+    }
+
+    @include respond($breakpoint-sm) {
+      height: 50%;
+    }
+    @include respond($breakpoint-xs) {
+      font-size: 40px;
+      height: 40%;
+      background: $gradientBlue-night;
+    }
+    @include hover {
+      
+      letter-spacing: 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.332);
+  }
+  
+}
+
+
+#contact-btn {
+  font-family: "Monoton", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 60px;
+  font-weight: 400;
+  
+  
+  cursor: pointer;
+  height: 100%;
+  
+  
+  transition: 0.1s ease-in;
+  text-overflow: ellipsis;
+  border-radius: 12px;
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
+  
+    @include respond($breakpoint-md) {
+      font-size: 60px;
+    }
+
+    @include respond($breakpoint-sm) {
+      height: 50%;
+    }
+    @include respond($breakpoint-xs) {
+      font-size: 40px;
+      height: 40%;
+      background: $gradientBlue-night;
+    }
+    @include hover {
+      
+      letter-spacing: 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.332);
+  }
+
+  
+}
+
+
+
+
+.backButton{
+  color: black;
+}

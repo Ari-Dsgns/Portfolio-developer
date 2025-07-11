@@ -1,0 +1,110 @@
+.container-mainPage{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 20px;
+  
+  
+  @include respond($breakpoint-lg) {
+    padding: 10px;
+  }
+  
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  border: solid 0px rgba(216, 216, 216, 0.822);
+  text-align: center;
+  margin-bottom: 20px;
+  color: $fontColor2-night;
+  margin-top: 20px;
+
+
+  @include respond($breakpoint-md) {
+    gap: 0px;
+    
+  }
+
+  h1 {
+    text-wrap: balance;
+    font-family: "Monoton", sans-serif;
+    font-family: "Advent Pro", serif;
+    font-weight: 800;
+    font-size:100px;
+    letter-spacing: 8px;
+
+    color: var(--font-color);
+    border: solid 0rem rgba(255, 255, 255, 0);
+
+    
+
+    @include respond($breakpoint-lg) {
+      font-size: 82px;
+      letter-spacing: 4px;
+    }
+    @include respond($breakpoint-md) {
+      font-size: 72px;
+      letter-spacing: 2px;
+    }
+    @include respond($breakpoint-sm) {
+      
+      letter-spacing: 0px;
+      
+      margin-bottom: 10px;
+    }
+    @include respond($breakpoint-xs) {
+      font-size: 48px;
+      letter-spacing: 0px;
+      margin-bottom: 10px;
+    }
+    
+    
+
+    
+
+
+  }
+
+  h2 {
+    display: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: transparent;
+    position: relative;
+    bottom: 20px;
+    color: var(--font-color);
+    border: solid 0rem rgba(255, 255, 255, 0);
+    letter-spacing: 4px;
+    
+    
+    
+
+
+    
+    
+    @include respond($breakpoint-sm) {
+      display: block;
+      font-size: 18px;
+      letter-spacing: 0px;
+    }
+    @include respond($breakpoint-xs) {
+      font-size: 16px;
+      letter-spacing: 0px;
+    }
+    
+    
+    
+  }
+
+
+
+
+}

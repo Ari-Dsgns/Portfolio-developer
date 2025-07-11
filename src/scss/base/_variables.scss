@@ -1,0 +1,41 @@
+
+//COLORS
+$backgroundColor-night: #121111;
+$backgroundColor-day: #ffffff;
+
+
+$backgroundColorWork-night: #242222;
+$backgroundColorWork-day: #f5f5f5;
+
+//FONTS
+$FontFamily1: 'Nunito Sans', serif;
+$FontFamily2: 'Advent Pro', serif;
+$FontFamily3: 'Space Mono', monospace;
+
+//FONT COLORS
+$fontColor-night: #f5f5f5;
+$fontColor2-night: #484848fc;
+$fontColor3-night: #858585;
+$fontColor-day: #101010;
+$fontColor2-day: #474747;
+$fontColorBlue: #58afd1;
+$fontColorPink: #f271bc;
+$fontColorOrange: #ff7700;
+$fontColorPurple: #633192;
+
+$gradientBlue-night: linear-gradient( #5febf524, #13d3e500);
+$gradientPink-night: linear-gradient(#ff79c72e, #f20f9300);
+$gradientOrange-night: linear-gradient( #faac692b, #d2660700);
+
+$gradientBlue-night-sm: linear-gradient(to right, #5febf524, #13d3e500);
+$gradientBlueLeft-night-sm: linear-gradient(to left, #5febf524, #13d3e500);
+$gradientPink-night-sm: linear-gradient(to left,#ff7ac82e, #f20f9300);
+$gradientOrange-night-sm: linear-gradient(to right, #faac692b, #d2660700);
+
+
+// Breakpoints globales
+$breakpoint-xs: 480px;   // móviles
+$breakpoint-sm: 768px;   // tablet vertical
+$breakpoint-md: 1024px;  // tablet horizontal / laptop pequeño
+$breakpoint-lg: 1440px;  // desktop grande
+ 

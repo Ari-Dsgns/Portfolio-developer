@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.* 
+
+# Optional: dist/build folders
+dist/
+build/
+
+# Optional: VSCode settings (if you don't want to share them)
+.vscode/
+
+# Optional: Mac system files
+*.DS_Store
+
+# Optional: Linux trash files
+.Trash-*
+
+# Optional: IDEs
+.idea/
+*.sublime-workspace
+*.sublime-project

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TuVinilo – Minimalist Vinyl Record eCommerce | Ari Designs</title>
+    <meta name="description" content="TuVinilo is a minimalist eCommerce project for vinyl records. Designed with smooth navigation, dynamic cart, and a retro-inspired aesthetic.">
+    <meta name="keywords" content="vinyl, eCommerce, HTML, CSS, JavaScript, minimalist design, music store, TuVinilo, Ari Designs">
+    <meta name="author" content="Ari Sanchez">
+    <link rel="canonical" href="https://www.arisanpala.com/works/tuvinilo.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TuVinilo – Minimalist Vinyl Record eCommerce">
+    <meta property="og:description" content="An online vinyl store with smooth navigation, clean design, and a dynamic shopping cart. Developed by Ari Designs.">
+    <meta property="og:image" content="https://www.arisanpala.com/assets/img/tuvinilo%20(2).gif">
+    <meta property="og:url" content="https://www.arisanpala.com/works/tuvinilo.html">
+    <meta property="og:site_name" content="Ari Sanpala">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TuVinilo – Minimalist Vinyl Record eCommerce">
+    <meta name="twitter:description" content="Clean and nostalgic eCommerce project for vinyl lovers. Created by Ari Designs.">
+    <meta name="twitter:image" content="https://www.arisanpala.com/assets/img/tuvinilo%20(2).gif">
+    <meta name="twitter:creator" content="@your_twitter_handle">
+
+    <link rel="shortcut icon" href="../assets/icons/favicon.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b247a8ee2de848b78f1ddc5de6e6de2b"}'></script>
+    <script src="/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+  </head>
+  <body>
+    <div class="main-container" id="main">
+      <div class="container">
+        <div class="cardsDetail-container">
+          <nav class="navbar" aria-label="Main navigation">
+          <button class="wave-icon" aria-label="Open menu" id="menu-btn">
+            <svg width="50" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M57 27C50.25 27 50.25 33 43.5 33C36.75 33 36.75 27 30 27C23.25 27 23.25 33 16.5 33C9.75 33 9.75 27 3 27" stroke="#EBEBEB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 9C9.75 9 9.75 15 16.5 15C23.25 15 23.25 9 30 9C36.75 9 36.78 15 43.53 15C50.28 15 50.25 9 57 9" stroke="#EBEBEB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M57 45C50.25 45 50.25 51 43.5 51C36.75 51 36.75 45 30 45C23.25 45 23.25 51 16.5 51C9.75 51 9.75 45 3 45" stroke="#EBEBEB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <a href="/index.html" class="logo-link" aria-label="Go to Home Page">
+            <div class="logo">
+              <P>ARI SANPALA</P>
+              <P><span>FRONT-END DEV & DESIGNER</span></P>
+            </div>
+          </a>
+          <div class="menuBox">
+            <div class="lang-selector">
+              <button id="lang-toggle" aria-label="Select language">En <i class="bi bi-chevron-down"></i></button>
+              <ul id="lang-menu" class="hidden">
+                <li><button data-lang="en">English</button></li>
+                <li><button  data-lang="es">Español</button></li>
+              </ul>
+            </div>
+            <button id="dark-btn" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+            <button id="day-btn" aria-label="Toggle day mode"><i class="bi bi-brightness-high-fill"></i></button>
+            <a href="https://github.com/Ari-Dsgns" id="github" target="_blank" rel="noopener" aria-label="Visit GitHub Profile"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/ari-sanchez" id="linkedin" target="_blank" rel="noopener" aria-label="Visit LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
+          </div>
+
+          <div class="mobile-menu hidden" aria-hidden="true">
+            <div class="menu-content">
+              <a href="/index.html"><p>Home</p></a>
+              <button id="dark-btn-mobile" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+              <button id="day-btn-mobile" aria-label="Toggle day mode"><i class="bi bi-brightness-high-fill"></i></button>
+              <div class="lang-selector">
+                <button id="lang-toggle-mobile" aria-label="Select language">En <i class="bi bi-chevron-down"></i></button>
+                <ul id="lang-menu-mobile" class="hidden">
+                  <li><button data-lang="en">English</button></li>
+                  <li><button data-lang="es">Español</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            </nav>
+          <div class="tuvinilo-content">
+            <div class="nextAndBack">
+              <a data-i18n="backBtn" href="./justgoodstuff.html" class="backButton">Back</a>
+              
+              <a data-i18n="nextBtn" href="./destinea.html"class="backButton">Next</a>
+            </div>
+            <h1>TU VINILO</h1>
+            <h2 data-i18n="tuviniloSubtitle" id="subtitle">
+              A clean and minimalist vinyl record eCommerce with dynamic cart and
+              smooth navigation
+            </h2>
+            <a href="https://github.com/Ari-Dsgns/tuvinilo" target="_blank"
+              ><i class="bi bi-link-45deg"></i>View source code → GitHub</a
+            >
+            <a href="https://vinyl-shop-flame.vercel.app/" target="_blank" class="try-me-button">LIVE DEMO</a>
+            <div id="icon-box">
+              <img src="/assets/icons/html-icon.svg" alt="html icon">
+              <img src="/assets/icons/css-icon.svg" alt="css icon">
+              <img src="/assets/icons/js-icon.svg" alt="js icon">
+              <img src="/assets/icons/bootstrap-icon.svg" alt="bootstraop icon">
+              <img src="/assets/icons/figma-icon.svg" alt="figma icon">
+              <img src="/assets/icons/canva-icon.svg" alt="canva icon">
+            </div>
+            <h3>
+              <strong>
+                <i class="bi bi-clipboard-check"></i>
+                <span data-i18n="SummaryTitle">Summary</span>
+              </strong>
+            </h3>
+            <p data-i18n="tuviniloSummaryContent">
+              TuVinilo is an online vinyl record store designed for music lovers.
+              The platform allows users to browse a curated collection of records,
+              add them to their cart, and complete their purchase with ease. The
+              design emphasizes a clean and minimalist aesthetic, featuring a
+              hidden but accessible cart and navigation bar for an intuitive user
+              experience.
+            </p>
+
+            <div class="img-box">
+              <img src="/assets/img/vinilo.png"  id="img1-eris" alt="short gif showing website interactions">
+              <img src="/assets/img/vinilo2.png"  id="img1-eris" alt="short gif showing website interactions">
+            </div>
+
+            <h3>
+              <strong>
+                <i class="bi bi-bullseye"></i> 
+                <span data-i18n="GoalTitle">Project goal:</span>
+              </strong>
+            </h3>
+            <p data-i18n="tuviniloGoalContent">
+              The main objective was to create a visually appealing and functional
+              eCommerce experience that captures the vibe of vinyl culture. The
+              focus was on smooth navigation and an interface that feels as
+              nostalgic and enjoyable as listening to records.
+            </p>
+            <h3>
+              <strong>
+                <i class="bi bi-cpu-fill"></i>
+                <span data-i18n="TechTitle"> Technologies used:</span>
+              </strong>
+            </h3>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>javaScript Vanilla</p>
+            <h3>
+              <strong>
+                <i class="bi bi-person-workspace"></i>
+                <span data-i18n="RoleTitle"> My role:</span>
+              </strong>
+            </h3>
+            <p data-i18n="tuviniloRoleContent">
+              I handled the entire development process—from UI/UX design to
+              implementing core features like the shopping cart and dynamic
+              navigation. Special care was taken to ensure the user journey was
+              seamless, balancing aesthetics with usability across all devices.
+            </p>
+            <h3>
+              <strong>
+                <i class="bi bi-lightbulb"></i>
+                <span data-i18n="ChallengeTitle">Challenges and solutions:</span>
+              </strong>
+            </h3>
+            <p data-i18n="tuviniloChallengeContent">
+              One of the key challenges was creating an intuitive layout while
+              keeping the interface visually clean. I implemented
+              hidden-yet-accessible navigation and cart elements, which required
+              thoughtful design and coding solutions. This project helped me
+              refine my skills in user-centered design and strengthened my ability
+              to merge visual design with interactive functionality.
+            </p>
+            <div class="nextAndBack">
+              <a data-i18n="backBtn" href="./justgoodstuff.html" class="backButton">Back</a>
+              <a data-i18n="nextBtn" href="./destinea.html" class="backButton">Next</a>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div>
+            <a  data-i18n="cookiesLink" href="../legal/privacy.html" aria-label="Política de Cookies y Privacidad">
+              Cookies & Privacidad
+            </a>
+            <p style="padding-left: 10px;">
+              © 2025 arisanpala
+            </p>
+          </div>
+        </footer>
+        <div class="noise"></div>
+      </div>
+    </div>
+  </body>
+</html>

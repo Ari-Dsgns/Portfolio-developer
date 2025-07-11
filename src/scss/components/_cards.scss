@@ -1,0 +1,54 @@
+#card0, #card1, #card2, #card3, #card4, #card5, #card6 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Advent Pro", serif;
+  text-align: center;
+  background-color: $gradientBlue-night;
+  width: 80%;
+  border-radius: 6px;
+  padding: 20px;
+  transition: 0.3s ease-in;
+  font-weight: 400;
+  font-size: 50px;
+  text-decoration: none;
+  
+  color: $fontColor2-night;
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.5);
+  
+  h2{
+    
+    font-weight: 400;
+    font-size: 30px;
+    color: $fontColor-day;
+    
+  }
+  h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: $fontColor3-night;
+    margin-bottom: 10px;
+  }
+  p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: $fontColor3-night;
+  }
+
+  @include respond($breakpoint-lg) {
+    width: 90%;
+    font-size: 50px;
+  }
+  @include respond($breakpoint-md) {
+    width: 100%;
+    font-size: 40px;
+    
+  }
+  @include hover {
+    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0.699);
+  }
+  
+}
+
+

@@ -1,0 +1,21 @@
+@mixin respond($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin active {
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}

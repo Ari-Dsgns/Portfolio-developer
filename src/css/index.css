@@ -1,0 +1,179 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* transition: all 2s ease; */
+}
+
+:root {
+
+  --navbar-color: #c1c1c1;
+ 
+  
+ 
+  
+  --navbar-night: #ffffff;
+  --background-color: #c1c1c1;
+  
+  
+  --background-color-night:white;
+
+  --font-color: #484848fc;
+  
+  --font-color-text: #FFFBAD;
+  --font-card-color:  rgb(143, 171, 255);
+  --font-card-color2:  rgb(166, 255, 213);
+  --font-card-color3:  rgb(255, 198, 158);
+  --font-card-color4:  rgb(244, 255, 144);
+  --font-card-color5:  rgb(255, 143, 249);
+  --font-card-color6:  rgb(255, 195, 143);
+  
+  --font-color-night2: #6476a9;
+  --font-color-night3: #35477A;
+
+  --color-card-night1:#E4E4E7;
+  --color-card-night2: #35477A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.1s;
+}
+
+.icon-menu {
+  display: flex;
+  justify-content: start;
+  gap: .75rem;
+  padding: .25rem;
+  width: 90px;
+  height: 2.5rem;
+  border: solid .1rem rgba(255, 255, 255, 0);
+  z-index: 2;
+
+
+}
+
+
+/* works */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
