@@ -105,14 +105,14 @@
   h2{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.5rem;
     
     
   }
   h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-bottom: 8px;
     border-bottom: solid 2px var(--font-color);
     
@@ -129,9 +129,16 @@
   }
   a{
     text-decoration: none;
-    color: blue;
-
+    font-weight: 500;
+    color: $fontColorPurple;
+    padding: 4px;
+    border-radius: 2px;
+    
   }
+  a:hover{
+    background-color: rgba(128, 128, 128, 0.212);
+  }
+  
   p{
     font-size: 1.25rem;
     font-weight: 500;
@@ -169,9 +176,7 @@
     h3 {
       font-size: 1rem;
     }
-    p {
-      font-size: 0.875rem;
-    }
+    
   }
 }
 
