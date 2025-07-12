@@ -521,7 +521,7 @@ body {
     background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   #work-btn {
     font-size: 28px;
     height: 40%;
@@ -577,7 +577,7 @@ body {
     background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   #about-btn {
     font-size: 28px;
     height: 40%;
@@ -634,7 +634,7 @@ body {
     background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   #contact-btn {
     font-size: 28px;
     height: 40%;
@@ -1422,7 +1422,7 @@ a {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .brand h1 {
     font-size: 40px;
     letter-spacing: 0px;
@@ -1461,7 +1461,7 @@ a {
     margin-top: 0px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .brand h2 {
     font-size: 12px;
     margin-top: 0px;
