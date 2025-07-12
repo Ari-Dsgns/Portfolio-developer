@@ -498,17 +498,32 @@ body {
 }
 @media (max-width: 1024px) {
   #work-btn {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 @media (max-width: 768px) {
   #work-btn {
+    font-size: 42px;
     height: 50%;
   }
 }
 @media (max-width: 480px) {
   #work-btn {
-    font-size: 40px;
+    font-size: 36px;
+    height: 40%;
+    background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
+  }
+}
+@media (max-width: 425px) {
+  #work-btn {
+    font-size: 32px;
+    height: 40%;
+    background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
+  }
+}
+@media (max-width: 375px) {
+  #work-btn {
+    font-size: 28px;
     height: 40%;
     background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
   }
@@ -539,17 +554,32 @@ body {
 }
 @media (max-width: 1024px) {
   #about-btn {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 @media (max-width: 768px) {
   #about-btn {
+    font-size: 42px;
     height: 50%;
   }
 }
 @media (max-width: 480px) {
   #about-btn {
-    font-size: 40px;
+    font-size: 36px;
+    height: 40%;
+    background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
+  }
+}
+@media (max-width: 425px) {
+  #about-btn {
+    font-size: 32px;
+    height: 40%;
+    background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
+  }
+}
+@media (max-width: 375px) {
+  #about-btn {
+    font-size: 28px;
     height: 40%;
     background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
   }
@@ -581,17 +611,32 @@ body {
 }
 @media (max-width: 1024px) {
   #contact-btn {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 @media (max-width: 768px) {
   #contact-btn {
+    font-size: 42px;
     height: 50%;
   }
 }
 @media (max-width: 480px) {
   #contact-btn {
-    font-size: 40px;
+    font-size: 36px;
+    height: 40%;
+    background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
+  }
+}
+@media (max-width: 425px) {
+  #contact-btn {
+    font-size: 32px;
+    height: 40%;
+    background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
+  }
+}
+@media (max-width: 375px) {
+  #contact-btn {
+    font-size: 28px;
     height: 40%;
     background: linear-gradient(rgba(95, 235, 245, 0.1411764706), rgba(19, 211, 229, 0));
   }
@@ -624,7 +669,7 @@ body {
   box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.5);
 }
 #card0 h2, #card1 h2, #card2 h2, #card3 h2, #card4 h2, #card5 h2, #card6 h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
   color: #101010;
 }
@@ -1028,7 +1073,11 @@ a {
 @media (max-width: 768px) {
   #about-me-content h1 {
     font-size: 32px;
-    margin-top: 0px;
+  }
+}
+@media (max-width: 480px) {
+  #about-me-content h1 {
+    font-size: 28px;
   }
 }
 #about-me-content p {
@@ -1092,7 +1141,7 @@ a {
 .contact-content {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 40%;
   height: 100%;
   border: solid 0px rgba(255, 255, 255, 0.884);
   align-items: center;
@@ -1116,6 +1165,16 @@ a {
     font-size: 38px;
   }
 }
+@media (max-width: 768px) {
+  .contact-content h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .contact-content h1 {
+    font-size: 28px;
+  }
+}
 .contact-content h2 {
   border: solid 0px rgba(255, 255, 255, 0.818);
   text-align: center;
@@ -1132,8 +1191,19 @@ a {
     font-size: 36px;
   }
 }
+@media (max-width: 1024px) {
+  .contact-content h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-content h2 {
+    font-size: 28px;
+  }
+}
 @media (max-width: 1440px) {
   .contact-content {
+    width: 60%;
     height: 100%;
     padding: 0px;
     font-size: 24px;
@@ -1143,7 +1213,6 @@ a {
 }
 @media (max-width: 1024px) {
   .contact-content {
-    width: 90%;
     height: 100%;
     padding: 0px;
     font-size: 20px;
@@ -1153,6 +1222,7 @@ a {
 }
 @media (max-width: 768px) {
   .contact-content {
+    width: 80%;
     height: 100%;
     padding: 0px;
     font-size: 16px;
@@ -1347,7 +1417,14 @@ a {
 }
 @media (max-width: 425px) {
   .brand h1 {
-    font-size: 48px;
+    font-size: 46px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .brand h1 {
+    font-size: 40px;
     letter-spacing: 0px;
     margin-bottom: 10px;
   }
@@ -1373,14 +1450,21 @@ a {
 }
 @media (max-width: 480px) {
   .brand h2 {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 425px) {
   .brand h2 {
-    font-size: 15px;
-    letter-spacing: 0px;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .brand h2 {
+    font-size: 12px;
+    margin-top: 0px;
   }
 }
 
@@ -1426,6 +1510,16 @@ a {
 @media (max-width: 1024px) {
   .cards-container h1 {
     font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .cards-container h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .cards-container h1 {
+    font-size: 28px;
   }
 }
 @media (max-width: 768px) {
@@ -1479,7 +1573,7 @@ a {
 .readmeapp-content h1,
 .saffvision-content h1 {
   font-family: "Advent Pro", serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 2.5rem;
   color: #101010;
   border: solid 0rem rgb(250, 250, 250);
@@ -1601,6 +1695,7 @@ a {
   .saffvision-content {
     width: 100%;
     padding: 10px;
+    gap: 15px;
   }
   .erischatbot-content h1,
   .justgoodstuff-content h1,

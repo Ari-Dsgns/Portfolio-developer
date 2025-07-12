@@ -27,7 +27,7 @@
 .contact-content{
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 40%;
   height: 100%;
   border: solid 0px rgba(255, 255, 255, 0.884);
   align-items: center;
@@ -51,6 +51,12 @@
     @include respond($breakpoint-md) {
       font-size: 38px;
     }
+    @include respond($breakpoint-sm) {
+      font-size: 32px;
+    }
+    @include respond($breakpoint-xs) {
+      font-size: 28px;
+    }
   }
 
   h2{
@@ -69,10 +75,16 @@
     @include respond($breakpoint-lg) {
       font-size: 36px;
     }
+    @include respond($breakpoint-md) {
+      font-size: 32px;
+    }
+    @include respond($breakpoint-sm) {
+      font-size: 28px;
+    }
   }
 
   @include respond($breakpoint-lg) {
-    
+    width: 60%;
     height: 100%;
     padding: 0px;
     font-size: 24px;
@@ -80,7 +92,7 @@
     justify-content: center;
   }
   @include respond($breakpoint-md) {
-    width: 90%;
+    
     height: 100%;
     padding: 0px;
     font-size: 20px;
@@ -88,6 +100,7 @@
     justify-content: center;
   }
   @include respond($breakpoint-sm) {
+    width: 80%;
     height: 100%;
     padding: 0px;
     font-size: 16px;

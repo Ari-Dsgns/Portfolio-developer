@@ -49,15 +49,27 @@
   
 
    @include respond($breakpoint-md) {
-     font-size: 60px;
+      font-size: 48px;
+     
     }
 
     @include respond($breakpoint-sm) {
+      font-size: 42px;
       height: 50%;
     }
 
   @include respond($breakpoint-xs) {
-    font-size: 40px;
+    font-size: 36px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include respond($breakpoint-xxs) {
+    font-size: 32px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include respond($breakpoint-xxs2) {
+    font-size: 28px;
     height: 40%;
     background: $gradientBlue-night;
   }
@@ -100,14 +112,25 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
   
   @include respond($breakpoint-md) {
-      font-size: 60px;
+      font-size: 48px;
     }
 
     @include respond($breakpoint-sm) {
+      font-size: 42px;
       height: 50%;
     }
     @include respond($breakpoint-xs) {
-      font-size: 40px;
+      font-size: 36px;
+      height: 40%;
+      background: $gradientBlue-night;
+    }
+    @include respond($breakpoint-xxs) {
+      font-size: 32px;
+      height: 40%;
+      background: $gradientBlue-night;
+    }
+    @include respond($breakpoint-xxs2) {
+      font-size: 28px;
       height: 40%;
       background: $gradientBlue-night;
     }
@@ -144,14 +167,25 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
   
     @include respond($breakpoint-md) {
-      font-size: 60px;
+      font-size: 48px;
     }
 
     @include respond($breakpoint-sm) {
+      font-size: 42px;
       height: 50%;
     }
     @include respond($breakpoint-xs) {
-      font-size: 40px;
+      font-size: 36px;
+      height: 40%;
+      background: $gradientBlue-night;
+    }
+    @include respond($breakpoint-xxs) {
+      font-size: 32px;
+      height: 40%;
+      background: $gradientBlue-night;
+    }
+    @include respond($breakpoint-xxs2) {
+      font-size: 28px;
       height: 40%;
       background: $gradientBlue-night;
     }

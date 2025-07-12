@@ -65,7 +65,12 @@
       margin-bottom: 10px;
     }
     @include respond($breakpoint-xxs) {
-      font-size: 48px;
+      font-size: 46px;
+      letter-spacing: 0px;
+      margin-bottom: 10px;
+    }
+    @include respond($breakpoint-xxs2) {
+      font-size: 40px;
       letter-spacing: 0px;
       margin-bottom: 10px;
     }
@@ -101,12 +106,18 @@
       letter-spacing: 0px;
     }
     @include respond($breakpoint-xs) {
-      font-size: 18px;
+      font-size: 16px;
       letter-spacing: 0px;
+      margin-top: 0px;
     }
     @include respond($breakpoint-xxs) {
-      font-size: 15px;
-      letter-spacing: 0px;
+      font-size: 14px;
+      
+      margin-top: 0px;
+    }
+    @include respond($breakpoint-xxs2) {
+      font-size: 12px;
+      margin-top: 0px;
     }
     
     
