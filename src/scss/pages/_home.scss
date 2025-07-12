@@ -111,12 +111,11 @@
       margin-top: 0px;
     }
     @include respond($breakpoint-xxs) {
-      font-size: 14px;
-      
+     
       margin-top: 0px;
     }
     @include respond($breakpoint-xxs2) {
-      font-size: 12px;
+      
       margin-top: 0px;
     }
     
