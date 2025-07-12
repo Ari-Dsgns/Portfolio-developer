@@ -1340,6 +1340,13 @@ a {
 }
 @media (max-width: 480px) {
   .brand h1 {
+    font-size: 52px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .brand h1 {
     font-size: 48px;
     letter-spacing: 0px;
     margin-bottom: 10px;
@@ -1366,7 +1373,13 @@ a {
 }
 @media (max-width: 480px) {
   .brand h2 {
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .brand h2 {
+    font-size: 15px;
     letter-spacing: 0px;
   }
 }
