@@ -1098,6 +1098,7 @@ a {
   align-items: center;
   align-content: center;
   overflow-y: auto;
+  animation: appear 5s;
 }
 .contact-content div {
   display: flex;
@@ -1456,6 +1457,7 @@ a {
   border-radius: 2px;
   overflow-y: auto;
   background-color: transparent;
+  animation: appear 5s;
 }
 .erischatbot-content h1,
 .justgoodstuff-content h1,
@@ -1667,20 +1669,43 @@ a {
 .container-legal {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
   gap: 30px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 40px;
-  color: var(--background-color-night);
+  color: #474747;
   z-index: 3;
-  background-color: #d4d2d2;
+  background-color: #ffffff;
+  animation: appear 2s;
 }
-@media (max-width: 425px) {
+.container-legal h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #474747;
+}
+.container-legal h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #474747;
+}
+.container-legal p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #474747;
+  line-height: 1.5;
+}
+@media (max-width: 480px) {
   .container-legal {
-    height: 100%;
-    padding: 8px;
+    padding: 10px;
+  }
+  .container-legal h1 {
+    font-size: 24px;
+  }
+  .container-legal h2 {
+    font-size: 20px;
+  }
+  .container-legal p {
+    font-size: 14px;
   }
 }
 
