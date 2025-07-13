@@ -65,7 +65,7 @@
     font-family: "Advent Pro", serif; 
     font-size: 38px;
     /* font-family: "Space Mono", monospace; */
-    color:$fontColor2-night;
+    color:$fontColor2-day;
     word-wrap:normal;
     max-width: 100%;
      margin-bottom: 20px;
@@ -119,7 +119,7 @@
 }
 
 .form-container{
-  font-family: "Space Mono", monospace;
+  
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -138,7 +138,7 @@
 }
 
 .input-field{
-  font-family: "Space Mono", monospace;
+  
   border: none;
   background-color: #dddfe0;
   width:100%;
@@ -148,7 +148,7 @@
 }
 
 .input-field-textArea{
-  font-family: "Space Mono", monospace;
+  
   border: none;
   background-color: #dddfe0;
   width:100%;
@@ -161,7 +161,7 @@
 .input-field-textArea:focus {
   outline: none;
   
-  font-family: "Space Mono", monospace !important;
+  
   font-weight: 700;
 
 }
@@ -169,27 +169,27 @@
 .input-field:focus::placeholder,
 .input-field-textArea:focus::placeholder {
   color: transparent;
-  font-family: "Space Mono", monospace;
+  
 }
 
 .input-field::placeholder,
 .input-field-textArea::placeholder {
-  color: #5E5E5E;
+  color: $fontColor3-day;
   font-size: 1rem;
-  font-weight: 600;
-  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  
 }
 
 .submit-btn{
   width: 120px;
   height: 40px;
   align-self: center;
-  background-color: transparent;
-  color: black;
+  background-color: $fontColorPurple;
+  color: $fontColor-night;
   font-size: 1.25rem;
-  font-weight: 800;
-  font-family: "Space Mono", monospace;
-  border: solid 1px rgba(39, 39, 39, 0.723);
+  font-weight: 700;
+  
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.1s;
@@ -201,7 +201,7 @@
 }
 
 .submit-btn:hover{
-  background-color: rgb(200, 200, 200);
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.685);
   
 }
 

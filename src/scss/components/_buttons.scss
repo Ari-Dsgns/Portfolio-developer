@@ -1,7 +1,7 @@
 .list {
   display: flex;
   flex-wrap: nowrap;
-  width:100%;
+  width: 100%;
   height: 50%;
   border: solid 0px rgba(193, 193, 193, 0.901);
   font-family: "Advent Pro", serif;
@@ -9,8 +9,8 @@
   z-index: 4;
   gap: 10px;
   transition: 1s;
-  animation: appear 2.5s  ;
-  
+  animation: appear 2.5s;
+
   ul {
     list-style: none;
     display: flex;
@@ -25,9 +25,6 @@
     height: 50%;
     flex-wrap: wrap;
   }
-  
-  
-  
 }
 
 #work-btn {
@@ -40,23 +37,23 @@
   height: 100%;
   font-size: 60px;
   font-weight: 400;
-  
-  // background: linear-gradient(#0b0b0b, #f3f3f300);
   cursor: pointer;
   transition: 0.1s ease-in;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
   border-radius: 12px;
-  
 
-   @include respond($breakpoint-md) {
-      font-size: 48px;
-     
-    }
+  @include respond($breakpoint-lg) {
+    font-size: 48px;
+  }
 
-    @include respond($breakpoint-sm) {
-      font-size: 42px;
-      height: 50%;
-    }
+  @include respond($breakpoint-md) {
+    font-size: 48px;
+  }
+
+  @include respond($breakpoint-sm) {
+    font-size: 42px;
+    height: 50%;
+  }
 
   @include respond($breakpoint-xs) {
     font-size: 36px;
@@ -75,21 +72,10 @@
   }
 
   @include hover {
-    
-    letter-spacing: 10px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.332);
-    
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.332);
   }
-  
-  
 }
-
-
-
-
-
-
-
 
 #about-btn {
   font-family: "Monoton", sans-serif;
@@ -101,47 +87,45 @@
   text-decoration: none;
   font-size: 60px;
   font-weight: 400;
- 
   cursor: pointer;
-  
-  
   -webkit-transition: color 0.25s 0.0833333333s;
   transition: 0.1s ease-in;
   text-overflow: ellipsis;
   border-radius: 12px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
-  
-  @include respond($breakpoint-md) {
-      font-size: 48px;
-    }
 
-    @include respond($breakpoint-sm) {
-      font-size: 42px;
-      height: 50%;
-    }
-    @include respond($breakpoint-xs) {
-      font-size: 36px;
-      height: 40%;
-      background: $gradientBlue-night;
-    }
-    @include respond($breakpoint-xxs) {
-      font-size: 32px;
-      height: 40%;
-      background: $gradientBlue-night;
-    }
-    @include respond($breakpoint-xxs2) {
-      font-size: 28px;
-      height: 40%;
-      background: $gradientBlue-night;
-    }
-    @include hover {
-      
-      letter-spacing: 10px;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.332);
+  @include respond($breakpoint-lg) {
+    font-size: 48px;
   }
-  
-}
 
+  @include respond($breakpoint-md) {
+    font-size: 48px;
+  }
+
+  @include respond($breakpoint-sm) {
+    font-size: 42px;
+    height: 50%;
+  }
+  @include respond($breakpoint-xs) {
+    font-size: 36px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include respond($breakpoint-xxs) {
+    font-size: 32px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include respond($breakpoint-xxs2) {
+    font-size: 28px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include hover {
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.332);
+  }
+}
 
 #contact-btn {
   font-family: "Monoton", sans-serif;
@@ -154,53 +138,43 @@
   padding: 10px;
   font-size: 60px;
   font-weight: 400;
-  
-  
   cursor: pointer;
   height: 100%;
-  
-  
   transition: 0.1s ease-in;
   text-overflow: ellipsis;
   border-radius: 12px;
-  
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
-  
-    @include respond($breakpoint-md) {
-      font-size: 48px;
-    }
 
-    @include respond($breakpoint-sm) {
-      font-size: 42px;
-      height: 50%;
-    }
-    @include respond($breakpoint-xs) {
-      font-size: 36px;
-      height: 40%;
-      background: $gradientBlue-night;
-    }
-    @include respond($breakpoint-xxs) {
-      font-size: 32px;
-      height: 40%;
-      background: $gradientBlue-night;
-    }
-    @include respond($breakpoint-xxs2) {
-      font-size: 28px;
-      height: 40%;
-      background: $gradientBlue-night;
-    }
-    @include hover {
-      
-      letter-spacing: 10px;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.332);
+  @include respond($breakpoint-lg) {
+    font-size: 48px;
   }
 
-  
+  @include respond($breakpoint-md) {
+    font-size: 48px;
+  }
+
+  @include respond($breakpoint-sm) {
+    font-size: 42px;
+    height: 50%;
+  }
+  @include respond($breakpoint-xs) {
+    font-size: 36px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include respond($breakpoint-xxs) {
+    font-size: 32px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include respond($breakpoint-xxs2) {
+    font-size: 28px;
+    height: 40%;
+    background: $gradientBlue-night;
+  }
+  @include hover {
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.332);
+  }
 }
 
-
-
-
-.backButton{
-  color: black;
-}

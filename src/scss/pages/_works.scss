@@ -76,6 +76,7 @@
   z-index: 3;
   background-color:$backgroundColor-day;
   
+  
 }
 
 
@@ -120,8 +121,10 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
-    padding-bottom: 8px;
-    border-bottom: solid 2px var(--font-color);
+    
+    color: $fontColor-day;
+    
+    
     
     
     
