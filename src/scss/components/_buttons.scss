@@ -1,180 +1,402 @@
-.list {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 50%;
-  border: solid 0px rgba(193, 193, 193, 0.901);
-  font-family: "Advent Pro", serif;
-  padding: 0px;
-  z-index: 4;
-  gap: 10px;
-  transition: 1s;
-  animation: appear 2.5s;
 
-  ul {
-    list-style: none;
-    display: flex;
+ 
+
+#work-btn, #about-btn, #contact-btn {
+  
+  font-family: 'Fender', sans-serif;
+  
+  font-family: "Boldonse", system-ui;
+  font-family: "NeueMetanaNext", system-ui;
+
+  font-size: 70px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: $button-petrol;
+
+  transition: 0.1s ease;
+
+  z-index: 999;
+   -webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+
+  
+  
+  padding:15px;
+  text-align: start;
+  width: auto;
+  background-color: transparent;
+
+  
+    
+  
+  
+
+  @include respond($breakpoint-xl) {
+   font-size: 60px;
+  }
+  @include respond($breakpoint-lg) {
+    font-size:60px;
+  }
+  
+  @include respond($breakpoint-md) {
+    font-size: 50px;
+  
+  }
+  @include respond($breakpoint-sm) {
+    font-size: 50px;
+    
+  }
+
+  span{
+    &:hover{
+      transform: scale(2);
+    }
+  }
+ 
+ 
+  
+  &:hover{
+    transform: scale(1.01);
+    
+    
+  } 
+  
+  
+  @include disable-hover-sm;
+}
+
+
+
+
+
+.language-box {
+  
+  cursor: pointer;
+  display: flex;
+  
+  position: fixed;
+  top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin-top: 0px;
+ 
+  
+  
+ 
+  
+  
+  
+  gap: .5rem;
+  
+  
+
+  
+
+ z-index: 999;
+
+  @include respond($breakpoint-sm) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     flex-direction: column;
-    gap: 20px;
+   
   }
-  @include respond($breakpoint-md) {
-    flex-wrap: wrap;
-    height: 30%;
+
+  
+}
+#lang-en,
+#lang-es {
+  display: flex;
+  font-family: "rawest", sans-serif;
+  
+  font-size: 16px;
+  font-weight: 300;
+  color: $button-petrol-light;
+  font-family: 'boldonse', system-ui;
+  font-family: "NeueMetanaNext", system-ui;
+  font-size: 12px;
+  align-items: center;
+  
+  @include respond($breakpoint-mobile-l) {
+    font-size: 12px;
+    font-weight: 100;
   }
-  @include respond($breakpoint-sm) {
-    height: 50%;
-    flex-wrap: wrap;
+
+}
+#lang-en.active,
+#lang-es.active {
+  
+  font-weight: regular;
+  color: $fontColorBlue;
+  border: solid 1px $fontColorBlue;
+  padding: 4px;
+  @include respond($breakpoint-mobile-l) {
+    border: none;
+    padding: 0;
   }
 }
 
-#work-btn {
-  font-family: "Monoton", sans-serif;
+
+
+
+
+
+
+.extra {
+  grid-column: 6 / 7;
+  grid-row: 1 / 2;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  font-size: 60px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: 0.1s ease-in;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
+  align-items:center;
+  
+  
+  border: solid 5px transparent;
+  background-color: transparent;
   border-radius: 12px;
+  // background-color: rgba(255, 255, 255, 0.15);
+  // backdrop-filter: blur(10px) ;
+  // -webkit-backdrop-filter: blur(10px) saturate(150%);
 
-  @include respond($breakpoint-lg) {
-    font-size: 48px;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: line-through;
+      color: $button-petrol;
+    }
   }
+  h3{
+    font-family: "Boldonse", system-ui;
+    font-size: 16px;
+    color: $button-petrol;
+    
+    @include respond($breakpoint-mobile-l) {
+      font-size: 12px;
+    }
+  }
+  button{
+    font-family: "rawest", sans-serif; 
+    font-size: 14px;
+    font-weight: 400;
+    color: $fontColor-petrol;
+    margin-top: 4px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @include respond($breakpoint-mobile-l) {
+      font-size: 12px;
+    }
+    
+    
 
-  @include respond($breakpoint-md) {
-    font-size: 48px;
   }
+  
+  
+
+
+  
+
+  
+  
 
   @include respond($breakpoint-sm) {
-    font-size: 42px;
-    height: 50%;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    border: solid 0px $button-petrol;
   }
-
-  @include respond($breakpoint-xs) {
-    font-size: 36px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include respond($breakpoint-xxs) {
-    font-size: 32px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include respond($breakpoint-xxs2) {
-    font-size: 28px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-
-  @include hover {
-    letter-spacing: 2px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.332);
-  }
+  
 }
 
-#about-btn {
-  font-family: "Monoton", sans-serif;
+
+
+.color-box-text{
+  position: relative;
+  right: 30px;
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0px;
+  border-radius: 12px;
+  border: solid 0px $button-petrol;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  font-size: 60px;
-  font-weight: 400;
-  cursor: pointer;
-  -webkit-transition: color 0.25s 0.0833333333s;
-  transition: 0.1s ease-in;
-  text-overflow: ellipsis;
-  border-radius: 12px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
 
-  @include respond($breakpoint-lg) {
-    font-size: 48px;
-  }
-
-  @include respond($breakpoint-md) {
-    font-size: 48px;
-  }
-
+  transform: scale(0.9);
   @include respond($breakpoint-sm) {
-    font-size: 42px;
-    height: 50%;
+    top: 0;
+    transform: scale(0.7);
   }
-  @include respond($breakpoint-xs) {
-    font-size: 36px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include respond($breakpoint-xxs) {
-    font-size: 32px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include respond($breakpoint-xxs2) {
-    font-size: 28px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include hover {
-    letter-spacing: 2px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.332);
-  }
+  
 }
 
-#contact-btn {
-  font-family: "Monoton", sans-serif;
+.text-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  animation: rotateRing 60s linear infinite;
+  pointer-events: none;
+}
+
+
+
+.color-box1, .color-box2{
+  
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-  font-size: 60px;
-  font-weight: 400;
-  cursor: pointer;
-  height: 100%;
-  transition: 0.1s ease-in;
-  text-overflow: ellipsis;
-  border-radius: 12px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.332);
+  gap: 5px;
+ 
 
-  @include respond($breakpoint-lg) {
-    font-size: 48px;
-  }
-
-  @include respond($breakpoint-md) {
-    font-size: 48px;
-  }
-
-  @include respond($breakpoint-sm) {
-    font-size: 42px;
-    height: 50%;
-  }
-  @include respond($breakpoint-xs) {
-    font-size: 36px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include respond($breakpoint-xxs) {
-    font-size: 32px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include respond($breakpoint-xxs2) {
-    font-size: 28px;
-    height: 40%;
-    background: $gradientBlue-night;
-  }
-  @include hover {
-    letter-spacing: 2px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.332);
-  }
+ 
 }
 
+.color1{
+  width: 2rem;
+  height: 2rem;
+  background-color: $backgroundColor;
+  border: solid 0px $button-petrol;
+  transform: skewX(0deg);
+  border-radius: 20%;
+  box-shadow: 0 0 10px rgba(51, 62, 77, 0.7);
+  cursor: pointer;
+}
+
+.color2{
+  width: 2rem;
+  height: 2rem;
+  background-color: $backgroundColor-2;
+  border: solid 0px $button-petrol;
+  transform: skewX(0deg);
+  border-radius: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(51, 62, 77, 0.7);
+  cursor: pointer;
+}
+.color3{
+ width: 2rem;
+  height: 2rem;
+  background-color: $backgroundColor-3;
+  border: solid 0px $button-petrol;
+  transform: skewX(0deg);
+  border-radius: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(51, 62, 77, 0.7);
+  cursor: pointer;
+}
+.color4{
+  width: 2rem;
+  height: 2rem;
+  background-color: $backgroundColor-4;
+  border-radius: 20%;
+  box-shadow: 0 0 10px rgba(51, 62, 77, 0.7);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  
+  
+}
+
+.color1:hover, .color2:hover, .color3:hover, .color4:hover {
+  
+  box-shadow: 0 0 12px rgba(51, 62, 77, 0.63);
+  
+}
+.color1:active, .color2:active, .color3:active, .color4:active {
+  
+  box-shadow: 0 0 15px rgba(51, 62, 77, 1); 
+  transform: scale(0.95); 
+}
+
+
+
+//////
+/// 
+/// 
+
+// #work-btn {
+//   grid-column: 2 / 6;
+//   grid-row: 1 / 2;
+//   font-size: 3rem;
+//   text-decoration: none;
+//   font-family: "Boldonse";
+//   font-size: 70px;
+//   text-align: center;
+//   font-style: regular;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 100%;
+  
+//   position: relative;
+//   cursor: pointer;
+  
+  
+//   background-color: transparent;
+//   color: #333e4d;
+  
+  
+//   border: dashed 0px $button-petrol;
+
+//   // Variables internas para animación del borde
+//   --border-width: 8px;
+//   --animation-speed: 0.5s;
+//   --color: #333e4d;
+
+//   font-size: 3rem;
+//   line-height: 1em;
+//   transform: scale(1, 0.8);
+//   border: var(--border-width) solid transparent;
+//   transition: all var(--animation-speed) ease-in-out;
+
+//   // Inner span para el texto
+  
+
+//   &::before,
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     background: transparent;
+//     transition: all 2s ease-in-out;
+//   }
+
+//   &:hover::before {
+//     animation: beforeBorders var(--animation-speed) forwards ease-in-out;
+//   }
+
+//   &:hover::after {
+//     animation: afterBorders var(--animation-speed) forwards ease-in-out;
+//   }
+
+//   &:hover {
+//     outline: none;
+//     animation: borderColors var(--animation-speed) ease-in-out forwards;
+//   }
+
+//   @include respond($breakpoint-lg) {
+//     font-size: 2.375rem;
+//   }
+
+//   @include respond($breakpoint-md) {
+//     font-size: 2.375rem;
+//   }
+
+//    @include hover {
+//     background-color: transparent;
+//     color: $button-petrol;
+//     transition: all var(--animation-speed) ease-in-out;
+//   }
+  
+
+  
+
+//   @include disable-hover-sm;
+// }

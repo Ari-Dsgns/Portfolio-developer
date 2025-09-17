@@ -1,89 +1,187 @@
-.container-about-me{
+
+
+
+
+
+.about-me-content {
+
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   align-items: center;
+  margin-top: 0px;
+  border:none;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  border-radius: 2px;
-  
-  
-  
-  background-color: $backgroundColor-day;
-  transition: 0.5s;
   z-index: 3;
-   
-}
+  border: solid white 0px;
+  
+  // border-bottom: solid 1px $button-petrol;
+  // border-bottom: solid 1px $button-petrol;
+  // border-left: solid 1px $button-petrol;
+  // border-right: solid 1px $button-petrol;
+  background-color: $backgroundColor;
 
-#about-me-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  
-  gap: 20px;
-  width: 90%;
-  height: 100%;
-  padding: 0px;
-  
-  overflow-y: auto;
-  z-index: 3;
-  animation: appear 5s  ;
-  h1 {
-    color:$fontColorPurple; ;
-    text-align: center;
-    font-family: "Monoton", sans-serif;
+
+  h1{
+    font-family: "NeueMetanaNext", system-ui;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size:48px;
-    letter-spacing: 10px;
-    @include respond($breakpoint-md) {
-      font-size: 38px;
-    }
+    color: $fontColorBlue;
+    font-size: 30px;
+    margin-bottom: 40px;
     @include respond($breakpoint-sm) {
-      font-size: 32px;
-    }
-    @include respond($breakpoint-xs) {
-      font-size: 28px;
+      font-size: 18px;
+      margin-top: 0px;
+      text-align: center;
     }
   }
-  p {
-    z-index: 999;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  
+
+  
+  @include respond($breakpoint-xl) {
+    
+    width: 100%;
+    padding: 10px;
+    
+  }
+  
+  
+  
+  
+  
+}
+
+.about-me-image-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+  align-self: self-start;
+  border-radius: 8px;
+  margin-top: 0px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  p{
+    font-style: italic;
+  }
+
+  @include respond($breakpoint-mobile-l) {
+    width: 100%;
+    
+  }
+}
+
+
+.about-me-image {
+  
+  
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+  border: solid 0px $button-petrol-light2;
+  
+
+   -webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+
+
+
+.about-me-text1{
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  padding:20px;
+  border: solid 0px transparent;
+  
+  gap: 10px;
+  margin-bottom: 60px;
+  
+  background: 
+    linear-gradient(#1a1919, #1a1919) padding-box,
+    linear-gradient(90deg, #FF6C58, #6958ff) border-box;
+
+  border: solid 0px $button-petrol-light2;
+  h1{
     text-align: center;
-    line-height: 1.5;
-    text-wrap: balance;
-    font-size: 24px;
-    font-weight: 300;
-    font-family: "Inter", sans-serif;
-    color: var(--font-color-text);
-    
-    
-    @include respond($breakpoint-md) {
+    font-family: "Boldonse", system-ui;
+    font-family: "NeueMetanaNext", system-ui;
+    font-family: 'Montserrat', sans-serif; 
+    color: $fontColorBlue;
+    font-size: 30px;
+    @include respond($breakpoint-sm) {
       font-size: 20px;
+    }
+    @include respond($breakpoint-mobile-l) {
+      font-size: 18px;
+      padding: 6px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    
+  }
+  
+  h2{
+    font-family: "Boldonse", system-ui;
+    font-family: "NeueMetanaNext", system-ui;
+    font-family: 'Montserrat', sans-serif;
+    color: $button-petrol;
+    color: $button-petrol-light;
+    color: $fontColorBlue;
+    font-weight: 500;
+    padding: 0px;
+    text-align: start;
+    font-size: 18px;
+    margin-top: 20px;
+    @include respond($breakpoint-sm) {
+      font-size: 16px;
       
     }
   }
+
+  p {
+    text-align: start;
+    text-wrap-mode: balance;
+    line-height: 1.5;
+    font-family: "Brockmann", sans-serif;
+    font-family: 'inter', sans-serif;
+    font-family: 'nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: $button-petrol-lighter;
+    padding: 0px;
+    @include respond($breakpoint-mobile-l) {
+      font-size: 16px;
+      
+    }
+    
+  }
   
-  
-  
-  @include respond($breakpoint-lg) {
+  @include respond($breakpoint-xl) {
     width: 80%;
-    padding: 10px;
+    font-size: 18px;
   }
-  @include respond($breakpoint-md) {
-    width: 90%;
-    height: 100%;
-    padding: 2px;
-  }
-  @include respond($breakpoint-sm) {
-    width: 100%;
-    height: 100%;
-    padding: 12px;
-  }
+  @include respond($breakpoint-lg) {
+      width: 90%;
+      font-size: 18px;
+    }
+    @include respond($breakpoint-sm) {
+      width: 100%;
+      font-size: 16px;
+    }
+    @include respond($breakpoint-mobile-l) {
+      font-size: 14px;
+      padding: 6px;
+    }
   
 }
+
+
 
 

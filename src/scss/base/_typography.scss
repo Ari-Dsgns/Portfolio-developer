@@ -1,8 +1,73 @@
+@import url('https://fonts.cdnfonts.com/css/fender');
+
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 
+@font-face {
+  font-family: "Brockmann";
+  src: url("/assets/fonts/Brockmann-Medium.woff2") format("woff2");     
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "N27";
+  src: url("/assets/fonts/N27-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "N27";
+  src: url("/assets/fonts/N27-RegularItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "rawest";
+  src: url("/assets/fonts/rawest-medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "NeueMetanaNext";
+  src: url("/assets/fonts/NeueMetanaNext-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.fonts{
+  font-family: "Monoton", sans-serif;
+  font-family: "Limelight", sans-serif;
+  font-family: "Anton", sans-serif;
+
+  font-family: "Boldonse", system-ui;
+  
+  font-family: "N27", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "safiro", sans-serif;
+  font-family: "Brockmann", sans-serif;
+  font-family: "rawest", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "NeueMetanaNext", system-ui;
+}

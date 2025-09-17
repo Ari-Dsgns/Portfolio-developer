@@ -1,228 +1,427 @@
-.container-contact{
+.contact-me{
+  
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  
-  
-  z-index: 3;
-  border: solid 0px rgba(255, 255, 255, 0.723);
-  background-color:var(--background-color);
-  
-  @include respond($breakpoint-xs) {
-    padding: 12px;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 10px;
+  margin-bottom: 0px;
+  border: solid white 0px;
+  background-color:$backgroundColor;
+  p{
+    color: $fontColor-petrol-light;
+    font-weight: 500;
+   
   }
-  
 
-
-
+ 
   
 }
-
-.contact-content{
+.contact-card{
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
-  width: 40%;
-  height: 100%;
-  border: solid 0px rgba(255, 255, 255, 0.884);
+  gap: 20px;
+  justify-content: center;
   align-items: center;
-  align-content: center ;
-  overflow-y: auto;
-  animation: appear 5s  ;
-  div {
-    display: flex;
-    gap: 1rem;
-  }
+  
+  text-align: center;
+  padding: 40px;
+  background-color:$button-petrol-lighter;
 
-  h1{
-    font-family: "Monoton", sans-serif;
-    font-size: 48px;
-    letter-spacing: 10px;
-    font-weight: 400;
+   --border-angle: 0turn; // For animation.
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #1a1919 ,
+        #1a1919 95%
+    );
+  
+    border: solid 8px transparent;
+    border-radius:0;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
     
+    background: 
+      // padding-box clip this background in to the overall element except the border.
+      var(--main-bg) padding-box,
+      // border-box extends this background to the border space
+      var(--gradient-border) border-box, 
+      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+      var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 8s linear infinite;
+  
+  h1,h2{
+    font-family: 'Montserrat', sans-serif;
+      color: $button-petrol-lighter;
+      font-size: 18px;
+      font-weight: 300;
+  }
+  
+  p{
+    color: $button-petrol-light2;
+    font-weight: 300;
+    font-size: 16px;
    
-    color: $fontColorPurple;
-
-    @include respond($breakpoint-md) {
-      font-size: 38px;
-    }
-    @include respond($breakpoint-sm) {
-      font-size: 32px;
-    }
-    @include respond($breakpoint-xs) {
-      font-size: 28px;
-    }
   }
-
-  h2{
-    border: solid 0px rgba(255, 255, 255, 0.818);
-    text-align: center;
-    font-family: "Advent Pro", serif; 
-    font-size: 38px;
-    /* font-family: "Space Mono", monospace; */
-    color:$fontColor2-day;
-    word-wrap:normal;
-    max-width: 100%;
-     margin-bottom: 20px;
+  a{
     
-    
-
-    @include respond($breakpoint-lg) {
-      font-size: 36px;
-    }
-    @include respond($breakpoint-md) {
-      font-size: 32px;
-    }
-    @include respond($breakpoint-sm) {
-      font-size: 28px;
-    }
-  }
-
-  @include respond($breakpoint-lg) {
-    width: 60%;
-    height: 100%;
-    padding: 0px;
-    font-size: 24px;
-    align-items: center;
-    justify-content: center;
-  }
-  @include respond($breakpoint-md) {
-    
-    height: 100%;
-    padding: 0px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    align-items: center;
-    justify-content: center;
+    color: $fontColorBlue;
+    padding: 10px;
   }
   @include respond($breakpoint-sm) {
-    width: 80%;
-    height: 100%;
-    padding: 0px;
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
-  }
-  @include respond($breakpoint-xs) {
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    width: 90%;
+    h1,h2{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+    }
+    a{
+      font-size: 18px;
+      padding: 6px;
+    }
   }
   
+
+
+
 }
 
-.form-container{
-  
+.social-icons{
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 20px;
-  height: 100%;
-  padding: 20px;
-  align-items: start;
-  justify-content: start;
-  border: solid 0px rgba(255, 255, 255, 0.829);
-  div{
-    width: 100%;
-  }
-  @include respond($breakpoint-md) {
-    padding: 0px;
-  }
-}
-
-.input-field{
-  
-  border: none;
-  background-color: #dddfe0;
-  width:100%;
-  padding: 4px;
-  height: 40px;
-  border-radius: 4px;
-}
-
-.input-field-textArea{
-  
-  border: none;
-  background-color: #dddfe0;
-  width:100%;
-  padding: 4px;
-  min-height:200px;
-  border-radius: 4px;
-}
-
-.input-field:focus,
-.input-field-textArea:focus {
-  outline: none;
-  
-  
-  font-weight: 700;
+  gap: 0px;
+  border: solid 0px $button-petrol;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.input-field:focus::placeholder,
-.input-field-textArea:focus::placeholder {
-  color: transparent;
+#github{
   
-}
-
-.input-field::placeholder,
-.input-field-textArea::placeholder {
-  color: $fontColor3-day;
-  font-size: 1rem;
-  font-weight: 700;
-  
-}
-
-.submit-btn{
-  width: 120px;
-  height: 40px;
-  align-self: center;
-  background-color: $fontColorPurple;
-  color: $fontColor-night;
-  font-size: 1.25rem;
-  font-weight: 700;
-  
-  border: none;
-  border-radius: 4px;
+  font-size: 22px;
+  color: $button-petrol-lighter;
+  background-color: transparent;
   cursor: pointer;
-  transition: 0.1s;
+  border: none;
+  border: solid 0px rgba(255, 255, 255, 0.774);
+ 
+}
+
+#linkedin{
   
-  @media (max-width: 425px) {
-    width: 50%;
-    height: 40px;
-  }
-}
-
-.submit-btn:hover{
-  box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.685);
+  font-size: 22px;
+  color: $button-petrol-lighter;
+  
+  cursor: pointer;
+  border: none;
+  
+  
   
 }
 
+// .container-contact{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 100%;
+//   overflow-x: hidden;
+//   overflow-y: auto;
+
+ 
+//   transition: 0.5s;
+//   background-color:white;
+
+// }
+
+// .contact-content{
+  
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+//   grid-template-rows: 1fr 1fr 1fr 1fr;
+//   border: none;
+
+//   width: 60%;
+//   height: 100%;
+//   padding: 20px;
+//   gap: 10px;
+//   overflow-y: hidden;
+//   z-index: 3;
+//   animation: appear 5s  ;
+//   background: transparent;
+
+//   div {
+//     display: flex;
+//     gap: 1rem;
+//   }
+
+//   @include respond($breakpoint-lg) {
+//     width: 80%;
+//     padding: 10px;
+    
+//   }
+//   @include respond($breakpoint-md) {
+    
+//     width: 90%;
+//     height: 100%;
+//     padding: 2px;
+//   }
+//   @include respond($breakpoint-sm) {
+//     width: 100%;
+//     height: 100%;
+//     padding: 12px;
+    
+//   }
+//   @include respond($breakpoint-mobile-l) {
+//     width: 100%;
+//     height: 100%;
+    
+//     font-size: 16px;
+//     align-items: center;
+//     justify-content: center;
+//   }
+  
+// }
 
 
-.visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-padding: 0;
-overflow: hidden;
-clip: rect(0 0 0 0);
-white-space: nowrap;
-border: 0;
-}
+// .contact-title{
+//   grid-column: 5 /  6;
+//   grid-row: 1 / 5;
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   justify-content: center;
+  
+//   padding:0px;
+//   background-color: $backgroundColor;
+//   h1{
+//     font-family: "Anton", sans-serif;
+//     letter-spacing: 10px;
+//     font-size: 42px;
+//     font-weight: 400;
+//     text-align: center;
+//     transform: rotateZ(90deg);
+//     color: $fontColor-petrol;
+//   }
+  
+  
+// }
 
-.contact-icons{
-    color: inherit;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 28px;
-}
+// .exit-contact{
+//   grid-column: 1 / 2;
+//   grid-row: 4 / 5;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   justify-self: end;
+//   align-items:start;
+//   position: relative;
+  
+//   padding: 14px;
+//   text-decoration: none;
+//   width: 120px;
+//   height: 100%;
+//   font-size: 16px;
+//   text-align: start;
+//   font-weight: 400;
+//   cursor: pointer;
+//   transition: 0.5s ease-in;
+//   background: #333E4D;
+//   color: #828FA2;
+//   border: none;
+
+//   background-color: transparent;
+//   border-right: solid 1px #333E4D;
+  
+  
+//    color: $fontColor-petrol;
+
+//   div{
+//     font-family: "Lugrasimo", cursive;
+//   }
+
+//   span{
+//     font-family: "Inter", sans-serif;
+//   }
+
+//   @include respond($breakpoint-lg) {
+//     font-size: 14px;
+//   }
+//   @include respond($breakpoint-sm) {
+//     grid-column: 1 / 3;
+//     grid-row: 3;
+//     align-items: end;
+//     justify-content: center;
+//   }
+//   @include respond($breakpoint-mobile-l) {
+//     grid-column: 1 /5;
+//     grid-row: 3 / 4;
+//   }
+
+//   @include hover {
+//     background-color: $button-petrol;
+//     border: none;
+//     border-right: solid 1px #333E4D;
+    
+//     color: #ffffff;
+//     div{
+//       color: #ffffff;
+//     }
+//     i{
+//       color: #ffffff;
+//     }
+//   }
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 0;
+//     background-color:$button-petrol;
+//     z-index: -1;
+//     transition: width 0.3s ease ;
+//   }
+//   &:hover::before {
+//     width: 100%;
+    
+//   }
+  
+// }
+
+
+
+// .form-container{
+//   grid-column: 2 /5;
+//   grid-row: 1 / 4;
+//   padding: 10px;
+//   border: solid 0px $fontColor-petrol;
+//   overflow-y: auto;
+//   min-height: 350px;
+//   h2{
+//     margin-top: 10px;
+//     margin-bottom: 30px;
+//     text-align: center;
+//     color: $fontColor-petrol;
+//   }
+// }
+
+// .input-field{
+//   border: solid 0px #8c8c8c ;
+//   color: $fontColor-petrol;
+//   background-color: $button-petrol-lighter;
+//   width:100%;
+//   padding: 4px;
+//   height: 40px;
+//   margin-bottom: 20px;
+//   color: $fontColor-petrol;
+  
+// }
+
+// .input-field-textArea{
+  
+//   border: solid 0px #8c8c8c ;
+//   background-color: $button-petrol-lighter;
+//   width:100%;
+//   min-height: 200px;
+//   max-height:320px;
+//   padding: 4px;
+//   resize: none;
+//   overflow-y: hidden;
+//   color: $fontColor-petrol;
+  
+// }
+
+// .input-field:focus,
+// .input-field-textArea:focus {
+//   outline: none;
+//   font-weight: 700;
+
+// }
+
+// .input-field:focus::placeholder,
+// .input-field-textArea:focus::placeholder {
+//   color: transparent;
+  
+// }
+
+// .input-field::placeholder,
+// .input-field-textArea::placeholder {
+//   color: $fontColor-petrol-light;
+//   font-size: 1rem;
+//   font-weight: 700;
+  
+// }
+
+// .submit-container{
+//   grid-column: 2 / 5;
+//   grid-row: 4 / 5;
+//   display: flex;
+  
+//   padding: 0px;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 0px;
+//   border: solid 0px $fontColor-day;
+//   min-height: 150px;
+// }
+
+// .submit-btn{
+  
+  
+//   background-color:rgb(228, 227, 227);
+  
+//   border: solid 1px $fontColor-day;
+//   font-size: 1.25rem;
+//   font-weight: 700;
+//   padding: 0px;
+//   align-self: center;
+//   justify-self: start;
+//   width: 120px;
+//   height: 40px;
+//   color: $fontColor-petrol;
+//   cursor: pointer;
+//   transition: 0.2s;
+  
+  
+// }
+
+// .submit-btn:hover{
+//  transform: scale(1.02);
+  
+// }
+
+
+
+// .visually-hidden {
+// position: absolute;
+// width: 1px;
+// height: 1px;
+// margin: -1px;
+// padding: 0;
+// overflow: hidden;
+// clip: rect(0 0 0 0);
+// white-space: nowrap;
+// border: 0;
+// }
+
+// .contact-icons{
+//     color: inherit;
+//     border: none;
+//     background-color: transparent;
+//     cursor: pointer;
+//     font-size: 28px;
+// }

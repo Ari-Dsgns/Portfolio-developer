@@ -1,51 +1,85 @@
-.footer{
+// .footer{
   
-  margin-bottom: 10px;
-  margin-top: 0px;
-  display: flex;
-  position: relative;
+//   margin-top: 10px;
+//   display: flex;
+//   position: relative;
+//   bottom: 0;
+//   justify-content: center;
+//   width: 100%;
+//   min-height: 60px;
+//   background-color: $button-petrol;
+//   padding: 6px;
+//   border-top: dashed 2px $button-petrol;
+//   z-index: 999;
+
   
-  justify-content: center;
-  width: 90%;
-  background-color: transparent;
   
-  z-index: 3;
-  div{
-    display: flex;
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    color: inherit;
-    padding: 12px;
+//   border: none;
+  
+//   mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/10px 100%;
+
+//   animation: move-dents-to-left 180s linear infinite;
+
+
+//   div{
+//     display: flex;
+//     width: 95%;
+//     justify-content: center;
+//     align-items: center;
+//     align-content: center;
+//     color: inherit;
+//     padding: 12px;
     
 
-    a{
-        font-family: "Inter", sans-serif;
-        font-size: 14px;
-        text-decoration: none;
-        font-weight: 500;
-        color: inherit;
-        border-right: solid 1px ;
-        padding-right: 10px;
-        
-        
-    }
-    p{
-      font-family: "Inter", sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      color: inherit;
-      padding-left: 10px;
-      @include respond($breakpoint-sm) {
-        font-size: 14px;
-      }
-    }
-    @media (max-width: 375px) {
-      flex-direction: column;
+//     a{
+//         font-family: "Inter", sans-serif;
+//         font-size: 14px;
+//         text-decoration: none;
+//         font-weight: 600;
+//         color: $button-petrol;
+//         border-right: solid 1.5px ;
+//         padding-right: 10px;
 
-    }
-  }
+//         @include respond($breakpoint-mobile-l) {
+//           padding-right: 0px;
+//           border: none;
+//           font-weight: 400;
+//         }
+//     }
+//     p{
+//       font-family: "Inter", sans-serif;
+//       font-size: 14px;
+//       font-weight: 600;
+//       color: $button-petrol;
+//       padding-left: 10px;
+//       @include respond($breakpoint-sm) {
+//         font-size: 14px;
+//         font-weight: 600;
+//       }
+      
+//     }
+//     @include respond($breakpoint-mobile-l) {
+//       flex-direction: row;
+//       align-items: center;
+//       justify-content: center;
+      
+//       width: 100%;
+//     }
+//   }
   
 
+ 
+
+// }
+
+.footer{
+  
+  width: 100%;
+  height:5%;
+  
+  transition: transform 0.8s ease-in-out;
+  background-color: $button-petrol;
+  mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/5px 100%;
+
+  animation: move-dents-to-left 180s linear infinite;
 }

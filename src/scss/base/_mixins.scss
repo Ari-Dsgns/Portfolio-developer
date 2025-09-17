@@ -4,6 +4,7 @@
   }
 }
 
+
 @mixin hover {
   @media (hover: hover) {
     &:hover {
@@ -19,3 +20,91 @@
     }
   }
 }
+
+@mixin respond-up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// @mixin disable-hover-sm {
+//   @media (max-width: 768px) {
+//     pointer-events: none; // evita que se dispare el hover
+//   }
+// }
+
+@mixin disable-hover-sm {
+  @media (max-width: 768px) {
+    &:hover {
+      background-color:inherit;
+      color: $fontColor-petrol;
+      transform: none;
+      cursor: default;
+      border: none;
+      div{
+        color: $fontColor-petrol;
+        
+      }
+      i{
+       color: $fontColor-petrol;  
+      }
+      #radio-button,
+      #radio-button2 {
+        border: solid .0625rem $button-petrol;
+      }
+      #radio-button.active-radio,
+      #radio-button2.active-radio {
+        background-color: $button-petrol;
+      }
+    }
+    &::before {
+        width: 0 !important;
+        height: 0 !important;
+    }
+    
+  }
+}
+
+
+
+
+
+
+@for $i from 1 through $iterations {
+  $delay: ($i * $rotate-delay - 60);
+  
+  #dna div:nth-child(#{$i}) {
+    animation-delay: #{$delay}s;
+    
+    &::before,
+    &::after {
+      animation-delay: #{$delay}s;
+    }
+  }
+}
+@for $i from 1 through $iterations-logo {
+  $delay: ($i * $rotate-delay-logo - 60);
+
+  #dna-logo div:nth-child(#{$i}) {
+    animation-delay: #{$delay}s;
+    
+    &::before,
+    &::after {
+      animation-delay: #{$delay}s;
+    }
+  }
+}
+
+
+
+
+
+// @mixin no-hover-sm {
+//   @media (max-width: 768px) {
+//     &:hover {
+//       all: unset; // resetea todo
+//       cursor: pointer; // opcional, para que siga pareciendo clicable
+//     }
+//   }
+// }
+

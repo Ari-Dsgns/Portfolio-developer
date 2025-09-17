@@ -1,361 +1,323 @@
-::-webkit-scrollbar {
-  display: none;
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-.noise {
+ #overlay {
   position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
   z-index: 9999;
-  top: -300%;
-  left: -150%;
-  height: 600%;
-  width: 600%;
-
-  animation: grain 7s steps(10) infinite;
-  background-image: url('../../assets/img/noise1.png');
-  background-size: 12.5rem;
-  background-repeat: repeat;
-  opacity: 0.4;
-  pointer-events: none;
-}
-.noise.clean {
-  display: none;
-}
-
-.main-container.night {
-  background-color: $backgroundColor-night;
-
-  a{
-    color: rgb(114, 114, 255);
+  display: none; /* Oculto por defecto */
+  p{
+    font-size: 1.5rem;
   }
-
-  .logo{
-    border-right: solid 1px rgba(255, 255, 255, 0.774);
-    span{
-      font-weight: 400;
-    }
-  }
-
-  .wave-icon path {
-    stroke: rgb(230, 230, 230);
-  }
-
-  .noise {
-    opacity: 0.3;
-  }
-  .lang-selector {
-    color: #eaeaed;
-  }
-  .lang-selector button {
-    color: #eaeaed;
-    background-color: transparent;
-    border: none;
-  }
-  .lang-selector button:hover {
-    color: #c4c4c5;
-    background-color: transparent;
-    border: none;
-  }
-  #lang-menu {
-    color: #eaeaed;
-    border: none;
-    li {
-      button {
-        background-color: var(--color-card-night2);
-        color: #eaeaed;
-        border: none;
-        cursor: pointer;
-        font-weight: 700;
-        text-align: center;
-        transition: 0.1s;
-      }
-      button:hover {
-        background-color: rgb(54, 54, 54);
-        color: white;
-        border: none;
-      }
-    }
-  }
-
-  .footer {
-    div {
-      background-color: transparent;
-
-      border-top: solid 1px rgba(131, 131, 131, 0);
-    }
-
-    p,a,
-    #linkedin,
-    #github {
-      color: $fontColor2-night;
-    }
-    
-    a:hover {
-      color: #bebebe;
-    }
-  }
-
-  .container {
-    background-color: transparent;
-  }
-
-  .cardsDetail-container {
-    background-color: rgba(110, 243, 253, 0.089);
-  }
-
-  .work-container {
-    background: $gradientBlue-night;
-  }
-  .cards-container {
-    h1 {
-      color: $fontColorBlue;
-    }
-  }
-  #separator {
-    color: var(--color-card-night2);
-  }
-
-  #card0 {
-    background: $gradientBlue-night-sm;
-    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0);
-    h2 {
-      color: $fontColor-night;
-    }
-  }
-  #card1 {
-    background: $gradientBlueLeft-night-sm;
-    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0);
-    h2 {
-      color: $fontColor-night;
-    }
-  }
-  #card2 {
-    background: $gradientBlue-night-sm;
-    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0);
-    h2 {
-      color: $fontColor-night;
-    }
-  }
-  #card3 {
-    background: $gradientBlueLeft-night-sm;
-    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0);
-    h2 {
-      color: $fontColor-night;
-    }
-  }
-  #card5 {
-    background: $gradientBlue-night-sm;
-    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0);
-    h2 {
-      color: $fontColor-night;
-    }
-  }
-  #card6 {
-    background: $gradientBlueLeft-night-sm;
-    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0);
-    h2 {
-      color: $fontColor-night;
-    }
-  }
-
-  #card0:hover,
-  #card1:hover,
-  #card2:hover,
-  #card3:hover,
-  #card4:hover,
-  #card5:hover,
-  #card6:hover {
-    box-shadow: 0px 0px 20px rgba(10, 10, 10, 0);
-    
-  }
-
-  .navbar {
-    background-color: transparent;
-    color: $fontColor-night;
-    border-bottom: solid 1px rgba(200, 200, 200, 0.777);
-  }
-  .navbar:hover {
-    border-bottom: solid 1px inherit;
-  }
-
-  .nav-dark-noise {
-    color: #eaeaed;
-  }
-
-  .logo {
+  @include respond($breakpoint-mobile-l) {
+    font-size: 1rem;
     p{
-      color: $fontColor2-night;
+      font-size: 1rem;
     }
   }
-
-  .brand {
-    h1 {
-      color: $fontColor2-night;
-    }
-    h2 {
-      color: $fontColor2-night;
-    }
-  }
-
-  .e {
-    color: var(--font-color-night2);
-  }
-  #work-btn {
-    background: linear-gradient(#242424, $backgroundColor-night);
-    box-shadow: none;
-    color: $fontColorBlue;
-    @include respond($breakpoint-md) {
-      background: $gradientBlue-night-sm;
-    }
-  }
-  #work-btn:hover {
-    background: linear-gradient(#6ef3fd31, #13141400);
-  }
-  #about-btn {
-    background: linear-gradient(rgb(70, 70, 70), $backgroundColor-night);
-    color: #f271bc;
-    box-shadow: none;
-    @include respond($breakpoint-md) {
-      background: $gradientPink-night-sm;
-    }
-  }
-  #about-btn:hover {
-    background: $gradientPink-night;
-  }
-
-  #contact-btn {
-    background: linear-gradient(rgb(36, 36, 36), $backgroundColor-night);
-    color: #de6800;
-    box-shadow: none;
-    @include respond($breakpoint-md) {
-      background: linear-gradient(to right, #faac692b, #d2660700);
-    }
-  }
-  #contact-btn:hover {
-    background: $gradientOrange-night;
-  }
-
-  .contact-content {
-    h1 {
-      color: #ff7700;
-    }
-  }
-
-  .input-field,
-  .input-field-textArea {
-    background-color: rgb(40, 40, 40);
-    color: #eaeaed;
-    border: solid 1px #52505000;
-    background-color: rgb(219, 219, 219);
-  }
-  .contact-form input,
-  .contact-form textarea {
-    background-color: rgb(40, 40, 40);
-    border: solid 1px #52505000;
-  }
-
-  .submit-btn {
-    background-color: $fontColorOrange;
-    color: $fontColor-night;
-    border:none;
-  }
-  .submit-btn:hover {
-    box-shadow: 0px 0px 10px rgba(205, 205, 205, 0.976);
-  }
-
-  .container-about-me {
-    background: linear-gradient(#f271bc39, #c1097400);
-  }
-  #about-me-content {
-    h1 {
-      color: #f271bc;
-    }
-    p {
-      color: white;
-    }
-  }
-
-  .container-contact {
-    color: #eaeaed;
-    background: linear-gradient(#f1c17847, #de680000);
-  }
-  .contact-content {
-    color: #eaeaed;
-  }
-
-  .cardsDetail-container {
-    background: $gradientBlue-night;
-  }
-  .erischatbot-content,
-  .justgoodstuff-content,
-  .tuvinilo-content,
-  .destinea-content,
-  .readmeapp-content,
-  .saffvision-content {
-    color: #eaeaed;
-    background-color: rgb(40, 40, 40);
-    border: solid 1px #52505000;
-    background: transparent;
-  }
-  h1,
-  h2,
-  
-  p {
-    color:$fontColor-night;
-  }
-  h3 {
-    
-    color: $fontColor-night;
-  }
-  a {
-    color: rgb(114, 114, 255);
-  }
-  #subtitle {
-    color: #eaeaed;
-  }
-
-  
 }
+.dots::after {
+    content: '';
+    animation: dots 1.5s steps(3, end) infinite;
+}
+
+.loader {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+
+// .noise {
+//   position: fixed;
+//   z-index: 9999;
+//   top: -300%;
+//   left: -150%;
+//   height: 600%;
+//   width: 600%;
+
+//   animation: grain 7s steps(10) infinite;
+//   background-image: url('/assets/img/noise2.png');
+//   background-size: 12.5rem;
+//   background-repeat: repeat;
+  
+//   opacity: 0.5;
+//   pointer-events: none;
+// }
+// .noise.clean {
+//   display: none;
+// }
+
+// &::after {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background-image: url('../../assets/img/ruido2.png');
+//     background-size: 1200px ;
+//     background-repeat: repeat;
+    
+//     animation: grain 10s steps(10) infinite;
+//     opacity: 0.3; // oculto por defecto
+//     transition: opacity 0.3s ease;
+//     pointer-events: none; // para que no bloquee clics
+//     z-index: -1; // queda debajo del contenido del botón
+//   }
+
+
 
 .main-container {
-  position: fixed;
+  
   width: 100%;
   height: 100%;
   user-select: none;
   display: flex;
-  flex-direction: column;
-
-  align-items: center;
   z-index: 3;
-  border: solid 0.1rem rgba(255, 255, 255, 0);
+  overflow: hidden;
+  background-color: $backgroundColor;
 }
 
-.container {
+
+
+// .main-container.transition {
+//   transition: background-color 0.6s ease;
+// }
+
+// .main-container-yellow { background-color: $backgroundColor; }
+// .main-container-red { background-color: $backgroundColor-2; }
+// .main-container-blue { background-color: $backgroundColor-3; }
+// .main-container-green {
+
+//   background-color: $backgroundColor-4;
+
+  
+// }
+
+// .main-container::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 0;
+//   height: 100%;
+//   border-radius: 50%;
+  
+//   transform: translate(-50%, -50%);
+//   z-index: -1; // detrás del contenido
+//   transition: width 3s ease, height 3s ease;
+//   transition: width 1s ease;
+// }
+
+// .main-container-yellow::before { background-color: $backgroundColor; }
+// .main-container-red::before    { background-color: $backgroundColor-2; }
+// .main-container-blue::before   { background-color: $backgroundColor-3; }
+// .main-container-green::before  { background-color: $backgroundColor-4; }
+
+// .main-container.transitioning::before {
+//   width: 200vmax; 
+//   height: 200vmax;
+//   // width: 100%;
+// }
+
+.container{
+  position: relative;
+  
+  right: 0;
+  display: flex;
+  width: 100%;
+  height:100%;
+  padding-left: 6em;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: auto;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  border:none;
+  background-color: $backgroundColor;
+  border-left: 0.5px rgba(255, 255, 255, 0.558) solid;
+  @include respond($breakpoint-sm) {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+.sideBar{
+  position: fixed;
+  left: 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  gap: 80px;
+  width: 6em;
   height: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-  justify-self: center;
-  align-items: center;
-  padding: 0px;
-  gap: 20px;
-  background-color: $backgroundColor-day;
+  border-right: 1px $button-petrol solid;
+  z-index: 999;
+  background-color: $backgroundColor;
+  
+  
+  transition: 0.5s ease-in-out;
 
-  @media (max-width: 1440px) {
-    width: 100%;
+  a{
+    color: $fontColorBlue;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px;
+    border-right: solid 0px $button-petrol;
+    text-align: center;
+    transition: 0.1s ease-in-out;
+    transform: rotate(-90deg);
+
+    @include respond($breakpoint-sm) {
+      transform: rotate(0deg);
+      font-size: 14px;
+      padding: 8px;
+    }
+    &:hover{
+      
+      color: $fontColorBlue;
+      
+     
+      
+    }
+    &.active {
+      border: solid 1px $fontColorBlue;
+    }
   }
+  @include respond($breakpoint-sm) {
+    bottom: 0;
+    height: 4em;
+    width: 100%;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    align-content: center;
+    border-top: solid 1px $button-petrol;
+    border-right: none;
+  }
+
+   
+}
+
+
+
+
+
+
+
+.portfolio-buttons{
+ 
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: auto;
+  height:80%;
+  border: none;
+  padding: 0px;
+  transition: 0.3 ease-in-out;
+ 
+  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+   -webkit-animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+  // backdrop-filter: blur(30px);
+  // border: solid 1px rgba(255, 255, 255, 0.168);
+  
+  // box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+
+  &:hover{
+    
+    transition: 0.3 ease-in-out;
+  }
+
+  @include respond($breakpoint-mobile-l) {
+    padding: 0px;
+    
+  }
+
   
 
-  @media (max-width: 425px) {
+}
+
+
+
+.lang-color-box{
+  
+  display: flex;
+  
+  justify-content: space-between;
+  gap: 40px;
+  width:100%;
+  
+  
+  z-index: 3;
+  align-items: center;
+  border-radius: 2px;
+  
+
+   -webkit-animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+  border: none;
+  padding: 20px;
+
+  @include respond($breakpoint-sm) {
+    flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 180px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
-  @media (max-width: 325px) {
+ 
+  @include respond($breakpoint-mobile-l) {
+    flex-direction: row;
     width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.168);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+
+  &:hover{
+   
+    transition: 0.3 ease-in-out;
+  }
+}
+
+.line{
+  width: 70%;
+  height: 1px;
+  background-color: $button-petrol;
+  @include respond($breakpoint-sm) {
+    display: none;
   }
 }

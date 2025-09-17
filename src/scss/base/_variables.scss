@@ -1,7 +1,23 @@
 
 //COLORS
-$backgroundColor-night: #121111;
-$backgroundColor-day: #ffffff;
+$backgroundColor: #f8cb74;
+$backgroundColor: #1a1919;
+
+
+
+$backgroundColor-5: #f8cb74;
+$backgroundColor-2: #FF6C58;
+$backgroundColor-3: #75ABF6;
+$backgroundColor-4: #89CC83;
+$backgroundColor-4: #828FA2;
+
+$background-4:  linear-gradient(nulldeg,rgba(0, 0, 0, 1) 0%, rgba(137, 204, 131, 1) 100%);
+
+$backgroundColor-day: #f2f2f2;
+$backgroundColor-petrol: #333E4D;
+$backgroundColor-petrol-light: #828FA2;
+$backgroundColor-petrol-light2: #a5b2c4;
+$backgroundColor-petrol-lighter: #d7dce5;
 
 
 $backgroundColorWork-night: #242222;
@@ -13,14 +29,18 @@ $FontFamily2: 'Advent Pro', serif;
 $FontFamily3: 'Space Mono', monospace;
 
 //FONT COLORS
-$fontColor-night: #f5f5f5;
-$fontColor2-night: #9a9696fc;
-$fontColor3-night: #858585;
-$fontColor-day: #101010;
+$fontColor-white: #f5f5f5;
+$fontColor-petrol: #333E4D;
+$fontColor-petrol: #5E6978;
+$fontColor-petrol-light: #828FA2;
+
+
+
+$fontColor-day: #121111;
 $fontColor2-day: #525252;
 $fontColor3-day: #7a7a7a;
-$fontColorBlue: #58afd1;
-$fontColorPink: #f271bc;
+$fontColorBlue: #6958ff;
+$fontColorRed: #FF6C58;
 $fontColorOrange: #ff7700;
 $fontColorPurple: #633192;
 
@@ -35,10 +55,34 @@ $gradientOrange-night-sm: linear-gradient(to right, #faac692b, #d2660700);
 
 
 // Breakpoints globales
-$breakpoint-xxs2: 400px; // pantallas extra grandes
-$breakpoint-xxs: 425px;   // móviles
-$breakpoint-xs: 480px;   // móviles
+$breakpoint-mobile-s: 325px; // pantallas extra grandes
+$breakpoint-mobile-m: 375px;   // móviles
+$breakpoint-mobile-l: 480px;   // móviles
 $breakpoint-sm: 768px;   // tablet vertical
 $breakpoint-md: 1024px;  // tablet horizontal / laptop pequeño
-$breakpoint-lg: 1440px;  // desktop grande
- 
+$breakpoint-lg: 1280px;  // desktop grande
+$breakpoint-xl: 1440px;  // desktop extra grande
+$breakpoint-sm-up: 768px;
+
+
+$gradientBlue: linear-gradient( #5febf524, #13d3e500);
+$gradientBlueHover: linear-gradient( #5febf524, #13d3e500);
+
+$button-petrol: #333E4D;
+$button-petrol-light: #828FA2;
+$button-petrol-light2: #a5b2c4;
+$button-petrol-lighter: #d7dce5;
+
+$iterations: 30;
+$rotate-time: 4s;
+$rotate-delay: 0.15;
+
+$lines-color: #d7dce5;
+$lines-color2: #333E4D;
+
+$dots-color:#d7dce5;
+$dots-color2: #333E4D;
+
+$iterations-logo: 16;
+$rotate-time-logo: 4s;
+$rotate-delay-logo: 0.35;

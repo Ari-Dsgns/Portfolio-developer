@@ -1,248 +1,196 @@
 .work-container{
   display: flex;
+  
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  
   align-items: center;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: $backgroundColor-day;
-  z-index: 3;
-
-  @include respond($breakpoint-xs) {
-    padding: 4px;
-  }
+  height: 100vh;
   
+  background-color: $backgroundColor;
+  z-index: 1;
+
+
+  border: solid white 0px;
+
+  h1{
+    
+    
+    font-family: "boldonse", system-ui;
+    font-family: "NeueMetanaNext", system-ui;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: $fontColorBlue;
+    font-size: 30px;
+    font-weight: 300;
+    
+    
+    @include respond($breakpoint-sm) {
+      font-size: 20px;
+      margin: 0px;
+      text-align: start;
+    }
+    @include respond($breakpoint-mobile-l) {
+      font-size: 18px;
+      margin: 0px;
+      text-align: center;
+    }
+  }
+
+  @include respond($breakpoint-xl) {
+    height: 100vh;
+    padding: 10px;
+    
+   
+  }
+
+  @include respond($breakpoint-mobile-l) {
+    height: 100vh;
+    padding: 4px;
+    
+   
+  }
+
 
 }
 
+
+
+
+
+
+
+
 .cards-container {
+  
+  display: flex;
+  width: 80%;
+  height: 80%;
+  overflow-y: auto;
+  gap: 20px;
+  border: 20px solid $fontColor-petrol;
+  padding: 30px;
+  
+
+
+  @include respond($breakpoint-xl) {
+    padding: 10px;
+    
+    width: 100%;
+    
+  }
+  
+  
+  @include respond($breakpoint-sm) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    overflow-y: scroll;
+    margin: 10px;
+    border: solid 0px  $button-petrol-light;
+    
+  }
+ 
+  
+
+  //  background: 
+  //   linear-gradient(#1a1919, #1a1919) padding-box,
+  //   linear-gradient(90deg, #FF6C58, #6958ff) border-box;
+    
+
+}
+
+
+
+.cards-container.expanded{
+  margin-top: 10px;
+  
+}
+
+.cards-container.expanded .card {
+  display: none; // ocultamos todas
+  
+}
+.cards-container.expanded .card.active {
+  display: flex;
+  inset: 0; // ocupa toda la pantalla
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  overflow-y: auto;
+  z-index: 2000;
+  background-color: transparent;
+  padding: 10px;
+
+  
+  
+  .title-desktop{
+    display: none;
+
+  }
+
+  // Para que el scroll interno funcione
+  -webkit-overflow-scrolling: touch;
+
+  
+}
+
+.projects-title{
+  
   display: flex;
   flex-direction: column;
-  
-  margin-bottom: 0px;
-  overflow-x: visible;
-  overflow-y: auto;
-  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding:0px;
+  width: 180px;
   height: 100%;
-  align-content: center;
-  align-items: center;
-  gap: 20px;
-  
-  
-  animation: appear 2s  ;
-  
+  background-color: $button-petrol-lighter;
   h1{
     font-family: "Monoton", sans-serif;
-    font-size: 48px;
-    letter-spacing: 10px;
-    font-weight: 400;
-    color: $fontColorPurple;
+    font-family: "Anton", sans-serif;
+    font-family: 'N27', sans-serif;
+    font-family: "Boldonse", system-ui;
+    
+    font-weight: bolder;
+    font-size: 25px;
+    font-weight: 800;
+    transform: rotateZ(90deg);
+    color: $button-petrol;
+
+    font-family: 'Fender', sans-serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+    
     @include respond($breakpoint-md) {
-      font-size: 38px;
-    }
-    @include respond($breakpoint-sm) {
-      font-size: 32px;
-    }
-    @include respond($breakpoint-xs) {
       font-size: 28px;
     }
   }
-
-  @include respond($breakpoint-sm) {
-    padding: 10px;
-    width: 100%;
-  }
-  
-
-}
-
-
-.cardsDetail-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-  height: 100%;
-  gap: 0rem;
-  
-  color: var(--font-color);
-  z-index: 3;
-  background-color:$backgroundColor-day;
-  
-  
-}
-
-
-
-
-.erischatbot-content,
-.justgoodstuff-content,
-.tuvinilo-content,
-.destinea-content,
-.readmeapp-content,
-.saffvision-content {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  border: solid 0px rgba(255, 255, 255, 0.962);
-  width: 70%;
-  height:100%;
-  padding: 20px;
-  gap: 20px;
-  color: #eaeaed;
-  color: inherit;
-  border-radius: 2px;
-  
-  overflow-y: auto;
-  background-color:transparent;
-  animation: appear 5s  ;
-  h1{
-    font-family: "Advent Pro", serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color:$fontColor-day;
-    border: solid 0rem rgb(250, 250, 250);
-  }
-  h2{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    
-    
-  }
-  h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    
-    color: $fontColor-day;
-    
-    
-    
-    
-    
-  }
-  #icon-box {
-    display: flex;
-    padding: 10px;
-    align-self: flex-start;
-    gap: .5rem;
-    
-    
-  }
-  a{
-    text-decoration: none;
-    font-weight: 500;
-    color: $fontColorPurple;
-    padding: 4px;
-    border-radius: 2px;
-    
-  }
-  a:hover{
-    background-color: rgba(128, 128, 128, 0.212);
-  }
-  
-  p{
-    font-size: 1.25rem;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
-    line-height: 1.5;
-    color: var(--font-color-text);
-  }
-  
-
-  @include respond($breakpoint-lg) {
-    width: 80%;
-    padding: 20px;
-    h1 {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-    }
-    h3 {
-      font-size: 1.25rem;
-    }
-    p {
-      font-size: 1rem;
-    }
+  @include respond($breakpoint-md) {
+    display: none;
+   
   }
   @include respond($breakpoint-sm) {
-    width: 100%;
-    padding: 10px;
-    gap: 15px;
-    h1 {
-      font-size: 1.75rem;
-    }
-    h2 {
-      font-size: 1.25rem;
-    }
-    h3 {
-      font-size: 1rem;
-    }
     
-  }
-  
-}
-
-.img-box{
-  
-  display: flex;
-  width: 100%;
-  
-  justify-content: space-between;
-  gap: 10px;
-  
-  border: solid 0px rgba(44, 44, 44, 0.774);
-  
-  @include respond($breakpoint-xs) {
-    flex-direction: column;
     
-  }
-}
-
-#img1-eris{
-  
-  width: 48%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.88);
-  @include respond($breakpoint-xs) {
+    
+    
     width: 100%;
-  }
-}
-#img2-eris{
-  width: 48%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
-  @include respond($breakpoint-xs) {
-    width: 100%;
+    height: 100px;
+    h1{
+      
+      font-size: 16px;
+      transform: rotateZ(0deg);
+    }
   }
 }
 
 
-#img1-readme{
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.88);
-}
 
 
-.nextAndBack{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  border: solid 0px rgba(255, 255, 255, 0.774);
-  margin-bottom: 20px;
-  
-  
-  
-}
+
+
+

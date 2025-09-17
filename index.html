@@ -52,97 +52,529 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b247a8ee2de848b78f1ddc5de6e6de2b"}'></script>
-    <script src="./index.js" defer></script>
+    <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b247a8ee2de848b78f1ddc5de6e6de2b"}'></script> -->
+    
   </head>
   <body>
-    <div class="main-container" id="main">
-      <main class="container">
-        <nav class="navbar" aria-label="Main navigation">
-          <button class="wave-icon" aria-label="Open menu" id="menu-btn">
-            <svg width="50" height="30" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M57 27C50.25 27 50.25 33 43.5 33C36.75 33 36.75 27 30 27C23.25 27 23.25 33 16.5 33C9.75 33 9.75 27 3 27" stroke="#EBEBEB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M3 9C9.75 9 9.75 15 16.5 15C23.25 15 23.25 9 30 9C36.75 9 36.78 15 43.53 15C50.28 15 50.25 9 57 9" stroke="#EBEBEB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M57 45C50.25 45 50.25 51 43.5 51C36.75 51 36.75 45 30 45C23.25 45 23.25 51 16.5 51C9.75 51 9.75 45 3 45" stroke="#EBEBEB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <a href="./index.html" class="logo-link" aria-label="Go to Home Page">
-            <div class="logo">
-              <P>ARI SANPALA</P>
-              <P><span>FRONT-END DEV & DESIGNER</span></P>
-            </div>
-          </a>
-          <div class="menuBox">
-            <div class="lang-selector">
-              <button id="lang-toggle" aria-label="Select language">En <i class="bi bi-chevron-down"></i></button>
-              <ul id="lang-menu" class="hidden">
-                <li><button data-lang="en">English</button></li>
-                <li><button  data-lang="es">Español</button></li>
-              </ul>
-            </div>
-            <button id="dark-btn" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
-            <button id="day-btn" aria-label="Toggle day mode"><i class="bi bi-brightness-high-fill"></i></button>
-            <a href="https://github.com/Ari-Dsgns" id="github" target="_blank" rel="noopener" aria-label="Visit GitHub Profile"><i class="bi bi-github"></i></a>
-            <a href="https://linkedin.com/in/ari-sanchez" id="linkedin" target="_blank" rel="noopener" aria-label="Visit LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
-          </div>
 
-          <div class="mobile-menu hidden" aria-hidden="true">
-            <div class="menu-content">
+    <div id="overlay" style="display:none;">
+      <div class="loader"></div>
+      <p>Translating...</p>
+    </div>
+
+    <div class="main-container" id="main">
+
+      <div class="sideBar">
+        <div class="language-box">
+          <p id="lang-en">Eng</p>
+          <p id="lang-es">Esp</p>
+        </div>
+        <a href="#projects">PROJECTS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+        
+      </div>
+      <div class="container">
+        <div class="portfolio-mainPage">
+            <div class="portfolio__title" id="home">
+              <div class="portfolio__text">
+                <p>WELCOME, I'M <span>ARI</span></p>
+                <h1>VISUAL DESIGNER</h1>
+                <h3>FRONTEND DEVELOPER</h3>
+                <h2>UX UI DESIGNER</h2>
+                <p>AND THIS IS MY PORTFOLIO</p>
+              </div> 
+              <a data-i18n="viewProjectsBtn" href="#projects" id="viewProjectsBtn">VIEW MY PROJECTS</a>
+            </div>
+        </div>      
+        <div class="work-container" id="work-container">
+            <h1 data-i18n="ProjectsTitle" id="projects">LET'S HAVE A LOOK AT MY WORK</h1>
+            <nav class="cards-container" id="cards" aria-label="Works navigation">
+              <div href="" class="card" id="card1" type="button" aria-label="Go to Eris Chatbot project">
+                <div class="title-mobile">
+                  <h2>ERIS BOT</h2>
+                  <h3>A University FAQ assistant</h3>
+                </div>
+                <div class="card-image">
+                  <div id="tag1"></div>
+                  <img src="/assets/img/universe.gif" alt="">
+                </div>
+                <div class="title-desktop">
+                  <h2>ERIS BOT</h2>
+                  <h3>A University FAQ assistant</h3>
+                  <p>Design & Development</p>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <strong>
+                        <i class="bi bi-clipboard-check"></i>
+                        <span data-i18n="SummaryTitle">Summary</span>
+                    </strong>
+                  </h3>
+                  <p data-i18n="erischatbotSummaryContent">
+                      ERIS is a university FAQ chatbot created as a full-scope design
+                      and development project. It combines brand identity, UI design,
+                      and front-end development to deliver an engaging and accessible
+                      experience for students. Inspired by the solar system, ERIS stands
+                      out with its minimalist orbit-themed interface, dynamic logo, and
+                      modern microinteractions.
+                  </p>
+                  <h3>
+                    <strong>
+                      <i class="bi bi-bullseye"></i>
+                      <span data-i18n="GoalTitle">Project goal:</span>
+                    </strong>
+                  </h3>
+                  <p data-i18n="erischatbotGoalContent">
+                      To build a complete digital product: from brand concept and visual
+                      identity to UI prototyping, accessibility, and live deployment.
+                      The aim was to provide students with an intuitive tool to find
+                      academic information while demonstrating advanced design systems
+                      and coding skills.
+                  </p>
+                  <h3>
+                    <strong>
+                      <i class="bi bi-cpu-fill"></i>
+                      <span data-i18n="TechTitle"> Technologies used:</span>
+                    </strong>
+                  </h3>
+                  <div id="icon-box">
+                      <img src="../../assets/icons/html-icon.svg" alt="HTML icon" />
+                      <img src="../../assets/icons/css-icon.svg" alt="CSS icon" />
+                      <img src="../../assets/icons/js-icon.svg" alt="JavaScript icon" />
+                      <img src="../../assets/icons/figma-icon.svg" alt="Figma icon" />
+                      <img src="../../assets/icons/react-icon.svg" alt="React icon" />
+                      <img
+                        src="../../assets/icons/tailwind-icon.svg"
+                        alt="Tailwind CSS icon"
+                      />
+                      <img src="../../assets/icons/vite-icon.svg" alt="Vite icon" />
+                  </div>
+                  <h3>
+                    <strong>
+                      <i class="bi bi-person-workspace"></i>
+                      <span data-i18n="RoleTitle"> My role:</span>
+                    </strong>
+                  </h3>
+                  <p data-i18n="erischatbotRoleContent">
+                      I led every stage of the project, including:
+                  </p>
+                  <p data-i18n="erischatbotRoleContent_a">
+                      Branding & Identity: Defined ERIS’ name, concept, logo, and
+                      solar-inspired design language.
+                  </p>
+                  <p data-i18n="erischatbotRoleContent_b">
+                      UI/UX Design: Crafted a clean, responsive interface ensuring
+                      clarity, focus, and intuitive navigation.
+                  </p>
+                  <p data-i18n="erischatbotRoleContent_c">
+                      Development: Built the app with React, Vite, Tailwind CSS, and
+                      JavaScript for interactive logic and chatbot responses.
+                  </p>
+                  <p data-i18n="erischatbotRoleContent_d">
+                      Accessibility Implementation: Ensured WCAG 2.1 AA compliance with
+                      keyboard navigation, semantic HTML, ARIA labels, and contrast
+                      guidelines.
+                  </p>
+                  <p data-i18n="erischatbotRoleContent_e">
+                      Deployment & Testing: Hosted on Vercel for rapid access, tested
+                      cross-browser and device responsiveness.
+                  </p>
+                  <a href="https://github.com/Ari-Dsgns/Eris-Chatbot" target="_blank">→ View source code GitHub</a>
+                  <a href="https://eris-chatbot.vercel.app/" target="_blank" class="try-me-button">→ LIVE DEMO</a>
+              </div>
+              </div>
+
+              <div href="" class="card" id="card2" type="button" aria-label="Go to Just Good Stuff project">
+                <div class="title-mobile">
+                    <h2>J.G.S</h2>
+                    <h3>A React-based eCommerce</h3>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/Just Good Stuff.gif" alt="">
+                </div>
+                <div class="title-desktop">
+                  <h2>J.G.S</h2>
+                  <h3>A React-based eCommerce</h3>
+                  <p>Design & Development</p>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <strong>
+                      <i class="bi bi-clipboard-check"></i>
+                      <span data-i18n="SummaryTitle">Summary</span>
+                    </strong>
+                  </h3>
+                  <p data-i18n="jgsSummaryContent">
+                    Just Good Stuff is a fictional online clothing store I built as my final bootcamp project.
+                    The goal was to create a realistic web app that could also be presented to a development
+                    agency in Argentina, showcasing both frontend skills and integration with external services.
+                  </p>
+                  <h3>
+                    <strong>
+                      <i class="bi bi-bullseye"></i> 
+                      <span data-i18n="GoalTitle">Project goal:</span>
+                    </strong>
+                  </h3>
+                  <p data-i18n="jgsGoalContent">
+                    The main challenge was to build a modern, fast, and responsive online store that features:
+                  </p>
+                  <p>
+                    <i class="bi bi-dot"></i>
+                    <span data-i18n="jgsGoalContent_a">A dynamic product catalog</span>
+                  </p>
+                  <p>
+                    <i class="bi bi-dot"></i>
+                    <span data-i18n="jgsGoalContent_b">Shopping cart functionality</span>
+                    </p>
+                  <p>
+                    <i class="bi bi-dot"></i>
+                    <span data-i18n="jgsGoalContent_c">Category filters</span>
+                    </p>
+                  <p>
+                    <i class="bi bi-dot"></i>
+                    <span data-i18n="jgsGoalContent_d"> A smooth, reload-free user experience</span>
+                  </p>
+                  <h3>
+                    <strong>
+                      <i class="bi bi-cpu-fill"></i>
+                      <span data-i18n="TechTitle"> Technologies used:</span>
+                    </strong>
+                  </h3>
+                  <div id="icon-box">
+                    <img src="../../assets/icons/html-icon.svg" alt="html icon">
+                    <img src="../../assets/icons/css-icon.svg" alt="css icon">
+                    <img src="../../assets/icons/js-icon.svg" alt=" js icon">
+                    <img src="../../assets/icons/figma-icon.svg" alt="Figma icon" />
+                    <img src="../../assets/icons/react-icon.svg" alt="react icon">
+                    <img src="../../assets/icons/bootstrap-icon.svg" alt="bootstrap icon">
+                    <img src="../../assets/icons/canva-icon.svg" alt="canva icon">
+                  </div>
+                  <h3>
+                    <strong>
+                      <i class="bi bi-person-workspace"></i>
+                      <span data-i18n="RoleTitle"> My role:</span>
+                    </strong>
+                  </h3>
+                  <p data-i18n="jgsRoleContent">I developed the entire project from scratch:</p>
+                  <p>
+                    <i class="bi bi-check2-circle"></i>
+                    <span data-i18n="jgsRoleContent_a">Designed the UI/UX</span>
+                  </p>
+                  <p>
+                    <i class="bi bi-check2-circle"></i>
+                    <span data-i18n="jgsRoleContent_b">Built responsive layout</span>
+                  </p>
+                  <p>
+                    <i class="bi bi-check2-circle"></i>
+                    <span data-i18n="jgsRoleContent_c">Implemented dynamic routing (/item/:itemId,
+                    /category/:categoryId)</span> 
+                  </p>
+                  <p>
+                    <i class="bi bi-check2-circle"></i>
+                    <span data-i18n="jgsRoleContent_d">Developed global cart logic using Context API</span>
+                  </p>
+                  <p>
+                    <i class="bi bi-check2-circle"></i>
+                    <span data-i18n="jgsGoalContent_e">Integrated Firebase for order storage and checkout functionality</span>
+                  </p>
+                  <a href="https://github.com/Ari-Dsgns/my-ecommerce" target="_blank">→ View source code GitHub</a>
+                  <a href="https://justgoodstuff.vercel.app/" target="_blank" class="try-me-button">→ LIVE DEMO</a>
+                </div>
+              </div>
+
+              <div href="" class="card" id="card3" type="button" aria-label="Go to Tu Vinilo project">
+                <div class="title-mobile">
+                  <h2>TU VINILO</h2>
+                  <h3>A vinyl record eCommerce</h3>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/v.gif" alt="">
+                </div>
+                <div class="title-desktop">
+                  <h2>TU VINILO</h2>
+                  <h3>A vinyl record eCommerce</h3>
+                  <p>Design & Development</p>
+                </div>
+                <div class="card-content">
+                  <h3>
+                  <strong>
+                    <i class="bi bi-clipboard-check"></i>
+                    <span data-i18n="SummaryTitle">Summary</span>
+                  </strong>
+                </h3>
+                <p data-i18n="tuviniloSummaryContent">
+                  TuVinilo is an online vinyl record store designed for music lovers.
+                  The platform allows users to browse a curated collection of records,
+                  add them to their cart, and complete their purchase with ease. The
+                  design emphasizes a clean and minimalist aesthetic, featuring a
+                  hidden but accessible cart and navigation bar for an intuitive user
+                  experience.
+                </p>
+                <h3>
+                  <strong>
+                    <i class="bi bi-bullseye"></i> 
+                    <span data-i18n="GoalTitle">Project goal:</span>
+                  </strong>
+                </h3>
+                <p data-i18n="tuviniloGoalContent">
+                  The main objective was to create a visually appealing and functional
+                  eCommerce experience that captures the vibe of vinyl culture. The
+                  focus was on smooth navigation and an interface that feels as
+                  nostalgic and enjoyable as listening to records.
+                </p>
+                <h3>
+                  <strong>
+                    <i class="bi bi-cpu-fill"></i>
+                    <span data-i18n="TechTitle"> Technologies used:</span>
+                  </strong>
+                </h3>
+                <div id="icon-box">
+                  <img src="../../assets/icons/html-icon.svg" alt="html icon">
+                  <img src="../../assets/icons/css-icon.svg" alt="css icon">
+                  <img src="../../assets/icons/js-icon.svg" alt="js icon">
+                  <img src="../../assets/icons/bootstrap-icon.svg" alt="bootstraop icon">
+                  <img src="../../assets/icons/figma-icon.svg" alt="figma icon">
+                  <img src="../../assets/icons/canva-icon.svg" alt="canva icon">
+                </div>
+                <h3>
+                  <strong>
+                    <i class="bi bi-person-workspace"></i>
+                    <span data-i18n="RoleTitle"> My role:</span>
+                  </strong>
+                </h3>
+                <p data-i18n="tuviniloRoleContent">
+                  I handled the entire development process—from UI/UX design to
+                  implementing core features like the shopping cart and dynamic
+                  navigation. Special care was taken to ensure the user journey was
+                  seamless, balancing aesthetics with usability across all devices.
+                </p>
+                <a href="https://github.com/Ari-Dsgns/tuvinilo" target="_blank">→ View source code GitHub</a>
+                <a href="https://vinyl-shop-flame.vercel.app/" target="_blank" class="try-me-button">→ LIVE DEMO</a>
+                </div>
+              </div>
+
+              <div href="" class="card" id="card4" type="button" aria-label="Go to Destinea project">
+                <div class="title-mobile">
+                  <h2>DESTINEA</h2>
+                  <h3>A travel agency website</h3>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/dest-video.gif" alt="">
+                </div>
+                <div class="title-desktop">
+                  <h2>DESTINEA</h2>
+                  <h3>A travel agency website</h3>
+                  <p>UX/UI Design & Layout</p> 
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <strong>
+                        <i class="bi bi-clipboard-check"></i>
+                        <span data-i18n="SummaryTitle">Summary</span>
+                    </strong>
+                </h3>
+                <P data-i18n="destineaSummaryContent">
+                    Destinea is a travel agency website designed to showcase the layout and styling capabilities of Bootstrap. The site features a clean and modern design,
+                    emphasizing usability and responsiveness across devices. It serves as a demonstration of how Bootstrap can be utilized to create a visually appealing and functional
+                    travel website.
+                </P>
+                <h3>
+                    <strong>
+                        <i class="bi bi-bullseye"></i> 
+                        <span data-i18n="GoalTitle">Project goal:</span>
+                    </strong>
+                </h3>
+                <p data-i18n="destineaGoalContent">
+                    The primary objective was to create a travel agency website that highlights the design and layout features of Bootstrap.
+                    The focus was on demonstrating how Bootstrap's grid system and components can be leveraged to build a responsive and
+                    user-friendly website.
+                </p>
+                <h3>
+                    <strong>
+                        <i class="bi bi-cpu-fill"></i>
+                        <span data-i18n="TechTitle"> Technologies used:</span>
+                    </strong>
+                </h3>
+                <div id="icon-box">
+                    <img src="../../assets/icons/html-icon.svg" alt="html icon">
+                    <img src="../../assets/icons/css-icon.svg" alt="css icon">
+                    <img src="../../assets/icons/bootstrap-icon.svg" alt="bootstrap icon">
+                    <img src="../../assets/icons/sass.svg" alt="sass icon">
+                    <img src="../../assets/icons/figma-icon.svg" alt="figma icon">
+                    <img src="../../assets/icons/canva-icon.svg" alt="canva icon">
+                </div>
+                <h3>
+                    <strong>
+                        <i class="bi bi-person-workspace"></i>
+                        <span data-i18n="RoleTitle"> My role:</span>
+                    </strong>
+                </h3>
+                <p data-i18n="destineaRoleContent">
+                    I was responsible for the entire development process, from structuring the HTML and applying CSS styles to implementing Bootstrap components.
+                    The goal was to create a site that not only showcases Bootstrap's capabilities but also provides a seamless user experience.
+                </p>
+                <h3>
+                    <strong>
+                        <i class="bi bi-lightbulb"></i>
+                        <span data-i18n="ChallengeTitle">Challenges and solutions:</span>
+                    </strong>
+                </h3>
+                <p data-i18n="destineaChallengeContent">
+                    One of the main challenges was ensuring that the website was fully responsive and provided an optimal viewing experience across various devices.
+                    By utilizing Bootstrap's grid system and responsive utilities, I was able to create a layout that adapts to different screen sizes.
+                    This project enhanced my understanding of responsive web design and the practical application of Bootstrap's features.
+                </p>
+                <a href="https://github.com/Ari-Dsgns/destinea-def" target="_blank">→ View source code GitHub</a>
+                <a href="https://destinea.vercel.app/" target="_blank" class="try-me-button">→ LIVE DEMO</a>
+                </div>
+              </div>
+
+              <div href="" class="card" id="card5" type="button" aria-label="Go to Saffvision project">
+                <div class="title-mobile">
+                  <h2>SAFFVISION</h2>
+                  <h3>A portfolio website</h3>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/saffie.gif" alt="">
+                </div>
+                <div class="title-desktop">
+                  <h2>SAFFVISION</h2>
+                  <h3>A portfolio website</h3>
+                  <p>UX/UI Design & prototype</p>
+                </div>
+                <div class="card-content">
+                  <h3>
+                  <strong>
+                    <i class="bi bi-clipboard-check"></i>
+                    <span data-i18n="SummaryTitle">Summary</span>
+                  </strong>
+                </h3>
+                <p data-i18n="saffvisionSummaryContent">
+                  SaffVision is a prototype-portfolio website designed with a
+                  commercial focus to attract and engage visitors. The site features a
+                  unique menu opening animation inspired by a camera shutter,
+                  enhancing the visual storytelling and user experience. This creative
+                  interaction helps reflect the brand’s identity and draws attention
+                  to the showcased work.
+                </p>
+                <h3>
+                  <strong>
+                    <i class="bi bi-bullseye"></i> 
+                    <span data-i18n="GoalTitle">Project goal:</span>
+                  </strong>
+                </h3>
+                <p data-i18n="saffvisionGoalContent">
+                  The goal was to design an innovative portfolio prototype that
+                  reflects the photography theme through creative navigation effects.
+                  This concept aims to attract attention and provide an engaging user
+                  experience in a commercial context.
+                </p>
+                <h3>
+                  <strong>
+                    <i class="bi bi-cpu-fill"></i>
+                    <span data-i18n="TechTitle"> Technologies used:</span>
+                  </strong>
+                </h3>
+                <div id="icon-box">
+                  <img src="../../assets/icons/figma-icon.svg" alt="" />
+                  <img src="../../assets/icons/photoshop-icon.svg" alt="" />
+                </div>
+                <h3>
+                  <strong>
+                    <i class="bi bi-person-workspace"></i>
+                    <span data-i18n="RoleTitle"> My role:</span>
+                  </strong>
+                </h3>
+                <p data-i18n="saffvisionRoleContent">
+                  I was responsible for the full design process using Figma and
+                  Photoshop, focusing on visual storytelling and interaction concepts.
+                  No coding was involved; the prototype serves as a visual blueprint
+                  for future development.
+                </p>
+                </div>
+              </div>
+
+              <div href="" class="card" id="card6" type="button" aria-label="Go to Readmeapp project">
+                <div class="title-mobile">
+                  <h2>READMEAPP</h2>
+                  <h3>A smart reading app</h3>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/read-gif.gif" alt="">
+                </div>
+                <div class="title-desktop">
+                  <h2>READMEAPP</h2>
+                  <h3>A smart reading app</h3>
+                  <p>UX/UI Design Case Study</p>
+                </div>
+                <div class="card-content">
+                  <h3>
+                  <strong>
+                    <i class="bi bi-clipboard-check"></i>
+                    <span data-i18n="SummaryTitle">Summary</span>
+                  </strong>
+                </h3>
+                <p data-i18n="readmeappSummaryContent">
+                  This is a speed reading app designed for users with little time or
+                  who want to improve their reading habits in a fun and purposeful
+                  way. It's a UX/UI project where the main objective and focus is to
+                  provide a great user experience.
+                </p>
+                <div id="icon-box">
+                  <img src="../../assets/icons/figma-icon.svg" alt="figma icon" />
+                  <img src="../../assets/icons/canva-icon.svg" alt="canva icon" />
+                  <img src="../../assets/icons/photoshop-icon.svg" alt="photoshop icon"/>
+                </div>
+                <div class="img-box">
+                  <img src="/assets/img/Group3.jpg" id="img1-readme" alt="short gif showing website interactions">
+                </div>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <div class="about-me-content">
+            <h1 data-i18n="aboutMeTitle" id="about">A SHORT STORY ABOUT ME</h1>
+            <div class="about-me-text1">
+              <div class="about-me-image-wrapper">
+                <img class="about-me-image" src="/assets/img/ari-6.JPG" alt="">
+                <p data-i18n="aboutMePhotoComment">Yes, that's me in the photo. Just posing. Unfortunately, I don't have any boat.</p>
+              </div>
               
-              <button id="dark-btn-mobile" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
-              <button id="day-btn-mobile" aria-label="Toggle day mode"><i class="bi bi-brightness-high-fill"></i></button>
-              <div class="lang-selector">
-                <button id="lang-toggle-mobile" aria-label="Select language">En <i class="bi bi-chevron-down"></i></button>
-                <ul id="lang-menu-mobile" class="hidden">
-                  <li><button data-lang="en">English</button></li>
-                  <li><button data-lang="es">Español</button></li>
-                </ul>
+              <h2 data-i18n="aboutMeContentSubtitle">Let me tell You a bit about me</h2>
+              <p data-i18n="aboutMeContentText1">
+                I am a front-end developer and web designer with a focus on UXUI. I'm passionate about the different, the challenging. I have a disruptive soul but an organized mind.
+              </p>
+              <h2 data-i18n="aboutMeContentText2">What do I do?</h2>
+              <p data-i18n="aboutMeContentText4">As I said, I am a front-end developer and web designer with a focus on UXUI. I am passionate about the different, the challenging. I have a disruptive soul but an organized mind.
+                I transform original ideas into functional and attractive websites with a lot of dedication and care, although not everything is possible; sometimes you have to say no, miracles do not exist! But no worries, I'll try anyway </p>
+              <h2 data-i18n="aboutMeContentText6">What motivates me?</h2>
+              <p data-i18n="aboutMeContentText7"> For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe a design is never completely finished, as adaptation is never final; it must grow and transform alongside those who use it. The clearest example can be seen in the Peugeot logo, which has transformed over the years while maintaining its essence. <strong> What do you think?</strong>
+              </p>
+              <h2 data-i18n="aboutMeContentText8">How did I end up here?</h2>
+              <p data-i18n="aboutMeContentText9">Over the years, I've found a unique balance between design and development, where creativity and logic converge. It's in that middle ground where I feel most comfortable, turning ideas into engaging and functional experiences for users.</p>
+              <p data-i18n="aboutMeContentText10">I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.
+              </p>
+              <h2 data-i18n="aboutMeContentText11"><strong>Shall we get in touch?</strong></h2>
+            </div>
+        </div>
+        <div class="contact-me" id="contact">
+            <div class="contact-card">
+              <h1 data-i18n="contactMeTitle">Email: arisanpala@gmail.com</h1>
+              <h2 data-i18n="contactMeSubtitle">Phone: +34 664 094 007</h2>
+              <p data-i18n="contactMeText">I'm currently available for freelance work or full-time opportunities. Whether you have a project in mind or just want to say hello, feel free to reach out. I look forward to connecting with you!</p>
+              <a data-i18n="contactMeButton" href="mailto:your-email@example.com">Contact Me</a>
+
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ari-sanchez/" id="linkedin" target="_blank" aria-label="Linkedin profile"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Ari-Dsgns" id="github" target="_blank" aria-label="Github profile"><i class="bi bi-github"></i></a>
               </div>
             </div>
-          </div>
-        </nav>
-        <div class="container-mainPage">
-
-          
-          
-          <div class="container-title">
-            <div class="brand" id="brand">
-              <h1>CREATIVE PORTFOLIO</h1>
-              <h2>
-                ARI SANPALA | FRONT-END DEVELOPER & WEB DESIGNER <span
-                  style="font-weight: 200"
-                ></span>
-              </h2>
-            </div>
-          </div>
-          <!-- <img src="./assets/icons/settings.svg" alt="" class="settings-icon-left">
-          <img src="./assets/icons/settings.svg" alt="" class="settings-icon-right"> -->
-          <nav class="list" id="list" aria-label="Main site links">
-            <a data-i18n= "workBtn" href="./pages/works.html" class="work-btn" id="work-btn" aria-label="Go to Work Page">
-                <span>Projects</span>
-            </a>
-            <a data-i18n= "aboutBtn" href="./pages/aboutme.html" class="about-btn" id="about-btn" aria-label="Go to About Page">
-                <span>About</span>
-            </a>
-            <a data-i18n= "contactBtn" href="./pages/contact.html" class="contact-btn" id="contact-btn" aria-label="Go to Contact Page">
-                <span>Contact</span>
-            </a>
-          </nav>
+            <p> © 2025 arisanpala.com</p>
         </div>
-        
-        <footer class="footer">
-          <div>
-              <a  data-i18n="cookiesLink" href="./pages/legal/privacy.html" aria-label="Política de Cookies y Privacidad">
-                Cookies & Privacidad
-              </a>
-              <p style="padding-left: 10px;">
-                © 2025 arisanpala
-              </p>
-          </div>
-        </footer>
-        <div class="noise" aria-hidden="true"></div>
-        
-      </main>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="./index.js" defer></script> 
   </body>
 </html>
