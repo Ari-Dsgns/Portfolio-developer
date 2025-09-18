@@ -38,6 +38,7 @@
       font-size: 18px;
       margin: 0px;
       text-align: center;
+      
     }
   }
 
@@ -50,7 +51,7 @@
 
   @include respond($breakpoint-mobile-l) {
     height: 100vh;
-    padding: 4px;
+    padding: 0px;
     
    
   }
@@ -72,7 +73,7 @@
   height: 80%;
   overflow-y: auto;
   gap: 20px;
-  border: 20px solid $fontColor-petrol;
+  border: 0px solid $fontColor-petrol;
   padding: 30px;
   
 
@@ -92,7 +93,7 @@
     overflow-y: scroll;
     margin: 10px;
     border: solid 0px  $button-petrol-light;
-    
+    padding: 2px;
   }
  
   
