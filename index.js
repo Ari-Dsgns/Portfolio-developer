@@ -445,6 +445,20 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("overlay").style.display = "none";
   });
 
+  const overlay = document.getElementById("size-overlay");
+
+    function checkHeight() {
+      if (window.innerHeight < 560) {
+        overlay.classList.add("visible");
+      } else {
+        overlay.classList.remove("visible");
+      }
+    }
+
+    // check on load and resize
+    window.addEventListener("load", checkHeight);
+    window.addEventListener("resize", checkHeight);
+
   
   function changeLanguage(lang) {
      document.getElementById("overlay").style.display = "flex";

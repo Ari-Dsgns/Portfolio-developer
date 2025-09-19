@@ -84,6 +84,8 @@
       display: block;
     }
 
+    
+
 
   }
 
@@ -113,6 +115,8 @@
 }
 
 
+
+
 .card-image{
 
   width: 100%;
@@ -120,7 +124,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+  margin-top: 50px;
 
   img{
     width: 100%;
@@ -207,7 +211,7 @@
 
 .title-mobile{
   display: none;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-align: start;
   border: solid 0px white;
   

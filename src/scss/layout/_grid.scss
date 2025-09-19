@@ -8,6 +8,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+
+
  #overlay {
   position: fixed;
   top: 0; left: 0;
@@ -47,6 +49,35 @@ body {
   margin-right: 20px;
 }
 
+ #size-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.2rem;
+      z-index: 9999;
+      display: none; /* oculto por defecto */
+}
+ #size-overlay.visible {
+      display: flex;
+      animation: fadeIn 0.5s ease forwards;
+}
+
+.emoji {
+      font-size: 2.5rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      animation: spin 2s linear infinite;
+}
+
+.message {
+      animation: bounce 2s ease-in-out infinite;
+}
 // .noise {
 //   position: fixed;
 //   z-index: 9999;
