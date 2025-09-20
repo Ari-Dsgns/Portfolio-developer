@@ -889,6 +889,17 @@ body {
     border-right: none;
   }
 }
+@media (max-width: 375px) {
+  .sideBar {
+    padding: 0px;
+    height: 60px;
+    gap: 2px;
+  }
+  .sideBar a {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
 
 .portfolio-buttons {
   display: flex;
@@ -2016,6 +2027,17 @@ body {
   .portfolio__title a {
     font-size: 16px;
     padding: 14px;
+  }
+}
+@media (max-width: 325px) {
+  .portfolio__title {
+    padding: 1.5em;
+    height: 85dvh;
+    gap: 0px;
+  }
+  .portfolio__title a {
+    font-size: 14px;
+    padding: 10px;
   }
 }
 

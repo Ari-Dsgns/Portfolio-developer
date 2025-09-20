@@ -322,7 +322,6 @@ const translations = {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-   
 
 
 
@@ -448,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.getElementById("size-overlay");
 
     function checkHeight() {
-      if (window.innerHeight < 560) {
+      if (window.innerHeight < 560 || window.innerWidth < 320) {
         overlay.classList.add("visible");
       } else {
         overlay.classList.remove("visible");

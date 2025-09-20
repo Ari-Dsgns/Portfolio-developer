@@ -235,6 +235,7 @@ body {
     }
     &.active {
       border: solid 1px $fontColorBlue;
+      
     }
   }
   @include respond($breakpoint-sm) {
@@ -247,6 +248,16 @@ body {
     align-content: center;
     border-top: solid 1px $button-petrol;
     border-right: none;
+  }
+
+  @include respond($breakpoint-mobile-m) {
+    padding: 0px;
+    height: 60px;
+    gap: 2px;
+    a{
+      font-size: 12px;
+      padding: 6px;
+    }
   }
 
    

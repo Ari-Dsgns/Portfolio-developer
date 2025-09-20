@@ -112,6 +112,15 @@
       padding: 14px;
     }
   }
+  @include respond($breakpoint-mobile-s) {
+    padding: 1.5em;
+    height: 85dvh;
+    gap: 0px;
+    a{
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
 
   
 
