@@ -324,62 +324,6 @@ const translations = {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
-  // const home = document.querySelector('#home');
-  // const cardsSection = document.querySelector("#cards");
-
-  // const cardAnimations = {
-  //   card1: (progress) => `translateX(${progress * 4500}px)`,
-  //   card2: (progress) => `translateY(${progress * -150}px)`,
-  //   card5: (progress) => `translateX(${progress * -100}px)`,
-  //   card3: (progress) => `translate(${progress * 100}px, ${progress * -50}px) scale(${1 + progress * 0.5})`
-  // };
-
-  // function handleScroll() {
-  //   if (window.innerWidth > 1024) {
-  //     let scrollY = window.scrollY;
-
-  //     // 🔹 Escalado del HOME
-  //     let scale = 1 - scrollY / 500;
-  //     if (scale < 0.5) scale = 0.5;
-  //     home.style.transform = `scale(${scale})`;
-
-  //     // 🔹 Movimiento de las CARDS
-  //     const rect = cardsSection.getBoundingClientRect();
-  //     const sectionTop = rect.top + window.scrollY;
-  //     const sectionHeight = cardsSection.offsetHeight;
-
-  //     if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
-  //       const progress = (scrollY - sectionTop) / sectionHeight; // 0 → 1 dentro de la sección
-
-  //       cards.forEach((card) => {
-  //         const anim = cardAnimations[card.id];
-  //         if (anim) {
-  //           card.style.transform = anim(progress);
-  //         } else {
-  //           card.style.transform = "none"; // fallback si no hay animación definida
-  //         }
-  //       });
-  //     }
-  //   } else {
-  //     // reset en mobile
-  //     home.style.transform = "scale(1)";
-  //     cards.forEach(card => card.style.transform = "none");
-  //   }
-  // }
-
-  // window.addEventListener("scroll", handleScroll);
-  // window.addEventListener("resize", handleScroll);
-
-
-
-
-
-
-
-  let lastScrollTop = 0;
-  const sideBar = document.querySelector('.sideBar');
   const sections = document.querySelectorAll("#projects, #about, #contact");
   const navLinks = document.querySelectorAll(".sideBar a");
   
@@ -427,40 +371,36 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach((section) => observer.observe(section));
 
 
+  const modal = document.getElementById("projectModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
   
-
-
-  // Cambio de idiomaconst modal = document.getElementById("projectModal");
-const modal = document.getElementById("projectModal");
-const modalImg = document.getElementById("modalImg");
-const closeBtn = document.querySelector(".close");
-
-// Selecciona todos los botones de abrir proyecto
-document.querySelectorAll(".openProject").forEach(btn => {
-  btn.addEventListener("click", function(e) {
-    e.preventDefault();
-    const card = this.closest(".card"); // busca la card más cercana
-    const imgSrc = card.getAttribute("data-project"); // obtiene la ruta del proyecto
-    modalImg.src = imgSrc;
-    modal.style.display = "block";
-    
-    document.body.style.overflow = "hidden";
+  // Selecciona todos los botones de abrir proyecto
+  document.querySelectorAll(".openProject").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      e.preventDefault();
+      const card = this.closest(".card"); // busca la card más cercana
+      const imgSrc = card.getAttribute("data-project"); // obtiene la ruta del proyecto
+      modalImg.src = imgSrc;
+      modal.style.display = "block";
+      
+      document.body.style.overflow = "hidden";
+    });
   });
-});
-
-// cerrar modal
-closeBtn.addEventListener("click", function() {
-  modal.style.display = "none";
-  document.body.style.overflow = "";
-});
-
-// cerrar si haces clic en el fondo
-modal.addEventListener("click", function(e) {
-  if (e.target === modal) {
+  
+  // cerrar modal
+  closeBtn.addEventListener("click", function() {
     modal.style.display = "none";
     document.body.style.overflow = "";
-  }
-});
+  });
+  
+  // cerrar si haces clic en el fondo
+  modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "";
+    }
+  });
 
   
 
@@ -468,47 +408,6 @@ modal.addEventListener("click", function(e) {
   const langES = document.getElementById('lang-es');
   const radioEN = document.getElementById('radio-button');
   const radioES = document.getElementById('radio-button2');
-
-
-
-//   const mainContainer = document.querySelector('.main-container');
-//   const colors = {
-//     color1: 'main-container-yellow',
-//     color2: 'main-container-red',
-//     color3: 'main-container-blue',
-//     color4: 'main-container-green'
-//   };
-
-//   const colorGuardado = localStorage.getItem('colorSeleccionado');
-//     if (colorGuardado) {
-//     mainContainer.classList.add(colorGuardado);
-//   }
-//   function aplicarColor(clase) {
-//   // Activar transición visual
-//   mainContainer.classList.remove(...Object.values(colors));
-//   mainContainer.offsetWidth; // fuerza reflow para reiniciar animación
-//   mainContainer.classList.add(clase, 'transitioning');
-
-//   // Guardar color
-//   localStorage.setItem('colorSeleccionado', clase);
-
-//   // Quitar 'transitioning' al terminar
-//   setTimeout(() => {
-//     mainContainer.classList.remove('transitioning');
-//   }, 600);
-// }
-
-//   setTimeout(() => {
-//     mainContainer.classList.add('transition');
-//   }, 50);
-
-  
-
-//   Object.entries(colors).forEach(([id, clase]) => {
-//     document.querySelector(`.${id}`).addEventListener('click', () => aplicarColor(clase));
-//   });
-
-  // Función: cambia los textos traducibles
 
 
 
@@ -589,23 +488,45 @@ modal.addEventListener("click", function(e) {
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   changeLanguage(savedLang);
 
-  const cards = document.querySelectorAll('.card');
-  const container = document.querySelector('.cards-container');
-  const workContainer = document.querySelector('.work-container');
-  
-  
-  
-
-
-
-
-
-
-
-
 
 
 });
 
 
+//   const mainContainer = document.querySelector('.main-container');
+//   const colors = {
+//     color1: 'main-container-yellow',
+//     color2: 'main-container-red',
+//     color3: 'main-container-blue',
+//     color4: 'main-container-green'
+//   };
+
+//   const colorGuardado = localStorage.getItem('colorSeleccionado');
+//     if (colorGuardado) {
+//     mainContainer.classList.add(colorGuardado);
+//   }
+//   function aplicarColor(clase) {
+//   // Activar transición visual
+//   mainContainer.classList.remove(...Object.values(colors));
+//   mainContainer.offsetWidth; // fuerza reflow para reiniciar animación
+//   mainContainer.classList.add(clase, 'transitioning');
+
+//   // Guardar color
+//   localStorage.setItem('colorSeleccionado', clase);
+
+//   // Quitar 'transitioning' al terminar
+//   setTimeout(() => {
+//     mainContainer.classList.remove('transitioning');
+//   }, 600);
+// }
+
+//   setTimeout(() => {
+//     mainContainer.classList.add('transition');
+//   }, 50);
+
+  
+
+//   Object.entries(colors).forEach(([id, clase]) => {
+//     document.querySelector(`.${id}`).addEventListener('click', () => aplicarColor(clase));
+//   });
 
