@@ -1,0 +1,46 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(28, 28, 28, 0.709);
+  backdrop-filter: blur(10px);
+  overflow-y: scroll;
+}
+.modal::-webkit-scrollbar { width: 12px; }
+.modal::-webkit-scrollbar-thumb { background: #666; border-radius: 6px; }
+.modal::-webkit-scrollbar-track { background: #222; }
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.modal-body img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  border: solid 1px white;
+  @include respond($breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+.close {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  background: #767676;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 2100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close:hover { background: #ff2222; }

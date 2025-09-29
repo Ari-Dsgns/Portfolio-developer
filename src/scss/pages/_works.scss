@@ -1,12 +1,12 @@
 .work-container{
   display: flex;
-  
   flex-direction: column;
+  
   justify-content: center;
   
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   
   background-color: $backgroundColor;
   z-index: 1;
@@ -19,14 +19,14 @@
     
     font-family: "boldonse", system-ui;
     font-family: "NeueMetanaNext", system-ui;
-    font-family: 'Montserrat', sans-serif;
+    
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    color: $fontColorBlue;
+    color: $button-petrol-light2;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 600;
     
     
     @include respond($breakpoint-sm) {
@@ -42,19 +42,8 @@
     }
   }
 
-  @include respond($breakpoint-xl) {
-    height: 100vh;
-    padding: 10px;
-    
-   
-  }
-
-  @include respond($breakpoint-mobile-l) {
-    height: 100vh;
-    padding: 0px;
-    
-   
-  }
+  
+  
 
 
 }
@@ -66,82 +55,64 @@
 
 
 
-.cards-container {
-  
+.cards-container{
   display: flex;
-  width: 80%;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
-  overflow-y: auto;
-  gap: 20px;
-  border: 0px solid $fontColor-petrol;
-  padding: 30px;
-  
-
-
+  gap: 100px;
+  border: 0px solid $fontColor-petrol-light;
+  padding: 20px;
+  padding: 40px;
   @include respond($breakpoint-xl) {
     padding: 10px;
     
     width: 100%;
     
   }
-  
-  
-  @include respond($breakpoint-sm) {
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
-    overflow-y: scroll;
-    margin: 10px;
-    border: solid 0px  $button-petrol-light;
-    padding: 2px;
-  }
- 
-  
+}
 
-  //  background: 
-  //   linear-gradient(#1a1919, #1a1919) padding-box,
-  //   linear-gradient(90deg, #FF6C58, #6958ff) border-box;
-    
-
+.cards-container::-webkit-scrollbar {
+  display: none; // Oculta la barra de desplazamiento en WebKit (Chrome, Safari)
 }
 
 
 
-.cards-container.expanded{
-  margin-top: 10px;
+// .cards-container.expanded{
+//   margin-top: 10px;
   
-}
+// }
 
-.cards-container.expanded .card {
-  display: none; // ocultamos todas
+// .cards-container.expanded .card {
+//   display: none; // ocultamos todas
   
-}
-.cards-container.expanded .card.active {
-  display: flex;
-  inset: 0; // ocupa toda la pantalla
-  width: 100vw;
-  height: 100vh;
-  background: white;
-  overflow-y: auto;
-  z-index: 2000;
-  background-color: transparent;
-  padding: 10px;
-
-  
-  
-  .title-desktop{
-    display: none;
-
-  }
-  .card-image{
-    margin-top: 0px;
-  }
-
-  // Para que el scroll interno funcione
-  -webkit-overflow-scrolling: touch;
+// }
+// .cards-container.expanded .card.active {
+//   display: flex;
+//   inset: 0; // ocupa toda la pantalla
+//   width: 100vw;
+//   height: 100vh;
+//   background: white;
+//   overflow-y: auto;
+//   z-index: 2000;
+//   background-color: transparent;
+//   padding: 10px;
 
   
-}
+  
+//   .title-desktop{
+//     display: none;
+
+//   }
+//   .card-image{
+//     margin-top: 0px;
+//   }
+
+//   // Para que el scroll interno funcione
+//   -webkit-overflow-scrolling: touch;
+
+  
+// }
 
 .projects-title{
   

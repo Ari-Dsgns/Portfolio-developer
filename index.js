@@ -7,7 +7,7 @@
 const translations = {
   en: {
    
-    viewProjectsBtn: "VIEW MY PROJECTS",
+    viewProjectsBtn: "GO TO MY PROJECTS",
 
     aboutMeTitle: "A SHORT STORY ABOUT ME",
 
@@ -23,7 +23,8 @@ const translations = {
     aboutMeContentText10:"I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.",
     aboutMeContentText11:"SHALL WE GET IN TOUCH?",
 
-    ProjectsTitle: "LET'S TAKE A LOOK AT SOME OF MY PROJECTS",
+    ProjectsTitle: "FULL WEBSITES",
+    ProjectsTitle2: "UX UI Projects",
 
 
     contactMeText: "I'm currently available for freelance work or full-time opportunities. Whether you have a project in mind or just want to say hello, feel free to reach out. I look forward to connecting with you!",
@@ -180,7 +181,8 @@ const translations = {
     aboutMeContentText10:"Siempre estoy buscando oportunidades para crecer, colaborar con equipos inspiradores y crear productos que marquen la diferencia.",
     aboutMeContentText11:"¿HABLAMOS?",
 
-    ProjectsTitle: "ECHEMOS UN VISTAZO A ALGUNOS DE MIS PROYECTOS",
+    ProjectsTitle: "SITIOS WEBS",
+    ProjectsTitle2: "PROYECTOS UX UI",
 
     contactMeText: "Actualmente estoy disponible para trabajos freelance o oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
     contactMeButton: "Contáctame",
@@ -285,7 +287,7 @@ const translations = {
     readmeappSubtitle:
       "Una aplicación rápida y divertida para leer -Caso de estudio",
     readmeappSummaryContent:
-      "Esta es una aplicación de lectura rápida diseñada para usuarios con poco tiempo o que desean mejorar sus hábitos de lectura de una manera divertida y con propósito. Es un proyecto de UX/UI donde el objetivo principal y el enfoque es proporcionar una gran experiencia de usuario.",
+      " ReadMeApp es una aplicación móvil diseñada para quienes tienen poco tiempo, pero desean mantener o mejorar sus hábitos de lectura de una forma práctica y entretenida. La app permite leer resúmenes breves de libros que destacan las ideas más importantes en cuestión de minutos. Con un sistema de objetivos y recompensas, motiva al usuario a leer cada día y descubrir nuevos temas.  Además, ofrece la opción de profundizar comprando el libro completo con un solo click.  Su lema: “Lee más en menos tiempo”.",
 
     saffvisionSubtitle:
       "Un portafolio creativo con una animación de menú inspirada en el obturador de una cámara para cautivar a los visitantes",
@@ -324,6 +326,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  // const home = document.querySelector('#home');
+  // const cardsSection = document.querySelector("#cards");
+
+  // const cardAnimations = {
+  //   card1: (progress) => `translateX(${progress * 4500}px)`,
+  //   card2: (progress) => `translateY(${progress * -150}px)`,
+  //   card5: (progress) => `translateX(${progress * -100}px)`,
+  //   card3: (progress) => `translate(${progress * 100}px, ${progress * -50}px) scale(${1 + progress * 0.5})`
+  // };
+
+  // function handleScroll() {
+  //   if (window.innerWidth > 1024) {
+  //     let scrollY = window.scrollY;
+
+  //     // 🔹 Escalado del HOME
+  //     let scale = 1 - scrollY / 500;
+  //     if (scale < 0.5) scale = 0.5;
+  //     home.style.transform = `scale(${scale})`;
+
+  //     // 🔹 Movimiento de las CARDS
+  //     const rect = cardsSection.getBoundingClientRect();
+  //     const sectionTop = rect.top + window.scrollY;
+  //     const sectionHeight = cardsSection.offsetHeight;
+
+  //     if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
+  //       const progress = (scrollY - sectionTop) / sectionHeight; // 0 → 1 dentro de la sección
+
+  //       cards.forEach((card) => {
+  //         const anim = cardAnimations[card.id];
+  //         if (anim) {
+  //           card.style.transform = anim(progress);
+  //         } else {
+  //           card.style.transform = "none"; // fallback si no hay animación definida
+  //         }
+  //       });
+  //     }
+  //   } else {
+  //     // reset en mobile
+  //     home.style.transform = "scale(1)";
+  //     cards.forEach(card => card.style.transform = "none");
+  //   }
+  // }
+
+  // window.addEventListener("scroll", handleScroll);
+  // window.addEventListener("resize", handleScroll);
+
+
+
+
+
+
 
   let lastScrollTop = 0;
   const sideBar = document.querySelector('.sideBar');
@@ -340,10 +393,12 @@ document.addEventListener('DOMContentLoaded', () => {
       target.scrollIntoView({
         behavior: 'smooth',
         block: 'start', // centra verticalmente
-        
       });
+      
       }
+
     });
+    
   });
 
   const observer = new IntersectionObserver(
@@ -357,6 +412,8 @@ document.addEventListener('DOMContentLoaded', () => {
           const activeLink = document.querySelector(`.sideBar a[href="#${entry.target.id}"]`);
           if (activeLink) {
             activeLink.classList.add("active");
+
+            
           }
         }
       });
@@ -373,22 +430,37 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 
-  window.addEventListener("scroll", function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  // Cambio de idiomaconst modal = document.getElementById("projectModal");
+const modal = document.getElementById("projectModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+
+// Selecciona todos los botones de abrir proyecto
+document.querySelectorAll(".openProject").forEach(btn => {
+  btn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const card = this.closest(".card"); // busca la card más cercana
+    const imgSrc = card.getAttribute("data-project"); // obtiene la ruta del proyecto
+    modalImg.src = imgSrc;
+    modal.style.display = "block";
     
-  
-    if (currentScroll > lastScrollTop) {
+    document.body.style.overflow = "hidden";
+  });
+});
 
-      sideBar.style.transform = "translateX(0)";
-    } else {
+// cerrar modal
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+});
 
-      sideBar.style.transform = "translateX(0)";
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  }, false);
-  
-
+// cerrar si haces clic en el fondo
+modal.addEventListener("click", function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = "";
+  }
+});
 
   
 
@@ -521,82 +593,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.cards-container');
   const workContainer = document.querySelector('.work-container');
   
-  const cardsContainer = document.querySelector('.cards-container');
-
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    if (window.innerWidth < 769) {
-      // --- MOBILE ---
-      if (card.classList.contains('active')) {
-        // cerrar
-        card.classList.remove('visible', 'active');
-        container.classList.remove('expanded');
-        card.scrollTop = 0;
-        
-       
-
-      } else {
-        // abrir
-        cards.forEach(c => c.classList.remove('active'));
-        card.classList.add('visible', 'active');
-        
-        container.classList.add('expanded');
-        cardsContainer.scrollTop = 0;
-        workContainer.classList.add('expanded');
-        workContainer.scrollTop = 0;
-        
-
-        workContainer.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-        });
-        
-
-      }
-    } else {
-      // --- DESKTOP ---
-      if (card.style.width === '800%') {
-        card.classList.remove('visible');
-        card.style.width ='100%';
-        card.scrollTop = 0;
-        card.style.overflow = 'hidden';
-        card.style.backdropFilter='blur(10px)';
-      } else {
-        card.classList.add('visible');
-        card.style.width = '800%';
-        card.style.overflow = 'scroll';
-        workContainer.classList.add('expanded');
-        workContainer.scrollTop = 0;
-        
-
-        workContainer.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-        });
-
-       
-      }
-    }
-  });
-
-  // mouseleave solo aplica en desktop
-  card.addEventListener('mouseleave', () => {
-    if (window.innerWidth >= 769) {
-      card.classList.remove('visible');
-      card.style.width = '100%';
-      card.scrollTop = 0;
-      card.style.overflow = 'hidden';
-    }
-  });
-});
-// const list = document.querySelector(".list");
-// document.getElementById("open-iframe").addEventListener("click", function() {
-//   const iframeContainer = document.getElementById("iframe-container");
-//   iframeContainer.classList.add("active");
-//   list.style.display = "none";
+  
   
 
-// });
+
 
 
 
@@ -607,32 +607,5 @@ cards.forEach(card => {
 
 });
 
-//   mainContainer = document.querySelector('.main-container-yellow');
-//   const color1 = document.querySelector('.color1');
-//   const color2 = document.querySelector('.color2');
-//   const color3 = document.querySelector('.color3');
-//   const color4 = document.querySelector('.color4');
-
-//   function aplicarColor(clase) {
-//   mainContainer.classList.remove('main-container-yellow', 'main-container-red', 'main-container-blue', 'main-container-green');
-//   mainContainer.classList.add(clase);
-//   localStorage.setItem('colorSeleccionado', clase);
-// }
-
-// color1.addEventListener('click', () => aplicarColor('main-container-yellow'));
-// color2.addEventListener('click', () => aplicarColor('main-container-red'));
-// color3.addEventListener('click', () => aplicarColor('main-container-blue'));
-// color4.addEventListener('click', () => aplicarColor('main-container-green'));
-
-//    const colorGuardado = localStorage.getItem('colorSeleccionado');
-//     if (colorGuardado) {
-//       mainContainer.classList.remove('main-container-yellow', 'main-container-red', 'main-container-blue', 'main-container-green');
-//       mainContainer.classList.add(colorGuardado);
-//     }
-
- // function aplicarColor(clase) {
-//   mainContainer.classList.remove(...Object.values(colors)); //   mainContainer.classList.add(clase);
-//   localStorage.setItem('colorSeleccionado', clase);
-// }
 
 

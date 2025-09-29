@@ -74,16 +74,18 @@
   
   cursor: pointer;
   display: flex;
-  
+  z-index: 9999;
   position: fixed;
-  top: 10px;
-  justify-content: center;
+  left: 0;
   align-items: center;
-  padding: 12px;
-  margin-top: 0px;
+  padding: 20px;
+  
  
-  
-  
+ 
+  height: 0;
+  width: 6em;
+  background-color: $backgroundColor;
+  border-right: 0px white solid;
  
   
   
@@ -96,15 +98,10 @@
 
  z-index: 999;
 
+  
   @include respond($breakpoint-sm) {
+    padding:16px ;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    flex-direction: column;
-   
-  }
-  @include respond($breakpoint-mobile-l) {
-    padding:12px ;
   }
 
   
@@ -112,19 +109,19 @@
 #lang-en,
 #lang-es {
   display: flex;
-  font-family: "rawest", sans-serif;
+  
   
   font-size: 16px;
   font-weight: 300;
   color: $button-petrol-light;
-  font-family: 'boldonse', system-ui;
-  font-family: "NeueMetanaNext", system-ui;
-  font-size: 12px;
+  
+  font-size: 14px;
+  font-weight: 500;
   align-items: center;
   
   @include respond($breakpoint-mobile-l) {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
   }
 
 }
@@ -133,8 +130,10 @@
   
   font-weight: regular;
   color: $fontColorBlue;
-  border: solid 1px $fontColorBlue;
+  
   padding: 4px;
+
+  
   @include respond($breakpoint-mobile-l) {
     border: none;
     padding: 0;

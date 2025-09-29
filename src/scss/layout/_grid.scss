@@ -6,7 +6,10 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+
+  
 }
+
 
 
 
@@ -14,7 +17,7 @@ body {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.897);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
@@ -24,7 +27,7 @@ body {
   z-index: 9999;
   display: none; /* Oculto por defecto */
   p{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   @include respond($breakpoint-mobile-l) {
     font-size: 1rem;
@@ -39,11 +42,11 @@ body {
 }
 
 .loader {
-  border: 6px solid rgba(255, 255, 255, 0.3);
+  border: 6px solid rgba(255, 255, 255, 0);
   border-top: 6px solid white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   animation: spin 1s linear infinite;
   margin-bottom: 0px;
   margin-right: 20px;
@@ -58,6 +61,7 @@ body {
       justify-content: center;
       align-items: center;
       text-align: center;
+      
       padding: 2rem;
       font-size: 1.2rem;
       z-index: 9999;
@@ -126,7 +130,7 @@ body {
   background-color: $backgroundColor;
  
 
- 
+  
 }
 
 
@@ -178,7 +182,9 @@ body {
   display: flex;
   width: 100%;
   height:100%;
+  padding-right: 6em;
   padding-left: 6em;
+  
   flex-direction: column;
   gap: 30px;
   overflow-y: auto;
@@ -187,39 +193,47 @@ body {
   align-content: center;
   border:none;
   background-color: $backgroundColor;
-  border-left: 0.5px rgba(255, 255, 255, 0.558) solid;
+  border-left: 0px rgba(255, 255, 255, 0.558) solid;
   @include respond($breakpoint-sm) {
     border-left: none;
+    padding-right: 0;
     padding-left: 0;
+    
   }
+
+  
+
+ 
 }
 
 .sideBar{
   position: fixed;
-  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 80px;
   width: 6em;
   height: 100%;
-  border-right: 1px $button-petrol solid;
+  border-left: 0px white solid;
   z-index: 999;
   background-color: $backgroundColor;
+  padding: 0px;
   
-  
-  transition: 0.5s ease-in-out;
+  transition: 0s ease-in-out;
 
   a{
-    color: $fontColorBlue;
+    
+    color: $fontColor-petrol;
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 500;
-    padding: 8px;
-    border-right: solid 0px $button-petrol;
+    font-weight: 700;
+    padding: 0px;
+    border-bottom: solid 0px $button-petrol;
     text-align: center;
     transition: 0.1s ease-in-out;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+   
 
     @include respond($breakpoint-sm) {
       transform: rotate(0deg);
@@ -234,11 +248,15 @@ body {
       
     }
     &.active {
-      border: solid 1px $fontColorBlue;
+     color: $fontColorBlue;
+
+      
+  
       
     }
   }
   @include respond($breakpoint-sm) {
+    
     bottom: 0;
     height: 4em;
     width: 100%;
