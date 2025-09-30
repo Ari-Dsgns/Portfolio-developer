@@ -6,6 +6,9 @@
 
 const translations = {
   en: {
+
+    homeGreeting: "HEY! I'M ARI",
+    homeWelcome: "WELCOME TO MY LATEST PORTFOLIO",
    
     viewProjectsBtn: "GO TO MY PROJECTS",
 
@@ -163,7 +166,8 @@ const translations = {
   },
 
   es: {
-    
+    homeGreeting: "¡HOLA! SOY ",
+    homeWelcome: "BIENVENIDO A MI ÚLTIMO PORTFOLIO",
 
     viewProjectsBtn: "VER MIS PROYECTOS",
 

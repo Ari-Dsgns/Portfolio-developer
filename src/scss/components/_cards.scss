@@ -86,7 +86,7 @@
 .card-text{
   width: 400px;
   height: 500px;
-  
+  padding: 10px;
   overflow-y: scroll;
   position: relative;
   flex-shrink: 0;
@@ -147,7 +147,20 @@
   }
 }
 .card-text::-webkit-scrollbar{
-  display: none;
+  width: 6px;
+  
+
+
+}
+.card-text::-webkit-scrollbar-thumb{
+  background: #666;
+  border-radius: 4px;
+}
+.card-text::-webkit-scrollbar-track{
+  background: #222;
+}
+.card-text::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 
