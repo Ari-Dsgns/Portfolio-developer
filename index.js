@@ -166,7 +166,7 @@ const translations = {
   },
 
   es: {
-    homeGreeting: "¡HOLA! SOY ",
+    homeGreeting: "¡HOLA! SOY ARI",
     homeWelcome: "BIENVENIDO A MI ÚLTIMO PORTFOLIO",
 
     viewProjectsBtn: "VER MIS PROYECTOS",
