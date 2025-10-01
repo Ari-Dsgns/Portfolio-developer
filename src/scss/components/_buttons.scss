@@ -71,7 +71,6 @@
 
 
 .language-box {
-  
   cursor: pointer;
   display: flex;
   z-index: 9999;
@@ -79,59 +78,37 @@
   left: 0;
   align-items: center;
   padding: 20px;
-  
- 
- 
   height: 0;
   width: 6em;
   background-color: $backgroundColor;
   border-right: 0px white solid;
- 
-  
-  
-  
   gap: .5rem;
-  
-  
-
-  
-
- z-index: 999;
-
-  
+  z-index: 999;
   @include respond($breakpoint-sm) {
     padding:16px ;
     position: absolute;
   }
-
-  
 }
 #lang-en,
 #lang-es {
   display: flex;
-  
-  
+  border: none;
+  background: transparent;
   font-size: 16px;
   font-weight: 500;
   color: $fontColor-petrol;
-  
   font-size: 14px;
   font-weight: 500;
   align-items: center;
-  
   @include respond($breakpoint-mobile-l) {
     font-size: 14px;
     font-weight: 500;
   }
-
 }
 #lang-en.active,
 #lang-es.active {
-
   font-weight: 500;
   color: $fontColorBlue;
-
-  
 }
 
 
