@@ -1098,6 +1098,8 @@ body {
 #lang-en,
 #lang-es {
   display: flex;
+  border: none;
+  background: transparent;
   font-size: 16px;
   font-weight: 500;
   color: #5E6978;
@@ -1125,6 +1127,7 @@ body {
   width: 100%;
   height: auto;
   border: solid 0px white;
+  padding: 4px;
 }
 .card img {
   width: 1200px;
@@ -1275,10 +1278,6 @@ body {
 
 .card-text::-webkit-scrollbar-track {
   background: #222;
-}
-
-.card-text::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .section-animate {
@@ -1720,7 +1719,7 @@ body {
       #1a1919 95%
   );
   border: solid 15px transparent;
-  border-radius: 0;
+  border-radius: 1px;
   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
   background-position: center center;

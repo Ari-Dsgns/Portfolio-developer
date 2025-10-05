@@ -328,6 +328,21 @@ const translations = {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+
+  // const slider = document.querySelector('.card-inner');
+
+  // slider.addEventListener('wheel', (e) => {
+  //   if (e.deltaY !== 0) {
+  //     e.preventDefault();
+  //     slider.scrollBy({
+  //       left: e.deltaY * 8, // más lento
+  //       behavior: 'smooth'
+  //     });
+  //   }
+  // });
+
+    
+
   const sections = document.querySelectorAll("#projects, #about, #contact");
   const navLinks = document.querySelectorAll(".sideBar a");
   
@@ -491,6 +506,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Al cargar, aplicar el idioma guardado
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   changeLanguage(savedLang);
+
+
+
+
+  
 
 
 
