@@ -32,31 +32,31 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  border: solid 2px white;
+  overflow: hidden;
   text-align: center;
   padding: 40px;
   background-color:transparent;
 
-  //  --border-angle: 0turn; // For animation.
-  //   --main-bg: conic-gradient(
-  //       from var(--border-angle),
-  //       #1a1919 ,
-  //       #1a1919 95%
-  //   );
+   --border-angle: 0turn; // For animation.
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #1a1919 ,
+        #1a1919 95%
+    );
   
-  //   border: solid 4px transparent;
-  //   border-radius:0;
-  //   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
+    border: solid 0px transparent;
+    border-radius:0;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
     
-  //   background: 
-  //     // padding-box clip this background in to the overall element except the border.
-  //     var(--main-bg) padding-box,
-  //     // border-box extends this background to the border space
-  //     var(--gradient-border) border-box, 
-  //     // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
-  //     var(--main-bg) border-box;
-  //   background-position: center center;
-  //   animation: bg-spin 8s linear infinite;
+    background: 
+      // padding-box clip this background in to the overall element except the border.
+      var(--main-bg) padding-box,
+      // border-box extends this background to the border space
+      var(--gradient-border) border-box, 
+      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+      var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 8s linear infinite;
   
   h1,h2{
     font-family: 'Montserrat', sans-serif;
@@ -69,6 +69,7 @@
     color: $button-petrol-light2;
     font-weight: 300;
     font-size: 16px;
+    
    
   }
   a{
@@ -129,6 +130,17 @@
   
   
   
+}
+
+@keyframes fromRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
 }
 
 // .container-contact{

@@ -28,7 +28,7 @@
     position: relative;
     gap: 0px;
     
-    padding: 6em;
+    padding: 4em;
     z-index: 2;
     
 
@@ -43,7 +43,7 @@
         #1a1919 95%
     );
   
-    border: solid 15px transparent;
+    border: solid 20px transparent;
     border-radius:1px;
     --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
     
@@ -55,14 +55,14 @@
       // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
       var(--main-bg) border-box;
     background-position: center center;
-    animation: bg-spin 6s linear infinite;
+    animation: bg-spin 20s linear infinite;
   
 
   
   a{
     
     text-align: center;
-    align-self: center;
+    align-self: flex-start;
     background-color:transparent;
     text-decoration: none;
     color: $fontColorBlue;
@@ -79,6 +79,7 @@
     @include respond($breakpoint-sm) {
       position: absolute;
       bottom: 2em;
+      align-self: center;
     }
   }
 
@@ -94,9 +95,9 @@
     
     width: 95%;
     margin: 0.5em;
-    height: 100vh;
+    height: 90dvh;
     gap: 0px;
-    margin-bottom:4.5em;
+    margin-bottom:6em;
     a{
       font-size: 18px;
       padding: 20px;
@@ -105,7 +106,7 @@
   @include respond($breakpoint-mobile-l) {
     padding: 2em;
     height: 90dvh;
-    border: solid 10px transparent;
+    border: solid 16px transparent;
     gap: 0px;
     
     a{
@@ -139,6 +140,7 @@
   justify-content: center;
   gap: 8px;
   align-items: start;
+  align-content: center;
   position: relative;
   border: solid 1px rgba(255, 255, 255, 0);
   text-wrap: balance;

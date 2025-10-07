@@ -8,7 +8,7 @@ const translations = {
   en: {
 
     homeGreeting: "HEY! I'M ARI",
-    homeWelcome: "WELCOME TO MY LATEST PORTFOLIO",
+    homeWelcome: "I DESIGN WITH STRATEGY, I BUILD SMART DIGITAL EXPERIENCES.",
    
     viewProjectsBtn: "GO TO MY PROJECTS",
 
@@ -167,7 +167,7 @@ const translations = {
 
   es: {
     homeGreeting: "¡HOLA! SOY ARI",
-    homeWelcome: "BIENVENIDO A MI ÚLTIMO PORTFOLIO",
+    homeWelcome: "DISEÑO CON ESTRATEGIA, CONSTRUYO EXPERIENCIAS DIGITALES INTELIGENTES.",
 
     viewProjectsBtn: "VER MIS PROYECTOS",
 
