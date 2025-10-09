@@ -43,7 +43,7 @@
         #1a1919 95%
     );
   
-    border: solid 20px transparent;
+    border: solid 18px transparent;
     border-radius:1px;
     --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
     
@@ -106,7 +106,7 @@
   @include respond($breakpoint-mobile-l) {
     padding: 2em;
     height: 90dvh;
-    border: solid 10px transparent;
+    border: solid 12px transparent;
     gap: 0px;
     
     a{
@@ -224,6 +224,25 @@
     a{
       font-size: 16px;
       padding: 14px;
+    }
+  }
+  @include respond($breakpoint-mobile-s) {
+    
+    h1{
+      font-size: 28px;
+    }
+    h2{
+      font-size: 28px;
+    }
+    h3{
+      font-size: 28px;
+    }
+    p{
+      font-size: 14px;
+    }
+    a{
+      font-size: 14px;
+      padding: 10px;
     }
   }
 }

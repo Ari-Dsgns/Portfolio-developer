@@ -67,29 +67,20 @@
 }
 
 
-.home-btn{
-  cursor: pointer;
-  display: flex;
-  z-index: 9999;
+.home-button-container {
   position: fixed;
-  right: 0;
-  align-items: center;
-  padding: 20px;
-  color: $fontColorBlue;
-  width: 6em;
-  height: 0;
-  background-color: $backgroundColor;
-  border: solid 0px white;
-  font-size: 16px;
-  font-weight: 600;
-  gap: .5rem;
-  z-index: 9998;
+  top: 0;
+  a{
+    color: $fontColorBlue;
+  }
   @include respond($breakpoint-sm) {
     padding:16px ;
-    position: absolute;
+    position: relative;
   }
   @include respond($breakpoint-mobile-l) {
-    position: fixed;
+    border: solid 1px white;
+    bottom: 0;
+    
   }
 }
 
@@ -100,24 +91,33 @@
   z-index: 9999;
   position: fixed;
   left: 0;
+  top: 0;
   align-items: center;
   padding: 20px;
   height: 0;
   width: 6em;
-  background-color: $backgroundColor;
+  
   border-right: 0px white solid;
   gap: .5rem;
   z-index: 999;
+  background: transparent;
+  
+
+
   @include respond($breakpoint-sm) {
-    padding:16px ;
-    position: absolute;
+    width: 0;
+    height:0;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border: solid 0px white;
+    gap: 0;
   }
-  @include respond($breakpoint-mobile-l) {
-    position: fixed;
-  }
+  
 }
 #lang-en,
 #lang-es {
+  
   display: flex;
   border: none;
   background: transparent;
@@ -128,7 +128,7 @@
   font-weight: 500;
   align-items: center;
   @include respond($breakpoint-mobile-l) {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
   }
 }

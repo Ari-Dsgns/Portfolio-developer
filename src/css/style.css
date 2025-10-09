@@ -903,6 +903,7 @@ body {
     height: 4em;
     width: 100%;
     flex-direction: row;
+    justify-content: center;
     gap: 4px;
     align-items: center;
     align-content: center;
@@ -1073,33 +1074,23 @@ body {
   }
 }
 
-.home-btn {
-  cursor: pointer;
-  display: flex;
-  z-index: 9999;
+.home-button-container {
   position: fixed;
-  right: 0;
-  align-items: center;
-  padding: 20px;
+  top: 0;
+}
+.home-button-container a {
   color: #6958ff;
-  width: 6em;
-  height: 0;
-  background-color: #1a1919;
-  border: solid 0px white;
-  font-size: 16px;
-  font-weight: 600;
-  gap: 0.5rem;
-  z-index: 9998;
 }
 @media (max-width: 768px) {
-  .home-btn {
+  .home-button-container {
     padding: 16px;
-    position: absolute;
+    position: relative;
   }
 }
 @media (max-width: 480px) {
-  .home-btn {
-    position: fixed;
+  .home-button-container {
+    border: solid 1px white;
+    bottom: 0;
   }
 }
 
@@ -1109,24 +1100,25 @@ body {
   z-index: 9999;
   position: fixed;
   left: 0;
+  top: 0;
   align-items: center;
   padding: 20px;
   height: 0;
   width: 6em;
-  background-color: #1a1919;
   border-right: 0px white solid;
   gap: 0.5rem;
   z-index: 999;
+  background: transparent;
 }
 @media (max-width: 768px) {
   .language-box {
-    padding: 16px;
-    position: absolute;
-  }
-}
-@media (max-width: 480px) {
-  .language-box {
-    position: fixed;
+    width: 0;
+    height: 0;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border: solid 0px white;
+    gap: 0;
   }
 }
 
@@ -1145,7 +1137,7 @@ body {
 @media (max-width: 480px) {
   #lang-en,
   #lang-es {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
   }
 }
@@ -1566,7 +1558,6 @@ body {
 }
 .about-me-content h1 {
   font-family: "NeueMetanaNext", system-ui;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #333E4D;
   font-size: 30px;
@@ -1853,7 +1844,7 @@ body {
       #1a1919 ,
       #1a1919 95%
   );
-  border: solid 20px transparent;
+  border: solid 18px transparent;
   border-radius: 1px;
   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
@@ -1907,7 +1898,7 @@ body {
   .portfolio__title {
     padding: 2em;
     height: 90dvh;
-    border: solid 10px transparent;
+    border: solid 12px transparent;
     gap: 0px;
   }
   .portfolio__title a {
@@ -2000,6 +1991,24 @@ body {
   .portfolio__text a {
     font-size: 16px;
     padding: 14px;
+  }
+}
+@media (max-width: 325px) {
+  .portfolio__text h1 {
+    font-size: 28px;
+  }
+  .portfolio__text h2 {
+    font-size: 28px;
+  }
+  .portfolio__text h3 {
+    font-size: 28px;
+  }
+  .portfolio__text p {
+    font-size: 14px;
+  }
+  .portfolio__text a {
+    font-size: 14px;
+    padding: 10px;
   }
 }
 
