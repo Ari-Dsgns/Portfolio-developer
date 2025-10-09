@@ -67,7 +67,31 @@
 }
 
 
-
+.home-btn{
+  cursor: pointer;
+  display: flex;
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  align-items: center;
+  padding: 20px;
+  color: $fontColorBlue;
+  width: 6em;
+  height: 0;
+  background-color: $backgroundColor;
+  border: solid 0px white;
+  font-size: 16px;
+  font-weight: 600;
+  gap: .5rem;
+  z-index: 9998;
+  @include respond($breakpoint-sm) {
+    padding:16px ;
+    position: absolute;
+  }
+  @include respond($breakpoint-mobile-l) {
+    position: fixed;
+  }
+}
 
 
 .language-box {
@@ -87,6 +111,9 @@
   @include respond($breakpoint-sm) {
     padding:16px ;
     position: absolute;
+  }
+  @include respond($breakpoint-mobile-l) {
+    position: fixed;
   }
 }
 #lang-en,
