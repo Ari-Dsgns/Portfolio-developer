@@ -14,6 +14,7 @@
   
 
   
+    
  
 }
 
@@ -43,7 +44,7 @@
         #1a1919 95%
     );
   
-    border: solid 18px transparent;
+    border: solid 30px transparent;
     border-radius:1px;
     
     --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
@@ -57,7 +58,12 @@
       var(--main-bg) border-box;
     background-position: center center;
     animation: bg-spin 20s linear infinite;
-  
+
+
+
+
+   
+
 
   
   a{
@@ -107,7 +113,7 @@
   @include respond($breakpoint-mobile-l) {
     padding: 2em;
     height: 90dvh;
-    border: solid 12px transparent;
+    border: solid 20px transparent;
     gap: 0px;
     
     a{
@@ -115,9 +121,20 @@
       padding: 14px;
     }
   }
+  @include respond($breakpoint-mobile-m) {
+    padding: 1.5em;
+    border: solid 16px transparent;
+    
+    gap: 0px;
+    a{
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
   @include respond($breakpoint-mobile-s) {
     padding: 1.5em;
-    height: 85dvh;
+    border: solid 12px transparent;
+    
     gap: 0px;
     a{
       font-size: 14px;

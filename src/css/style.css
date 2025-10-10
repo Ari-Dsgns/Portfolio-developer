@@ -1845,7 +1845,7 @@ body {
       #1a1919 ,
       #1a1919 95%
   );
-  border: solid 18px transparent;
+  border: solid 30px transparent;
   border-radius: 1px;
   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
@@ -1899,7 +1899,7 @@ body {
   .portfolio__title {
     padding: 2em;
     height: 90dvh;
-    border: solid 12px transparent;
+    border: solid 20px transparent;
     gap: 0px;
   }
   .portfolio__title a {
@@ -1907,10 +1907,21 @@ body {
     padding: 14px;
   }
 }
+@media (max-width: 375px) {
+  .portfolio__title {
+    padding: 1.5em;
+    border: solid 16px transparent;
+    gap: 0px;
+  }
+  .portfolio__title a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 @media (max-width: 325px) {
   .portfolio__title {
     padding: 1.5em;
-    height: 85dvh;
+    border: solid 12px transparent;
     gap: 0px;
   }
   .portfolio__title a {
