@@ -27,7 +27,6 @@
 
   h1{
     font-family: "NeueMetanaNext", system-ui;
-    
     font-weight: 400;
     color: $button-petrol;
     font-size: 30px;
@@ -112,8 +111,9 @@
   h1{
     text-align: center;
     font-family: "Boldonse", system-ui;
+    font-family: 'Montserrat', sans-serif;
     font-family: "NeueMetanaNext", system-ui;
-    font-family: 'Montserrat', sans-serif; 
+     
     color: $fontColorBlue;
     font-size: 30px;
     
@@ -136,7 +136,7 @@
     color: $button-petrol;
     color: $button-petrol-light;
     color: $fontColorBlue;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0px;
     text-align: start;
     font-size: 18px;

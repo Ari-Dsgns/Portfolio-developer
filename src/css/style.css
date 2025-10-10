@@ -1095,7 +1095,6 @@ body {
 }
 
 .language-box {
-  cursor: pointer;
   display: flex;
   z-index: 9999;
   position: fixed;
@@ -1105,7 +1104,7 @@ body {
   padding: 20px;
   height: 0;
   width: 6em;
-  border-right: 0px white solid;
+  border: 0px white solid;
   gap: 0.5rem;
   z-index: 999;
   background: transparent;
@@ -1124,6 +1123,7 @@ body {
 
 #lang-en,
 #lang-es {
+  cursor: pointer;
   display: flex;
   border: none;
   background: transparent;
@@ -1335,13 +1335,14 @@ body {
 .card-text h2 {
   font-family: "montserrat", sans-serif;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   color: #6958ff;
 }
 .card-text h3 {
   font-family: "montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
+  color: #6958ff;
 }
 .card-text p {
   font-family: "montserrat", sans-serif;
@@ -1350,7 +1351,7 @@ body {
 }
 .card-text a {
   text-decoration: none;
-  color: #6958ff;
+  color: #FF6C58;
   width: auto;
   font-size: 16px;
   font-weight: 600;
@@ -1619,8 +1620,8 @@ body {
 .about-me-text1 h1 {
   text-align: center;
   font-family: "Boldonse", system-ui;
-  font-family: "NeueMetanaNext", system-ui;
   font-family: "Montserrat", sans-serif;
+  font-family: "NeueMetanaNext", system-ui;
   color: #6958ff;
   font-size: 30px;
 }
@@ -1644,7 +1645,7 @@ body {
   color: #333E4D;
   color: #828FA2;
   color: #6958ff;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0px;
   text-align: start;
   font-size: 18px;

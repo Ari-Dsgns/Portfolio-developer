@@ -86,7 +86,7 @@
 
 
 .language-box {
-  cursor: pointer;
+  
   display: flex;
   z-index: 9999;
   position: fixed;
@@ -97,7 +97,7 @@
   height: 0;
   width: 6em;
   
-  border-right: 0px white solid;
+  border: 0px white solid;
   gap: .5rem;
   z-index: 999;
   background: transparent;
@@ -117,7 +117,7 @@
 }
 #lang-en,
 #lang-es {
-  
+  cursor: pointer;
   display: flex;
   border: none;
   background: transparent;

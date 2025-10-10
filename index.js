@@ -9,18 +9,21 @@ const translations = {
 
     homeGreeting: "HEY! I'M ARI",
     homeWelcome: "I DESIGN WITH STRATEGY, I BUILD SMART DIGITAL EXPERIENCES.",
-   
     viewProjectsBtn: "GO TO MY PROJECTS",
+
+    projectTag: "PROJECTS",
+    aboutTag: "ABOUT",
+    contactTag: "CONTACT",
 
     aboutMeTitle: "A SHORT STORY ABOUT ME",
 
     aboutMePhotoComment: "Yes, that's me in the photo. Just posing. Unfortunately, I don't have a boat yet.",
     aboutMeContentSubtitle: "LET ME TELL YOU A VERY SHORT STORY ABOUT ME",
-    aboutMeContentText1:"My name is Ariel Sanchez, although people know me as Ari. I'm a web designer with a focus on UX/UI and a front-end developer. I was born and raised in Buenos Aires. I've lived in many places, including Granada, London, and Madrid, where I finally settled. I'm passionate about anything different and challenging. I have a disruptive soul but a structured mind.",
+    aboutMeContentText1:"My name is Ariel Sanchez, but people know me as Ari. I'm a Web Designer with a focus on UXUI and a Front-End Developer. I was born and raised in Buenos Aires. I've lived in many places like Granada, London, or Madrid, where I finally decided to settle down. I'm passionate about the different and the challenging. Inside me coexist two essences seeking balance: a disruptive soul under a structured mind.",
     aboutMeContentText2:"WHAT DO I DO?",
     aboutMeContentText4:"I Design things. I transform original ideas into functional and attractive websites with a lot of dedication and care, although not everything is possible; sometimes you have to say no, miracles do not exist! But no worries, I'll try anyway",
     aboutMeContentText6:"WHAT MOTIVATES ME?",
-    aboutMeContentText7:"For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe a design is never completely finished, as adaptation is never final; it must grow and transform alongside those who use it. The clearest example can be seen in the Peugeot logo, which has transformed over the years while maintaining its essence. What do you think?",
+    aboutMeContentText7:"For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe that a design is never completely finished because adaptation is never complete; it must grow and transform alongside those who use it. In a way, artificial intelligence reflects that same essence: it learns, transforms, and redefines itself with each interaction, as if it had its own life cycle. Just as AI evolves from experience, design must also be nurtured by time, people, and the changes that surround it. A clear example of this constant evolution is the Peugeot logo, which has changed over the years without losing its identity, demonstrating that the essence can be maintained even when the form is renewed. What do you think?",
     aboutMeContentText8:"HOW DID I END UP HERE?",
     aboutMeContentText9:"Over the years, I've found a unique balance between design and development, where creativity and logic converge. It's in that middle ground where I feel most comfortable, turning ideas into engaging and functional experiences for users.",
     aboutMeContentText10:"I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.",
@@ -32,6 +35,12 @@ const translations = {
 
     contactMeText: "I'm currently available for freelance work or full-time opportunities. Whether you have a project in mind or just want to say hello, feel free to reach out. I look forward to connecting with you!",
     contactMeButton: "Contact Me",
+
+    OpenProject: "→  View full Project",
+    OpenPrototype: "→ View Prototype",
+    OpenReel: "→ Watch Reel",
+    OpenGitHub: "→ View source code on GitHub",
+    OpenDemo: "→ View Live Demo",
 
     jgsSubtitle:
       "A React-based minimalist eCommerce built from scratch using Firebase & Context API",
@@ -129,9 +138,22 @@ const translations = {
     destineaChallengeContent:
       "One of the main challenges was ensuring that the website was fully responsive and provided an optimal viewing experience across various devices. By utilizing Bootstrap`s` grid system and responsive utilities, I was able to create a layout that adapts to different screen sizes. This project enhanced my understanding of responsive web design and the practical application of Bootstrap`s features.",
 
+
+    selvatikaSummaryContent:
+      "Selvatika is a fictional eCommerce website dedicated to selling eco-friendly products. The design focuses on a clean and modern aesthetic, emphasizing sustainability and nature. The site features a user-friendly interface with easy navigation, product filtering, and a seamless checkout process. The color palette is inspired by natural tones, creating a calming and inviting atmosphere for users.",
+    selvatikaGoalContent:
+      "The main goal was to create an eCommerce platform that not only showcases eco-friendly products but also provides an enjoyable shopping experience. This involved implementing intuitive navigation, effective product filtering, and a streamlined checkout process.",
+    selvatikaRoleContent:
+      "I was responsible for the entire design and development process, from creating the initial wireframes to implementing the final design using HTML, CSS, and JavaScript. The focus was on ensuring a responsive layout that works well on both desktop and mobile devices.",
+    
     readmeappSubtitle: "A fast and enjoyable app for reading- Case study",
     readmeappSummaryContent:
       "This is a speed reading app designed for users with little time or who want to improve their reading habits in a fun and purposeful way. It is a UX/UI project where the main objective and focus is to provide a great user experience.",
+    readmeappGoalContent:
+      "The goal was to create an accessible and dynamic experience to encourage reading in users with little time. The project was developed applying the Design Thinking methodology, implementing a design system based on its 5 phases.",
+    readmeappRoleContent:
+      "I was responsible for the entire design and development process, from creating the initial wireframes to implementing the final design using HTML, CSS, and JavaScript. The focus was on ensuring a responsive layout that works well on both desktop and mobile devices.",
+    
 
     saffvisionSubtitle:
       "A creative portfolio with a camera shutter-inspired menu animation to captivate visitors",
@@ -171,15 +193,19 @@ const translations = {
 
     viewProjectsBtn: "VER MIS PROYECTOS",
 
+    projectTag: "PROYECTOS",
+    aboutTag: "SOBRE MI",
+    contactTag: "CONTACTO",
+
     aboutMeTitle: "UNA BREVE HISTORIA SOBRE MI",
     aboutMePhotoComment: "Sí, soy yo el de la foto, pero solo estoy posando. Desafortunadamente no tengo ningún barco.",
-    aboutMeContentSubtitle: "TE CUENTO UNA PEQUEÑA HISTORIA SOBRE MI",
-    aboutMeContentText1: "Me llamo Ariel Sanchez, aunque la gente me conoce como Ari. Soy Diseñador web con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente anidé. Me apasiona lo diferente y lo desafiante. Tengo un alma disruptiva pero una mente estructurada.",
-    aboutMeContentText2:"¿QUÉ ES LO QUEHAGO?",
+    aboutMeContentSubtitle: "TE CUENTO UNA MUY BREVE HISTORIA SOBRE MI",
+    aboutMeContentText1: "Me llamo Ariel Sanchez, aunque la gente me conoce como Ari. Soy Diseñador web con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir. Me apasiona lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
+    aboutMeContentText2:"¿QUÉ ES LO QUE HAGO?",
     aboutMeContentText4:"Diseño cosas. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado, aunque no todo es posible; a veces hay que decir que no, ¡los milagros no existen! Pero no te preocupes, lo intentaré de todas formas.",
     
     aboutMeContentText6:"¿QUÉ ME MOTIVA?",
-    aboutMeContentText7:"Para mí, los diseños son como seres vivos en la naturaleza: necesitan evolucionar y adaptarse a los entornos en los que existen. Creo que un diseño nunca está completamente terminado, ya que la adaptación nunca es definitiva; debe crecer y transformarse junto a quienes lo utilizan. El ejemplo más claro se puede ver en el logotipo de Peugeot, que ha ido transformándose a lo largo de los años mientras mantenía su esencia. ¿Tú qué opinas?",
+    aboutMeContentText7:"Para mí, los diseños son como seres vivos en la naturaleza: necesitan evolucionar y adaptarse a los entornos en los que existen. Creo que un diseño nunca está completamente terminado, porque la adaptación nunca lo está; debe crecer y transformarse junto a quienes lo utilizan. En cierto modo, la inteligencia artificial refleja esa misma esencia: aprende, se transforma y se redefine con cada interacción, como si tuviera su propio ciclo vital. Así como la IA evoluciona a partir de la experiencia, el diseño también debe nutrirse del tiempo, de las personas y de los cambios que lo rodean. Un ejemplo claro de esta evolución constante es el logotipo de Peugeot, que ha cambiado con los años sin perder su identidad, demostrando que la esencia puede mantenerse incluso cuando la forma se renueva. ¿Y tú qué opinas?",
     aboutMeContentText8:"¿CÓMO LLEGUÉ HASTA AQUÍ?",
     aboutMeContentText9:"A lo largo de los años, he encontrado un equilibrio único entre el diseño y el desarrollo, donde la creatividad y la lógica convergen. Es en ese punto intermedio donde me siento más cómodo, convirtiendo ideas en experiencias atractivas y funcionales para los usuarios.",
     aboutMeContentText10:"Siempre estoy buscando oportunidades para crecer, colaborar con equipos inspiradores y crear productos que marquen la diferencia.",
@@ -190,6 +216,12 @@ const translations = {
 
     contactMeText: "Actualmente estoy disponible para trabajos freelance o oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
     contactMeButton: "Contáctame",
+
+    OpenProject: "→ Ver Proyecto completo",
+    OpenPrototype: "→ Ver Prototipo",
+    OpenReel: "→ Ver Reel",
+    OpenGitHub: "→ Ver el código en GitHub",
+    OpenDemo: "→ Ver Demo en Vivo",
 
     jgsSubtitle:
       "Un eCommerce minimalista basado en React construido desde cero usando Firebase y Context API",
@@ -288,10 +320,25 @@ const translations = {
     destineaChallengeContent:
       "Uno de los principales desafíos fue garantizar que el sitio web fuera completamente receptivo y proporcionara una experiencia de visualización óptima en varios dispositivos. Al utilizar el sistema de cuadrícula y las utilidades responsivas de Bootstrap, pude crear un diseño que se adapta a diferentes tamaños de pantalla. Este proyecto mejoró mi comprensión del diseño web responsivo y la aplicación práctica de las características de Bootstrap.",
 
+
+    selvatikaSummaryContent:
+      "Selvatika es un sitio web de eCommerce ficticio dedicado a la venta de productos ecológicos. El diseño se centra en una estética limpia y moderna, enfatizando la sostenibilidad y la naturaleza. El sitio cuenta con una interfaz fácil de usar con navegación sencilla, filtrado de productos y un proceso de pago sin complicaciones. La paleta de colores está inspirada en tonos naturales, creando una atmósfera tranquila y acogedora para los usuarios.",
+    
+    selvatikaGoalContent:
+      "El objetivo principal era crear una plataforma de eCommerce que no solo mostrara productos ecológicos, sino que también proporcionara una experiencia de compra agradable. Esto implicó implementar una navegación intuitiva, un filtrado de productos efectivo y un proceso de pago simplificado.",
+
+    selvatikaRoleContent:
+      "Fui responsable de todo el proceso de diseño y desarrollo, desde la creación de los wireframes iniciales hasta la implementación del diseño final utilizando HTML, CSS y JavaScript. El enfoque estaba en garantizar un diseño receptivo que funcionara bien tanto en dispositivos de escritorio como móviles.",
+
     readmeappSubtitle:
       "Una aplicación rápida y divertida para leer -Caso de estudio",
     readmeappSummaryContent:
       " ReadMeApp es una aplicación móvil diseñada para quienes tienen poco tiempo, pero desean mantener o mejorar sus hábitos de lectura de una forma práctica y entretenida. La app permite leer resúmenes breves de libros que destacan las ideas más importantes en cuestión de minutos. Con un sistema de objetivos y recompensas, motiva al usuario a leer cada día y descubrir nuevos temas.  Además, ofrece la opción de profundizar comprando el libro completo con un solo click.  Su lema: “Lee más en menos tiempo”.",
+    readmeappGoalContent:
+      "El objetivo era crear una experiencia accesible y dinámica para fomentar la lectura en usuarios con poco tiempo. El proyecto se desarrolló aplicando la metodología Design Thinking, implementando un sistema de diseño basado en sus 5 fases.",
+    readmeappRoleContent:
+      "Fui responsable de todo el proceso de diseño utilizando Figma y Photoshop, enfocándome en la narrativa visual y los conceptos de interacción. No se involucró codificación; el prototipo sirve como un plano visual para el desarrollo futuro.", 
+
 
     saffvisionSubtitle:
       "Un portafolio creativo con una animación de menú inspirada en el obturador de una cámara para cautivar a los visitantes",
