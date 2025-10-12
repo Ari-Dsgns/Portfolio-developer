@@ -70,18 +70,22 @@
 .home-button-container {
   position: fixed;
   top: 0;
+  right: 0;
+  width: 6em;
+  border: solid 0px white;
+  padding: 10px;
+  text-align: center;
   a{
-    color: $fontColorBlue;
+    color: $fontColor-petrol;
   }
   @include respond($breakpoint-sm) {
-    padding:16px ;
+    padding: 0;
     position: relative;
+    width: 4em;
+    border: solid 0px white;
   }
-  @include respond($breakpoint-mobile-l) {
-    border: solid 1px white;
-    bottom: 0;
-    
-  }
+
+ 
 }
 
 
@@ -111,7 +115,7 @@
     justify-content: center;
     position: relative;
     border: solid 0px white;
-    gap: 0;
+    gap: 4px;
   }
   
 }
@@ -128,8 +132,9 @@
   font-weight: 500;
   align-items: center;
   @include respond($breakpoint-mobile-l) {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
+    
   }
 }
 #lang-en.active,
@@ -154,69 +159,6 @@
 .cv-btn:active{ transform: translateY(0); }
 
 
-.scroll-down {
-  position: relative;
-  bottom: 2rem;
-  top: 50px;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: sans-serif;
-  color: white;
-  opacity: 0.8;
-  animation: fadeInMouse 2s ease forwards;
-  text-align: center;
-
-  .scroll-text {
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-  }
-
-  .mouse {
-    width: 24px;
-    height: 40px;
-    border: 2px solid #fff;
-    border-radius: 12px;
-    position: relative;
-
-    .wheel {
-      width: 4px;
-      height: 6px;
-      background: #fff;
-      border-radius: 2px;
-      position: absolute;
-      top: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      animation: wheelMouse 1.5s ease-in-out infinite;
-    }
-  }
-}
-
-@keyframes wheelMouse {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, 10px);
-  }
-}
-
-@keyframes fadeInMouse {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 10px);
-  }
-  100% {
-    opacity: 0.8;
-    transform: translate(-50%, 0);
-  }
-}
 
 
 

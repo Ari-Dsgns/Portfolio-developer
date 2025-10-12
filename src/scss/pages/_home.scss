@@ -226,7 +226,7 @@
 
   @include respond($breakpoint-mobile-l) {
     
-    
+    padding: 0;
     h1{
       font-size: 36px;
     }

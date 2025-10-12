@@ -11,6 +11,7 @@ const translations = {
     homeWelcome: "I DESIGN WITH STRATEGY, I BUILD SMART DIGITAL EXPERIENCES.",
     viewProjectsBtn: "GO TO MY PROJECTS",
 
+    homeBtn: "HOME",
     projectTag: "PROJECTS",
     aboutTag: "ABOUT",
     contactTag: "CONTACT",
@@ -193,6 +194,7 @@ const translations = {
 
     viewProjectsBtn: "VER MIS PROYECTOS",
 
+    homeBtn: "INICIO",
     projectTag: "PROYECTOS",
     aboutTag: "SOBRE MI",
     contactTag: "CONTACTO",
@@ -214,7 +216,7 @@ const translations = {
     ProjectsTitle: "SITIOS WEBS",
     ProjectsTitle2: "PROYECTOS UX UI",
 
-    contactMeText: "Actualmente estoy disponible para trabajos freelance o oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
+    contactMeText: "Actualmente estoy disponible para trabajos freelance u oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
     contactMeButton: "Contáctame",
 
     OpenProject: "→ Ver Proyecto completo",
@@ -390,8 +392,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-  const sections = document.querySelectorAll("#projects, #about, #contact");
+  const sections = document.querySelectorAll("#projects, #about, #contact, #home");
   const navLinks = document.querySelectorAll(".sideBar a");
+  const homeBtn= document.getElementById("home-btn");
+
+  
   
 
   document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -403,11 +408,15 @@ document.addEventListener('DOMContentLoaded', () => {
       target.scrollIntoView({
         behavior: 'smooth',
         block: 'start', // centra verticalmente
+        
       });
       
+      
       }
+      
 
     });
+    
     
   });
 
@@ -433,6 +442,13 @@ document.addEventListener('DOMContentLoaded', () => {
       threshold: 0.6, // % de visibilidad para considerar la sección activa
     }
   );
+
+  homeBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 
   sections.forEach((section) => observer.observe(section));
 

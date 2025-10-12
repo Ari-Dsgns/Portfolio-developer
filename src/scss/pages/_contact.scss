@@ -62,7 +62,7 @@
     font-family: 'Montserrat', sans-serif;
       color: $button-petrol-lighter;
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 400;
   }
   
   p{
@@ -76,9 +76,13 @@
     
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: $fontColorBlue;
-    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: $fontColor-white;
+    padding: 15px;
+    border: none;
+    background-color: $fontColorBlue;
   }
   @include respond($breakpoint-sm) {
     padding: 20px;
