@@ -671,11 +671,11 @@
 }
 @keyframes translateIn {
   0% {
-    transform: translateY(100%);
+    transform: translateX(-100px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -734,9 +734,10 @@
   width: 100%;
   height: 5%;
   transition: transform 0.8s ease-in-out;
-  background-color: #333E4D;
-  mask: conic-gradient(from 135deg at top, rgba(0, 0, 0, 0), #000 1deg 89deg, rgba(0, 0, 0, 0) 90deg) 50%/5px 100%;
-  animation: move-dents-to-left 180s linear infinite;
+  background-color: transparent;
+}
+.footer p {
+  text-shadow: 0px 0px 20px rgba(226, 226, 226, 0.928);
 }
 
 html {
@@ -1176,8 +1177,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: auto;
-  border: solid 0px white;
-  padding: 4px;
+  padding: 10px;
 }
 .card img {
   width: 1200px;
@@ -1270,9 +1270,8 @@ body {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  animation: scrollIn 1s ease-in-out;
+  justify-content: end;
   gap: 10px;
-  animation: fadeIn 2s ease-in-out;
 }
 .card-text h2 {
   font-family: "montserrat", sans-serif;
@@ -1319,7 +1318,7 @@ body {
 }
 
 .card-text::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
 }
 
 .card-text::-webkit-scrollbar-thumb {
@@ -1329,6 +1328,34 @@ body {
 
 .card-text::-webkit-scrollbar-track {
   background: #222;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+.card-title button, .card-title a {
+  background-color: #333E4D;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "NeueMetanaNext", system-ui;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.card-title button:hover, .card-title a:hover {
+  background-color: rgb(30.6796875, 37.296875, 46.3203125);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .section-animate {
@@ -1494,6 +1521,7 @@ body {
   margin-top: 0px;
   border: none;
   width: 100%;
+  padding: 40px;
   height: 100%;
   z-index: 3;
   border: solid white 0px;
@@ -1509,7 +1537,7 @@ body {
 }
 @media (max-width: 768px) {
   .about-me-content h1 {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 0px;
     text-align: center;
   }
@@ -1525,6 +1553,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 10px;
   align-items: start;
   align-self: self-start;
   border-radius: 8px;
@@ -1547,6 +1576,13 @@ body {
   object-fit: cover;
   border-radius: 6px;
   border: solid 0px #a5b2c4;
+  box-shadow: 0px 0px 20px rgba(94, 94, 94, 0.579);
+}
+@media (max-width: 480px) {
+  .about-me-image {
+    width: 100%;
+    height: 160px;
+  }
 }
 
 .about-me-text1 {
@@ -1558,27 +1594,6 @@ body {
   gap: 10px;
   margin-bottom: 60px;
   border: solid 0px #a5b2c4;
-}
-.about-me-text1 h1 {
-  text-align: center;
-  font-family: "Boldonse", system-ui;
-  font-family: "Montserrat", sans-serif;
-  font-family: "NeueMetanaNext", system-ui;
-  color: #6958ff;
-  font-size: 30px;
-}
-@media (max-width: 768px) {
-  .about-me-text1 h1 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 480px) {
-  .about-me-text1 h1 {
-    font-size: 18px;
-    padding: 6px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
 }
 .about-me-text1 h2 {
   font-family: "Boldonse", system-ui;
@@ -2075,24 +2090,20 @@ body {
 .work-container h1 {
   font-family: "boldonse", system-ui;
   font-family: "NeueMetanaNext", system-ui;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-bottom: 20px;
   color: #a5b2c4;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
 }
 @media (max-width: 768px) {
   .work-container h1 {
-    font-size: 20px;
+    font-size: 22px;
     margin: 0px;
     text-align: start;
   }
 }
 @media (max-width: 480px) {
   .work-container h1 {
-    font-size: 18px;
     margin: 0px;
     text-align: center;
   }
@@ -2105,8 +2116,7 @@ body {
   height: 100%;
   gap: 100px;
   border: 0px solid #828FA2;
-  padding: 20px;
-  padding: 40px;
+  padding: 10px;
 }
 @media (max-width: 1440px) {
   .cards-container {
@@ -2240,7 +2250,8 @@ body {
   max-width: 80%;
   height: auto;
   border-radius: 12px;
-  border: solid 1px white;
+  border: none;
+  box-shadow: 0px 0px 20px rgba(195, 195, 195, 0.247);
 }
 @media (max-width: 768px) {
   .modal-body img {

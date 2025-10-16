@@ -19,8 +19,8 @@ const translations = {
     aboutMeTitle: "A SHORT STORY ABOUT ME",
 
     aboutMePhotoComment: "Yes, that's me in the photo. Just posing. Unfortunately, I don't have a boat yet.",
-    aboutMeContentSubtitle: "LET ME TELL YOU A VERY SHORT STORY ABOUT ME",
-    aboutMeContentText1:"My name is Ariel Sanchez, but people know me as Ari. I'm a Web Designer with a focus on UXUI and a Front-End Developer. I was born and raised in Buenos Aires. I've lived in many places like Granada, London, or Madrid, where I finally decided to settle down. I'm passionate about the different and the challenging. Inside me coexist two essences seeking balance: a disruptive soul under a structured mind.",
+    aboutMeContentSubtitle: "WHO AM I?",
+    aboutMeContentText1:"My name is Ariel Sanchez, but people know me as Ari. I'm a Visual Designer with a focus on UXUI and a Front-End Developer. I was born and raised in Buenos Aires. I've lived in many places like Granada, London, or Madrid, where I finally decided to settle down. I'm passionate about the different and the challenging. Inside me coexist two essences seeking balance: a disruptive soul under a structured mind.",
     aboutMeContentText2:"WHAT DO I DO?",
     aboutMeContentText4:"I Design things. I transform original ideas into functional and attractive websites with a lot of dedication and care, although not everything is possible; sometimes you have to say no, miracles do not exist! But no worries, I'll try anyway",
     aboutMeContentText6:"WHAT MOTIVATES ME?",
@@ -30,14 +30,14 @@ const translations = {
     aboutMeContentText10:"I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.",
     aboutMeContentText11:"SHALL WE GET IN TOUCH?",
 
-    ProjectsTitle: "FULL WEBSITES",
+    ProjectsTitle: "PROJECTS",
     ProjectsTitle2: "UX UI Projects",
 
 
     contactMeText: "I'm currently available for freelance work or full-time opportunities. Whether you have a project in mind or just want to say hello, feel free to reach out. I look forward to connecting with you!",
     contactMeButton: "Contact Me",
 
-    OpenProject: "→  View full Project",
+    OpenProject: "→  View Case Study",
     OpenPrototype: "→ View Prototype",
     OpenReel: "→ Watch Reel",
     OpenGitHub: "→ View source code on GitHub",
@@ -91,22 +91,11 @@ const translations = {
       "• Strengthening branding skills to complement technical execution.",
 
     jgsSummaryContent:
-      "Just Good Stuff is a fictional online clothing store I built as my final bootcamp project. The goal was to create a realistic web app that could also be presented to a development agency in Argentina, showcasing both frontend skills and integration with external services.",
+      "Just Good Stuff is a website clothing store I built as my final bootcamp project. The goal was to create a realistic web app that could also be presented to a development agency in Argentina, showcasing both frontend skills and integration with external services.",
     jgsGoalContent:
-      "The main challenge was to build a modern, fast, and responsive online store that features:",
-    jgsGoalContent_a: "A dynamic product catalog",
-    jgsGoalContent_b: "Shopping cart functionality",
-    jgsGoalContent_c: "Category filters",
-    jgsGoalContent_d: " A smooth, reload-free user experience",
+      "The main challenge was to create a modern, fast, and responsive online store. The project features a dynamic product catalog, shopping cart functionality, category filters, and a smooth, reload-free user experience.",
 
-    jgsRoleContent: "I developed the entire project from scratch",
-    jgsRoleContent_a: "Designed the UI/UX",
-    jgsRoleContent_b: "Built responsive and semantic layout",
-    jgsRoleContent_c:
-      "Implemented dynamic routing (/item/:itemId,/category/:categoryId)",
-    jgsRoleContent_d: "Developed global cart logic using Context API",
-    jgsGoalContent_e:
-      "Integrated Firebase for order storage and checkout functionality",
+    jgsRoleContent: "I developed the entire project from scratch with UI/UX design and ReactJS Development. I implemented dynamic routing (/item/:itemId,/category/:categoryId). I also developed the global cart logic using Context API and integrated Firebase for order storage and checkout functionality.",
 
     jgsChallengeContent:
       "The main challenge was keeping dynamic routing for categories and product pages fully in sync while maintaining a consistent global cart state. I solved this using React Router for dynamic routes and Context API for state management I also implemented a checkout system that stores each order in Firebase with a unique ID.",
@@ -201,8 +190,8 @@ const translations = {
 
     aboutMeTitle: "UNA BREVE HISTORIA SOBRE MI",
     aboutMePhotoComment: "Sí, soy yo el de la foto, pero solo estoy posando. Desafortunadamente no tengo ningún barco.",
-    aboutMeContentSubtitle: "TE CUENTO UNA MUY BREVE HISTORIA SOBRE MI",
-    aboutMeContentText1: "Me llamo Ariel Sanchez, aunque la gente me conoce como Ari. Soy Diseñador web con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir. Me apasiona lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
+    aboutMeContentSubtitle: "¿QUIÉN SOY?",
+    aboutMeContentText1: "Me llamo Ariel Sanchez, aunque la gente me conoce como Ari. Soy Visual Designer con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir. Me apasiona lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
     aboutMeContentText2:"¿QUÉ ES LO QUE HAGO?",
     aboutMeContentText4:"Diseño cosas. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado, aunque no todo es posible; a veces hay que decir que no, ¡los milagros no existen! Pero no te preocupes, lo intentaré de todas formas.",
     
@@ -213,13 +202,13 @@ const translations = {
     aboutMeContentText10:"Siempre estoy buscando oportunidades para crecer, colaborar con equipos inspiradores y crear productos que marquen la diferencia.",
     aboutMeContentText11:"¿HABLAMOS?",
 
-    ProjectsTitle: "SITIOS WEBS",
+    ProjectsTitle: "PROYECTOS",
     ProjectsTitle2: "PROYECTOS UX UI",
 
     contactMeText: "Actualmente estoy disponible para trabajos freelance u oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
     contactMeButton: "Contáctame",
 
-    OpenProject: "→ Ver Proyecto completo",
+    OpenProject: "→ Ver Caso de Estudio",
     OpenPrototype: "→ Ver Prototipo",
     OpenReel: "→ Ver Reel",
     OpenGitHub: "→ Ver el código en GitHub",
@@ -273,23 +262,11 @@ const translations = {
       "• Fortalecimiento de las habilidades de marca para complementar la ejecución técnica.",
 
     jgsSummaryContent:
-      "JustGoodStuff es una tienda de productos online ficticia que construí como proyecto final del bootcamp. El objetivo era crear una aplicación web realista que también pudiera ser presentada a una agencia de desarrollo en Argentina, mostrando tanto las habilidades de front end, así como la integración con servicios externos.",
+      "JustGoodStuff es una tienda de productos online que construí como proyecto final del bootcamp. El objetivo era crear una aplicación web realista que también pudiera ser presentada a una agencia de desarrollo en Argentina, mostrando tanto las habilidades de front end, así como la integración con servicios externos.",
     jgsGoalContent:
-      "El principal reto consistía en crear una tienda online moderna, rápida y con capacidad de respuesta:",
-    jgsGoalContent_a: "Un catálogo de productos dinámico",
-    jgsGoalContent_b: "Funcionalidad de carrito de compras",
-    jgsGoalContent_c: "Filtros de categorías",
-    jgsGoalContent_d: "Una experiencia de usuario fluida y sin recargas",
+      "El principal reto consistía en crear una tienda online moderna, rápida y con capacidad de respuesta. El proyecto cuenta con un catálogo de productos dinámico, funcionalidad de carrito de compras, filtros de categorías y una experiencia de usuario fluida y sin recargas.",
 
-    jgsRoleContent: "He desarrollado todo el proyecto desde cero:",
-    jgsRoleContent_a: "Diseño completo de UI/UX",
-    jgsRoleContent_b: "Diseño responsive",
-    jgsRoleContent_c:
-      "He implementado el enrutamiento dinámico (/item/:itemId,/category/:categoryId)",
-    jgsRoleContent_d:
-      "He desarrollado la lógica global del carrito utilizando Context API",
-    jgsGoalContent_e:
-      "He integrado Firebase para el almacenamiento de pedidos y la funcionalidad de pago",
+    jgsRoleContent: "He desarrollado todo el proyecto desde cero con diseño UI/UX y Desarrollo con ReactJS. He implementado el enrutamiento dinámico (/item/:itemId,/category/:categoryId). También he desarrollado la lógica global del carrito utilizando Context API e integrado Firebase para el almacenamiento de pedidos y la funcionalidad de pago.",
 
     jgsChallengeContent:
       "El principal reto fue mantener el enrutamiento dinámico de categorías y páginas de producto completamente sincronizado, a la vez que se mantenía un estado global del carrito consistente. Lo resolví usando React Router para rutas dinámicas y la API de contexto para la gestión del estado. También implementé un sistema de pago que almacena cada pedido en Firebase con un ID único.",
@@ -377,6 +354,7 @@ const translations = {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+   
 
   // const slider = document.querySelector('.card-inner');
 

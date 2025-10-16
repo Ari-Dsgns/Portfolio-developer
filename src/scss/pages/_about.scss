@@ -12,6 +12,7 @@
   margin-top: 0px;
   border:none;
   width: 100%;
+  padding: 40px;
   height: 100%;
   z-index: 3;
   border: solid white 0px;
@@ -21,6 +22,11 @@
   // border-left: solid 1px $button-petrol;
   // border-right: solid 1px $button-petrol;
   background-color: $backgroundColor-day;
+  
+  
+  
+  
+  
 
   
 
@@ -29,11 +35,12 @@
     font-family: "NeueMetanaNext", system-ui;
     font-weight: 400;
     color: $button-petrol;
+   
     font-size: 30px;
     padding-top: 40px;
     margin-bottom: 40px;
     @include respond($breakpoint-sm) {
-      font-size: 18px;
+      font-size: 22px;
       margin-top: 0px;
       text-align: center;
     }
@@ -58,6 +65,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 10px;
   align-items: start;
   align-self: self-start;
   border-radius: 8px;
@@ -84,8 +92,13 @@
   object-fit: cover;
   border-radius: 6px;
   border: solid 0px $button-petrol-light2;
+  box-shadow: 0px 0px 20px rgba(94, 94, 94, 0.579);
   
-  
+  @include respond($breakpoint-mobile-l) {
+    width: 100%;
+    height: 160px;
+    
+  }
 }
 
 
@@ -108,26 +121,7 @@
 
 
   
-  h1{
-    text-align: center;
-    font-family: "Boldonse", system-ui;
-    font-family: 'Montserrat', sans-serif;
-    font-family: "NeueMetanaNext", system-ui;
-     
-    color: $fontColorBlue;
-    font-size: 30px;
-    
-    @include respond($breakpoint-sm) {
-      font-size: 20px;
-    }
-    @include respond($breakpoint-mobile-l) {
-      font-size: 18px;
-      padding: 6px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    
-  }
+  
   
   h2{
     font-family: "Boldonse", system-ui;
@@ -159,6 +153,7 @@
     font-size: 16px;
     font-weight: 500;
     color: $button-petrol;
+   
     padding: 0px;
     @include respond($breakpoint-mobile-l) {
       font-size: 16px;
@@ -185,7 +180,3 @@
     }
   
 }
-
-
-
-
