@@ -66,30 +66,25 @@
       </div>
     </div>
 
-    
+    <main id="main-content">
 
     <div class="main-container" id="main">
 
-      
-      
-      
 
-      <div class="sideBar">
-
-        <div class="language-box">
-          <button id="lang-en" aria-label="English">EN</button>
-          <button id="lang-es" aria-label="Español ">ES</button>
+      <nav class="sideBar" aria-label="Main navigation">
+         <div class="language-box" role="group" aria-label="Language selector">
+          <button id="lang-en" aria-label="Change language to English">EN</button>
+          <button id="lang-es" aria-label="Cambiar idioma a Español">ES</button>
         </div>
-
-        <a data-i18n="projectTag" href="#projects">PROJECTS</a>
-        <a data-i18n="aboutTag" href="#about">ABOUT</a>
-        <a data-i18n="contactTag" href="#contact">CONTACT</a>
-
-        <div class="home-button-container">
-          <a data-i18n="homeBtn" href="#home" class="home-btn" id="home-btn" aria-label="Home">HOME</a>
+        <div role="list" class="nav-links">
+          <a role="listitem" data-i18n="projectTag" href="#projects">PROJECTS</a>
+          <a role="listitem" data-i18n="aboutTag" href="#about">ABOUT</a>
+          <a role="listitem" data-i18n="contactTag" href="#contact">CONTACT</a>
         </div>
-        
-      </div>
+        <div class="home-button-container" role="navigation" aria-label="Home link">
+          <a data-i18n="homeBtn" href="#home" class="home-btn" id="home-btn" aria-current="page">HOME</a>
+        </div>
+      </nav>
 
       <div class="container">
 
@@ -98,8 +93,8 @@
               <div class="portfolio__text">
                 <p data-i18n="homeGreeting"></p>
                 <h1>VISUAL DESIGNER</h1>
-                <h3>FRONTEND DEVELOPER</h3>
-                <h2>UX UI DESIGNER</h2>
+                <h1>FRONTEND DEVELOPER</h1>
+                <h1>UX UI DESIGNER</h1>
                 <p data-i18n="homeWelcome"></p>
               </div> 
               <a data-i18n="viewProjectsBtn" href="#projects" id="viewProjectsBtn"></a>
@@ -253,12 +248,13 @@
               <div class="card" id="card2" type="button" aria-label="Go to Readmeapp project" data-project="/assets/img/readme.jpg">
                 <div class="card-title">
                   <div>
-                    <h2>READMEAPP</h2>
+                    <h2>READMEAPP | CASE STUDY</h2>
                     <h3>A smart reading app</h3>
                     <p>UX/UI Design Case Study</p>
+                    
                   </div>
                   <div>
-                    <button href="#" class="openProject" data-i18n="OpenProject"></button>
+                    <button href="#readmeapp" class="openProject" data-i18n="OpenProject" ></button>
                     <a href="https://www.figma.com/proto/3mXHk1YH5g0bJ1g0uYkK7M/Readmeapp?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.11&scaling=scale-down&starting-point-node-id=2%3A2" target="_blank" data-i18n="OpenPrototype"></a>
                   </div>
                 </div>
@@ -282,8 +278,10 @@
                     <p data-i18n="readmeappGoalContent">
                     </p>
                     <h3>
-                      <i class="bi bi-person-workspace"></i>
-                      <span data-i18n="RoleTitle"></span>
+                      <strong>
+                        <i class="bi bi-person-workspace"></i>
+                        <span data-i18n="RoleTitle"></span>
+                      </strong>
                     </h3>
                     <p data-i18n="readmeappRoleContent">
                     </p>
@@ -296,7 +294,7 @@
                 <div>
                   <div class="card-title">
                     <div>
-                      <h2>DESTINEA</h2>
+                      <h2>DESTINEA | WEBSITE</h2>
                       <h3>A travel booking platform</h3>
                       <p>Design & Development</p>
                     </div>
@@ -352,7 +350,7 @@
                 <div>
                   <div class="card-title">
                     <div>
-                      <h2>TU VINILO</h2>
+                      <h2>TU VINILO | WEBSITE</h2>
                       <h3>A React-based eCommerce</h3>
                       <p>Design & Development</p>
                     </div>
@@ -394,7 +392,7 @@
                 <div>
                   <div class="card-title">
                     <div>
-                      <h2>JUST GOOD STUFF | CASE STUDY</h2>
+                      <h2>JUST GOOD STUFF | WEBSITE</h2>
                       <h3>A modern eCommerce platform</h3>
                       <p>Design & Development</p>
                     </div>
@@ -435,7 +433,7 @@
               </div>
 
               <div class="card" id="card6" type="button" aria-label="Go to Saffvision project">
-                <h2>SAFFVISION</h2>
+                <h2>SAFFVISION | PORTFOLIO DESIGN | WEBSITE</h2>
                 <h3>A portfolio website</h3>
                 <p>UX/UI Design & prototype</p>
                 <div class="card-inner">
@@ -520,15 +518,17 @@
     </div>
 
     <div id="projectModal" class="modal">
-      <button class="close">&times;</button>
+      <button class="close" aria-label="close">&times;</button>
       <div class="modal-body">
         <img id="modalImg" src="" alt="Proyecto completo">
       </div>
     </div>
 
-    
+    </main>
 
     
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <script src="./index.js" defer></script> 

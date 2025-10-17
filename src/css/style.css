@@ -904,7 +904,7 @@ body {
     height: 4em;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     gap: 4px;
     align-items: center;
     align-content: center;
@@ -921,6 +921,28 @@ body {
   .sideBar a {
     font-size: 12px;
     padding: 6px;
+  }
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 80px;
+}
+.nav-links a {
+  transform: rotate(90deg);
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .nav-links a {
+    transform: rotate(0deg);
   }
 }
 
@@ -1270,25 +1292,24 @@ body {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.771);
   justify-content: start;
+  border-radius: 12px;
+  perspective: 1000px;
+  padding-top: 20px;
   gap: 10px;
-}
-.card-text h2 {
-  font-family: "montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 28px;
-  color: #6958ff;
 }
 .card-text h3 {
   font-family: "montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
-  color: #6958ff;
+  color: black;
 }
 .card-text p {
   font-family: "montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 14px;
+  color: black;
 }
 .card-text a {
   text-decoration: none;
@@ -1308,11 +1329,13 @@ body {
 }
 @media (max-width: 1024px) {
   .card-text {
+    width: 300px;
     height: 350px;
   }
 }
 @media (max-width: 480px) {
   .card-text {
+    width: 250px;
     height: 300px;
   }
 }
@@ -1335,6 +1358,10 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: start;
+}
+.card-title img {
+  width: 120px;
+  height: auto;
 }
 .card-title button, .card-title a {
   background-color: #333E4D;
@@ -2090,7 +2117,7 @@ body {
 .work-container h1 {
   font-family: "boldonse", system-ui;
   font-family: "NeueMetanaNext", system-ui;
-  margin-bottom: 20px;
+  padding-bottom: 100px;
   color: #a5b2c4;
   font-size: 40px;
   font-weight: 600;

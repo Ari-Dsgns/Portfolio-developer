@@ -130,11 +130,11 @@ const translations = {
 
 
     selvatikaSummaryContent:
-      "Selvatika is a fictional eCommerce website dedicated to selling eco-friendly products. The design focuses on a clean and modern aesthetic, emphasizing sustainability and nature. The site features a user-friendly interface with easy navigation, product filtering, and a seamless checkout process. The color palette is inspired by natural tones, creating a calming and inviting atmosphere for users.",
+      "Selvatika is a travel agency specializing in immersive jungle experiences around the world. Its purpose is to connect travelers with biodiversity and local cultures, promoting sustainable tourism and respect for the environment. The brand combines adventure, authenticity, and ecological awareness with a visual identity that conveys mystery and natural exuberance.",
     selvatikaGoalContent:
-      "The main goal was to create an eCommerce platform that not only showcases eco-friendly products but also provides an enjoyable shopping experience. This involved implementing intuitive navigation, effective product filtering, and a streamlined checkout process.",
+      "Design an identity and digital experience that reflects the essence of the brand —the connection between humans and nature—, generating attraction and conversion through a modern, immersive aesthetic consistent with Selvatika's ecological values.",
     selvatikaRoleContent:
-      "I was responsible for the entire design and development process, from creating the initial wireframes to implementing the final design using HTML, CSS, and JavaScript. The focus was on ensuring a responsive layout that works well on both desktop and mobile devices.",
+      "I was responsible for the entire design process, from creating the logo and visual identity, UX/UI design of the home web in Figma with a focus on conversion and visual storytelling, Design and visual direction of the promotional reel for social media, integrating text, rhythm, and immersive sound ambiance.",
     
     readmeappSubtitle: "A fast and enjoyable app for reading- Case study",
     readmeappSummaryContent:
@@ -142,7 +142,7 @@ const translations = {
     readmeappGoalContent:
       "The goal was to create an accessible and dynamic experience to encourage reading in users with little time. The project was developed applying the Design Thinking methodology, implementing a design system based on its 5 phases.",
     readmeappRoleContent:
-      "I was responsible for the entire design and development process, from creating the initial wireframes to implementing the final design using HTML, CSS, and JavaScript. The focus was on ensuring a responsive layout that works well on both desktop and mobile devices.",
+      "I was responsible for the entire design and development process, from creating the initial wireframes to implementing the final prototype. The focus was on ensuring a responsive layout that works well on both desktop and mobile devices.",
     
 
     saffvisionSubtitle:
@@ -301,13 +301,13 @@ const translations = {
 
 
     selvatikaSummaryContent:
-      "Selvatika es un sitio web de eCommerce ficticio dedicado a la venta de productos ecológicos. El diseño se centra en una estética limpia y moderna, enfatizando la sostenibilidad y la naturaleza. El sitio cuenta con una interfaz fácil de usar con navegación sencilla, filtrado de productos y un proceso de pago sin complicaciones. La paleta de colores está inspirada en tonos naturales, creando una atmósfera tranquila y acogedora para los usuarios.",
+      "Selvatika es una agencia de viajes especializada en experiencias inmersivas en selvas de todo el mundo. Su propósito es conectar a los viajeros con la biodiversidad y las culturas locales, promoviendo el turismo sostenible y el respeto por el medio ambiente. La marca combina aventura, autenticidad y conciencia ecológica con una identidad visual que transmite misterio y exuberancia natural.",
     
     selvatikaGoalContent:
-      "El objetivo principal era crear una plataforma de eCommerce que no solo mostrara productos ecológicos, sino que también proporcionara una experiencia de compra agradable. Esto implicó implementar una navegación intuitiva, un filtrado de productos efectivo y un proceso de pago simplificado.",
+      "Diseñar una identidad y experiencia digital que refleje la esencia de la marca —la conexión entre el ser humano y la naturaleza—, generando atracción y conversión a través de una estética moderna, envolvente y coherente con los valores ecológicos de Selvatika.",
 
     selvatikaRoleContent:
-      "Fui responsable de todo el proceso de diseño y desarrollo, desde la creación de los wireframes iniciales hasta la implementación del diseño final utilizando HTML, CSS y JavaScript. El enfoque estaba en garantizar un diseño receptivo que funcionara bien tanto en dispositivos de escritorio como móviles.",
+      "Fui responsable de todo el proceso de diseño, desde la creación del logotipo e identidad visual, Diseño UX/UI de la home web en Figma con enfoque en conversión y storytelling visual, Diseño y dirección visual del reel promocional para redes, integrando texto, ritmo y ambientación sonora inmersiva.",
 
     readmeappSubtitle:
       "Una aplicación rápida y divertida para leer -Caso de estudio",

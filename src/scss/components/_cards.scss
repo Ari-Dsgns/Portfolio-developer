@@ -4,7 +4,6 @@
   width:100%;
   height: auto;
   
-
   padding: 10px;
   img{
     width:1200px;
@@ -78,6 +77,11 @@
          /* scroll en eje Y */
     height: auto;        /* altura fija para scroll vertical */
   }
+
+  
+
+  
+  
  
 }
 
@@ -95,32 +99,31 @@
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  
+  background-color: rgba(255, 255, 255, 0.771);
   justify-content: start;
+  border-radius: 12px;
+  perspective: 1000px;
+  padding-top: 20px;
   
   
-  
+
   gap: 10px;
   
   
   
-  h2{
-    font-family: "montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    color: $fontColorBlue;
-  }
+  
   h3{
     font-family: "montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
-    color: $fontColorBlue;
+    color: black
+
   }
   p{
     font-family: "montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 14px;
-    
+    color: black;
   }
   a{
     text-decoration: none;
@@ -144,11 +147,14 @@
   }
 
   @include respond($breakpoint-md) {
+    width: 300px;
     height: 350px;
   }
   @include respond($breakpoint-mobile-l) {
+    width: 250px;
     height: 300px;
   }
+  
 }
 .card-text::-webkit-scrollbar{
   width: 0px;
@@ -174,6 +180,11 @@
   flex-direction: column;
   gap: 20px;
   align-items: start;
+
+  img{
+    width: 120px;
+    height: auto;
+  }
   
   button,a{
     background-color: $button-petrol;
