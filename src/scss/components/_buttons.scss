@@ -137,6 +137,11 @@
     font-weight: 500;
     
   }
+  @include respond($breakpoint-mobile-s) {
+    font-size: 12px;
+    font-weight: 500;
+    
+  }
 }
 #lang-en.active,
 #lang-es.active {

@@ -29,13 +29,18 @@
     z-index: 2;
     width: auto;
     height: auto;
+
+    
+    overflow: hidden;
+
+
     --border-angle: 0turn; // For animation.
     --main-bg: conic-gradient(
         from var(--border-angle),
         #1a1919 ,
         #1a1919 95%
     );
-    border: solid 30px transparent;
+    border: solid 25px transparent;
     border-radius:1px;
     --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
     background: 

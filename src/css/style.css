@@ -671,11 +671,11 @@
 }
 @keyframes translateIn {
   0% {
-    transform: translateX(-100px);
+    transform: translateY(100%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(-120%);
     opacity: 1;
   }
 }
@@ -923,6 +923,17 @@ body {
     padding: 6px;
   }
 }
+@media (max-width: 325px) {
+  .sideBar {
+    padding: 0px;
+    height: 50px;
+    gap: 2px;
+  }
+  .sideBar a {
+    font-size: 10px;
+    padding: 4px;
+  }
+}
 
 .nav-links {
   display: flex;
@@ -1165,6 +1176,13 @@ body {
     font-weight: 500;
   }
 }
+@media (max-width: 325px) {
+  #lang-en,
+  #lang-es {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
 
 #lang-en.active,
 #lang-es.active {
@@ -1310,22 +1328,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: black;
-}
-.card-text a {
-  text-decoration: none;
-  color: #FF6C58;
-  width: auto;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-family: "NeueMetanaNext", system-ui;
-  font-family: "Montserrat", sans-serif;
-  border: solid 0px #6958ff;
-}
-.card-text a:hover {
-  color: white;
-  border: solid 0px #333E4D;
 }
 @media (max-width: 1024px) {
   .card-text {
@@ -1548,11 +1550,12 @@ body {
   margin-top: 0px;
   border: none;
   width: 100%;
-  padding: 40px;
+  padding: 0px;
   height: 100%;
   z-index: 3;
   border: solid white 0px;
-  background-color: #f2f2f2;
+  padding: 10px;
+  background-color: #1a1919;
 }
 .about-me-content h1 {
   font-family: "NeueMetanaNext", system-ui;
@@ -1574,6 +1577,15 @@ body {
     width: 100%;
     padding: 10px;
   }
+}
+
+.about-me-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0px 0px 20px rgba(94, 94, 94, 0.579);
 }
 
 .about-me-image-wrapper {
@@ -1650,7 +1662,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #333E4D;
+  color: #828FA2;
   padding: 0px;
 }
 @media (max-width: 480px) {
@@ -1827,13 +1839,14 @@ body {
   z-index: 2;
   width: auto;
   height: auto;
+  overflow: hidden;
   --border-angle: 0turn;
   --main-bg: conic-gradient(
       from var(--border-angle),
       #1a1919 ,
       #1a1919 95%
   );
-  border: solid 30px transparent;
+  border: solid 25px transparent;
   border-radius: 1px;
   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
   background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;

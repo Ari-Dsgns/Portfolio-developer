@@ -12,16 +12,17 @@
   margin-top: 0px;
   border:none;
   width: 100%;
-  padding: 40px;
+  padding: 0px;
   height: 100%;
   z-index: 3;
   border: solid white 0px;
+  padding: 10px;
   
   // border-bottom: solid 1px $button-petrol;
   // border-bottom: solid 1px $button-petrol;
   // border-left: solid 1px $button-petrol;
   // border-right: solid 1px $button-petrol;
-  background-color: $backgroundColor-day;
+  background-color: $backgroundColor;
   
   
   
@@ -59,6 +60,16 @@
   
   
   
+}
+
+.about-me-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0px 0px 20px rgba(94, 94, 94, 0.579);
 }
 
 .about-me-image-wrapper{
@@ -152,7 +163,7 @@
 
     font-size: 16px;
     font-weight: 500;
-    color: $button-petrol;
+    color: $button-petrol-light;
    
     padding: 0px;
     @include respond($breakpoint-mobile-l) {
