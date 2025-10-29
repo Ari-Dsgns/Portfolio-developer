@@ -987,18 +987,6 @@
   gap: 2px;
   z-index: 999;
   background-color: #F76C5E;
-  backdrop-filter: blur(10px);
-}
-@media (max-width: 1024px) {
-  .language-box {
-    width: 0;
-    height: 0;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    border: solid 0px white;
-    gap: 4px;
-  }
 }
 
 #lang-en,
@@ -1007,17 +995,19 @@
   display: flex;
   border: none;
   background: transparent;
-  font-size: 16px;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
+  color: white;
   align-items: center;
-  padding: 8px;
-  opacity: 0.3;
-  border-radius: 30%;
+  padding: 6px;
+  opacity: 0.5;
+  transition: 0.1s ease-in-out;
 }
 #lang-en:hover,
 #lang-es:hover {
   opacity: 1;
+  color: white;
+  transform: scale(1.1);
 }
 @media (max-width: 480px) {
   #lang-en,
@@ -1026,21 +1016,13 @@
     font-weight: 500;
   }
 }
-@media (max-width: 325px) {
-  #lang-en,
-  #lang-es {
-    font-size: 12px;
-    font-weight: 500;
-  }
-}
 
 #lang-en.active,
 #lang-es.active {
   color: #333E4D;
-  color: rgb(207, 219, 213);
+  color: white;
   font-weight: 500;
   opacity: 1;
-  transform: scale(1.1);
 }
 
 .menu-toggle {
@@ -1098,7 +1080,7 @@
     gap: 40px;
     padding: 20px;
     width: 100dvw;
-    height: 100dvh;
+    min-height: 100dvh;
     transition: transform 0.3s ease;
     transform: translateX(100%);
     box-shadow: -2px 2px 8px rgba(0, 0, 0, 0);
@@ -1137,12 +1119,12 @@
 .footer {
   width: 100%;
   height: 5%;
-  transition: transform 0.8s ease-in-out;
+  color: rgb(36, 36, 35);
   background-color: transparent;
 }
 .footer p {
   font-size: 18px;
-  color: #333E4D;
+  color: rgb(36, 36, 35);
 }
 
 html {
@@ -1956,7 +1938,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   border-radius: 4px;
-  color: #333E4D;
+  color: white;
   padding: 10px;
   border: none;
   background-color: #F76C5E;
