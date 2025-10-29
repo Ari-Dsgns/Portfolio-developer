@@ -7,46 +7,46 @@
 const translations = {
   en: {
 
-    homeGreeting: "HEY! I'M ARI",
-    homeWelcome: "I DESIGN WITH STRATEGY, I BUILD SMART DIGITAL EXPERIENCES.",
-    viewProjectsBtn: "GO TO MY PROJECTS",
+    homeGreeting: "Hello! I'm Ari",
+    homeWelcome: "I design with strategy. I build smart digital experiences.",
+    homeGreetingHead: "I'm a Visual Designer with a focus on UX/UI and Front-End Developer based in Madrid.",
+    viewProjectsBtn: "VIEW MY WORK",
 
-    homeBtn: "HOME",
-    projectTag: "PROJECTS",
-    aboutTag: "ABOUT",
-    contactTag: "CONTACT",
+    homeBtn: "Ari's Portfolio",
+    projectTag: "Work",
+    aboutTag: "About",
+    contactTag: "Contact",
 
-    aboutMeTitle: "A SHORT STORY ABOUT ME",
+    aboutMeTitle: "2. About",
 
     aboutMePhotoComment: "Yes, that's me in the photo. Just posing. Unfortunately, I don't have a boat yet.",
     aboutMeContentSubtitle: "WHO AM I?",
-    aboutMeContentText1:"My name is Ariel Sanchez, but people know me as Ari. I'm a Visual Designer with a focus on UXUI and a Front-End Developer. I was born and raised in Buenos Aires. I've lived in many places like Granada, London, or Madrid, where I finally decided to settle down. I'm passionate about the different and the challenging. Inside me coexist two essences seeking balance: a disruptive soul under a structured mind.",
+    aboutMeContentText1:"My name is Ariel Sánchez, but people know me as Ari. I'm a Visual Designer with a focus on UXUI and a Front-End Developer. I was born and raised in Buenos Aires. I've lived in many places like Granada, London, or Madrid, where I finally decided to settle down. I'm passionate about the different and the challenging. Inside me coexist two essences seeking balance: a disruptive soul under a structured mind.",
     aboutMeContentText2:"WHAT DO I DO?",
-    aboutMeContentText4:"I Design things. I transform original ideas into functional and attractive websites with a lot of dedication and care, although not everything is possible; sometimes you have to say no, miracles do not exist! But no worries, I'll try anyway",
+    aboutMeContentText4:"I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
     aboutMeContentText6:"WHAT MOTIVATES ME?",
     aboutMeContentText7:"For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe that a design is never completely finished because adaptation is never complete; it must grow and transform alongside those who use it. In a way, artificial intelligence reflects that same essence: it learns, transforms, and redefines itself with each interaction, as if it had its own life cycle. Just as AI evolves from experience, design must also be nurtured by time, people, and the changes that surround it. A clear example of this constant evolution is the Peugeot logo, which has changed over the years without losing its identity, demonstrating that the essence can be maintained even when the form is renewed. What do you think?",
     aboutMeContentText8:"HOW DID I END UP HERE?",
-    aboutMeContentText9:"Over the years, I've found a unique balance between design and development, where creativity and logic converge. It's in that middle ground where I feel most comfortable, turning ideas into engaging and functional experiences for users.",
+    aboutMeContentText9:"I love art in all its forms, from painting to music, cinema, and photography. Over the years, I've found a unique balance between design and development, where creativity and logic converge. It's at that intersection where I feel most comfortable, turning ideas into engaging and functional experiences for users.",
     aboutMeContentText10:"I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.",
     aboutMeContentText11:"SHALL WE GET IN TOUCH?",
 
-    ProjectsTitle: "PROJECTS",
-    ProjectsTitle2: "UX UI Projects",
+    ProjectsTitle: "1. Work",
+    ProjectsTitle2: "Projects",
 
-
+    contactTitle: "3. Contact",
     contactMeText: "I'm currently available for freelance work or full-time opportunities. Whether you have a project in mind or just want to say hello, feel free to reach out. I look forward to connecting with you!",
     contactMeButton: "Contact Me",
 
-    OpenProject: "→  View Case Study",
-    OpenPrototype: "→ View Prototype",
-    OpenReel: "→ Watch Reel",
-    OpenGitHub: "→ View source code on GitHub",
-    OpenDemo: "→ View Live Demo",
+    OpenProject: "→  VIEW CASE STUDY",
+    OpenPrototype: "→  VIEW PROTOTYPE",
+    OpenReel: "→  WATCH REEL",
+    OpenGitHub: "→  VIEW SOURCE CODE ON GITHUB",
+    OpenDemo: "→  VIEW LIVE DEMO",
 
     jgsSubtitle:
       "A React-based minimalist eCommerce built from scratch using Firebase & Context API",
-    jgsLinkGitHub: "View source code → GitHub",
-    jgsLinkDemo: "Live Demo",
+    
 
     SummaryTitle: "Summary:",
     GoalTitle: "Proyect goal:",
@@ -178,41 +178,43 @@ const translations = {
   },
 
   es: {
-    homeGreeting: "¡HOLA! SOY ARI",
-    homeWelcome: "DISEÑO CON ESTRATEGIA, CONSTRUYO EXPERIENCIAS DIGITALES INTELIGENTES.",
+    homeGreeting: "¡Hola! Soy Ari",
+    homeWelcome: "Diseño con estrategia. Construyo experiencias digitales inteligentes.",
+    homeGreetingHead: "Soy Visual Designer con enfoque en UX/UI y Front End Developer en Madrid.",
 
-    viewProjectsBtn: "VER MIS PROYECTOS",
+    viewProjectsBtn: "VER MI TRABAJO",
 
-    homeBtn: "INICIO",
-    projectTag: "PROYECTOS",
-    aboutTag: "SOBRE MI",
-    contactTag: "CONTACTO",
+    homeBtn: "Ari's Portfolio",
+    projectTag: "Trabajo",
+    aboutTag: "Sobre mí",
+    contactTag: "Contacto",
 
-    aboutMeTitle: "UNA BREVE HISTORIA SOBRE MI",
+    aboutMeTitle: "2. Sobre mí",
     aboutMePhotoComment: "Sí, soy yo el de la foto, pero solo estoy posando. Desafortunadamente no tengo ningún barco.",
     aboutMeContentSubtitle: "¿QUIÉN SOY?",
-    aboutMeContentText1: "Me llamo Ariel Sanchez, aunque la gente me conoce como Ari. Soy Visual Designer con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir. Me apasiona lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
+    aboutMeContentText1: "Me llamo Ariel Sánchez, aunque la gente me conoce como Ari. Soy Visual Designer con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir. Me apasiona lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
     aboutMeContentText2:"¿QUÉ ES LO QUE HAGO?",
-    aboutMeContentText4:"Diseño cosas. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado, aunque no todo es posible; a veces hay que decir que no, ¡los milagros no existen! Pero no te preocupes, lo intentaré de todas formas.",
+    aboutMeContentText4:"Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
     
     aboutMeContentText6:"¿QUÉ ME MOTIVA?",
     aboutMeContentText7:"Para mí, los diseños son como seres vivos en la naturaleza: necesitan evolucionar y adaptarse a los entornos en los que existen. Creo que un diseño nunca está completamente terminado, porque la adaptación nunca lo está; debe crecer y transformarse junto a quienes lo utilizan. En cierto modo, la inteligencia artificial refleja esa misma esencia: aprende, se transforma y se redefine con cada interacción, como si tuviera su propio ciclo vital. Así como la IA evoluciona a partir de la experiencia, el diseño también debe nutrirse del tiempo, de las personas y de los cambios que lo rodean. Un ejemplo claro de esta evolución constante es el logotipo de Peugeot, que ha cambiado con los años sin perder su identidad, demostrando que la esencia puede mantenerse incluso cuando la forma se renueva. ¿Y tú qué opinas?",
     aboutMeContentText8:"¿CÓMO LLEGUÉ HASTA AQUÍ?",
-    aboutMeContentText9:"A lo largo de los años, he encontrado un equilibrio único entre el diseño y el desarrollo, donde la creatividad y la lógica convergen. Es en ese punto intermedio donde me siento más cómodo, convirtiendo ideas en experiencias atractivas y funcionales para los usuarios.",
+    aboutMeContentText9:"Me encanta el arte en todos sus formas, desde la pintura hasta la música, el cine y la fotografía. A lo largo de los años, he encontrado un equilibrio único entre el diseño y el desarrollo, donde la creatividad y la lógica convergen. Es en ese punto intermedio donde me siento más cómodo, convirtiendo ideas en experiencias atractivas y funcionales para los usuarios.",
     aboutMeContentText10:"Siempre estoy buscando oportunidades para crecer, colaborar con equipos inspiradores y crear productos que marquen la diferencia.",
     aboutMeContentText11:"¿HABLAMOS?",
 
-    ProjectsTitle: "PROYECTOS",
-    ProjectsTitle2: "PROYECTOS UX UI",
+    ProjectsTitle: "1. Trabajos",
+    ProjectsTitle2: "PROYECTOS",
 
+    contactTitle: "3. Contacto",
     contactMeText: "Actualmente estoy disponible para trabajos freelance u oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
     contactMeButton: "Contáctame",
 
-    OpenProject: "→ Ver Caso de Estudio",
-    OpenPrototype: "→ Ver Prototipo",
-    OpenReel: "→ Ver Reel",
-    OpenGitHub: "→ Ver el código en GitHub",
-    OpenDemo: "→ Ver Demo en Vivo",
+    OpenProject: "→ VER CASO DE ESTUDIO",
+    OpenPrototype: "→ VER PROTOTIPO",
+    OpenReel: "→ VER REEL",
+    OpenGitHub: "→ VER EL CÓDIGO EN GITHUB",
+    OpenDemo: "→ VER DEMO EN VIVO",
 
     jgsSubtitle:
       "Un eCommerce minimalista basado en React construido desde cero usando Firebase y Context API",
@@ -351,8 +353,29 @@ const translations = {
     BackToHome: "Volver al inicio",
   },
 };
+document.addEventListener("contextmenu", e => e.preventDefault());
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
+  let lastScrollTop = 0;
+
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScrollTop) {
+    // Scroll hacia abajo → ocultar navbar
+    navbar.classList.add('hide-navbar');
+  } else {
+    // Scroll hacia arriba → mostrar navbar
+    navbar.classList.remove('hide-navbar');
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // para evitar valores negativos
+});
+
 
    
 
@@ -371,11 +394,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
   const sections = document.querySelectorAll("#projects, #about, #contact, #home");
-  const navLinks = document.querySelectorAll(".sideBar a");
+  const navLinks = document.querySelectorAll(".nav-links a");
   const homeBtn= document.getElementById("home-btn");
+  const sideBar = document.querySelector(".sideBar");
+  
 
   
-  
+  const cardInner = document.querySelector('.card-inner');
 
   document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
@@ -386,16 +411,15 @@ document.addEventListener('DOMContentLoaded', () => {
       target.scrollIntoView({
         behavior: 'smooth',
         block: 'start', // centra verticalmente
-        
       });
-      
-      
+      cardInner.classList.add('animate');
+      setTimeout(() => {
+        cardInner.classList.remove('animate');
+      }, 150);
+
       }
-      
 
     });
-    
-    
   });
 
   const observer = new IntersectionObserver(
@@ -404,13 +428,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (entry.isIntersecting) {
           // quitar 'active' de todos
           navLinks.forEach((link) => link.classList.remove("active"));
-
           // marcar el que coincide con la sección visible
-          const activeLink = document.querySelector(`.sideBar a[href="#${entry.target.id}"]`);
+          const activeLink = document.querySelector(`.sideBar a[href="#${entry.target.id}"]`) || homeBtn;
           if (activeLink) {
             activeLink.classList.add("active");
-
-            
           }
         }
       });
@@ -421,11 +442,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   );
 
+  const portfolioText = document.querySelector('.portfolio__title');
+
   homeBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
+    portfolioText.classList.add('animate');
+    setTimeout(() => {
+      portfolioText.classList.remove('animate');
+    }, 150);
+    
   });
 
   sections.forEach((section) => observer.observe(section));
@@ -547,6 +575,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // Al cargar, aplicar el idioma guardado
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   changeLanguage(savedLang);
+
+  const menuToggle = document.querySelector('.menu-toggle');
+const navContainer = document.querySelector('.navlinks-container');
+const container = document.querySelector('.container');
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = navContainer.classList.toggle('open');
+  menuToggle.classList.toggle('active');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+  
+});
+
+// Cerrar menú al hacer click en un enlace
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navContainer.classList.remove('open');
+    menuToggle.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', "false");
+  });
+});
+
 
 
 

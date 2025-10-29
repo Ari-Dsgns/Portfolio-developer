@@ -3,21 +3,20 @@
   flex-direction: column;
   width:100%;
   height: auto;
+  border-bottom: solid 30px $platinum;
   
-  padding: 10px;
+  
+  padding: 0px;
+  
+  
   img{
-    width:1200px;
-    height: auto;
+    
+    height: 400px;
     flex-shrink: 0;
+    border: solid 0px black;
+   
 
-    @include respond($breakpoint-md) {
-      width: 900px;
-      height: 350px;
-    }
-    @include respond($breakpoint-mobile-l) {
-      width: 700px;
-      height: 300px;height: 300px;
-    }
+    
   }
    
   h2{
@@ -25,7 +24,7 @@
     font-weight: 400;
     font-size: 20px;
     padding-left: 10px;
-    color: $fontColorBlue;
+    color:#242423ff;
     text-align: start;
     @include respond($breakpoint-sm) {
       font-size: 18px;
@@ -35,7 +34,7 @@
     font-family: "NeueMetanaNext", system-ui;
     font-weight: 400;
     padding-left: 10px;
-    color: $button-petrol-light2;
+    color:#242423ff;
     font-size: 18px;
     
     text-align: start;
@@ -47,7 +46,7 @@
     font-family: "NeueMetanaNext", system-ui;
     font-weight: 300;
     padding-left: 10px;
-    color: $button-petrol-light2;
+    color:#242423ff;
     font-size: 14px;
    
     text-align: start;
@@ -55,19 +54,23 @@
       font-size: 14px;
     }
   }
+  @include respond($breakpoint-mobile-l) {
+    border-bottom: 12px $platinum solid;
+  }
 }
 
 .card-inner{
   display: flex;
-  
+  padding: 10px;
   gap: 20px;
   border: solid 0px white;
   margin-top: 20px;
-  animation: fadeIn 1.5s ease-in-out;
-  
+  animation:  fadeIn 1.5s ease-in-out;
+  border: solid 0px black;
   overflow-x: auto;     /* scroll en eje X */
   overflow-y: hidden;   /* ocultar vertical */
   scroll-behavior: smooth;
+  border: solid 0px black;
 
   /* ocultar scrollbar (opcional) */
   -ms-overflow-style: none;  /* IE/Edge */
@@ -92,24 +95,28 @@
 
 
 .card-text{
-  width: 400px;
-  height: 500px;
-  padding: 10px;
+  width:650px;
+  height: 400px;
+  padding: 0px;
   overflow-y: scroll;
   position: relative;
   flex-shrink: 0;
   
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.771);
+  background-color: whitesmoke;
   justify-content: start;
-  border-radius: 12px;
-  justify-self: center;
+  
+  
+ 
+  border: solid 0px black;
   
   padding-top: 20px;
   gap: 10px;
 
-   
+  background-color: #f7f7f7fb;
+  background-color: transparent;
+ 
 
   // transform: rotateY(-30deg );
   // transform-style: preserve-3d;
@@ -121,26 +128,29 @@
   
   h3{
     font-family: "montserrat", sans-serif;
+    font-family: "inter", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    color: black
+    
+    font-size: 18px;
+    color: $miami;
 
   }
   p{
     font-family: "montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: black;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(26, 26, 26);
   }
   
 
   @include respond($breakpoint-md) {
-    width: 300px;
-    height: 350px;
+    width: 500px;
+    height: 450px;
   }
   @include respond($breakpoint-mobile-l) {
-    width: 250px;
-    height: 300px;
+    width: 450px;
+    height: 400px;
   }
   
 }
@@ -168,31 +178,71 @@
   flex-direction: column;
   gap: 20px;
   align-items: start;
-
-  img{
-    width: 120px;
-    height: auto;
+  position: relative;
+  left: 40px;
+  margin-top: 40px;
+  h2{
+    font-family: "Boldonse", system-ui;
+    font-family: "NeueMetanaNext", system-ui;
+    font-size: 18px;
+    font-weight: 700;
+    color: $button-petrol;
+  }
+  h3{
+    font-family: "inter", system-ui;
+    font-size: 18px;
+    font-weight: 500;
+    color: $button-petrol;
+  }
+  p{
+    font-family: "inter", system-ui;
+    font-size: 16px;
+    font-weight: 400;
+    color: $button-petrol;
   }
   
   button,a{
-    background-color: $button-petrol;
+    background-color:rgb(175, 175, 175);
+    background-color:$petrol;
     border: none;
-    color: white;
+    color:white;
     padding: 10px 20px;
+    border-radius: 15%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 4px;
+    
     font-family: "NeueMetanaNext", system-ui;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: all 0s ease-in-out;
     &:hover {
-      background-color: darken($button-petrol, 10%);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+      
+      background: darken($petrol, 10%);
+      
+      
+    }
+  }
+  @include respond($breakpoint-sm) {
+    left: 20px;
+    margin-top: 20px;
+    gap: 10px;
+    h2{
+      font-size: 16px;
+    }
+    h3{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+    }
+    button,a{
+      font-size: 14px;
+      padding: 8px 16px;
     }
   }
 }
@@ -202,6 +252,7 @@
 .section-animate {
   animation: translateIn 0.8s ease-out forwards;
 }
+
 
 
 

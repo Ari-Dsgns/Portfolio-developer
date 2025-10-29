@@ -7,39 +7,64 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  
-  background-color: $backgroundColor;
+
+  background-color: $alabaster;
   z-index: 1;
 
 
-  border: solid white 0px;
+  border-left: solid 30px $platinum;
+  border-right: solid 30px transparent;
+  
+  
+  
+  
+
+
+  // --border-angle: 0turn; // For animation.
+  //   --main-bg: conic-gradient(
+  //       from var(--border-angle),
+  //       #f2f2f2 ,
+  //       #f2f2f2 95%
+  //   );
+  //   border-top: solid 0px transparent;
+  //   border-bottom: solid 0px transparent;
+  //   border-left: solid 0px transparent;
+  //   border-right: solid 20px transparent;
+  //   border-radius:1px;
+  //   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
+  //   background: 
+  //     // padding-box clip this background in to the overall element except the border.
+  //     var(--main-bg) padding-box,
+  //     // border-box extends this background to the border space
+  //     var(--gradient-border) border-box, 
+  //     // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+  //     var(--main-bg) border-box;
+  //   background-position: center center;
+  //   animation: bg-spin 20s linear infinite;
 
   h1{
+    font-family: "inter", sans-serif;
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-top: 80px;
     
-    
-    font-family: "boldonse", system-ui;
-    font-family: "NeueMetanaNext", system-ui;
-    
-   padding-bottom: 100px;
-    color: $button-petrol-light2;
-    font-size: 40px;
-    font-weight: 600;
-    
-    
-    @include respond($breakpoint-sm) {
-      font-size: 22px;
-      margin: 0px;
-      text-align: start;
-    }
-    @include respond($breakpoint-mobile-l) {
-      
-      margin: 0px;
-      text-align: center;
-      
+    color: $button-petrol;
+    font-size: 22px;
+    font-weight: 400;
+
+    @include respond($breakpoint-md) {
+      padding-top: 60px;
+      font-size: 18px;
     }
   }
+  @include respond($breakpoint-mobile-l) {
+      border-left: 12px $platinum solid;
+      border-right: 12px transparent solid;
+    }
 
   
+  
+
   
 
 
@@ -57,17 +82,14 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  
-  gap: 100px;
+  margin-top: 40px;
+  gap: 40px;
   border: 0px solid $fontColor-petrol-light;
-  padding: 10px;
   
-  @include respond($breakpoint-xl) {
-    padding: 10px;
-    
-    width: 100%;
-    
-  }
+  padding: 0px;
+  
+  
+  
 }
 
 .cards-container::-webkit-scrollbar {

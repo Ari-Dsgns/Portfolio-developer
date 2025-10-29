@@ -7,11 +7,27 @@
   height:100%;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  
   gap: 40px;
-  margin-bottom: 4em;
-  border: solid white 0px;
-  background-color:$backgroundColor;
+  padding: 20px;
+  
+  border-left: 30px solid $platinum;
+  border-bottom: 30px solid $platinum;
+  background-color:$alabaster;
+  
+  h1{
+    font-family: "inter", sans-serif;
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-top: 20px;
+    color: $button-petrol;
+    font-size: 22px;
+    font-weight: 300;
+    @include respond($breakpoint-mobile-l) {
+      padding-right: 0;
+      font-size: 18px;
+    }
+  }
   p{
     color: $fontColor-petrol-light;
     font-weight: 500;
@@ -20,13 +36,18 @@
    
   }
 
+  @include respond($breakpoint-mobile-l) { 
+      border-left: 12px $platinum solid;
+      border-bottom: 12px $platinum solid;
+    }
+
  
   
 }
 .contact-card{
-  max-width: 600px;
+  width: 100%;
   height: auto;
-  
+  position: relative;
   margin-bottom: 0px;
   display: flex;
   flex-direction: column;
@@ -36,54 +57,58 @@
   overflow: hidden;
   text-align: center;
   padding: 40px;
-  background-color:transparent;
+  
+  
 
-   --border-angle: 0turn; // For animation.
-    --main-bg: conic-gradient(
-        from var(--border-angle),
-        #1a1919 ,
-        #1a1919 95%
-    );
   
-    border: solid 0px transparent;
-    border-radius:0;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
-    
-    background: 
-      // padding-box clip this background in to the overall element except the border.
-      var(--main-bg) padding-box,
-      // border-box extends this background to the border space
-      var(--gradient-border) border-box, 
-      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
-      var(--main-bg) border-box;
-    background-position: center center;
-    animation: bg-spin 8s linear infinite;
-  
-  h1,h2{
-    font-family: 'Montserrat', sans-serif;
-      color: $button-petrol-lighter;
+ 
+
+   
+  h2{
+    font-family: 'inter', sans-serif;
+      color: $button-petrol;
       font-size: 18px;
       font-weight: 400;
   }
   
   p{
-    color: $button-petrol-light2;
+    font-family: 'inter', sans-serif;
+    color: $button-petrol;
     font-weight: 300;
     font-size: 16px;
+    width: 40%;
+    @include respond($breakpoint-sm) {
+      width: 80%;
+    }
+    @include respond($breakpoint-mobile-l) {
+      
+      width: 90%;
+    }
    
    
   }
   a{
     
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 4px;
-    color: $fontColor-white;
-    padding: 15px;
+    color: $button-petrol;
+    padding: 10px;
     border: none;
-    background-color: $fontColorBlue;
+    background-color:$miami;
+    border-radius: 20%;
+  }
+
+  svg{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0px;
+    bottom: 0px;
+    
+    
   }
   @include respond($breakpoint-sm) {
     padding: 20px;
@@ -116,8 +141,8 @@
 
 #github{
   
-  font-size: 22px;
-  color: $button-petrol-lighter;
+  font-size: 28px;
+  color: rgb(11, 11, 11);
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -127,8 +152,8 @@
 
 #linkedin{
   
-  font-size: 22px;
-  color: $button-petrol-lighter;
+  font-size: 28px;
+  color: rgb(39, 118, 255);
   
   cursor: pointer;
   border: none;
