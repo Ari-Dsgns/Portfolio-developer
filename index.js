@@ -395,6 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const sections = document.querySelectorAll("#projects, #about, #contact, #home");
   const navLinks = document.querySelectorAll(".nav-links a");
+  
   const homeBtn= document.getElementById("home-btn");
   const sideBar = document.querySelector(".sideBar");
   
@@ -588,7 +589,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 // Cerrar menú al hacer click en un enlace
-document.querySelectorAll('.nav-links a').forEach(link => {
+document.querySelectorAll('.nav-links a, .home-btn').forEach(link => {
   link.addEventListener('click', () => {
     navContainer.classList.remove('open');
     menuToggle.classList.remove('active');

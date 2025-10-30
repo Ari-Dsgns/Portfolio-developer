@@ -76,12 +76,7 @@
   -ms-overflow-style: none;  /* IE/Edge */
   scrollbar-width: none;     /* Firefox */
 
-  @include respond($breakpoint-sm) {
-         /* scroll en eje Y */
-    height: auto;        /* altura fija para scroll vertical */
-  }
-
-  perspective: 800px; /* Añade perspectiva para el efecto 3D */
+ 
 
    
 

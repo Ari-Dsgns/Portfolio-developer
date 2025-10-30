@@ -1,4 +1,8 @@
-
+.navbar,
+.navlinks-container,
+.cards-container {
+  overflow-x: hidden;
+}
 
 
 .navbar{
@@ -70,7 +74,7 @@
 
 
 .home-btn{
-  
+  text-decoration: none;
   font-family: "inter", sans-serif;
   background-color: transparent;
   padding: 0px;
@@ -80,7 +84,7 @@
   border-radius: 25%;
   z-index: 9999;
   width:auto;
-  
+  align-self: center;
   text-align: center;
   border: none;
   font-size: 18px;
@@ -210,9 +214,9 @@
 /* Estado oculto por defecto en móvil */
 @include respond($breakpoint-sm) {
   .navlinks-container {
-    position: fixed;
+    position: absolute;
     top: 80px;
-    right: -10px;
+    right: 0px;
     flex-direction: column;
     justify-content: space-around;
     background-color: $alabaster;
