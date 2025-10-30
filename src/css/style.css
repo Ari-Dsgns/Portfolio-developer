@@ -988,7 +988,7 @@
   border: 0px rgba(255, 255, 255, 0.853) solid;
   gap: 2px;
   z-index: 999;
-  background-color: #F76C5E;
+  background-color: rgba(247, 107, 94, 0.8666666667);
 }
 
 #lang-en,
@@ -1461,7 +1461,7 @@ body {
 
 .card-text {
   width: 650px;
-  height: 320px;
+  height: 350px;
   padding: 0px;
   overflow-y: scroll;
   position: relative;
@@ -1549,7 +1549,7 @@ body {
   border: none;
   color: white;
   padding: 10px 20px;
-  border-radius: 15%;
+  border-radius: 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -1924,7 +1924,7 @@ body {
   padding: 10px;
   border: none;
   background-color: #F76C5E;
-  border-radius: 20%;
+  border-radius: 50px;
 }
 .contact-card svg {
   position: absolute;
@@ -2104,7 +2104,7 @@ body {
   transition: all 0.3s ease-in-out;
   font-family: "NeueMetanaNext", system-ui;
   font-family: "inter", sans-serif;
-  border-radius: 10%;
+  border-radius: 50px;
 }
 .portfolio__text a:hover {
   background: rgb(244.5857988166, 63.6390532544, 45.4142011834);

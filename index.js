@@ -10,7 +10,7 @@ const translations = {
     homeGreeting: "Hello! I'm Ari",
     homeWelcome: "I design with strategy. I build smart digital experiences.",
     homeGreetingHead: "I'm a Visual Designer with a focus on UX/UI and Front-End Developer based in Madrid.",
-    viewProjectsBtn: "VIEW MY WORK",
+    viewProjectsBtn: "View my work",
 
     homeBtn: "Ari's Portfolio",
     projectTag: "Work",
