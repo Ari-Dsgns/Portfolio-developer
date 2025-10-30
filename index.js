@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll(".nav-links a");
   
   const homeBtn= document.getElementById("home-btn");
-  const sideBar = document.querySelector(".sideBar");
+  
   
 
   
