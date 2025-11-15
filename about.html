@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio | Front-End Developer | Diseñador Web Freelance en Madrid</title>
+    <link rel="canonical" href="https://ariwork.pro">
+
+    <meta
+        name="description"
+        content="Portfolio de Ari Sánchez | Designer & Developer | UX/UI | AI-Powered Digital Creativity. Proyectos innovadores y funcionales. ¡Trabajemos juntos!"
+    >
+    <meta name="author" content="Ari Sanchez">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="ariwork.pro">
+    
+    <meta 
+        property="og:title" 
+        content="Portfolio | Designer & Developer | UX/UI | Front-End Developer- Ari Sánchez"
+    >
+    <meta 
+        property="og:description" 
+        content="Portafolio de Ari Sánchez | Designer & Developer | UX/UI | AI-Powered Digital Creativity. ¡Echa un vistazo a mis proyectos!"
+    >
+    <meta 
+        property="og:image" 
+        content="https://ariwork.pro/assets/img/og-image.png" 
+    >
+    <meta property="og:url" content="https://ariwork.pro">
+    <meta property="og:type" content="website">
+    
+    <link rel="shortcut icon" href="https://ariwork.pro/assets/icons/favicon.svg"> 
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b247a8ee2de848b78f1ddc5de6e6de2b"}'></script>
+    
+  </head>
+  <body oncontextmenu="return false;">
+
+    <div class="popup">
+      <p data-i18n="popupMessage"></p>
+    </div>
+
+    <div id="overlay" style="display:none;">
+      <div class="loader"></div>
+      <p>Translating...</p>
+    </div>
+
+    <div id="size-overlay">
+    <div>
+      <div class="emoji">🔄</div>
+      <h2>Sorry!</h2>
+      <p class="message">
+        Your screen is too tiny.<br>
+        Please rotate your device<br>
+        for a healthier digital experience ✨
+      </p>
+    </div>
+    </div>
+
+    
+
+    <main id="main-content">
+
+    <div class="main-container" id="main">
+
+
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="logo-container">
+          <a data-i18n="homeBtn" href="/index.html" class="home-btn" id="home-btn" aria-current="page" role="navigation" aria-label="Home link"></a>
+          <svg width="30" height="30" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="149.2" width="100" height="100" rx="13" transform="rotate(-45 0 149.2)" fill="#F86C5F"/>
+            <rect x="78.4888" y="70.7104" width="100" height="100" rx="13" transform="rotate(-45 78.4888 70.7104)" fill="#2D4859"/>
+          </svg>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navlinks-container">
+          <div role="list" class="nav-links">
+            <a role="listitem" data-i18n="projectTag" href="#projects">PROJECTS</a>
+            <a role="listitem" data-i18n="aboutTag" href="/about.html">ABOUT</a>
+            <a role="listitem" data-i18n="contactTag" href="#contact">CONTACT</a>
+          </div>
+          <div class="language-box" role="group" aria-label="Language selector">
+            <button id="lang-en" aria-label="Change language to English">en</button>
+            <button id="lang-es" aria-label="Cambiar idioma a Español">es</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container" id="container">
+        <div class="about-me-content">
+          <div class="about-me-inner">
+            <h1 data-i18n="aboutMeTitle" id="about"></h1>
+            <div class="about-me-text1">
+              <p data-i18n="aboutMeContentText1"></p>
+            </div>
+            <div class="about-me-image-content">
+              <img  src="/assets/img/1.png" alt="">
+              <img  src="/assets/img/yo-little.JPG" alt="">
+              <img  src="/assets/img/Imagen de WhatsApp 2025-10-27 a las 16.45.11_03308e1b.jpg" alt="">
+              <img  src="/assets/img/bike.jpg" alt="">
+            </div>
+            <div class="about-me-text2">
+              <p data-i18n="aboutMeContentText7"></p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-me" id="contact">
+          <h1 data-i18n="contactTitle">. Contact</h1>
+            <div class="contact-card">
+              <h2>Email: arisanpala@gmail.com</h2>
+              <h2>Phone: +34 664 094 007</h2>
+              <p data-i18n="contactMeText"></p>
+              <a data-i18n="contactMeButton" href="mailto:arisanpala@gmail.com"></a>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ari-sanchez/" id="linkedin" target="_blank" aria-label="Linkedin profile"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Ari-Dsgns" id="github" target="_blank" aria-label="Github profile"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="footer">
+              <p>© 2025 ariwork.pro | All rights reserved.</p>
+          </div>       
+        </div>
+      </div>
+      <div id="projectModal" class="modal">
+        <button class="close" aria-label="close">&times;</button>
+        <div class="modal-body">
+          <img id="modalImg" src="" alt="Proyecto completo">
+        </div> 
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="./index.js" defer></script> 
+  </body>
+</html>

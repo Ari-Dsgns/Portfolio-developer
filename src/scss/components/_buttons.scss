@@ -86,7 +86,99 @@
 
 
 
+#custom-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: $cursor-size;
+  height: $cursor-size;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: $z-index-cursor;
+  mix-blend-mode: normal;
+  will-change: transform;
+  user-select: none;
+  display: block;
+  
 
+  .cursor-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $ring-color inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+    transition: transform 220ms cubic-bezier(.2,.9,.3,1), box-shadow 220ms;
+    border: 1px solid rgba(255,255,255,0.04);
+    backdrop-filter: brightness(1.1) saturate(1.2) blur(1px);
+    animation: cursor-pulse 3s ease-in-out infinite; // 💓 animación activa
+  }
+
+  .cursor-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: $dot-size;
+    height: $dot-size;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: $dot-color;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    transition: transform 160ms cubic-bezier(.2,.9,.3,1), background 160ms;
+  }
+
+  // Hover state
+  &.hover {
+    .cursor-ring {
+      transform: scale($hover-scale);
+      box-shadow: 0 0 24px $ring-stroke;
+      animation: none;
+      backdrop-filter: brightness(1.1) saturate(1.2) blur(0px);
+    }
+
+    .cursor-dot {
+      transform: translate(-50%, -50%) scale(0.9);
+      background: transparent;
+    }
+  }
+
+  // Click state
+  &.click {
+    .cursor-ring {
+      transform: scale(calc(#{$click-scale} * #{$hover-scale}));
+      transition: transform 110ms cubic-bezier(.3,.0,.15,1);
+    }
+  }
+}
+
+// Ocultar en pantallas táctiles
+@media (pointer: coarse), (hover: none) {
+  #custom-cursor {
+    display: none;
+  }
+
+  html.custom-cursor-enabled {
+    cursor: auto !important;
+
+    * {
+      cursor: auto !important;
+    }
+  }
+}
+
+// Reduce motion
+@media (prefers-reduced-motion: reduce) {
+  #custom-cursor {
+    transition: none;
+
+    .cursor-ring,
+    .cursor-dot {
+      transition: none;
+    }
+  }
+}
 
 
 

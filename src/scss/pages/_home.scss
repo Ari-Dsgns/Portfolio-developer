@@ -1,45 +1,71 @@
 
 .portfolio-mainPage{
   display: flex;
-  flex-direction: column;
+  
+  
+  
   justify-content: center;
   align-items: center;
   text-align: start;
   border: none;
   position: relative;
-  
-  min-height: 100dvh;
+
+  min-height: 80dvh;
   max-width: 100%;
   background-color: #242423;
   
   background-color: $alabaster;
+  background-color: $platinum;
+  background-color: #E0EAE5;
+  background-color: #f3f4f3;
+
+   background-color: $platinum;
+   background-color: #e9e9e9;
+   background-color: transparent;
+   background-color: #F9FAFB;
+   
+  border-bottom: 3px solid $petrol;
   
+  
+
+  // &::before{
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url(/assets/img/);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // opacity: 0.3;
+  
+  // }
 
   
 
-  
-
-  &::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: $platinum;
+  // &::before{
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 50%;
+  //   height: 100%;
+  //   background-color: $platinum;
     
-    opacity: 1;
-    z-index: 0;
-    pointer-events: none;
+  //   opacity: 1;
+  //   z-index: 0;
+  //   pointer-events: none;
     
 
     
    
-  }
+  // }
 
-
+    
 
 }
+
 
 
 .portfolio__title{
@@ -49,6 +75,7 @@
     align-items: center;
     align-content: center;
     position: relative;
+    left: 0%;
     gap: 0px;
     
     z-index: 2;
@@ -58,16 +85,15 @@
 
     height: auto  ;
     overflow: hidden;
-    background-color: transparent;
     
+    padding-left: 0px;
 
-    
-    
+    animation: scaleDown 1.5s ease-in-out;
     
     
 
     transition: 1s ease-in-out;
-    animation: scaleDown 1.5s ease-in-out;
+    
 
     // -webkit-animation: jello-horizontal 0.9s both;
 	  //       animation: jello-horizontal 0.9s both;
@@ -120,20 +146,11 @@
     }
   }
   @include respond($breakpoint-mobile-l) {
-    padding: 2em;
+    padding: 10px;
     
 
   }
-  @include respond($breakpoint-mobile-s) {
-    padding: 1.5em;
-    border: dashed 12px  #F5CB5C;
-
-    gap: 0px;
-    a{
-     font-size: 20px;
-
-    }
-  }
+  
 
 
 
@@ -164,7 +181,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 2px;
   align-items: start;
   align-content: center;
   position: relative;
@@ -173,7 +190,9 @@
   margin-top: 0px;
   // animation: translateIn 1.5s ease-in-out;
   color: transparent;
-  padding-left: 100px;
+  padding-left: 0px;
+  
+  
   
 
   
@@ -182,18 +201,26 @@
   h1{
     font-family: "boldonse", system-ui;
     font-family: "NeueMetanaNext", system-ui;
+    font-family: "safiro", sans-serif;
+    font-family: "Brockmann", sans-serif;
+    font-family: "inter", sans-serif;
+    font-family: "safiro", sans-serif;
     
-    font-size: 46px;
+    font-size: 64px;
     line-height: 1.2;
-    font-weight: 800;
+    font-weight: 600;
     color: $fontColor-white;
-    color: $button-petrol;
+    color: $petrol;
+    
+    
+    color: #523F38;
+    color: #5d636b;
+     color: $petrol;
+    
+    
     
     width: 80%;
     
-    // color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $button-petrol;
 
      
     
@@ -206,10 +233,19 @@
     font-family: "inter", sans-serif;
     
 
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 500;
     color: $fontColor-white;
-    color: $button-petrol;
+    color: $petrol;
+    
+    color: #60656e;
+    color: #523F38;
+    color: #5d636b;
+     color: $petrol;
+    
+    
+    
+    
     
     
 
@@ -219,28 +255,62 @@
   a{
     text-align: center;
     
-    background-color: $miami;
-    text-decoration: none;
-    color: white;
-    border: solid 0px $miami-dark;
-    width: 300px;
     
+    
+   
+    // background-image: url(/assets/img/button.png);
+    background-size: cover;
+    object-fit: cover;
+    
+    background-repeat: no-repeat;
+    
+   
+    
+    text-decoration: none;
+    color: $miami;
+    color: #06B6D4;
+    color: $petrol;
+   
+    
+    
+    
+    
+    border: solid 2px $petrol;
+    
+     
     padding: 12px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     font-family: "NeueMetanaNext", system-ui;
     font-family: 'inter', sans-serif;
     position: relative;
-    border-radius: 50px;
+    
+    background-color: $light-blue;
+    background-color: $persiangreen;
+    background-color: #9ca2a7;
+    background-color: $miami;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    
 
+    &:hover {
+     
+      color: white;
+      
+      
+      
+    }
+    
+    
+    
 
    
-    &:hover{
-      background: $petrol; 
-    }
+    
+    
   }
 
   div{
@@ -256,10 +326,14 @@
   @include respond($breakpoint-lg) {
 
     h1{
-      font-size: 40px;
+      font-size: 48px;
     }
     p{
       font-size: 22px;
+    }
+    a{
+      font-size: 24px;
+      
     }
 
   }
@@ -267,25 +341,30 @@
 
     padding-left: 50px;
     h1{
-      font-size: 40px;
+      font-size: 36px;
+
     }
     p{
-      font-size: 18px;
+      font-size: 20px;
+    }
+    a{
+      font-size: 20px;
+      margin-top: 60px;
     }
   }
 
   @include respond($breakpoint-mobile-l) {
 
-    padding: 20px;
+    padding-left: 0px;
     h1{
-      font-size: 30px;
+      font-size: 32px;
     }
     p{
-      font-size: 22px;
+      font-size: 18px;
     }
     a{
-      font-size: 16px;
-      padding: 14px;
+      font-size: 18px;
+      padding: 12px 20px;
     }
   }
   @include respond($breakpoint-mobile-s) {
@@ -307,6 +386,47 @@
   animation: fadeInUp 0.2s ease forwards;
 }
 
+
+.flip-text {
+  position: relative;
+  display: inline-block;
+  perspective: 1000px;
+  width: 100%;
+  text-align: start;
+  
+}
+
+.flip-text span {
+  display: block;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  color: #523F38;
+  color: #5d636b;
+  
+  
+  
+}
+
+.front {
+  transform: rotateX(0deg);
+}
+
+.back {
+  transform: rotateX(540deg);
+}
+
+.flip-text.flipped .front {
+  transform: rotateX(540deg);
+  
+}
+
+.flip-text.flipped .back {
+  transform: rotateX(0deg);
+  
+}
 
 // .portfolio__text::before {
 //   content: "";

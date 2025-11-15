@@ -7,17 +7,19 @@
 const translations = {
   en: {
 
-    homeGreeting: "Hello! I'm Ari",
+    homeGreeting: "Hello! I'm Ari,",
     homeWelcome: "I design with strategy. I build smart digital experiences.",
-    homeGreetingHead: "I'm a Visual Designer with a focus on UX/UI and Front-End Developer based in Madrid.",
+    homeWelcomeBack: "Creating with purpose. Designing engaging digital projects.",
+    homeGreetingHead: "a multidisciplinary designer who blends strategy, aesthetics, and code to create memorable digital experiences.",
     viewProjectsBtn: "VIEW MY WORK",
 
-    homeBtn: "Ari's Portfolio",
+    homeBtn: "ARI PORTFOLIO",
     projectTag: "Work",
     aboutTag: "About",
     contactTag: "Contact",
 
-    aboutMeTitle: "2. About",
+    aboutMeTitle: "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
+    interludeText: "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
 
     aboutMePhotoComment: "Yes, that's me in the photo. Just posing. Unfortunately, I don't have a boat yet.",
     aboutMeContentSubtitle: "WHO AM I?",
@@ -31,7 +33,7 @@ const translations = {
     aboutMeContentText10:"I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.",
     aboutMeContentText11:"SHALL WE GET IN TOUCH?",
 
-    ProjectsTitle: "1. Work",
+    ProjectsTitle: "You can find out how to do something and then do it or do something and then find out what you did",
     ProjectsTitle2: "Projects",
 
     contactTitle: "3. Contact",
@@ -136,7 +138,7 @@ const translations = {
     selvatikaRoleContent:
       "I was responsible for the entire design process, from creating the logo and visual identity, UX/UI design of the home web in Figma with a focus on conversion and visual storytelling, Design and visual direction of the promotional reel for social media, integrating text, rhythm, and immersive sound ambiance.",
     
-    readmeappSubtitle: "A fast and enjoyable app for reading- Case study",
+    readmeappSubtitle: "A fast and enjoyable app for reading- UX/UI Case study",
     readmeappSummaryContent:
       "This is a speed reading app designed for users with little time or who want to improve their reading habits in a fun and purposeful way. It is a UX/UI project where the main objective and focus is to provide a great user experience.",
     readmeappGoalContent:
@@ -178,22 +180,25 @@ const translations = {
   },
 
   es: {
-    homeGreeting: "¡Hola! Soy Ari",
+    homeGreeting: "¡Hola! Soy Ari,",
     homeWelcome: "Diseño con estrategia. Construyo experiencias digitales inteligentes.",
-    homeGreetingHead: "Soy Visual Designer con enfoque en UX/UI y Front End Developer en Madrid.",
+    homeWelcomeBack: "Creando con propósito. Diseñando proyectos digitales atractivos.",
+    homeGreetingHead: "Diseñador multidisciplinar que une estrategia, estética y código para crear experiencias digitales memorables.",
 
     viewProjectsBtn: "VER MI TRABAJO",
 
-    homeBtn: "Ari's Portfolio",
+    homeBtn: "ARI PORTFOLIO",
     projectTag: "Trabajo",
     aboutTag: "Sobre mí",
     contactTag: "Contacto",
 
-    aboutMeTitle: "2. Sobre mí",
+    aboutMeTitle: "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
+
+    interludeText: "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
     aboutMePhotoComment: "Sí, soy yo el de la foto, pero solo estoy posando. Desafortunadamente no tengo ningún barco.",
     aboutMeContentSubtitle: "¿QUIÉN SOY?",
-    aboutMeContentText1: "Me llamo Ariel Sánchez, aunque la gente me conoce como Ari. Soy Visual Designer con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir. Me apasiona lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
-    aboutMeContentText2:"¿QUÉ ES LO QUE HAGO?",
+    aboutMeContentText1: "Me llamo Ariel Sánchez, aunque la gente me conoce como Ari. Soy Visual Designer con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir.",
+    aboutMeContentText2:" Me siento atraído por lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
     aboutMeContentText4:"Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
     
     aboutMeContentText6:"¿QUÉ ME MOTIVA?",
@@ -203,7 +208,7 @@ const translations = {
     aboutMeContentText10:"Siempre estoy buscando oportunidades para crecer, colaborar con equipos inspiradores y crear productos que marquen la diferencia.",
     aboutMeContentText11:"¿HABLAMOS?",
 
-    ProjectsTitle: "1. Trabajos",
+    ProjectsTitle: "Puedes descubrir algo y luego hacerlo, o hacer algo y luego descubrir por qué lo has hecho.",
     ProjectsTitle2: "PROYECTOS",
 
     contactTitle: "3. Contacto",
@@ -357,6 +362,12 @@ document.addEventListener("contextmenu", e => e.preventDefault());
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // const flipText = document.querySelector('.flip-text');
+
+  // setInterval(() => {
+  //   flipText.classList.toggle('flipped');
+  // }, 5000); 
+
 
   let lastScrollTop = 0;
 
@@ -371,6 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     // Scroll hacia arriba → mostrar navbar
     navbar.classList.remove('hide-navbar');
+    
   }
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // para evitar valores negativos
@@ -402,6 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   const cardInner = document.querySelector('.card-inner');
+  
 
   document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
@@ -414,6 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
         block: 'start', // centra verticalmente
       });
       cardInner.classList.add('animate');
+      
       setTimeout(() => {
         cardInner.classList.remove('animate');
       }, 150);
@@ -461,21 +475,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const modal = document.getElementById("projectModal");
+
   const modalImg = document.getElementById("modalImg");
   const closeBtn = document.querySelector(".close");
   
   // Selecciona todos los botones de abrir proyecto
-  document.querySelectorAll(".openProject").forEach(btn => {
-    btn.addEventListener("click", function(e) {
-      e.preventDefault();
-      const card = this.closest(".card"); // busca la card más cercana
-      const imgSrc = card.getAttribute("data-project"); // obtiene la ruta del proyecto
-      modalImg.src = imgSrc;
-      modal.style.display = "block";
-      
-      document.body.style.overflow = "hidden";
-    });
+  document.querySelectorAll(".openProject").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const imgSrc = this.getAttribute("data-project"); // toma directamente del <a>
+    modalImg.src = imgSrc;
+    modal.style.display = "block";
+    
+    document.body.style.overflow = "hidden";
   });
+});
   
   // cerrar modal
   closeBtn.addEventListener("click", function() {
@@ -531,10 +546,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = el.getAttribute('data-i18n');
       const translation = translations[lang]?.[key];
       if (translation) {
-        el.textContent = translation;
+        el.innerHTML = translation;
       }
       if (el.tagName === "SPAN") {
-        el.textContent = translation;
+        el.innerHTML = translation;
     }
     });
     localStorage.setItem('selectedLanguage', lang);
@@ -596,6 +611,80 @@ document.querySelectorAll('.nav-links a, .home-btn').forEach(link => {
     menuToggle.setAttribute('aria-expanded', "false");
   });
 });
+
+
+(function() {
+  if (('ontouchstart' in window) || navigator.maxTouchPoints > 0) return;
+
+  document.documentElement.classList.add('custom-cursor-enabled');
+
+  const cursor = document.getElementById('custom-cursor');
+  const ring = cursor.querySelector('.cursor-ring');
+  const dot = cursor.querySelector('.cursor-dot');
+
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let currentX = mouseX;
+  let currentY = mouseY;
+  let targetX = mouseX;
+  let targetY = mouseY;
+
+  const speed = 0.18;
+  const magnetStrength = 0.35; // qué tan fuerte es el "imán" (0.1–0.5 es razonable)
+  let isMagnetActive = false;
+  let magnetElement = null;
+
+  function lerp(a, b, n) { return (1 - n) * a + n * b; }
+
+  function onMove(e) {
+    if (!isMagnetActive) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    }
+  }
+  window.addEventListener('mousemove', onMove, { passive: true });
+
+  function render() {
+    // si hay imán activo, el cursor se mueve hacia el centro del elemento
+    if (isMagnetActive && magnetElement) {
+      const rect = magnetElement.getBoundingClientRect();
+      targetX = rect.left + rect.width / 2;
+      targetY = rect.top + rect.height / 2;
+      currentX = lerp(currentX, targetX, magnetStrength);
+      currentY = lerp(currentY, targetY, magnetStrength);
+    } else {
+      currentX = lerp(currentX, mouseX, speed);
+      currentY = lerp(currentY, mouseY, speed);
+    }
+
+    cursor.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
+    requestAnimationFrame(render);
+  }
+  render();
+
+  // Hover detection + imán
+  const hoverElements = document.querySelectorAll(' a, button, input, textarea, select, [role="button"], .interactive');
+  hoverElements.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.classList.add('hover');
+      isMagnetActive = true;
+      magnetElement = el;
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.classList.remove('hover');
+      isMagnetActive = false;
+      magnetElement = null;
+    });
+    el.addEventListener('focus', () => cursor.classList.add('hover'));
+    el.addEventListener('blur', () => cursor.classList.remove('hover'));
+  });
+
+  // Click feedback
+  window.addEventListener('mousedown', () => cursor.classList.add('click'));
+  window.addEventListener('mouseup', () => cursor.classList.remove('click'));
+})();
+
+
 
 
 

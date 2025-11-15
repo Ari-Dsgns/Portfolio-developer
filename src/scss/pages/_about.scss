@@ -15,17 +15,20 @@
   padding: 0px;
   height: 100%;
   z-index: 3;
-  border-right: solid 30px $alabaster;
-  border-left: solid 30px $platinum;
-  padding: 0px;
+  
+ 
   overflow: hidden;
   
   // border-bottom: solid 1px $button-petrol;
   // border-bottom: solid 1px $button-petrol;
   // border-left: solid 1px $button-petrol;
   // border-right: solid 1px $button-petrol;
-  background-color: $backgroundColor;
-  background-color: #cfdbd5ff;
+  background-color: $platinum;
+  background-color: #E0EAE5;
+  background-color: #e9e9e9;
+
+  background-color: #F9FAFB;
+  
   
   
     
@@ -35,30 +38,20 @@
   
 
 
-  h1{
-     font-family: "inter", sans-serif;
-    align-self: flex-end;
-    padding-right: 20px;
-    padding-top: 20px;
-    color: $button-petrol;
-    font-size: 22px;
-    font-weight: 300;
-
-   
-    
-  }
+  
+  
   
 
   
   @include respond($breakpoint-xl) {
     
     width: 100%;
-    padding: 0px;
+    
     
   }
   @include respond($breakpoint-mobile-l) {
-      border-left: 12px $platinum solid;
-      border-right: 12px $alabaster solid;
+      border-left: 0px $platinum solid;
+      border-right: 0px $alabaster solid;
     }
   
   
@@ -71,28 +64,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  margin-top: 120px;
   width: 100%;
   
-  h1{
-   font-family: "inter", sans-serif;
-    align-self: flex-end;
-    
-    padding-top: 80px;
-    color: $button-petrol;
-    font-size: 22px;
-    font-weight: 300;
-    color: $button-petrol;
-    font-size: 22px;
-    font-weight: 300;
-    @include respond($breakpoint-mobile-l) {
-      padding-top: 60px;
-      font-size: 18px;
-      
-    }
-    
-  }
+  
  
+}
+
+.about-me-text-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  margin-top: 120px;
+  gap: 40px;
+  border: solid 0px black;
+  @include respond($breakpoint-md) {
+    width: 100%;
+  }
 }
 
 
@@ -107,20 +96,23 @@
   margin-bottom: 40px;
   overflow-x: auto;     /* scroll en eje X */
   overflow-y: hidden;   /* ocultar vertical */
+  padding: 10px;
   
-  
-   border: solid 0px black;
+  border: solid 0px black;
   img{
     
     width: 450px;
     height: 400px;
     object-fit: cover;
-    opacity: 0.7;
+    position: relative;
     
-    border-radius: 0px;
+    border-radius: 1px;
     border: solid 0px transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.298);
+    transition: 0.8s ease;
+
+    
+    
 
     @include respond($breakpoint-mobile-l) {
       width: 300px;
@@ -128,10 +120,12 @@
     }
     
   }
-  img:hover{
-    
-    opacity: 0.9;
-  }
+  
+}
+
+#img2, #img4{
+  margin-top: 0px;
+  
 }
 
 
@@ -141,38 +135,55 @@
 .about-me-text1{
   
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding:20px;
+  padding:0px;
   border: solid 0px transparent;
   border: solid 0px black;
-  gap: 30px;
-  margin-bottom: 60px;
+  gap: 0px;
   
-  
-
-  
-
-  
-  
-  
-  
-
-  p {
-    
-    font-family: "Inter", sans-serif;
-    width: 800px;
-    font-size: 28px;
-    font-weight: 400;
-    color: $button-petrol;
+  h1{
+    font-family: "inter", sans-serif;
     color: $miami;
-   
-    padding: 0px;
-    border: solid 0px black;
-    @include respond($breakpoint-mobile-l) {
+    
+    font-size: 30px;
+    font-weight: 400;
+
+    @include respond($breakpoint-md) {
       font-size: 26px;
       
     }
+  }
+  span{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    margin-top: 6px;
+    font-weight: 300;
+    color: $petrol;
     
+
+    @include respond($breakpoint-md) {
+      font-size: 18px;
+      
+    }
+  }
+  
+  
+  
+  
+
+  p{
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: $petrol;
+    margin-top: 80px;
+    
+
+    @include respond($breakpoint-md) {
+      font-size: 18px;
+      
+    }
   }
   
   
@@ -183,23 +194,24 @@
 .about-me-text2{
   
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   border: solid 0px black;
-  padding:20px;
-  gap: 20px;
-  margin-bottom: 120px;
+  padding:0px;
+  gap: 0px;
+  margin-top: 0px;
   
   p{
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 200;
-    border: solid 0px black;
-    width: 50%;
+    font-size: 26px;
+    font-weight: 300;
+    color: $petrol;
+    
 
-    @include respond($breakpoint-mobile-l) {
+    @include respond($breakpoint-md) {
       font-size: 20px;
-      width: 100%;
+      
     }
   }
   @include respond($breakpoint-mobile-l) {

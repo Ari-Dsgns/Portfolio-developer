@@ -96,13 +96,28 @@ $rotate-delay-logo: 0.35;
 /* SCSS HEX */
 $platinum: #cfdbd5ff;
 $alabaster: #e8eddfff;
+$alabaster-lighter: rgb(206, 212, 198);
 $saffron: #f5cb5cff;
 $eerie-black: #242423ff;
 $jet: #333533ff;
 $miami: #F76C5E;
+$bittersweet: #FF715B;
+$persiangreen: #1EA896;
 $petrol: #2F4858;
+$petrol2: #416277;
+
+$Vanilla: #EDDEA4;
+$honneydew: #D9E5D6;
+$moonstone: #0FA3B1;
 
 $miami-dark: #40c9a2;
+
+
+$blue: #4569A0;
+$light-blue: #4F87BF;
+$cream: #F2F1DD;
+$blacky: #201F1B;
+$pink: #c687b5;
 
 /* SCSS HSL */
 $platinum: hsla(150, 14%, 84%, 1);
@@ -128,3 +143,14 @@ $gradient-bottom-right: linear-gradient(135deg, #cfdbd5ff, #e8eddfff, #f5cb5cff,
 $gradient-top-left: linear-gradient(225deg, #cfdbd5ff, #e8eddfff, #f5cb5cff, #242423ff, #333533ff);
 $gradient-bottom-left: linear-gradient(315deg, #cfdbd5ff, #e8eddfff, #f5cb5cff, #242423ff, #333533ff);
 $gradient-radial: radial-gradient(#cfdbd5ff, #e8eddfff, #f5cb5cff, #242423ff, #333533ff);
+
+
+$cursor-size: 44px;            // diámetro del anillo
+$dot-size: 8px;                // diámetro del punto
+$ring-color: #416277;
+$ring-stroke: #416277;
+$dot-color: #416277;
+$hover-scale: 2;
+$click-scale: 0.8;
+$follow-speed: 0.1;
+$z-index-cursor: 9999;

@@ -1,21 +1,45 @@
 .work-container{
   display: flex;
-  flex-direction: column;
   
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
   
   align-items: center;
-  width: 100%;
+  
   height: 100%;
-
-  background-color: $alabaster;
+  
+  background-color: $platinum;
+  background-color: #F3F8F2;
+  background-color: #E0EAE5;
+  background-color: #f3f4f3;
+   background-color: #FCF7F8;
+   background-color: #ffffff;
+   background-color: #e9e9e9;
+   background-color: #F9FAFB;
+   overflow-x: hidden;
+   
+   
+   
+  
+  
+ 
+  
+  
   z-index: 1;
+  gap:40px;
 
 
-  border-left: solid 30px $platinum;
-  border-right: solid 30px transparent;
+  
+
   
   
+  padding-left: 0px;
+  padding-right: 0px;
+
+  
+  border-top: 0px solid $petrol;
+  border-bottom: 0px solid $petrol;
   
   
 
@@ -44,11 +68,14 @@
 
   h1{
     font-family: "inter", sans-serif;
-    align-self: flex-end;
+    align-self: flex-start;
     padding-right: 20px;
-    padding-top: 80px;
     
-    color: $button-petrol;
+    
+    color: #60656e;
+    color: #523F38;
+    color: #5d636b;
+    margin-top: 0px;
     font-size: 22px;
     font-weight: 400;
 
@@ -57,10 +84,17 @@
       font-size: 18px;
     }
   }
-  @include respond($breakpoint-mobile-l) {
-      border-left: 12px $platinum solid;
-      border-right: 12px transparent solid;
-    }
+  p{
+    font-style: italic;
+    font-family: "inter", sans-serif;
+    color: #60656e;
+    
+    font-weight: 500;
+    align-self: flex-start;
+    padding-bottom: 0px;
+  }
+  
+  
 
   
   
@@ -79,18 +113,42 @@
 
 .cards-container{
   display: flex;
-  flex-direction: column;
+  
   width: 100%;
   height: 100%;
-  margin-top: 40px;
-  gap: 40px;
+  margin-top: 0px;
+  gap: 32px;
   border: 0px solid $fontColor-petrol-light;
-  
+  outline: solid 0px $miami;
   padding: 0px;
+  border-bottom: 3px solid $petrol;
+  overflow-x: scroll; 
+  overflow-y: hidden;
   
+  padding: 10px;
+  
+  @include respond($breakpoint-mobile-l) {
+    gap: 20px;
+    padding: 0px;
+  }
   
   
 }
+
+
+
+
+// .cards-container3{
+//   display: flex;
+//   flex-direction: column;
+//   gap: 20px;
+//   width: 100%;
+//   height:100%;
+//   background-color: $alabaster;
+//   padding: 40px;
+  
+  
+// }
 
 .cards-container::-webkit-scrollbar {
   display: none; // Oculta la barra de desplazamiento en WebKit (Chrome, Safari)

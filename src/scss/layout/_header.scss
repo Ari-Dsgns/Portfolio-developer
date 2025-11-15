@@ -5,29 +5,44 @@
   position: fixed;
   top: 0px;
   display: flex;
+  
   justify-content: space-between;
   width: 100%;
   height: 80px;
-  border-left:30px $platinum solid;
-  border-right:10px $alabaster solid;
-  border-bottom: solid 0px $platinum;
+  
   z-index: 999;
   animation: borderDraw 1s ease forwards;
   transition: 0.3s ease-in-out;
 
-  background-color:$alabaster;
-  background-color:rgba(232, 237, 223, 0.932);
+  
+  
+  background-color: #e0eae5c5;
+  background-color: #f3f4f3;
+
+  background-color:rgba(207, 219, 213, 0.637);
+  background-color: $alabaster;
+  background-color: #EEF0EB;
+  background-color: $honneydew;
+  background-color: $platinum;
+  background-color: #e9e9e9;
+  background-color: #f0f0f0;
+  background-color: #f9fafbde;
+  
+  
+  
+  
+  
+  
   
   
   backdrop-filter: blur(10px);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   
   @include respond($breakpoint-mobile-l) {
     height: 60px;
     padding-left: 10px;
     padding-right: 10px;
-    border-left: 12px $platinum solid;
+    
   }
  
   
@@ -57,17 +72,19 @@
   
   a{
     text-decoration: none;
-    color: $button-petrol;
+    color: $petrol;
     font-family: "inter", sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    
-    
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+    padding: 4px 10px;
 
 
 
     &:hover{
+    
     color: $miami;
+    
     
   }
   }
@@ -81,10 +98,21 @@
 .home-btn{
   text-decoration: none;
   font-family: "inter", sans-serif;
+  font-family: "Brockmann", sans-serif;
+  font-family: "Boldonse", system-ui;
+  font-family: "Brockmann", sans-serif;
+  font-family: "inter", sans-serif;
   background-color: transparent;
   padding: 0px;
   color: $miami;
+  color: $petrol;
   
+  
+
+  
+
+  
+  position: relative;
   opacity: 1;
   border-radius: 25%;
   z-index: 9999;
@@ -92,13 +120,47 @@
   align-self: center;
   text-align: center;
   border: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size:20px;
+  font-weight: 900;
   cursor: pointer;
+
+  span{
+    display: inline-block;
+    
+    font-size:16px;
+    transform: scale(1, 1);
+
+  }
 
   &.active{
     opacity: 1;
   }
+  &:hover{
+    
+    color: $miami;
+  }
+  
+  
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  svg{
+    display: none;
+    transition: transform 0.4s ease-in-out;
+  } 
+
+  &:hover{
+    svg{
+      
+      transform: rotateY(180deg);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
   
   
 }
@@ -119,10 +181,14 @@
   
   
   border: 0px rgba(255, 255, 255, 0.853) solid;
-  gap: 2px;
+  gap: 0px;
   z-index: 999;
   
   background-color: #f76b5edd;
+  background-color: $blue;
+  background-color: $light-blue;
+  background-color:rgba(163, 163, 163, 0.781);
+  border-radius: 0px;
   
   
   
@@ -145,12 +211,13 @@
   padding: 6px;
   opacity: 0.5;
   transition: 0.1s ease-in-out;
-  v
+  
 
   &:hover{
     opacity:1;
     color: white;
-    transform: scale(1.1);
+    outline: solid 2px $miami;
+    background-color: rgb(128, 128, 128);
   }
   
   @include respond($breakpoint-mobile-l) {
@@ -166,53 +233,52 @@
   color: white;
   font-weight: 500;
   opacity: 1;
+  background-color: $petrol;
   
   
 }
-
-
-
 .menu-toggle {
   display: none;
-  flex-direction: row;
+  flex-direction: column;
   gap: 6px;
   position: relative;
   top: 30px;
-  display: none;
   background: none;
   border: none;
   cursor: pointer;
   z-index: 10000;
-  
-  
 
   span {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 2px;
     background-color: $miami;
-    border-radius: 2px;
-    transition: 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+    border-radius: 0;
+    transition: 0.4s ease;
+    transform-origin: center;
   }
 
   &.active span:nth-child(1) {
-    transform: translate(8px, 8px) rotate(45deg) scale(2);
-    border-radius: 2px;
-    background-color: $miami;
+    transform: translateY(8px) rotate(45deg) scale(0.8);
+    background-color: $petrol;
+    
   }
+
   &.active span:nth-child(2) {
     opacity: 0;
   }
+
   &.active span:nth-child(3) {
-    transform: translate(-8px, -8px) rotate(-45deg) scale(2);
-    border-radius: 2px;
+    transform: translateY(-8px) rotate(-45deg) scale(0.8);
     background-color: $petrol;
+    
   }
 
   @include respond($breakpoint-sm) {
     display: flex;
   }
+
   @include respond($breakpoint-mobile-l) {
-    top: 25px;
+    top: 20px;
   }
 }
 
@@ -221,31 +287,27 @@
 @include respond($breakpoint-sm) {
   .navlinks-container {
     position: fixed;
-    top: 80px;
-    right: -10px;
+    top: 0;
+    left: 0;
     flex-direction: column;
     justify-content: space-around;
-    background-color: $alabaster;
+    background-color: #e9e9e9;
     gap: 40px;
     padding: 20px;
-    width: 100dvw;
+    
+    width: 100%;
     min-height: 100dvh;
     transition: transform .3s ease;
     transform: translateX(100%);
     box-shadow: -2px 2px 8px rgba(0, 0, 0, 0);
     z-index: 9999;
     border-left: none;
-    border-right: solid 30px $alabaster;
-    border-top: solid 30px $platinum;
-    border-bottom: solid 30px $platinum;
+    
 
     @include respond($breakpoint-mobile-l) {
       top: 60px;
-      height: calc(100vh - 60px);
-      border-left: solid 12px $platinum;
-      border-right: solid 12px $alabaster;
-      border-top: solid 12px $platinum; 
-      border-bottom: solid 12px $platinum;
+      height: 100dvh;
+      
 
     }
     
@@ -253,6 +315,11 @@
 
   .navlinks-container.open {
     transform: translateX(0);
+    top: 80px;
+
+    @include respond($breakpoint-mobile-l) {
+      top: 60px;
+    }
   }
 
   .nav-links {
