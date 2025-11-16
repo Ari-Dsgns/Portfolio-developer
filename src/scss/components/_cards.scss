@@ -316,10 +316,9 @@
   }
   p{
     font-family: "inter", system-ui;
-    
     font-size: 14px;
     font-weight: 400;
-    color: $light-blue;
+    color: $petrol;
   }
   a{
     text-decoration: none;
@@ -415,7 +414,7 @@
   }
 }
 
-.readme-box, .selvatika-box, .destinea-box, .saffvision-box{
+.readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box{
   display: flex;
   flex-direction: column;
   width: 900px;

@@ -66,33 +66,8 @@
   //   background-position: center center;
   //   animation: bg-spin 20s linear infinite;
 
-  h1{
-    font-family: "inter", sans-serif;
-    align-self: flex-start;
-    padding-right: 20px;
-    
-    
-    color: #60656e;
-    color: #523F38;
-    color: #5d636b;
-    margin-top: 0px;
-    font-size: 22px;
-    font-weight: 400;
-
-    @include respond($breakpoint-md) {
-      padding-top: 60px;
-      font-size: 18px;
-    }
-  }
-  p{
-    font-style: italic;
-    font-family: "inter", sans-serif;
-    color: #60656e;
-    
-    font-weight: 500;
-    align-self: flex-start;
-    padding-bottom: 0px;
-  }
+  
+  
   
   
 

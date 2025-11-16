@@ -1639,7 +1639,7 @@ html.custom-cursor-enabled * {
   font-family: "inter", system-ui;
   font-size: 14px;
   font-weight: 400;
-  color: #4F87BF;
+  color: #2F4858;
 }
 .card-description a {
   text-decoration: none;
@@ -1707,7 +1707,7 @@ html.custom-cursor-enabled * {
   transition: 0.5s ease;
 }
 
-.readme-box, .selvatika-box, .destinea-box, .saffvision-box {
+.readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box {
   display: flex;
   flex-direction: column;
   width: 900px;
@@ -1718,10 +1718,10 @@ html.custom-cursor-enabled * {
   gap: 20px;
 }
 @media (max-width: 768px) {
-  .readme-box, .selvatika-box, .destinea-box, .saffvision-box {
+  .readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box {
     max-width: 98dvw;
   }
-  .readme-box .swipe-hint-2, .selvatika-box .swipe-hint-2, .destinea-box .swipe-hint-2, .saffvision-box .swipe-hint-2 {
+  .readme-box .swipe-hint-2, .selvatika-box .swipe-hint-2, .destinea-box .swipe-hint-2, .saffvision-box .swipe-hint-2, .jgs-box .swipe-hint-2 {
     display: inline-flex;
   }
 }
@@ -1989,7 +1989,7 @@ html.custom-cursor-enabled * {
   font-size: 22px;
   font-style: italic;
   margin-top: 6px;
-  font-weight: 300;
+  font-weight: 400;
   color: #2F4858;
 }
 @media (max-width: 1024px) {
@@ -2502,31 +2502,6 @@ html.custom-cursor-enabled * {
   padding-right: 0px;
   border-top: 0px solid #2F4858;
   border-bottom: 0px solid #2F4858;
-}
-.work-container h1 {
-  font-family: "inter", sans-serif;
-  align-self: flex-start;
-  padding-right: 20px;
-  color: #60656e;
-  color: #523F38;
-  color: #5d636b;
-  margin-top: 0px;
-  font-size: 22px;
-  font-weight: 400;
-}
-@media (max-width: 1024px) {
-  .work-container h1 {
-    padding-top: 60px;
-    font-size: 18px;
-  }
-}
-.work-container p {
-  font-style: italic;
-  font-family: "inter", sans-serif;
-  color: #60656e;
-  font-weight: 500;
-  align-self: flex-start;
-  padding-bottom: 0px;
 }
 
 .cards-container {
