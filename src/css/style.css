@@ -2080,6 +2080,8 @@ html.custom-cursor-enabled * {
 @media (max-width: 768px) {
   .contact-me {
     margin-bottom: 10px;
+    padding: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -2154,6 +2156,11 @@ html.custom-cursor-enabled * {
   .contact-card a {
     font-size: 18px;
     padding: 6px;
+  }
+}
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 0;
   }
 }
 

@@ -43,6 +43,8 @@
 
   @include respond($breakpoint-sm) {
     margin-bottom: 10px;
+    padding: 0;
+    padding-bottom: 20px;
   }
 
  
@@ -131,6 +133,11 @@
       font-size: 18px;
       padding: 6px;
     }
+  }
+
+  @include respond($breakpoint-mobile-l) {
+    padding: 0;
+   
   }
   
 
