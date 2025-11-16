@@ -8,11 +8,11 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   margin-top: 0px;
   border:none;
   width: 100%;
-  padding: 0px;
+  padding-left: 40px;
   height: 100%;
   z-index: 3;
   
@@ -50,8 +50,7 @@
     
   }
   @include respond($breakpoint-mobile-l) {
-      border-left: 0px $platinum solid;
-      border-right: 0px $alabaster solid;
+      padding-left: 10px;
     }
   
   
@@ -63,7 +62,7 @@
 .about-me-inner{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   margin-top: 120px;
   width: 100%;
   
@@ -74,6 +73,7 @@
 .about-me-text-container{
   display: flex;
   flex-direction: column;
+  
   width: 50%;
   height: auto;
   margin-top: 120px;
@@ -145,18 +145,19 @@
   h1{
     font-family: "inter", sans-serif;
     color: $miami;
-    
+    font-style: italic;
     font-size: 30px;
     font-weight: 400;
 
     @include respond($breakpoint-md) {
-      font-size: 26px;
+      font-size: 24px;
       
     }
   }
   span{
     font-family: 'Inter', sans-serif;
     font-size: 22px;
+    font-style: italic;
     margin-top: 6px;
     font-weight: 300;
     color: $petrol;
@@ -210,7 +211,7 @@
     
 
     @include respond($breakpoint-md) {
-      font-size: 20px;
+      font-size: 18px;
       
     }
   }

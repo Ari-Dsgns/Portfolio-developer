@@ -40,8 +40,7 @@
   
   @include respond($breakpoint-mobile-l) {
     height: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     
   }
  
@@ -326,6 +325,7 @@
     
     flex-direction: column;
     gap: 20px;
+    
   }
 
   .language-box {
@@ -333,5 +333,6 @@
     justify-content: center;
     width: auto;
     height: auto;
+    transform: scale(1.2);
   }
 }
