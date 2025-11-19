@@ -49,7 +49,7 @@
     
     
   }
-  @include respond($breakpoint-mobile-l) {
+  @include respond($breakpoint-sm) {
       padding-left: 10px;
     }
   

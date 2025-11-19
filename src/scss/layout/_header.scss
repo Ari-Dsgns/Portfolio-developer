@@ -36,7 +36,11 @@
   
   
   backdrop-filter: blur(10px);
-  padding: 0 20px;
+  padding: 0 40px;
+  @include respond($breakpoint-sm) {
+    padding: 0 20px;
+    
+  }
   
   @include respond($breakpoint-mobile-l) {
     height: 60px;
@@ -104,7 +108,7 @@
   background-color: transparent;
   padding: 0px;
   color: $miami;
-  color: $petrol;
+  
   
   
 

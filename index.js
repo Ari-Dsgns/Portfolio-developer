@@ -63,17 +63,8 @@ const translations = {
       "ERIS is a university FAQ chatbot created as a full-scope design and development project. It combines brand identity, UI design, and front-end development to deliver an engaging and accessible experience for students. Inspired by the solar system, ERIS stands out with its minimalist orbit-themed interface, dynamic logo, and modern microinteractions.",
     erischatbotGoalContent:
       "To build a complete digital product: from brand concept and visual identity to UI prototyping, accessibility, and live deployment. The aim was to provide students with an intuitive tool to find academic information while demonstrating advanced design systems and coding skills.",
-    erischatbotRoleContent: "I led every stage of the project, including:",
-    erischatbotRoleContent_a:
-      "Branding & Identity: Defined ERIS’ name, concept, logo, and solar-inspired design language.",
-    erischatbotRoleContent_b:
-      "UI/UX Design: Crafted a clean, responsive interface ensuring clarity, focus, and intuitive navigation.",
-    erischatbotRoleContent_c:
-      "Development: Built the app with React, Vite, Tailwind CSS, and JavaScript for interactive logic and chatbot responses.",
-    erischatbotRoleContent_d:
-      "Accessibility Implementation: Ensured WCAG 2.1 AA compliance with keyboard navigation, semantic HTML, ARIA labels, and contrast guidelines.",
-    erischatbotRoleContent_e:
-      "Deployment & Testing: Hosted on Vercel for rapid access, tested cross-browser and device responsiveness.",
+    erischatbotRoleContent: "I led every stage of the project, including: Branding & Identity: Defined ERIS’ name, concept, logo, and solar-inspired design language. UI/UX Design: Crafted a clean, responsive interface ensuring clarity, focus, and intuitive navigation. Development: Built the app with React, Vite, Tailwind CSS, and JavaScript for interactive logic and chatbot responses. Accessibility Implementation: Ensured WCAG 2.1 AA compliance with keyboard navigation, semantic HTML, ARIA labels, and contrast guidelines. Deployment & Testing: Hosted on Vercel for rapid access, tested cross-browser and device responsiveness.",
+
     erischatbotChallengeContent:
       "Creating an immersive brand experience while maintaining high accessibility standards was the core challenge. I solved it by:",
     erischatbotChallengeContent_a:
@@ -240,17 +231,7 @@ const translations = {
       "ERIS es un chatbot de preguntas frecuentes universitario creado como un proyecto completo de diseño y desarrollo. Combina identidad de marca, diseño de interfaz de usuario y desarrollo front-end para ofrecer una experiencia atractiva y accesible para los estudiantes. Inspirado en el sistema solar, ERIS se destaca por su interfaz minimalista con temática orbital, logotipo dinámico e interacciones modernas.",
     erischatbotGoalContent:
       "Construir un producto digital completo: desde el concepto de marca y la identidad visual hasta el prototipado de la interfaz de usuario, la accesibilidad y el despliegue en vivo. El objetivo era proporcionar a los estudiantes una herramienta intuitiva para encontrar información académica mientras se demostraban habilidades avanzadas en sistemas de diseño y codificación.",
-    erischatbotRoleContent: "Lideré cada etapa del proyecto, incluyendo:",
-    erischatbotRoleContent_a:
-      "Definición de marca e identidad: Definí el nombre, concepto, logotipo y lenguaje de diseño inspirado en el sistema solar de ERIS.",
-    erischatbotRoleContent_b:
-      "Diseño UI/UX: Creé una interfaz limpia y receptiva que garantiza claridad, enfoque y navegación intuitiva.",
-    erischatbotRoleContent_c:
-      "Desarrollo: Construí la aplicación con React, Vite, Tailwind CSS y JavaScript para la lógica interactiva y las respuestas del chatbot.",
-    erischatbotRoleContent_d:
-      "Implementación de accesibilidad: Aseguré el cumplimiento de WCAG 2.1 AA con navegación por teclado, HTML semántico, etiquetas ARIA y pautas de contraste.",
-    erischatbotRoleContent_e:
-      "Despliegue y pruebas: Direccioné a Vercel para acceso rápido, probé la compatibilidad entre navegadores y la capacidad de respuesta en dispositivos.",
+    erischatbotRoleContent: "Lideré cada etapa del proyecto, incluyendo: Branding e Identidad: Definí el nombre, concepto, logotipo y lenguaje de diseño inspirado en el sistema solar de ERIS. Diseño UI/UX: Creé una interfaz limpia y receptiva que garantiza claridad, enfoque y navegación intuitiva. Desarrollo: Construí la aplicación con React, Vite, Tailwind CSS y JavaScript para la lógica interactiva y las respuestas del chatbot. Implementación de accesibilidad: Aseguré el cumplimiento de WCAG 2.1 AA con navegación por teclado, HTML semántico, etiquetas ARIA y pautas de contraste. Despliegue y pruebas: Direccioné a Vercel para acceso rápido, probé la compatibilidad entre navegadores y la capacidad de respuesta en dispositivos.",
     erischatbotChallengeContent:
       "Crear una experiencia de marca inmersiva mientras se mantenían altos estándares de accesibilidad fue el desafío principal. Lo resolví mediante:",
     erischatbotChallengeContent_a:

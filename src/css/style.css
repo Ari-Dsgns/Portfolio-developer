@@ -971,7 +971,12 @@
   background-color: #f0f0f0;
   background-color: rgba(249, 250, 251, 0.8705882353);
   backdrop-filter: blur(10px);
-  padding: 0 20px;
+  padding: 0 40px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 480px) {
   .navbar {
@@ -1024,7 +1029,6 @@
   background-color: transparent;
   padding: 0px;
   color: #F76C5E;
-  color: #2F4858;
   position: relative;
   opacity: 1;
   border-radius: 25%;
@@ -1707,7 +1711,7 @@ html.custom-cursor-enabled * {
   transition: 0.5s ease;
 }
 
-.readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box {
+.readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box, .eris-box {
   display: flex;
   flex-direction: column;
   width: 900px;
@@ -1718,10 +1722,10 @@ html.custom-cursor-enabled * {
   gap: 20px;
 }
 @media (max-width: 768px) {
-  .readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box {
+  .readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box, .eris-box {
     max-width: 98dvw;
   }
-  .readme-box .swipe-hint-2, .selvatika-box .swipe-hint-2, .destinea-box .swipe-hint-2, .saffvision-box .swipe-hint-2, .jgs-box .swipe-hint-2 {
+  .readme-box .swipe-hint-2, .selvatika-box .swipe-hint-2, .destinea-box .swipe-hint-2, .saffvision-box .swipe-hint-2, .jgs-box .swipe-hint-2, .eris-box .swipe-hint-2 {
     display: inline-flex;
   }
 }
@@ -1902,7 +1906,7 @@ html.custom-cursor-enabled * {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .about-me-content {
     padding-left: 10px;
   }
@@ -2268,7 +2272,7 @@ html.custom-cursor-enabled * {
   text-wrap: balance;
   margin-top: 0px;
   color: transparent;
-  padding-left: 0px;
+  padding-left: 20px;
 }
 .portfolio__text h1 {
   font-family: "safiro", sans-serif;
@@ -2321,7 +2325,7 @@ html.custom-cursor-enabled * {
 }
 @media (max-width: 1024px) {
   .portfolio__text {
-    padding-left: 50px;
+    padding-left: 10px;
   }
   .portfolio__text h1 {
     font-size: 36px;
@@ -2332,9 +2336,6 @@ html.custom-cursor-enabled * {
   }
 }
 @media (max-width: 480px) {
-  .portfolio__text {
-    padding-left: 0px;
-  }
   .portfolio__text h1 {
     font-size: 30px;
   }

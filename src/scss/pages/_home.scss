@@ -164,7 +164,7 @@
   text-wrap: balance;
   margin-top: 0px;
   color: transparent;
-  padding-left: 0px;
+  padding-left: 20px;
   h1{
     font-family: "safiro", sans-serif;
     font-size: 64px;
@@ -219,7 +219,7 @@
   }
   @include respond($breakpoint-md) {
 
-    padding-left: 50px;
+    padding-left: 10px;
     h1{
       font-size: 36px;
 
@@ -232,7 +232,7 @@
 
   @include respond($breakpoint-mobile-l) {
 
-    padding-left: 0px;
+    
     h1{
       font-size: 30px;
     }
