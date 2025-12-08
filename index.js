@@ -99,15 +99,15 @@ const translations = {
     jgsLearn_d: "SPA routing best practices",
     jgsLearn_e: "Professional workflow using npm and continuous deployment",
 
-    tuviniloSubtitle:
+    vinylshopSubtitle:
       "A clean and minimalist vinyl record eCommerce with dynamic cart and smooth navigation",
-    tuviniloSummaryContent:
+    vinylshopSummaryContent:
       "TuVinilo is an online vinyl record store designed for music lovers. The platform allows users to browse a curated collection of records, add them to their cart, and complete their purchase with ease. The design emphasizes a clean and minimalist aesthetic, featuring a hidden but accessible cart and navigation bar for an intuitive user experience.",
-    tuviniloGoalContent:
+    vinylshopGoalContent:
       "The main objective was to create a visually appealing and functional eCommerce experience that captures the vibe of vinyl culture. The focus was on smooth navigation and an interface that feels as nostalgic and enjoyable as listening to records.",
-    tuviniloRoleContent:
+    vinylshopRoleContent:
       "I handled the entire development process—from UI/UX design to implementing core features like the shopping cart and dynamic navigation. Special care was taken to ensure the user journey was seamless, balancing aesthetics with usability across all devices.",
-    tuviniloChallengeContent:
+    vinylshopChallengeContent:
       "One of the key challenges was creating an intuitive layout while keeping the interface visually clean. I implemented hidden-yet-accessible navigation and cart elements, which required thoughtful design and coding solutions. This project helped me refine my skills in user-centered design and strengthened my ability to merge visual design with interactive functionality.",
 
     destineaSubtitle:
@@ -265,13 +265,13 @@ const translations = {
     jgsLearn_d: "Mejores prácticas de enrutamiento en SPA",
     jgsLearn_e: "Flujo de trabajo profesional usando npm y despliegue continuo",
 
-    tuviniloSubtitle:
+    vinylshopSubtitle:
       "Un eCommerce de discos de vinilo limpio y minimalista con carrito dinámico y navegación fluida",
-    tuviniloSummaryContent:
+    vinylshopSummaryContent:
       "Tu Vinilo es una tienda online de discos de vinilo diseñada para los amantes de la música. La plataforma permite a los usuarios navegar por una cuidada colección de discos, añadirlos al carrito y completar su compra con facilidad. El diseño enfatiza una estética limpia y minimalista, con un carrito y una barra de navegación ocultos pero accesibles para una experiencia de usuario intuitiva.",
-    tuviniloGoalContent:
+    vinylshopGoalContent:
       "El objetivo principal era crear una experiencia de eCommerce visualmente atractiva y funcional que capturara la esencia de la cultura del vinilo. El enfoque estaba en una navegación fluida y una interfaz que se sintiera tan nostálgica y agradable como escuchar discos.",
-    tuviniloRoleContent:
+    vinylshopRoleContent:
       "Me encargué de todo el proceso de desarrollo, desde el diseño de UI/UX hasta la implementación de funciones clave como el carrito de compras y la navegación dinámica. Se prestó especial atención a garantizar que el recorrido del usuario fuera fluido, equilibrando la estética con la usabilidad en todos los dispositivos.",
     tuviniloChallengeContent:
       "Uno de los principales desafíos fue crear un diseño intuitivo manteniendo la interfaz visualmente limpia. Implementé elementos de navegación y carrito ocultos pero accesibles, lo que requirió soluciones de diseño y codificación cuidadosas. Este proyecto me ayudó a perfeccionar mis habilidades en diseño centrado en el usuario y fortaleció mi capacidad para fusionar el diseño visual con la funcionalidad interactiva.",
@@ -339,9 +339,14 @@ const translations = {
     BackToHome: "Volver al inicio",
   },
 };
+
 document.addEventListener("contextmenu", e => e.preventDefault());
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
+
+  
 
   // const flipText = document.querySelector('.flip-text');
 
