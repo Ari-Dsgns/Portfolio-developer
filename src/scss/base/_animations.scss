@@ -560,11 +560,24 @@
     transform: scale(1.2);
     box-shadow: 0 0 12px $ring-stroke;
     backdrop-filter: blur(1px);
+    
   }
   50% {
-    transform: scale(2);
+    transform: scale(1.6);
     box-shadow: 0 0 18px $ring-stroke;
     backdrop-filter: blur(0);
+    
+  }
+}
+
+@keyframes rotate{
+  from {
+    transform: rotate(0deg);
+    backdrop-filter: blur(1px);
+  }
+  to {
+    transform: rotate(360deg);
+    backdrop-filter: blur(1px);
   }
 }
 

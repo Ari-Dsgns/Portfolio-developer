@@ -146,11 +146,11 @@ $gradient-radial: radial-gradient(#cfdbd5ff, #e8eddfff, #f5cb5cff, #242423ff, #3
 
 
 $cursor-size: 44px;            // diámetro del anillo
-$dot-size: 8px;                // diámetro del punto
+$dot-size: 6px;                // diámetro del punto
 $ring-color: #416277;
 $ring-stroke: #416277;
 $dot-color: #416277;
-$hover-scale: 2;
+$hover-scale: 1.6;
 $click-scale: 0.8;
 $follow-speed: 0.1;
 $z-index-cursor: 9999;
