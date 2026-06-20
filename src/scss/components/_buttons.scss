@@ -105,16 +105,17 @@
     position: absolute;
     inset: 0;
     border-radius:50%;
-    box-shadow: 0 0 0 2px $ring-color inset;
+    box-shadow: 0 0 0 0px $ring-color inset;
     display: flex;
     align-items: center;
+    background-color:$bittersweet;
     justify-content: center;
     transform-origin: center;
     transition: transform 220ms cubic-bezier(.2,.9,.3,1), box-shadow 220ms;
     border: 1px solid rgba(255,255,255,0.04);
     // backdrop-filter: brightness(1.1) saturate(1.2) blur(1px);
     // animation: cursor-pulse 1.5s ease-in-out infinite; // 💓 animación activa
-    animation: rotate 1s linear infinite;
+    animation: rotate 0s linear infinite;
   }
 
   .cursor-dot {
@@ -126,6 +127,7 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background: $dot-color;
+    background-color: $bittersweet;
     box-shadow: 0 6px 20px rgba(0,0,0,0.35);
     transition: transform 160ms cubic-bezier(.2,.9,.3,1), background 160ms;
   }
@@ -137,6 +139,7 @@
       box-shadow: 0 0 24px $ring-stroke;
       animation: none;
       border-radius: 50%;
+      background-color: transparent;
       backdrop-filter: brightness(1.1) saturate(1.2) blur(0px);
     }
 

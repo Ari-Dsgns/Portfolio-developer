@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  
+ 
 
   // const flipText = document.querySelector('.flip-text');
 
@@ -615,7 +615,7 @@ document.querySelectorAll('.nav-links a, .home-btn').forEach(link => {
   let targetX = mouseX;
   let targetY = mouseY;
 
-  const speed = 0.18;
+  const speed = 0.75;
   const magnetStrength = 0.35; // qué tan fuerte es el "imán" (0.1–0.5 es razonable)
   let isMagnetActive = false;
   let magnetElement = null;
