@@ -979,7 +979,7 @@
   background-color: rgb(207, 219, 213);
   background-color: #e9e9e9;
   background-color: #f0f0f0;
-  background-color: rgba(249, 250, 251, 0.8705882353);
+  background-color: rgba(249, 250, 251, 0.4745098039);
   backdrop-filter: blur(10px);
   padding: 0 40px;
 }
@@ -1798,7 +1798,7 @@ html.custom-cursor-enabled * {
   }
 }
 .card-inner:hover img {
-  transform: scale(1.05) perspective(2000px) rotateY(-5deg);
+  transform: scale(1.05) perspective(2000px) rotateY(0deg);
 }
 
 #card5, #card6 {
