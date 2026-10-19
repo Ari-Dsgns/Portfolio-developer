@@ -101,6 +101,7 @@
   overflow-x: scroll; 
   overflow-y: hidden;
   
+  
   padding: 10px;
   
   @include respond($breakpoint-mobile-l) {
@@ -184,6 +185,7 @@
     font-family: 'N27', sans-serif;
     font-family: "Boldonse", system-ui;
     
+    
     font-weight: bolder;
     font-size: 25px;
     font-weight: 800;
@@ -191,6 +193,7 @@
     color: $button-petrol;
 
     font-family: 'Fender', sans-serif;
+    font-family: "Keania One", sans-serif;
     font-size: 40px;
     letter-spacing: 4px;
     

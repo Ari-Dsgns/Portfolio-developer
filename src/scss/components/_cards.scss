@@ -310,14 +310,17 @@
   h2{
     font-family: "inter", system-ui;
     font-family: "safiro", system-ui;
+    font-family: "Keania One", sans-serif;
     font-size: 18px;
     font-weight: 800;
     color: $button-petrol;
   }
   p{
     font-family: "inter", system-ui;
+    font-family: "Montserrat", sans-serif;
+    
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: $petrol;
   }
   a{
@@ -325,7 +328,8 @@
     background-color: transparent;
     color: $miami;
     border: solid 1.5px $miami;
-    
+    border-radius: 4px;
+    font-family: "Keania One", sans-serif;
     font-weight: 600;
     padding: 8px 16px;
     font-size: 14px;

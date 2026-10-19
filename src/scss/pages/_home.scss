@@ -167,6 +167,9 @@
   padding-left: 20px;
   h1{
     font-family: "safiro", sans-serif;
+    font-family: "N27", sans-serif;
+    font-family: "Keania One", sans-serif;
+    
     font-size: 64px;
     line-height: 1.2;
     font-weight: 600;
@@ -176,6 +179,7 @@
   }
   p{
     font-family: "inter", sans-serif;
+    
     font-size: 26px;
     font-weight: 500;
     color: $petrol;
@@ -184,7 +188,8 @@
     text-align: center;
     text-decoration: none;
     color: $petrol;
-    border: solid 2px $petrol;
+    border: solid 0px $petrol;
+    border-radius: 8px;
     padding: 12px;
     font-size: 28px;
     font-weight: 600;
@@ -192,12 +197,14 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     font-family: 'inter', sans-serif;
+    font-family: "Keania One", sans-serif;
     position: relative;
     background-color: $miami;
     padding-left: 40px;
     padding-right: 40px;
     &:hover {
       color: white;
+      
     }
   }
   div{

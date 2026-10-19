@@ -19,6 +19,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Keania+One&family=Stack+Sans+Notch:wght@200..700&display=swap");
 #dna div:nth-child(1) {
   animation-delay: -59.85s;
 }
@@ -947,6 +948,7 @@
 }
 .fonts {
   font-family: "Monoton", sans-serif;
+  font-family: "Keania One", sans-serif;
   font-family: "Limelight", sans-serif;
   font-family: "Anton", sans-serif;
   font-family: "Boldonse", system-ui;
@@ -1020,6 +1022,7 @@
   text-decoration: none;
   color: #2F4858;
   font-family: "inter", sans-serif;
+  font-family: "Keania One", sans-serif;
   font-size: 18px;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -1036,6 +1039,7 @@
   font-family: "Boldonse", system-ui;
   font-family: "Brockmann", sans-serif;
   font-family: "inter", sans-serif;
+  font-family: "Keania One", sans-serif;
   background-color: transparent;
   padding: 0px;
   color: #F76C5E;
@@ -1649,14 +1653,16 @@ html.custom-cursor-enabled * {
 .card-description h2 {
   font-family: "inter", system-ui;
   font-family: "safiro", system-ui;
+  font-family: "Keania One", sans-serif;
   font-size: 18px;
   font-weight: 800;
   color: #333E4D;
 }
 .card-description p {
   font-family: "inter", system-ui;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: #2F4858;
 }
 .card-description a {
@@ -1664,6 +1670,8 @@ html.custom-cursor-enabled * {
   background-color: transparent;
   color: #F76C5E;
   border: solid 1.5px #F76C5E;
+  border-radius: 4px;
+  font-family: "Keania One", sans-serif;
   font-weight: 600;
   padding: 8px 16px;
   font-size: 14px;
@@ -2016,6 +2024,7 @@ html.custom-cursor-enabled * {
 }
 .about-me-text1 h1 {
   font-family: "inter", sans-serif;
+  font-family: "Keania One", sans-serif;
   color: #F76C5E;
   font-style: italic;
   font-size: 30px;
@@ -2028,6 +2037,7 @@ html.custom-cursor-enabled * {
 }
 .about-me-text1 span {
   font-family: "Inter", sans-serif;
+  font-family: "Keania One", sans-serif;
   font-size: 22px;
   font-style: italic;
   margin-top: 6px;
@@ -2041,6 +2051,7 @@ html.custom-cursor-enabled * {
 }
 .about-me-text1 p {
   font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-weight: 300;
   color: #2F4858;
@@ -2064,8 +2075,9 @@ html.custom-cursor-enabled * {
 }
 .about-me-text2 p {
   font-family: "Inter", sans-serif;
-  font-size: 26px;
-  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
   color: #2F4858;
 }
 @media (max-width: 1024px) {
@@ -2314,6 +2326,8 @@ html.custom-cursor-enabled * {
 }
 .portfolio__text h1 {
   font-family: "safiro", sans-serif;
+  font-family: "N27", sans-serif;
+  font-family: "Keania One", sans-serif;
   font-size: 64px;
   line-height: 1.2;
   font-weight: 600;
@@ -2330,14 +2344,16 @@ html.custom-cursor-enabled * {
   text-align: center;
   text-decoration: none;
   color: #2F4858;
-  border: solid 2px #2F4858;
-  padding: 12px;
+  border: solid 0px #2F4858;
+  border-radius: 8px;
+  padding: 16px;
   font-size: 28px;
   font-weight: 600;
   margin-top: 40px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "inter", sans-serif;
+  font-family: "Keania One", sans-serif;
   position: relative;
   background-color: #F76C5E;
   padding-left: 40px;
@@ -2589,6 +2605,7 @@ html.custom-cursor-enabled * {
   transform: rotateZ(90deg);
   color: #333E4D;
   font-family: "Fender", sans-serif;
+  font-family: "Keania One", sans-serif;
   font-size: 40px;
   letter-spacing: 4px;
 }

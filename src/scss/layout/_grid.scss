@@ -206,6 +206,7 @@ html.custom-cursor-enabled {
   border-bottom: .1875rem solid $petrol;
   h2{
     font-family: "inter", sans-serif;
+    
     color: $miami;
     font-size: 30px;
     font-weight: 400;
@@ -213,7 +214,7 @@ html.custom-cursor-enabled {
     margin-top: 200px;
     margin-bottom: 200px;
     padding-left: 40px;
-
+    
   }
 
   @include respond($breakpoint-sm) {
@@ -225,6 +226,7 @@ html.custom-cursor-enabled {
         margin-top: 10px;
         margin-bottom: 40px;
         padding-left: 10px;
+        
       }
     }
 }
