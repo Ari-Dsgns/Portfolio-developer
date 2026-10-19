@@ -17,8 +17,9 @@
    background-color: #ffffff;
    background-color: #e9e9e9;
    background-color: #F9FAFB;
-   overflow-x: hidden;
    
+   
+   overflow-x: hidden;
    
    
    
@@ -39,8 +40,7 @@
   padding-right: 0px;
 
   
-  border-top: 0px solid $petrol;
-  border-bottom: 0px solid $petrol;
+  
   
   
 
@@ -97,7 +97,7 @@
   border: 0px solid $fontColor-petrol-light;
   outline: solid 0px $miami;
   padding: 0px;
-  border-bottom: 3px solid $petrol;
+  border-bottom: 0px solid $petrol;
   overflow-x: scroll; 
   overflow-y: hidden;
   

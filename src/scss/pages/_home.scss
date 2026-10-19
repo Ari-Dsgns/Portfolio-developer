@@ -24,8 +24,7 @@
    background-color: transparent;
    background-color: #F9FAFB;
    
-  border-bottom: 3px solid $petrol;
-  
+  border-bottom: 0px solid $petrol;
   
 
   // &::before{
@@ -89,11 +88,16 @@
     padding-left: 0px;
 
     animation: scaleDown 1.5s ease-in-out;
-    
-    
+    background-color: #f1f1f3;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     transition: 1s ease-in-out;
-    
+    //background-color: #f4f4f6;
+    //border-radius: 12px;
+    //padding-top: 40px;
+    //padding-bottom: 40px;
 
     // -webkit-animation: jello-horizontal 0.9s both;
 	  //       animation: jello-horizontal 0.9s both;
@@ -165,10 +169,13 @@
   margin-top: 0px;
   color: transparent;
   padding-left: 20px;
+  
+  
   h1{
     font-family: "safiro", sans-serif;
     font-family: "N27", sans-serif;
     font-family: "Keania One", sans-serif;
+    
     
     font-size: 64px;
     line-height: 1.2;
