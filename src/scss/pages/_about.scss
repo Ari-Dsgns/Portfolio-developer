@@ -99,6 +99,7 @@
   padding: 10px;
   
   border: solid 0px black;
+  
   img{
     
     width: 450px;
@@ -106,12 +107,16 @@
     object-fit: cover;
     position: relative;
     
-    border-radius: 1px;
+    border-radius: 12px;
     border: solid 0px transparent;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.298);
     transition: 0.8s ease;
 
-    
+    &:hover {
+     transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+     
+   }
     
 
     @include respond($breakpoint-mobile-l) {
@@ -178,8 +183,8 @@
   p{
     font-family: 'Inter', sans-serif;
     font-family: "Montserrat", sans-serif;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 400;
     color: $petrol;
     margin-top: 80px;
     

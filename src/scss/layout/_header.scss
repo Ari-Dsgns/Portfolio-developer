@@ -186,6 +186,7 @@
   
   
   border: 0px rgba(255, 255, 255, 0.853) solid;
+  
   gap: 0px;
   z-index: 999;
   
@@ -193,6 +194,7 @@
   background-color: $blue;
   background-color: $light-blue;
   background-color:rgba(163, 163, 163, 0.781);
+  background-color: transparent;
   border-radius: 0px;
   
   
@@ -216,12 +218,14 @@
   padding: 6px;
   opacity: 0.5;
   transition: 0.1s ease-in-out;
+  border: solid 1px black;
+  border-radius: 50%;
   
 
   &:hover{
     opacity:1;
     color: white;
-    outline: solid 2px $miami;
+    outline: solid 0px $miami;
     background-color: rgb(128, 128, 128);
   }
   
@@ -238,7 +242,7 @@
   color: white;
   font-weight: 500;
   opacity: 1;
-  background-color: $petrol;
+  background-color: $miami;
   
   
 }

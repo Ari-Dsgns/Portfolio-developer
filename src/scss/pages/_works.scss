@@ -90,19 +90,21 @@
 .cards-container{
   display: flex;
   
-  width: 100%;
+  width: 98%;
   height: 100%;
-  margin-top: 0px;
+  
   gap: 32px;
   border: 0px solid $fontColor-petrol-light;
   outline: solid 0px $miami;
   padding: 0px;
-  border-bottom: 0px solid $petrol;
+ 
   overflow-x: scroll; 
   overflow-y: hidden;
   
   
   padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   
   @include respond($breakpoint-mobile-l) {
     gap: 20px;
