@@ -272,6 +272,7 @@
   display: flex;
   border: solid 0px black;
   padding: 10px;
+  background-color: #F1F1EF;
 
   @include respond($breakpoint-mobile-l) {
     
@@ -298,6 +299,8 @@
   height: 100%;
   position: relative;
   left: 0;
+  background-color: #F1F1EF;
+  
 
   div{
     display: flex;
@@ -320,14 +323,14 @@
     font-family: "Montserrat", sans-serif;
     
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     color: $petrol;
   }
   a{
     text-decoration: none;
     background-color: transparent;
     color: $miami;
-    border: solid 1.5px $miami;
+    border: solid 0px $miami;
     border-radius: 4px;
     font-family: "Keania One", sans-serif;
     font-weight: 600;
@@ -374,7 +377,7 @@
   background-color: #E0EAE5;
   background-color: #f3f4f3;
   
-  background-color: #f3f4f3;
+  background-color: #EDEEEC;
   background-color: transparent;
   transition: 0.1s ease-in-out;
 
@@ -410,10 +413,10 @@
   img{
     width:100%;
     height: 100%;
-    border-radius: 0px;
+    border-radius: 12px;
     border: solid 0px transparent;
-    transform: scale(1);
-    transition: 0.5s ease;
+    transform: scale(0.8);
+    transition: 0.8s ease;
     
   }
 }
@@ -506,7 +509,7 @@
   
   &:hover{
     img{
-      transform: scale(1.05) perspective(2000px) rotateY(0deg);
+      transform: scale(0.8) perspective(2000px) rotateY(0deg);
     }
   }
 }

@@ -1087,7 +1087,7 @@
   align-items: center;
   padding: 0px;
   border: 0px rgba(255, 255, 255, 0.853) solid;
-  gap: 0px;
+  gap: 2px;
   z-index: 999;
   background-color: rgba(247, 107, 94, 0.8666666667);
   background-color: #4569A0;
@@ -1105,12 +1105,13 @@
   background: transparent;
   font-size: 14px;
   font-weight: 500;
+  background-color: rgb(128, 128, 128);
   color: white;
   align-items: center;
   padding: 6px;
   opacity: 0.5;
   transition: 0.1s ease-in-out;
-  border: solid 1px black;
+  border: solid 0px black;
   border-radius: 50%;
 }
 #lang-en:hover,
@@ -1375,10 +1376,12 @@ html.custom-cursor-enabled * {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height: 100%;
   background-color: #f1f1f3;
+  background-color: #F9FAFB;
   border-radius: 12px;
+  border: dashed 0px #F76C5E;
 }
 .interlude-box h2 {
   font-family: "inter", sans-serif;
@@ -1625,6 +1628,7 @@ html.custom-cursor-enabled * {
   display: flex;
   border: solid 0px black;
   padding: 10px;
+  background-color: #F1F1EF;
 }
 @media (max-width: 480px) {
   .card-container {
@@ -1648,6 +1652,7 @@ html.custom-cursor-enabled * {
   height: 100%;
   position: relative;
   left: 0;
+  background-color: #F1F1EF;
 }
 .card-description div {
   display: flex;
@@ -1667,14 +1672,14 @@ html.custom-cursor-enabled * {
   font-family: "inter", system-ui;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #2F4858;
 }
 .card-description a {
   text-decoration: none;
   background-color: transparent;
   color: #F76C5E;
-  border: solid 1.5px #F76C5E;
+  border: solid 0px #F76C5E;
   border-radius: 4px;
   font-family: "Keania One", sans-serif;
   font-weight: 600;
@@ -1714,7 +1719,7 @@ html.custom-cursor-enabled * {
   background-color: #F3F8F2;
   background-color: #E0EAE5;
   background-color: #f3f4f3;
-  background-color: #f3f4f3;
+  background-color: #EDEEEC;
   background-color: transparent;
   transition: 0.1s ease-in-out;
   /* evita que se encojan */
@@ -1732,10 +1737,10 @@ html.custom-cursor-enabled * {
 .card img {
   width: 100%;
   height: 100%;
-  border-radius: 0px;
+  border-radius: 12px;
   border: solid 0px transparent;
-  transform: scale(1);
-  transition: 0.5s ease;
+  transform: scale(0.8);
+  transition: 0.8s ease;
 }
 
 .readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box, .eris-box, .vinyl-box {
@@ -1811,7 +1816,7 @@ html.custom-cursor-enabled * {
   }
 }
 .card-inner:hover img {
-  transform: scale(1.05) perspective(2000px) rotateY(0deg);
+  transform: scale(0.8) perspective(2000px) rotateY(0deg);
 }
 
 #card5, #card6 {
@@ -2283,6 +2288,7 @@ html.custom-cursor-enabled * {
   background-color: transparent;
   background-color: #F9FAFB;
   border-bottom: 0px solid #2F4858;
+  padding: 20px;
 }
 
 .portfolio__title {
@@ -2300,10 +2306,11 @@ html.custom-cursor-enabled * {
   overflow: hidden;
   padding-left: 0px;
   animation: scaleDown 1.5s ease-in-out;
-  background-color: #f1f1f3;
+  background-color: #F9FAFB;
   border-radius: 12px;
   padding-top: 30px;
   padding-bottom: 30px;
+  border: dashed 0px #2F4858;
   transition: 1s ease-in-out;
 }
 @media (max-width: 1280px) {
@@ -2584,8 +2591,10 @@ html.custom-cursor-enabled * {
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+  background-color: #F1F1EF;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.223);
 }
 @media (max-width: 480px) {
   .cards-container {

@@ -187,7 +187,7 @@
   
   border: 0px rgba(255, 255, 255, 0.853) solid;
   
-  gap: 0px;
+  gap:2px;
   z-index: 999;
   
   background-color: #f76b5edd;
@@ -212,14 +212,15 @@
   background: transparent;
   font-size: 14px;
   font-weight: 500;
-  
+  background-color: rgb(128, 128, 128);
   color: white;
   align-items: center;
   padding: 6px;
   opacity: 0.5;
   transition: 0.1s ease-in-out;
-  border: solid 1px black;
+  border: solid 0px black;
   border-radius: 50%;
+  
   
 
   &:hover{

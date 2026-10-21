@@ -25,6 +25,7 @@
    background-color: #F9FAFB;
    
   border-bottom: 0px solid $petrol;
+  padding: 20px;
   
 
   // &::before{
@@ -88,12 +89,14 @@
     padding-left: 0px;
 
     animation: scaleDown 1.5s ease-in-out;
-    background-color: #f1f1f3;
+    background-color: #F9FAFB;
     border-radius: 12px;
     padding-top: 30px;
     padding-bottom: 30px;
+    border: dashed 0px $petrol;
 
     transition: 1s ease-in-out;
+    //box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.223); 
     //background-color: #f4f4f6;
     //border-radius: 12px;
     //padding-top: 40px;

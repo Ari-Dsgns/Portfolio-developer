@@ -200,12 +200,14 @@ html.custom-cursor-enabled {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height:100%;
   
   
   background-color: #f1f1f3;
+  background-color: #F9FAFB;
   border-radius: 12px;
+  border: dashed 0px $miami;
 
   h2{
     font-family: "inter", sans-serif;

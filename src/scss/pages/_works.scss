@@ -103,9 +103,11 @@
   
   
   padding: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+  background-color: #F1F1EF;
   
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.223);
   @include respond($breakpoint-mobile-l) {
     gap: 20px;
     padding: 0px;
