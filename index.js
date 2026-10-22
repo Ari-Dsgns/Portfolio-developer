@@ -521,11 +521,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   function changeLanguage(lang) {
-     document.getElementById("overlay").style.display = "flex";
-     setTimeout(() => {
-        document.getElementById("overlay").style.display = "none";
-       
-      }, 2000);
+  const overlay = document.getElementById("overlay");
+  const translationMessage = overlay.querySelector("p");
+
+  // Cambiar el mensaje según el idioma seleccionado
+  translationMessage.textContent =
+    lang === "es" ? "Traduciendo..." : "Translating...";
+
+  overlay.style.display = "flex";
+
+  // Mantener el timeout original
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 2000);
 
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
