@@ -1,278 +1,19 @@
-// .card{
-//   display: flex;
-//   flex-direction: column;
-//   width:100%;
-//   height: auto;
-//   border-bottom: solid 30px $platinum;
-  
-  
-//   padding: 0px;
-  
-  
-//   img{
-    
-//     height: 400px;
-//     flex-shrink: 0;
-//     border: solid 0px black;
-   
 
-    
-//   }
-   
-//   h2{
-//     font-family: "NeueMetanaNext", system-ui;
-//     font-weight: 400;
-//     font-size: 20px;
-//     padding-left: 10px;
-//     color:#242423ff;
-//     text-align: start;
-//     @include respond($breakpoint-sm) {
-//       font-size: 18px;
-//     }
-//   }
-//   h3{
-//     font-family: "NeueMetanaNext", system-ui;
-//     font-weight: 400;
-//     padding-left: 10px;
-//     color:#242423ff;
-//     font-size: 18px;
-    
-//     text-align: start;
-//     @include respond($breakpoint-sm) {
-//       font-size: 16px;
-//     }
-//   }
-//   P{
-//     font-family: "NeueMetanaNext", system-ui;
-//     font-weight: 300;
-//     padding-left: 10px;
-//     color:#242423ff;
-//     font-size: 14px;
-   
-//     text-align: start;
-//     @include respond($breakpoint-sm) {
-//       font-size: 14px;
-//     }
-//   }
-//   @include respond($breakpoint-mobile-l) {
-//     border-bottom: 12px $platinum solid;
-//   }
-// }
-
-// .card-inner{
-//   display: flex;
-//   padding: 10px;
-//   gap: 20px;
-//   border: solid 0px white;
-//   margin-top: 20px;
-//   animation:  fadeIn 1.5s ease-in-out;
-//   overflow-x: auto;     /* scroll en eje X */
-//   overflow-y: hidden;   /* ocultar vertical */
-//   scroll-behavior: smooth;
-//   border: solid 0px black;
-
-//   /* ocultar scrollbar (opcional) */
-//   -ms-overflow-style: none;  /* IE/Edge */
-//   scrollbar-width: none;     /* Firefox */
-
-  
-
-   
-
-  
- 
-// }
 
 .card::-webkit-scrollbar{
   display: none;
 }
 
 
-// .card-text{
-//   width:850px;
-//   height: 350px;
-//   padding: 10px;
-//   overflow-y: scroll;
-//   position: relative;
-//   flex-shrink: 0;
-//   gap: 10px;
-//   display: flex;
-  
-//   background-color: rgba(232, 237, 223, 0.932);
-//   justify-content: start;
-  
-  
- 
-//   border: solid 0px rgba(51, 51, 51, 0.572);
-//   border-radius: 2px;
-//   padding-top: 20px;
-//   gap: 10px;
-
-//   background-color: #f7f7f7fb;
-//   background-color: transparent;
-//   background-color: rgba(207, 219, 213, 0.38);
-//   background-color: $platinum;
-//   background-color: transparent;
- 
-
-//   // transform: rotateY(-30deg );
-//   // transform-style: preserve-3d;
-  
-
-  
-//   div{
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10px;
-    
-//   }
-  
-  
-//   h3{
-//     font-family: "montserrat", sans-serif;
-//     font-family: "inter", sans-serif;
-//     font-weight: 400;
-    
-//     font-size: 18px;
-//     color: $miami;
-
-//   }
-//   p{
-//     font-family: "montserrat", sans-serif;
-//     font-family: "inter", sans-serif;
-//     font-weight: 400;
-//     font-size: 16px;
-//     color: rgb(26, 26, 26);
-//   }
-  
-
-//   @include respond($breakpoint-md) {
-//     width: 500px;
-//     height: 320px;
-//     flex-direction: column;
-//   }
-  
-//   @include respond($breakpoint-mobile-l) {
-//     width: 95dvw;
-//     flex-direction: column;
-    
-    
-//   }
-  
-// }
-// .card-text::-webkit-scrollbar{
-//   width: 0px;
-  
-
-
-// }
-// .card-text::-webkit-scrollbar-thumb{
-//   background: #666;
-//   border-radius: 4px;
-// }
-// .card-text::-webkit-scrollbar-track{
-//   background: #222;
-// }
-
-// // #card1{
-// //   transform: rotate(10deg) scale(0.8);
-// // }
-
-
-// .card-title{
-//   display: flex;
-//   flex-direction: column;
-//   gap: 20px;
-//   align-items: start;
-//   position: relative;
-//   padding-left: 40px;
-  
-//   border: solid 0px black;
-  
-//   h2{
-//     font-family: "Boldonse", system-ui;
-//     font-family: "NeueMetanaNext", system-ui;
-//     font-size: 18px;
-//     font-weight: 700;
-//     color: $button-petrol;
-//   }
-//   h3{
-//     font-family: "inter", system-ui;
-//     font-size: 18px;
-//     font-weight: 500;
-//     color: $button-petrol;
-//   }
-//   p{
-//     font-family: "inter", system-ui;
-//     font-size: 16px;
-//     font-weight: 400;
-//     color: $button-petrol;
-//   }
-  
-//   button{
-//     background-color:rgb(175, 175, 175);
-//     background-color:$miami;
-//     border: none;
-//     color:white;
-//     padding: 10px 20px;
-//     border-radius: 50px;
-//     text-align: center;
-//     text-decoration: none;
-//     display: inline-block;
-//     font-size: 16px;
-//     margin: 4px 2px;
-//     cursor: pointer;
-    
-//     font-family: "NeueMetanaNext", system-ui;
-//     font-family: 'Montserrat', sans-serif;
-//     font-weight: 700;
-//     transition: all 0s ease-in-out;
-//     &:hover {
-
-      
-//       background: darken($petrol, 10%);
-      
-      
-//     }
-//   }
-//   a{
-//     text-decoration: none;
-//     background-color: transparent;
-//     color: $petrol;
-//     border: solid 1.5px $petrol;
-//     border-radius: 50px;
-//     font-weight: 600;
-//     padding: 10px 20px;
-//     &:hover {
-//       background-color: $petrol;
-//       color: white;
-//     }
-//   }
-//   @include respond($breakpoint-sm) {
-//     left: 20px;
-//     margin-top: 20px;
-//     gap: 10px;
-//     h2{
-//       font-size: 16px;
-//     }
-//     h3{
-//       font-size: 16px;
-//     }
-//     p{
-//       font-size: 14px;
-//     }
-//     button,a{
-//       font-size: 14px;
-//       padding: 8px 16px;
-//     }
-//   }
-// }
-
 .card-container{
   display: flex;
   border: solid 0px black;
-  padding: 10px;
+  padding: 0px;
   background-color: #F1F1EF;
+  background-color: #EEEEEB;
+  background-color: #EEEDE9;
+  
+  border-radius: 0px;
 
   @include respond($breakpoint-mobile-l) {
     
@@ -299,8 +40,8 @@
   height: 100%;
   position: relative;
   left: 0;
-  background-color: #F1F1EF;
-  
+  background-color: transparent;
+  background-color: #EEEDE9;
 
   div{
     display: flex;
@@ -341,10 +82,11 @@
       
       font-size: 12px;
     }
-    &:hover {
-      background-color: $petrol;
-      color: white;
-    }
+    &:hover{
+    color: $miami;
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
   }
 
   @include respond($breakpoint-sm) {
@@ -352,10 +94,6 @@
   }
     
 }
-
-
-
-
 
 
 .card{
@@ -370,25 +108,11 @@
   position: relative;
   // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  border-radius: 0px;
-  animation: fadeIn 1.5s ease-in-out;
-  background-color: $platinum;
-  background-color: #F3F8F2;
-  background-color: #E0EAE5;
-  background-color: #f3f4f3;
   
-  background-color: #EDEEEC;
-  background-color: transparent;
+  animation: fadeIn 1.5s ease-in-out;
+  
   transition: 0.1s ease-in-out;
 
-   /* evita que se encojan */
-  
-  
-
-
-  
-  
-  
   &:hover{
     
     box-shadow: 0px 0px 6px rgba(56, 56, 56, 0);
@@ -402,12 +126,6 @@
         color: $miami;
       }
     }
-    
-    
-    
-    
-   
-    
   }
 
   img{
@@ -441,6 +159,10 @@
   }
   
 }
+
+
+
+
 
 .swipe-hint-2 {
   display:none;
@@ -485,23 +207,6 @@
   .chev { animation: none; }
 }
 
-// .card::before {
-//   content: "";
-//   position: absolute;
-//   inset: 0;
-//   border-radius: inherit;
-//   padding: 4px; /* grosor del borde */
-//   background: linear-gradient(to bottom, transparent 20%, #F76C5E 100%, transparent 100%);
-//   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-//   -webkit-mask-composite: xor;
-//   mask-composite: exclude;
-//   opacity: 0;
-//   transition: opacity 0.3s ease;
-// }
-
-// .card:hover::before {
-//   opacity: 1;
-// }
 
 
 

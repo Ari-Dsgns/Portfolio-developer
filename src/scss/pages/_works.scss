@@ -1,49 +1,14 @@
 .work-container{
   display: flex;
-  
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  
   align-items: center;
-  
   height: 100%;
-  
-  background-color: $platinum;
-  background-color: #F3F8F2;
-  background-color: #E0EAE5;
-  background-color: #f3f4f3;
-   background-color: #FCF7F8;
-   background-color: #ffffff;
-   background-color: #e9e9e9;
-   background-color: #F9FAFB;
-   
-   
-   overflow-x: hidden;
-   
-   
-   
-  
-  
- 
-  
-  
+  background-color: #F9FAFB;
+  overflow-x: hidden;
   z-index: 1;
   gap:40px;
-
-
-  
-
-  
-  
-  padding-left: 0px;
-  padding-right: 0px;
-
-  
-  
-  
-  
-
 
   // --border-angle: 0turn; // For animation.
   //   --main-bg: conic-gradient(
@@ -67,17 +32,6 @@
   //   background-position: center center;
   //   animation: bg-spin 20s linear infinite;
 
-  
-  
-  
-  
-
-  
-  
-
-  
-
-
 }
 
 
@@ -89,25 +43,13 @@
 
 .cards-container{
   display: flex;
-  
-  width: 98%;
+  width: 100%;
   height: 100%;
-  
   gap: 32px;
   border: 0px solid $fontColor-petrol-light;
   outline: solid 0px $miami;
-  padding: 0px;
- 
   overflow-x: scroll; 
   overflow-y: hidden;
-  
-  
-  padding: 10px;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  background-color: #F1F1EF;
-  
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.223);
   @include respond($breakpoint-mobile-l) {
     gap: 20px;
     padding: 0px;
@@ -117,19 +59,6 @@
 }
 
 
-
-
-// .cards-container3{
-//   display: flex;
-//   flex-direction: column;
-//   gap: 20px;
-//   width: 100%;
-//   height:100%;
-//   background-color: $alabaster;
-//   padding: 40px;
-  
-  
-// }
 
 .cards-container::-webkit-scrollbar {
   display: none; // Oculta la barra de desplazamiento en WebKit (Chrome, Safari)

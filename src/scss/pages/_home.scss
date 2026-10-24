@@ -12,17 +12,7 @@
 
   min-height: 80dvh;
   max-width: 100%;
-  background-color: #242423;
   
-  background-color: $alabaster;
-  background-color: $platinum;
-  background-color: #E0EAE5;
-  background-color: #f3f4f3;
-
-   background-color: $platinum;
-   background-color: #e9e9e9;
-   background-color: transparent;
-   background-color: #F9FAFB;
    
   border-bottom: 0px solid $petrol;
   padding: 20px;
@@ -89,50 +79,44 @@
     padding-left: 0px;
 
     animation: scaleDown 1.5s ease-in-out;
-    background-color: #F9FAFB;
+    
     border-radius: 12px;
     padding-top: 30px;
     padding-bottom: 30px;
     border: dashed 0px $petrol;
 
     transition: 1s ease-in-out;
-    //box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.223); 
-    //background-color: #f4f4f6;
-    //border-radius: 12px;
-    //padding-top: 40px;
-    //padding-bottom: 40px;
+    
+    
+    border-radius: 12px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
-    // -webkit-animation: jello-horizontal 0.9s both;
-	  //       animation: jello-horizontal 0.9s both;
-    //       animation-delay: 1s;
+    /* -webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+          animation-delay: 1s;
  
 
 
-    // --border-angle: 0turn; // For animation.
-    // --main-bg: conic-gradient(
-    //     from var(--border-angle),
-    //     #1a1919 ,
-    //     #1a1919 100%
-    // );
-    // border: solid 30px transparent;
+    --border-angle: 0turn; // For animation.
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #F9FAFB ,
+        #F9FAFB 100%
+    );
+    border: solid 12px transparent;
 
-    // border-radius:1px;
-    // --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #6958ff 99%, transparent);
-    // background:
-    //   // padding-box clip this background in to the overall element except the border.
-    //   var(--main-bg) padding-box,
-    //   // border-box extends this background to the border space
-    //   var(--gradient-border) border-box,
-    //   // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
-    //   var(--main-bg) border-box;
-    // background-position: center center;
-    // animation: bg-spin 6s  linear infinite;
-
-
-   
- 
-
-
+    border-radius:1px;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #FF6C58 99%, transparent);
+    background:
+      // padding-box clip this background in to the overall element except the border.
+      var(--main-bg) padding-box,
+      // border-box extends this background to the border space
+      var(--gradient-border) border-box,
+      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+      var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 6s  linear infinite; */
 
  @include respond($breakpoint-lg) {
     a{
@@ -197,10 +181,10 @@
   a{
     text-align: center;
     text-decoration: none;
-    color: $petrol;
+    color: $miami;
     border: solid 0px $petrol;
-    border-radius: 8px;
-    padding: 12px;
+    border-radius: 0px;
+    padding: 0px;
     font-size: 28px;
     font-weight: 600;
     margin-top: 40px;
@@ -209,11 +193,39 @@
     font-family: 'inter', sans-serif;
     font-family: "Keania One", sans-serif;
     position: relative;
-    background-color: $miami;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
     &:hover {
-      color: white;
+      
+      transform: scale(1.2);
+      transition: 0.1s;
+      border-bottom: 2px solid $miami;
+      /* -webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+          animation-delay: 0s;
+ 
+
+
+    --border-angle: 0turn; // For animation.
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #F9FAFB ,
+        #F9FAFB 100%
+    );
+    border: solid 2px transparent;
+
+    border-radius:1px;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #FF6C58 99%, transparent);
+    background:
+      // padding-box clip this background in to the overall element except the border.
+      var(--main-bg) padding-box,
+      // border-box extends this background to the border space
+      var(--gradient-border) border-box,
+      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+      var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 1s  linear ; */
       
     }
   }

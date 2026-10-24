@@ -1030,6 +1030,8 @@
 }
 .nav-links a:hover {
   color: #F76C5E;
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 
 .home-btn {
@@ -1628,8 +1630,11 @@ html.custom-cursor-enabled * {
 .card-container {
   display: flex;
   border: solid 0px black;
-  padding: 10px;
+  padding: 0px;
   background-color: #F1F1EF;
+  background-color: #EEEEEB;
+  background-color: #EEEDE9;
+  border-radius: 0px;
 }
 @media (max-width: 480px) {
   .card-container {
@@ -1653,7 +1658,8 @@ html.custom-cursor-enabled * {
   height: 100%;
   position: relative;
   left: 0;
-  background-color: #F1F1EF;
+  background-color: transparent;
+  background-color: #EEEDE9;
 }
 .card-description div {
   display: flex;
@@ -1694,8 +1700,9 @@ html.custom-cursor-enabled * {
   }
 }
 .card-description a:hover {
-  background-color: #2F4858;
-  color: white;
+  color: #F76C5E;
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 @media (max-width: 768px) {
   .card-description {
@@ -1714,16 +1721,8 @@ html.custom-cursor-enabled * {
   border: 0px solid #4569A0;
   position: relative;
   cursor: pointer;
-  border-radius: 0px;
   animation: fadeIn 1.5s ease-in-out;
-  background-color: rgb(207, 219, 213);
-  background-color: #F3F8F2;
-  background-color: #E0EAE5;
-  background-color: #f3f4f3;
-  background-color: #EDEEEC;
-  background-color: transparent;
   transition: 0.1s ease-in-out;
-  /* evita que se encojan */
 }
 .card:hover {
   box-shadow: 0px 0px 6px rgba(56, 56, 56, 0);
@@ -2028,6 +2027,21 @@ html.custom-cursor-enabled * {
   margin-top: 0px;
 }
 
+.quote-text {
+  display: block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: opacity 0.4s ease;
+}
+
+.quote-author {
+  display: block;
+  color: #b49b75;
+  font-size: 1rem;
+  margin-top: 12px;
+  transition: opacity 0.4s ease;
+}
+
 .about-me-text1 {
   display: flex;
   flex-direction: column;
@@ -2121,7 +2135,7 @@ html.custom-cursor-enabled * {
   text-align: center;
   gap: 40px;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgb(207, 219, 213);
   background-color: #e9e9e9;
   background-color: #201F1B;
@@ -2195,7 +2209,6 @@ html.custom-cursor-enabled * {
   text-decoration: none;
   background-color: transparent;
   color: #F76C5E;
-  border: solid 1.5px #F76C5E;
   border-radius: 8px;
   font-weight: 600;
   padding: 8px 16px;
@@ -2203,9 +2216,8 @@ html.custom-cursor-enabled * {
   width: fit-content;
 }
 .contact-card a:hover {
-  background-color: #2F4858;
-  color: white;
-  border: solid 1.5px transparent;
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 .contact-card svg {
   position: absolute;
@@ -2279,15 +2291,6 @@ html.custom-cursor-enabled * {
   position: relative;
   min-height: 80dvh;
   max-width: 100%;
-  background-color: #242423;
-  background-color: rgb(232, 237, 223);
-  background-color: rgb(207, 219, 213);
-  background-color: #E0EAE5;
-  background-color: #f3f4f3;
-  background-color: rgb(207, 219, 213);
-  background-color: #e9e9e9;
-  background-color: transparent;
-  background-color: #F9FAFB;
   border-bottom: 0px solid #2F4858;
   padding: 20px;
 }
@@ -2307,12 +2310,39 @@ html.custom-cursor-enabled * {
   overflow: hidden;
   padding-left: 0px;
   animation: scaleDown 1.5s ease-in-out;
-  background-color: #F9FAFB;
   border-radius: 12px;
   padding-top: 30px;
   padding-bottom: 30px;
   border: dashed 0px #2F4858;
   transition: 1s ease-in-out;
+  border-radius: 12px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* -webkit-animation: jello-horizontal 0.9s both;
+       animation: jello-horizontal 0.9s both;
+        animation-delay: 1s;
+
+
+
+  --border-angle: 0turn; // For animation.
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #F9FAFB ,
+      #F9FAFB 100%
+  );
+  border: solid 12px transparent;
+
+  border-radius:1px;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #FF6C58 99%, transparent);
+  background:
+    // padding-box clip this background in to the overall element except the border.
+    var(--main-bg) padding-box,
+    // border-box extends this background to the border space
+    var(--gradient-border) border-box,
+    // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+    var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 6s  linear infinite; */
 }
 @media (max-width: 1280px) {
   .portfolio__title a {
@@ -2367,10 +2397,10 @@ html.custom-cursor-enabled * {
 .portfolio__text a {
   text-align: center;
   text-decoration: none;
-  color: #2F4858;
+  color: #F76C5E;
   border: solid 0px #2F4858;
-  border-radius: 8px;
-  padding: 12px;
+  border-radius: 0px;
+  padding: 0px;
   font-size: 28px;
   font-weight: 600;
   margin-top: 40px;
@@ -2379,12 +2409,39 @@ html.custom-cursor-enabled * {
   font-family: "inter", sans-serif;
   font-family: "Keania One", sans-serif;
   position: relative;
-  background-color: #F76C5E;
-  padding-left: 40px;
-  padding-right: 40px;
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .portfolio__text a:hover {
-  color: white;
+  transform: scale(1.2);
+  transition: 0.1s;
+  border-bottom: 2px solid #F76C5E;
+  /* -webkit-animation: jello-horizontal 0.9s both;
+       animation: jello-horizontal 0.9s both;
+        animation-delay: 0s;
+
+
+
+  --border-angle: 0turn; // For animation.
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #F9FAFB ,
+      #F9FAFB 100%
+  );
+  border: solid 2px transparent;
+
+  border-radius:1px;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #FF6C58 99%, transparent);
+  background:
+    // padding-box clip this background in to the overall element except the border.
+    var(--main-bg) padding-box,
+    // border-box extends this background to the border space
+    var(--gradient-border) border-box,
+    // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+    var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 1s  linear ; */
 }
 .portfolio__text div {
   display: flex;
@@ -2566,36 +2623,21 @@ html.custom-cursor-enabled * {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: rgb(207, 219, 213);
-  background-color: #F3F8F2;
-  background-color: #E0EAE5;
-  background-color: #f3f4f3;
-  background-color: #FCF7F8;
-  background-color: #ffffff;
-  background-color: #e9e9e9;
   background-color: #F9FAFB;
   overflow-x: hidden;
   z-index: 1;
   gap: 40px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .cards-container {
   display: flex;
-  width: 98%;
+  width: 100%;
   height: 100%;
   gap: 32px;
   border: 0px solid #828FA2;
   outline: solid 0px #F76C5E;
-  padding: 0px;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 10px;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  background-color: #F1F1EF;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.223);
 }
 @media (max-width: 480px) {
   .cards-container {

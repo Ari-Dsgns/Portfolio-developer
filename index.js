@@ -1,44 +1,49 @@
-
-
-
-
-
-
 const translations = {
   en: {
-
     homeGreeting: "Hello! I'm Ari,",
     homeWelcome: "I design with strategy. I build smart digital experiences.",
-    homeWelcomeBack: "Creating with purpose. Designing engaging digital projects.",
-    homeGreetingHead: "a multidisciplinary designer who blends strategy, aesthetics, and code to create memorable digital experiences.",
-    viewProjectsBtn: "VIEW MY WORK",
+    homeWelcomeBack:
+      "Creating with purpose. Designing engaging digital projects.",
+    homeGreetingHead:
+      "a multidisciplinary designer who blends strategy, aesthetics, and code to create memorable digital experiences.",
+    viewProjectsBtn: "→ VIEW MY WORK",
 
     homeBtn: "ARI PORTFOLIO",
     projectTag: "Work",
     aboutTag: "About",
     contactTag: "Contact",
 
-    aboutMeTitle: "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
-    interludeText: "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
+    aboutMeTitle:
+      "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
+    interludeText:
+      "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
 
-    aboutMePhotoComment: "Yes, that's me in the photo. Just posing. Unfortunately, I don't have a boat yet.",
+    aboutMePhotoComment:
+      "Yes, that's me in the photo. Just posing. Unfortunately, I don't have a boat yet.",
     aboutMeContentSubtitle: "WHO AM I?",
-    aboutMeContentText1:"My name is Ariel Sánchez, but people know me as Ari. I'm a Visual Designer with a focus on UXUI and a Front-End Developer. I was born and raised in Buenos Aires. I've lived in many places like Granada, London, or Madrid, where I finally decided to settle down. I'm passionate about the different and the challenging. Inside me coexist two essences seeking balance: a disruptive soul under a structured mind.",
-    aboutMeContentText2:"WHAT DO I DO?",
-    aboutMeContentText4:"I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
-    aboutMeContentText6:"WHAT MOTIVATES ME?",
-    aboutMeContentText7:"For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe that a design is never completely finished because adaptation is never complete; it must grow and transform alongside those who use it. In a way, artificial intelligence reflects that same essence: it learns, transforms, and redefines itself with each interaction, as if it had its own life cycle. Just as AI evolves from experience, design must also be nurtured by time, people, and the changes that surround it. A clear example of this constant evolution is the Peugeot logo, which has changed over the years without losing its identity, demonstrating that the essence can be maintained even when the form is renewed. What do you think?",
-    aboutMeContentText8:"HOW DID I END UP HERE?",
-    aboutMeContentText9:"I love art in all its forms, from painting to music, cinema, and photography. Over the years, I've found a unique balance between design and development, where creativity and logic converge. It's at that intersection where I feel most comfortable, turning ideas into engaging and functional experiences for users.",
-    aboutMeContentText10:"I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.",
-    aboutMeContentText11:"SHALL WE GET IN TOUCH?",
+    aboutMeContentText1:
+      "My name is Ariel Sánchez, but people know me as Ari. I'm a Visual Designer with a focus on UXUI and a Front-End Developer. I was born and raised in Buenos Aires. I've lived in many places like Granada, London, or Madrid, where I finally decided to settle down. I'm passionate about the different and the challenging. Inside me coexist two essences seeking balance: a disruptive soul under a structured mind.",
+    aboutMeContentText2: "WHAT DO I DO?",
+    aboutMeContentText4:
+      "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
+    aboutMeContentText6: "WHAT MOTIVATES ME?",
+    aboutMeContentText7:
+      "For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe that a design is never completely finished because adaptation is never complete; it must grow and transform alongside those who use it. In a way, artificial intelligence reflects that same essence: it learns, transforms, and redefines itself with each interaction, as if it had its own life cycle. Just as AI evolves from experience, design must also be nurtured by time, people, and the changes that surround it. A clear example of this constant evolution is the Peugeot logo, which has changed over the years without losing its identity, demonstrating that the essence can be maintained even when the form is renewed. What do you think?",
+    aboutMeContentText8: "HOW DID I END UP HERE?",
+    aboutMeContentText9:
+      "I love art in all its forms, from painting to music, cinema, and photography. Over the years, I've found a unique balance between design and development, where creativity and logic converge. It's at that intersection where I feel most comfortable, turning ideas into engaging and functional experiences for users.",
+    aboutMeContentText10:
+      "I'm always looking for opportunities to grow, collaborate with inspiring teams, and create products that make a difference.",
+    aboutMeContentText11: "SHALL WE GET IN TOUCH?",
 
-    ProjectsTitle: "You can find out how to do something and then do it or do something and then find out what you did",
+    ProjectsTitle:
+      "You can find out how to do something and then do it or do something and then find out what you did",
     ProjectsTitle2: "Projects",
 
     contactTitle: "3. Contact",
-    contactMeText: "I'm currently available for freelance work or full-time opportunities. Whether you have a project in mind or just want to say hello, feel free to reach out. I look forward to connecting with you!",
-    contactMeButton: "Contact Me",
+    contactMeText:
+      "I'm currently available for freelance work or full-time opportunities. Whether you have a project in mind or just want to say hello, feel free to reach out. I look forward to connecting with you!",
+    contactMeButton: "→ Contact Me",
 
     OpenProject: "→  VIEW CASE STUDY",
     OpenPrototype: "→  VIEW PROTOTYPE",
@@ -48,7 +53,6 @@ const translations = {
 
     jgsSubtitle:
       "A React-based minimalist eCommerce built from scratch using Firebase & Context API",
-    
 
     SummaryTitle: "Summary:",
     GoalTitle: "Proyect goal:",
@@ -63,7 +67,8 @@ const translations = {
       "ERIS is a university FAQ chatbot created as a full-scope design and development project. It combines brand identity, UI design, and front-end development to deliver an engaging and accessible experience for students. Inspired by the solar system, ERIS stands out with its minimalist orbit-themed interface, dynamic logo, and modern microinteractions.",
     erischatbotGoalContent:
       "To build a complete digital product: from brand concept and visual identity to UI prototyping, accessibility, and live deployment. The aim was to provide students with an intuitive tool to find academic information while demonstrating advanced design systems and coding skills.",
-    erischatbotRoleContent: "I led every stage of the project, including: Branding & Identity: Defined ERIS’ name, concept, logo, and solar-inspired design language. UI/UX Design: Crafted a clean, responsive interface ensuring clarity, focus, and intuitive navigation. Development: Built the app with React, Vite, Tailwind CSS, and JavaScript for interactive logic and chatbot responses. Accessibility Implementation: Ensured WCAG 2.1 AA compliance with keyboard navigation, semantic HTML, ARIA labels, and contrast guidelines. Deployment & Testing: Hosted on Vercel for rapid access, tested cross-browser and device responsiveness.",
+    erischatbotRoleContent:
+      "I led every stage of the project, including: Branding & Identity: Defined ERIS’ name, concept, logo, and solar-inspired design language. UI/UX Design: Crafted a clean, responsive interface ensuring clarity, focus, and intuitive navigation. Development: Built the app with React, Vite, Tailwind CSS, and JavaScript for interactive logic and chatbot responses. Accessibility Implementation: Ensured WCAG 2.1 AA compliance with keyboard navigation, semantic HTML, ARIA labels, and contrast guidelines. Deployment & Testing: Hosted on Vercel for rapid access, tested cross-browser and device responsiveness.",
 
     erischatbotChallengeContent:
       "Creating an immersive brand experience while maintaining high accessibility standards was the core challenge. I solved it by:",
@@ -88,7 +93,8 @@ const translations = {
     jgsGoalContent:
       "The main challenge was to create a modern, fast, and responsive online store. The project features a dynamic product catalog, shopping cart functionality, category filters, and a smooth, reload-free user experience.",
 
-    jgsRoleContent: "I developed the entire project from scratch with UI/UX design and ReactJS Development. I implemented dynamic routing (/item/:itemId,/category/:categoryId). I also developed the global cart logic using Context API and integrated Firebase for order storage and checkout functionality.",
+    jgsRoleContent:
+      "I developed the entire project from scratch with UI/UX design and ReactJS Development. I implemented dynamic routing (/item/:itemId,/category/:categoryId). I also developed the global cart logic using Context API and integrated Firebase for order storage and checkout functionality.",
 
     jgsChallengeContent:
       "The main challenge was keeping dynamic routing for categories and product pages fully in sync while maintaining a consistent global cart state. I solved this using React Router for dynamic routes and Context API for state management I also implemented a checkout system that stores each order in Firebase with a unique ID.",
@@ -121,14 +127,13 @@ const translations = {
     destineaChallengeContent:
       "One of the main challenges was ensuring that the website was fully responsive and provided an optimal viewing experience across various devices. By utilizing Bootstrap`s` grid system and responsive utilities, I was able to create a layout that adapts to different screen sizes. This project enhanced my understanding of responsive web design and the practical application of Bootstrap`s features.",
 
-
     selvatikaSummaryContent:
       "Selvatika is a travel agency specializing in immersive jungle experiences around the world. Its purpose is to connect travelers with biodiversity and local cultures, promoting sustainable tourism and respect for the environment. The brand combines adventure, authenticity, and ecological awareness with a visual identity that conveys mystery and natural exuberance.",
     selvatikaGoalContent:
       "Design an identity and digital experience that reflects the essence of the brand —the connection between humans and nature—, generating attraction and conversion through a modern, immersive aesthetic consistent with Selvatika's ecological values.",
     selvatikaRoleContent:
       "I was responsible for the entire design process, from creating the logo and visual identity, UX/UI design of the home web in Figma with a focus on conversion and visual storytelling, Design and visual direction of the promotional reel for social media, integrating text, rhythm, and immersive sound ambiance.",
-    
+
     readmeappSubtitle: "A fast and enjoyable app for reading- UX/UI Case study",
     readmeappSummaryContent:
       "This is a speed reading app designed for users with little time or who want to improve their reading habits in a fun and purposeful way. It is a UX/UI project where the main objective and focus is to provide a great user experience.",
@@ -136,7 +141,6 @@ const translations = {
       "The goal was to create an accessible and dynamic experience to encourage reading in users with little time. The project was developed applying the Design Thinking methodology, implementing a design system based on its 5 phases.",
     readmeappRoleContent:
       "I was responsible for the entire design and development process, from creating the initial wireframes to implementing the final prototype. The focus was on ensuring a responsive layout that works well on both desktop and mobile devices.",
-    
 
     saffvisionSubtitle:
       "A creative portfolio with a camera shutter-inspired menu animation to captivate visitors",
@@ -172,39 +176,53 @@ const translations = {
 
   es: {
     homeGreeting: "¡Hola! Soy Ari,",
-    homeWelcome: "Diseño con estrategia. Construyo experiencias digitales inteligentes.",
-    homeWelcomeBack: "Creando con propósito. Diseñando proyectos digitales atractivos.",
-    homeGreetingHead: "Diseñador multidisciplinar que une estrategia, estética y código para crear experiencias digitales memorables.",
+    homeWelcome:
+      "Diseño con estrategia. Construyo experiencias digitales inteligentes.",
+    homeWelcomeBack:
+      "Creando con propósito. Diseñando proyectos digitales atractivos.",
+    homeGreetingHead:
+      "Diseñador multidisciplinar que une estrategia, estética y código para crear experiencias digitales memorables.",
 
-    viewProjectsBtn: "VER MI TRABAJO",
+    viewProjectsBtn: "→ VER MI TRABAJO",
 
     homeBtn: "ARI PORTFOLIO",
     projectTag: "Trabajo",
     aboutTag: "Sobre mí",
     contactTag: "Contacto",
 
-    aboutMeTitle: "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
+    aboutMeTitle:
+      "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
 
-    interludeText: "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
-    aboutMePhotoComment: "Sí, soy yo el de la foto, pero solo estoy posando. Desafortunadamente no tengo ningún barco.",
+    interludeText:
+      "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
+    aboutMePhotoComment:
+      "Sí, soy yo el de la foto, pero solo estoy posando. Desafortunadamente no tengo ningún barco.",
     aboutMeContentSubtitle: "¿QUIÉN SOY?",
-    aboutMeContentText1: "Me llamo Ariel Sánchez, aunque la gente me conoce como Ari. Soy Visual Designer con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir.",
-    aboutMeContentText2:" Me siento atraído por lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
-    aboutMeContentText4:"Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
-    
-    aboutMeContentText6:"¿QUÉ ME MOTIVA?",
-    aboutMeContentText7:"Para mí, los diseños son como seres vivos en la naturaleza: necesitan evolucionar y adaptarse a los entornos en los que existen. Creo que un diseño nunca está completamente terminado, porque la adaptación nunca lo está; debe crecer y transformarse junto a quienes lo utilizan. En cierto modo, la inteligencia artificial refleja esa misma esencia: aprende, se transforma y se redefine con cada interacción, como si tuviera su propio ciclo vital. Así como la IA evoluciona a partir de la experiencia, el diseño también debe nutrirse del tiempo, de las personas y de los cambios que lo rodean. Un ejemplo claro de esta evolución constante es el logotipo de Peugeot, que ha cambiado con los años sin perder su identidad, demostrando que la esencia puede mantenerse incluso cuando la forma se renueva. ¿Y tú qué opinas?",
-    aboutMeContentText8:"¿CÓMO LLEGUÉ HASTA AQUÍ?",
-    aboutMeContentText9:"Me encanta el arte en todos sus formas, desde la pintura hasta la música, el cine y la fotografía. A lo largo de los años, he encontrado un equilibrio único entre el diseño y el desarrollo, donde la creatividad y la lógica convergen. Es en ese punto intermedio donde me siento más cómodo, convirtiendo ideas en experiencias atractivas y funcionales para los usuarios.",
-    aboutMeContentText10:"Siempre estoy buscando oportunidades para crecer, colaborar con equipos inspiradores y crear productos que marquen la diferencia.",
-    aboutMeContentText11:"¿HABLAMOS?",
+    aboutMeContentText1:
+      "Me llamo Ariel Sánchez, aunque la gente me conoce como Ari. Soy Visual Designer con enfoque en UXUI y Desarrollador Front-End. Nací y me crié en Buenos Aires. He vivido en muchos sitios como Granada, Londres o Madrid, donde finalmente decidí quedarme a vivir.",
+    aboutMeContentText2:
+      " Me siento atraído por lo diferente y lo desafiante. En mi interior coexisten dos esencias que buscan el equilibrio: un alma disruptiva bajo una mente estructurada.",
+    aboutMeContentText4:
+      "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
 
-    ProjectsTitle: "Puedes descubrir algo y luego hacerlo, o hacer algo y luego descubrir por qué lo has hecho.",
+    aboutMeContentText6: "¿QUÉ ME MOTIVA?",
+    aboutMeContentText7:
+      "Para mí, los diseños son como seres vivos en la naturaleza: necesitan evolucionar y adaptarse a los entornos en los que existen. Creo que un diseño nunca está completamente terminado, porque la adaptación nunca lo está; debe crecer y transformarse junto a quienes lo utilizan. En cierto modo, la inteligencia artificial refleja esa misma esencia: aprende, se transforma y se redefine con cada interacción, como si tuviera su propio ciclo vital. Así como la IA evoluciona a partir de la experiencia, el diseño también debe nutrirse del tiempo, de las personas y de los cambios que lo rodean. Un ejemplo claro de esta evolución constante es el logotipo de Peugeot, que ha cambiado con los años sin perder su identidad, demostrando que la esencia puede mantenerse incluso cuando la forma se renueva. ¿Y tú qué opinas?",
+    aboutMeContentText8: "¿CÓMO LLEGUÉ HASTA AQUÍ?",
+    aboutMeContentText9:
+      "Me encanta el arte en todos sus formas, desde la pintura hasta la música, el cine y la fotografía. A lo largo de los años, he encontrado un equilibrio único entre el diseño y el desarrollo, donde la creatividad y la lógica convergen. Es en ese punto intermedio donde me siento más cómodo, convirtiendo ideas en experiencias atractivas y funcionales para los usuarios.",
+    aboutMeContentText10:
+      "Siempre estoy buscando oportunidades para crecer, colaborar con equipos inspiradores y crear productos que marquen la diferencia.",
+    aboutMeContentText11: "¿HABLAMOS?",
+
+    ProjectsTitle:
+      "Puedes descubrir algo y luego hacerlo, o hacer algo y luego descubrir por qué lo has hecho.",
     ProjectsTitle2: "PROYECTOS",
 
     contactTitle: "3. Contacto",
-    contactMeText: "Actualmente estoy disponible para trabajos freelance u oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
-    contactMeButton: "Contáctame",
+    contactMeText:
+      "Actualmente estoy disponible para trabajos freelance u oportunidades a tiempo completo. Ya sea que tengas un proyecto en mente o simplemente quieras saludar, no dudes en ponerte en contacto. ¡Espero con interés conectarme contigo!",
+    contactMeButton: "→ Contáctame",
 
     OpenProject: "→ VER CASO DE ESTUDIO",
     OpenPrototype: "→ VER PROTOTIPO",
@@ -231,7 +249,8 @@ const translations = {
       "ERIS es un chatbot de preguntas frecuentes universitario creado como un proyecto completo de diseño y desarrollo. Combina identidad de marca, diseño de interfaz de usuario y desarrollo front-end para ofrecer una experiencia atractiva y accesible para los estudiantes. Inspirado en el sistema solar, ERIS se destaca por su interfaz minimalista con temática orbital, logotipo dinámico e interacciones modernas.",
     erischatbotGoalContent:
       "Construir un producto digital completo: desde el concepto de marca y la identidad visual hasta el prototipado de la interfaz de usuario, la accesibilidad y el despliegue en vivo. El objetivo era proporcionar a los estudiantes una herramienta intuitiva para encontrar información académica mientras se demostraban habilidades avanzadas en sistemas de diseño y codificación.",
-    erischatbotRoleContent: "Lideré cada etapa del proyecto, incluyendo: Branding e Identidad: Definí el nombre, concepto, logotipo y lenguaje de diseño inspirado en el sistema solar de ERIS. Diseño UI/UX: Creé una interfaz limpia y receptiva que garantiza claridad, enfoque y navegación intuitiva. Desarrollo: Construí la aplicación con React, Vite, Tailwind CSS y JavaScript para la lógica interactiva y las respuestas del chatbot. Implementación de accesibilidad: Aseguré el cumplimiento de WCAG 2.1 AA con navegación por teclado, HTML semántico, etiquetas ARIA y pautas de contraste. Despliegue y pruebas: Direccioné a Vercel para acceso rápido, probé la compatibilidad entre navegadores y la capacidad de respuesta en dispositivos.",
+    erischatbotRoleContent:
+      "Lideré cada etapa del proyecto, incluyendo: Branding e Identidad: Definí el nombre, concepto, logotipo y lenguaje de diseño inspirado en el sistema solar de ERIS. Diseño UI/UX: Creé una interfaz limpia y receptiva que garantiza claridad, enfoque y navegación intuitiva. Desarrollo: Construí la aplicación con React, Vite, Tailwind CSS y JavaScript para la lógica interactiva y las respuestas del chatbot. Implementación de accesibilidad: Aseguré el cumplimiento de WCAG 2.1 AA con navegación por teclado, HTML semántico, etiquetas ARIA y pautas de contraste. Despliegue y pruebas: Direccioné a Vercel para acceso rápido, probé la compatibilidad entre navegadores y la capacidad de respuesta en dispositivos.",
     erischatbotChallengeContent:
       "Crear una experiencia de marca inmersiva mientras se mantenían altos estándares de accesibilidad fue el desafío principal. Lo resolví mediante:",
     erischatbotChallengeContent_a:
@@ -254,7 +273,8 @@ const translations = {
     jgsGoalContent:
       "El principal reto consistía en crear una tienda online moderna, rápida y con capacidad de respuesta. El proyecto cuenta con un catálogo de productos dinámico, funcionalidad de carrito de compras, filtros de categorías y una experiencia de usuario fluida y sin recargas.",
 
-    jgsRoleContent: "He desarrollado todo el proyecto desde cero con diseño UI/UX y Desarrollo con ReactJS. He implementado el enrutamiento dinámico (/item/:itemId,/category/:categoryId). También he desarrollado la lógica global del carrito utilizando Context API e integrado Firebase para el almacenamiento de pedidos y la funcionalidad de pago.",
+    jgsRoleContent:
+      "He desarrollado todo el proyecto desde cero con diseño UI/UX y Desarrollo con ReactJS. He implementado el enrutamiento dinámico (/item/:itemId,/category/:categoryId). También he desarrollado la lógica global del carrito utilizando Context API e integrado Firebase para el almacenamiento de pedidos y la funcionalidad de pago.",
 
     jgsChallengeContent:
       "El principal reto fue mantener el enrutamiento dinámico de categorías y páginas de producto completamente sincronizado, a la vez que se mantenía un estado global del carrito consistente. Lo resolví usando React Router para rutas dinámicas y la API de contexto para la gestión del estado. También implementé un sistema de pago que almacena cada pedido en Firebase con un ID único.",
@@ -287,10 +307,9 @@ const translations = {
     destineaChallengeContent:
       "Uno de los principales desafíos fue garantizar que el sitio web fuera completamente receptivo y proporcionara una experiencia de visualización óptima en varios dispositivos. Al utilizar el sistema de cuadrícula y las utilidades responsivas de Bootstrap, pude crear un diseño que se adapta a diferentes tamaños de pantalla. Este proyecto mejoró mi comprensión del diseño web responsivo y la aplicación práctica de las características de Bootstrap.",
 
-
     selvatikaSummaryContent:
       "Selvatika es una agencia de viajes especializada en experiencias inmersivas en selvas de todo el mundo. Su propósito es conectar a los viajeros con la biodiversidad y las culturas locales, promoviendo el turismo sostenible y el respeto por el medio ambiente. La marca combina aventura, autenticidad y conciencia ecológica con una identidad visual que transmite misterio y exuberancia natural.",
-    
+
     selvatikaGoalContent:
       "Diseñar una identidad y experiencia digital que refleje la esencia de la marca —la conexión entre el ser humano y la naturaleza—, generando atracción y conversión a través de una estética moderna, envolvente y coherente con los valores ecológicos de Selvatika.",
 
@@ -304,8 +323,7 @@ const translations = {
     readmeappGoalContent:
       "El objetivo era crear una experiencia accesible y dinámica para fomentar la lectura en usuarios con poco tiempo. El proyecto se desarrolló aplicando la metodología Design Thinking, implementando un sistema de diseño basado en sus 5 fases.",
     readmeappRoleContent:
-      "Fui responsable de todo el proceso de diseño utilizando Figma y Photoshop, enfocándome en la narrativa visual y los conceptos de interacción. No se involucró codificación; el prototipo sirve como un plano visual para el desarrollo futuro.", 
-
+      "Fui responsable de todo el proceso de diseño utilizando Figma y Photoshop, enfocándome en la narrativa visual y los conceptos de interacción. No se involucró codificación; el prototipo sirve como un plano visual para el desarrollo futuro.",
 
     saffvisionSubtitle:
       "Un portafolio creativo con una animación de menú inspirada en el obturador de una cámara para cautivar a los visitantes",
@@ -340,42 +358,44 @@ const translations = {
   },
 };
 
-document.addEventListener("contextmenu", e => e.preventDefault());
+const quotes = [
+  {
+    en: "You can find out how to do something and then do it, or do something and then find out what you did.",
+    es: "Puedes descubrir algo y luego hacerlo, o hacer algo y luego descubrir por qué lo has hecho.",
+    author: "Isamu Noguchi",
+  },
+  {
+    en: "Creativity takes courage.",
+    es: "La creatividad requiere valentía.",
+    author: "Henri Matisse",
+  },
+  {
+    en: "The creation of something new is not accomplished by the intellect but by the play instinct.",
+    es: "La creación de algo nuevo no se logra mediante el intelecto, sino a través del instinto de jugar.",
+    author: "Carl Jung",
+  },
+];
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
-
-
- 
-
-  // const flipText = document.querySelector('.flip-text');
-
-  // setInterval(() => {
-  //   flipText.classList.toggle('flipped');
-  // }, 5000); 
-
-
+document.addEventListener("DOMContentLoaded", () => {
   let lastScrollTop = 0;
 
-  const navbar = document.querySelector('.navbar');
+  const navbar = document.querySelector(".navbar");
 
-  window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
 
-  if (currentScroll > lastScrollTop) {
-    // Scroll hacia abajo → ocultar navbar
-    navbar.classList.add('hide-navbar');
-  } else {
-    // Scroll hacia arriba → mostrar navbar
-    navbar.classList.remove('hide-navbar');
-    
-  }
+    if (currentScroll > lastScrollTop) {
+      // Scroll hacia abajo → ocultar navbar
+      navbar.classList.add("hide-navbar");
+    } else {
+      // Scroll hacia arriba → mostrar navbar
+      navbar.classList.remove("hide-navbar");
+    }
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // para evitar valores negativos
-});
-
-
-   
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // para evitar valores negativos
+  });
 
   // const slider = document.querySelector('.card-inner');
 
@@ -389,37 +409,50 @@ document.addEventListener('DOMContentLoaded', () => {
   //   }
   // });
 
-    
+  //let currentQuote = 0;
 
-  const sections = document.querySelectorAll("#projects, #about, #contact, #home");
+  /* function showQuote() {
+    const quoteElement = document.getElementById("about-quote");
+
+    if (!quoteElement) return;
+
+    const lang = localStorage.getItem("language") || "en";
+    const quote = quotes[currentQuote];
+
+    quoteElement.textContent =
+        `"${quote[lang === "es" ? "es" : "en"]}" — ${quote.author}`;
+
+    currentQuote = (currentQuote + 1) % quotes.length;
+}
+
+showQuote();
+setInterval(showQuote, 10000); */
+
+  const sections = document.querySelectorAll(
+    "#projects, #about, #contact, #home",
+  );
   const navLinks = document.querySelectorAll(".nav-links a");
-  
-  const homeBtn= document.getElementById("home-btn");
-  
-  
 
-  
-  const cardInner = document.querySelector('.card-inner');
-  
+  const homeBtn = document.getElementById("home-btn");
 
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href');
-    const target = document.querySelector(targetId);
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start', // centra verticalmente
-      });
-      cardInner.classList.add('animate');
-      
-      setTimeout(() => {
-        cardInner.classList.remove('animate');
-      }, 150);
+  const cardInner = document.querySelector(".card-inner");
 
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href");
+      const target = document.querySelector(targetId);
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start", // centra verticalmente
+        });
+        cardInner.classList.add("animate");
+
+        setTimeout(() => {
+          cardInner.classList.remove("animate");
+        }, 150);
       }
-
     });
   });
 
@@ -430,7 +463,9 @@ document.addEventListener('DOMContentLoaded', () => {
           // quitar 'active' de todos
           navLinks.forEach((link) => link.classList.remove("active"));
           // marcar el que coincide con la sección visible
-          const activeLink = document.querySelector(`.sideBar a[href="#${entry.target.id}"]`) || homeBtn;
+          const activeLink =
+            document.querySelector(`.sideBar a[href="#${entry.target.id}"]`) ||
+            homeBtn;
           if (activeLink) {
             activeLink.classList.add("active");
           }
@@ -440,66 +475,60 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       root: null, // viewport
       threshold: 0.6, // % de visibilidad para considerar la sección activa
-    }
+    },
   );
 
-  const portfolioText = document.querySelector('.portfolio__title');
+  const portfolioText = document.querySelector(".portfolio__title");
 
   homeBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
-    portfolioText.classList.add('animate');
+    portfolioText.classList.add("animate");
     setTimeout(() => {
-      portfolioText.classList.remove('animate');
+      portfolioText.classList.remove("animate");
     }, 150);
-    
   });
 
   sections.forEach((section) => observer.observe(section));
-
 
   const modal = document.getElementById("projectModal");
 
   const modalImg = document.getElementById("modalImg");
   const closeBtn = document.querySelector(".close");
-  
-  // Selecciona todos los botones de abrir proyecto
-  document.querySelectorAll(".openProject").forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
 
-    const imgSrc = this.getAttribute("data-project"); // toma directamente del <a>
-    modalImg.src = imgSrc;
-    modal.style.display = "block";
-    
-    document.body.style.overflow = "hidden";
+  // Selecciona todos los botones de abrir proyecto
+  document.querySelectorAll(".openProject").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const imgSrc = this.getAttribute("data-project"); // toma directamente del <a>
+      modalImg.src = imgSrc;
+      modal.style.display = "block";
+
+      document.body.style.overflow = "hidden";
+    });
   });
-});
-  
+
   // cerrar modal
-  closeBtn.addEventListener("click", function() {
+  closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
     document.body.style.overflow = "";
   });
-  
+
   // cerrar si haces clic en el fondo
-  modal.addEventListener("click", function(e) {
+  modal.addEventListener("click", function (e) {
     if (e.target === modal) {
       modal.style.display = "none";
       document.body.style.overflow = "";
     }
   });
 
-  
-
-  const langEN = document.getElementById('lang-en');
-  const langES = document.getElementById('lang-es');
-  const radioEN = document.getElementById('radio-button');
-  const radioES = document.getElementById('radio-button2');
-
-
+  const langEN = document.getElementById("lang-en");
+  const langES = document.getElementById("lang-es");
+  const radioEN = document.getElementById("radio-button");
+  const radioES = document.getElementById("radio-button2");
 
   window.addEventListener("load", () => {
     document.getElementById("overlay").style.display = "none";
@@ -507,224 +536,174 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const overlay = document.getElementById("size-overlay");
 
-    function checkHeight() {
-      if (window.innerHeight < 560 || window.innerWidth < 320) {
-        overlay.classList.add("visible");
-      } else {
-        overlay.classList.remove("visible");
-      }
+  function checkHeight() {
+    if (window.innerHeight < 560 || window.innerWidth < 320) {
+      overlay.classList.add("visible");
+    } else {
+      overlay.classList.remove("visible");
     }
+  }
 
-    // check on load and resize
-    window.addEventListener("load", checkHeight);
-    window.addEventListener("resize", checkHeight);
+  // check on load and resize
+  window.addEventListener("load", checkHeight);
+  window.addEventListener("resize", checkHeight);
 
-  
   function changeLanguage(lang) {
-  const overlay = document.getElementById("overlay");
-  const translationMessage = overlay.querySelector("p");
+    const overlay = document.getElementById("overlay");
+    const translationMessage = overlay.querySelector("p");
 
-  // Cambiar el mensaje según el idioma seleccionado
-  translationMessage.textContent =
-    lang === "es" ? "Traduciendo..." : "Translating...";
+    // Cambiar el mensaje según el idioma seleccionado
+    translationMessage.textContent =
+      lang === "es" ? "Traduciendo..." : "Translating...";
 
-  overlay.style.display = "flex";
+    overlay.style.display = "flex";
 
-  // Mantener el timeout original
-  setTimeout(() => {
-    overlay.style.display = "none";
-  }, 2000);
+    // Mantener el timeout original
+    setTimeout(() => {
+      overlay.style.display = "none";
+    }, 2000);
 
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(el => {
-      const key = el.getAttribute('data-i18n');
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach((el) => {
+      const key = el.getAttribute("data-i18n");
       const translation = translations[lang]?.[key];
       if (translation) {
         el.innerHTML = translation;
       }
       if (el.tagName === "SPAN") {
         el.innerHTML = translation;
-    }
+      }
     });
-    localStorage.setItem('selectedLanguage', lang);
+    localStorage.setItem("selectedLanguage", lang);
     activateRadio(lang);
-
-    
   }
 
   // Función: activa el radiobutton visual
   function activateRadio(lang) {
     if (radioEN && radioES) {
-      if (lang === 'en') {
-        radioEN.classList.add('active-radio');
-        radioES.classList.remove('active-radio');
+      if (lang === "en") {
+        radioEN.classList.add("active-radio");
+        radioES.classList.remove("active-radio");
       } else {
-        radioEN.classList.remove('active-radio');
-        radioES.classList.add('active-radio');
+        radioEN.classList.remove("active-radio");
+        radioES.classList.add("active-radio");
       }
     }
     if (langEN && langES) {
-      if (lang === 'en') {
-        langEN.classList.add('active');
-        langES.classList.remove('active');
+      if (lang === "en") {
+        langEN.classList.add("active");
+        langES.classList.remove("active");
       } else {
-        langEN.classList.remove('active');
-        langES.classList.add('active');
+        langEN.classList.remove("active");
+        langES.classList.add("active");
       }
     }
   }
 
   // Listeners para los botones de idioma
   if (langEN) {
-    langEN.addEventListener('click', () => changeLanguage('en'));
+    langEN.addEventListener("click", () => changeLanguage("en"));
   }
   if (langES) {
-    langES.addEventListener('click', () => changeLanguage('es'));
+    langES.addEventListener("click", () => changeLanguage("es"));
   }
 
   // Al cargar, aplicar el idioma guardado
-  const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+  const savedLang = localStorage.getItem("selectedLanguage") || "en";
   changeLanguage(savedLang);
 
-  const menuToggle = document.querySelector('.menu-toggle');
-const navContainer = document.querySelector('.navlinks-container');
-const container = document.querySelector('.container');
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navContainer = document.querySelector(".navlinks-container");
+  const container = document.querySelector(".container");
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = navContainer.classList.toggle('open');
-  menuToggle.classList.toggle('active');
-  menuToggle.setAttribute('aria-expanded', isOpen);
-  
-});
-
-// Cerrar menú al hacer click en un enlace
-document.querySelectorAll('.nav-links a, .home-btn').forEach(link => {
-  link.addEventListener('click', () => {
-    navContainer.classList.remove('open');
-    menuToggle.classList.remove('active');
-    menuToggle.setAttribute('aria-expanded', "false");
-  });
-});
-
-
-(function() {
-  if (('ontouchstart' in window) || navigator.maxTouchPoints > 0) return;
-
-  document.documentElement.classList.add('custom-cursor-enabled');
-
-  const cursor = document.getElementById('custom-cursor');
-  const ring = cursor.querySelector('.cursor-ring');
-  const dot = cursor.querySelector('.cursor-dot');
-
-  let mouseX = window.innerWidth / 2;
-  let mouseY = window.innerHeight / 2;
-  let currentX = mouseX;
-  let currentY = mouseY;
-  let targetX = mouseX;
-  let targetY = mouseY;
-
-  const speed = 0.75;
-  const magnetStrength = 0.35; // qué tan fuerte es el "imán" (0.1–0.5 es razonable)
-  let isMagnetActive = false;
-  let magnetElement = null;
-
-  function lerp(a, b, n) { return (1 - n) * a + n * b; }
-
-  function onMove(e) {
-    if (!isMagnetActive) {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    }
-  }
-  window.addEventListener('mousemove', onMove, { passive: true });
-
-  function render() {
-    // si hay imán activo, el cursor se mueve hacia el centro del elemento
-    if (isMagnetActive && magnetElement) {
-      const rect = magnetElement.getBoundingClientRect();
-      targetX = rect.left + rect.width / 2;
-      targetY = rect.top + rect.height / 2;
-      currentX = lerp(currentX, targetX, magnetStrength);
-      currentY = lerp(currentY, targetY, magnetStrength);
-    } else {
-      currentX = lerp(currentX, mouseX, speed);
-      currentY = lerp(currentY, mouseY, speed);
-    }
-
-    cursor.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
-    requestAnimationFrame(render);
-  }
-  render();
-
-  // Hover detection + imán
-  const hoverElements = document.querySelectorAll(' a, button, input, textarea, select, [role="button"], .interactive');
-  hoverElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.classList.add('hover');
-      isMagnetActive = true;
-      magnetElement = el;
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.classList.remove('hover');
-      isMagnetActive = false;
-      magnetElement = null;
-    });
-    el.addEventListener('focus', () => cursor.classList.add('hover'));
-    el.addEventListener('blur', () => cursor.classList.remove('hover'));
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navContainer.classList.toggle("open");
+    menuToggle.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
   });
 
-  // Click feedback
-  window.addEventListener('mousedown', () => cursor.classList.add('click'));
-  window.addEventListener('mouseup', () => cursor.classList.remove('click'));
-})();
+  // Cerrar menú al hacer click en un enlace
+  document.querySelectorAll(".nav-links a, .home-btn").forEach((link) => {
+    link.addEventListener("click", () => {
+      navContainer.classList.remove("open");
+      menuToggle.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
 
+  (function () {
+    if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return;
 
+    document.documentElement.classList.add("custom-cursor-enabled");
 
+    const cursor = document.getElementById("custom-cursor");
+    const ring = cursor.querySelector(".cursor-ring");
+    const dot = cursor.querySelector(".cursor-dot");
 
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let currentX = mouseX;
+    let currentY = mouseY;
+    let targetX = mouseX;
+    let targetY = mouseY;
 
+    const speed = 0.75;
+    const magnetStrength = 0.35; // qué tan fuerte es el "imán" (0.1–0.5 es razonable)
+    let isMagnetActive = false;
+    let magnetElement = null;
 
+    function lerp(a, b, n) {
+      return (1 - n) * a + n * b;
+    }
 
-  
+    function onMove(e) {
+      if (!isMagnetActive) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      }
+    }
+    window.addEventListener("mousemove", onMove, { passive: true });
 
+    function render() {
+      // si hay imán activo, el cursor se mueve hacia el centro del elemento
+      if (isMagnetActive && magnetElement) {
+        const rect = magnetElement.getBoundingClientRect();
+        targetX = rect.left + rect.width / 2;
+        targetY = rect.top + rect.height / 2;
+        currentX = lerp(currentX, targetX, magnetStrength);
+        currentY = lerp(currentY, targetY, magnetStrength);
+      } else {
+        currentX = lerp(currentX, mouseX, speed);
+        currentY = lerp(currentY, mouseY, speed);
+      }
 
+      cursor.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
+      requestAnimationFrame(render);
+    }
+    render();
 
+    // Hover detection + imán
+    const hoverElements = document.querySelectorAll(
+      ' a, button, input, textarea, select, [role="button"], .interactive',
+    );
+    hoverElements.forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.classList.add("hover");
+        isMagnetActive = true;
+        magnetElement = el;
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("hover");
+        isMagnetActive = false;
+        magnetElement = null;
+      });
+      el.addEventListener("focus", () => cursor.classList.add("hover"));
+      el.addEventListener("blur", () => cursor.classList.remove("hover"));
+    });
+
+    // Click feedback
+    window.addEventListener("mousedown", () => cursor.classList.add("click"));
+    window.addEventListener("mouseup", () => cursor.classList.remove("click"));
+  })();
 });
-
-
-//   const mainContainer = document.querySelector('.main-container');
-//   const colors = {
-//     color1: 'main-container-yellow',
-//     color2: 'main-container-red',
-//     color3: 'main-container-blue',
-//     color4: 'main-container-green'
-//   };
-
-//   const colorGuardado = localStorage.getItem('colorSeleccionado');
-//     if (colorGuardado) {
-//     mainContainer.classList.add(colorGuardado);
-//   }
-//   function aplicarColor(clase) {
-//   // Activar transición visual
-//   mainContainer.classList.remove(...Object.values(colors));
-//   mainContainer.offsetWidth; // fuerza reflow para reiniciar animación
-//   mainContainer.classList.add(clase, 'transitioning');
-
-//   // Guardar color
-//   localStorage.setItem('colorSeleccionado', clase);
-
-//   // Quitar 'transitioning' al terminar
-//   setTimeout(() => {
-//     mainContainer.classList.remove('transitioning');
-//   }, 600);
-// }
-
-//   setTimeout(() => {
-//     mainContainer.classList.add('transition');
-//   }, 50);
-
-  
-
-//   Object.entries(colors).forEach(([id, clase]) => {
-//     document.querySelector(`.${id}`).addEventListener('click', () => aplicarColor(clase));
-//   });
 
