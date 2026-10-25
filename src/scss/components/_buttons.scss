@@ -1,89 +1,4 @@
 
- 
-
-#work-btn, #about-btn, #contact-btn {
-  
-  font-family: 'Fender', sans-serif;
-  
-  font-family: "Boldonse", system-ui;
-  font-family: "NeueMetanaNext", system-ui;
-  
-
-  font-size: 70px;
-  font-weight: bolder;
-  text-decoration: none;
-  color: $button-petrol;
-
-  transition: 0.1s ease;
-
-  z-index: 999;
-   -webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-
-
-  
-  
-  padding:15px;
-  text-align: start;
-  width: auto;
-  background-color: transparent;
-
-  
-    
-  
-  
-
-  @include respond($breakpoint-xl) {
-   font-size: 60px;
-  }
-  @include respond($breakpoint-lg) {
-    font-size:60px;
-  }
-  
-  @include respond($breakpoint-md) {
-    font-size: 50px;
-  
-  }
-  @include respond($breakpoint-sm) {
-    font-size: 50px;
-    
-  }
-
-  span{
-    &:hover{
-      transform: scale(2);
-    }
-  }
- 
- 
-  
-  &:hover{
-    transform: scale(1.01);
-    
-    
-  } 
-  
-  
-  @include disable-hover-sm;
-}
-
-
-
-
-.cv-btn{
-  display: inline-block;
-  padding: .6rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid transparent;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform .12s ease, box-shadow .12s ease;
-  background: white;
-  color: inherit;
-}
-.cv-btn:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
-.cv-btn:active{ transform: translateY(0); }
 
 
 
@@ -118,7 +33,10 @@
     // backdrop-filter: brightness(1.1) saturate(1.2) blur(1px);
     // animation: cursor-pulse 1.5s ease-in-out infinite; // 💓 animación activa
     animation: rotate 0s linear infinite;
+    
   }
+
+  
 
   .cursor-dot {
     position: absolute;
@@ -130,7 +48,7 @@
     border-radius: 50%;
     background: $dot-color;
     background-color: $bittersweet;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0);
     transition: transform 160ms cubic-bezier(.2,.9,.3,1), background 160ms;
   }
 
@@ -138,24 +56,26 @@
   &.hover {
     .cursor-ring {
       transform: scale($hover-scale);
-      box-shadow: 0 0 24px $ring-stroke;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
       animation: none;
       border-radius: 50%;
+      background: transparent;
       background-color: transparent;
-      backdrop-filter: brightness(1.1) saturate(1.2) blur(0px);
+      user-select: pointer;
     }
 
     .cursor-dot {
-      transform: translate(-50%, -50%) scale(0.9);
+      
       background: transparent;
+      background-color: transparent;
     }
   }
 
   // Click state
   &.click {
     .cursor-ring {
-      transform: scale(calc(#{$click-scale} * #{$hover-scale}));
-      transition: transform 110ms cubic-bezier(.3,.0,.15,1);
+      background: transparent;
+      background-color: transparent;
     }
   }
 }

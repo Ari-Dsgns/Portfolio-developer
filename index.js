@@ -630,6 +630,7 @@ setInterval(showQuote, 10000); */
       menuToggle.setAttribute("aria-expanded", "false");
     });
   });
+  
 
   (function () {
     if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return;
@@ -705,5 +706,7 @@ setInterval(showQuote, 10000); */
     window.addEventListener("mousedown", () => cursor.classList.add("click"));
     window.addEventListener("mouseup", () => cursor.classList.remove("click"));
   })();
+
+  
 });
 
