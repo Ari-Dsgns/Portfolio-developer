@@ -8,10 +8,10 @@ const translations = {
       "a multidisciplinary designer who blends strategy, aesthetics, and code to create memorable digital experiences.",
     viewProjectsBtn: "→ VIEW MY WORK",
 
-    homeBtn: "ARI PORTFOLIO",
-    projectTag: "Work",
-    aboutTag: "About",
-    contactTag: "Contact",
+    homeBtn: "ARIWORK",
+    projectTag: "WORK",
+    aboutTag: "ABOUT",
+    contactTag: "CONTACT",
 
     aboutMeTitle:
       "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
@@ -28,7 +28,7 @@ const translations = {
       "I Design with purpose. I transform original ideas into functional and attractive websites with a lot of dedication and care.",
     aboutMeContentText6: "WHAT MOTIVATES ME?",
     aboutMeContentText7:
-      "For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe that a design is never completely finished because adaptation is never complete; it must grow and transform alongside those who use it. In a way, artificial intelligence reflects that same essence: it learns, transforms, and redefines itself with each interaction, as if it had its own life cycle. Just as AI evolves from experience, design must also be nurtured by time, people, and the changes that surround it. A clear example of this constant evolution is the Peugeot logo, which has changed over the years without losing its identity, demonstrating that the essence can be maintained even when the form is renewed. What do you think?",
+      "For me, designs are like living beings in nature: they need to evolve and adapt to the environments in which they exist. I believe that a design is never completely finished because adaptation is never complete; it must grow and transform alongside those who use it. Designs must draw inspiration from time, people, and the changes that surround it. A clear example of this constant evolution is the Peugeot logo, which has changed over the years without losing its identity, demonstrating that the essence can be maintained even when the form is renewed. What do you think?",
     aboutMeContentText8: "HOW DID I END UP HERE?",
     aboutMeContentText9:
       "I love art in all its forms, from painting to music, cinema, and photography. Over the years, I've found a unique balance between design and development, where creativity and logic converge. It's at that intersection where I feel most comfortable, turning ideas into engaging and functional experiences for users.",
@@ -186,9 +186,9 @@ const translations = {
     viewProjectsBtn: "→ VER MI TRABAJO",
 
     homeBtn: "ARI PORTFOLIO",
-    projectTag: "Trabajo",
-    aboutTag: "Sobre mí",
-    contactTag: "Contacto",
+    projectTag: "TRABAJO",
+    aboutTag: "SOBRE MI",
+    contactTag: "CONTACTO",
 
     aboutMeTitle:
       "Diseño con propósito. Transformo ideas originales en sitios web funcionales y atractivos con mucha dedicación y cuidado.",
@@ -207,7 +207,7 @@ const translations = {
 
     aboutMeContentText6: "¿QUÉ ME MOTIVA?",
     aboutMeContentText7:
-      "Para mí, los diseños son como seres vivos en la naturaleza: necesitan evolucionar y adaptarse a los entornos en los que existen. Creo que un diseño nunca está completamente terminado, porque la adaptación nunca lo está; debe crecer y transformarse junto a quienes lo utilizan. En cierto modo, la inteligencia artificial refleja esa misma esencia: aprende, se transforma y se redefine con cada interacción, como si tuviera su propio ciclo vital. Así como la IA evoluciona a partir de la experiencia, el diseño también debe nutrirse del tiempo, de las personas y de los cambios que lo rodean. Un ejemplo claro de esta evolución constante es el logotipo de Peugeot, que ha cambiado con los años sin perder su identidad, demostrando que la esencia puede mantenerse incluso cuando la forma se renueva. ¿Y tú qué opinas?",
+      "Para mí, los diseños son como seres vivos en la naturaleza: necesitan evolucionar y adaptarse a los entornos en los que existen. Creo que un diseño nunca está completamente terminado, porque la adaptación nunca lo está; debe crecer y transformarse junto a quienes lo utilizan. El diseño debe nutrirse del tiempo, de las personas y de los cambios que lo rodean. Un ejemplo claro de esta evolución constante es el logotipo de Peugeot, que ha cambiado con los años sin perder su identidad, demostrando que la esencia puede mantenerse incluso cuando la forma se renueva. ¿Y tú qué opinas?",
     aboutMeContentText8: "¿CÓMO LLEGUÉ HASTA AQUÍ?",
     aboutMeContentText9:
       "Me encanta el arte en todos sus formas, desde la pintura hasta la música, el cine y la fotografía. A lo largo de los años, he encontrado un equilibrio único entre el diseño y el desarrollo, donde la creatividad y la lógica convergen. Es en ese punto intermedio donde me siento más cómodo, convirtiendo ideas en experiencias atractivas y funcionales para los usuarios.",
@@ -246,11 +246,11 @@ const translations = {
     erischatbotSubtitle:
       "Un asistente de preguntas frecuentes universitario construido con React, Vite y Tailwind CSS",
     erischatbotSummaryContent:
-      "ERIS es un chatbot de preguntas frecuentes universitario creado como un proyecto completo de diseño y desarrollo. Combina identidad de marca, diseño de interfaz de usuario y desarrollo front-end para ofrecer una experiencia atractiva y accesible para los estudiantes. Inspirado en el sistema solar, ERIS se destaca por su interfaz minimalista con temática orbital, logotipo dinámico e interacciones modernas.",
+      "ERIS es un chatbot de preguntas frecuentes universitario creado como un proyecto completo de diseño y desarrollo. Combina identidad de marca, diseño de interfaz de usuario y desarrollo front-end.",
     erischatbotGoalContent:
-      "Construir un producto digital completo: desde el concepto de marca y la identidad visual hasta el prototipado de la interfaz de usuario, la accesibilidad y el despliegue en vivo. El objetivo era proporcionar a los estudiantes una herramienta intuitiva para encontrar información académica mientras se demostraban habilidades avanzadas en sistemas de diseño y codificación.",
+      "Construir un producto digital completo: desde el concepto de marca y la identidad visual hasta el prototipado de la interfaz de usuario, la accesibilidad y el despliegue en vivo. El objetivo era proporcionar a los estudiantes una herramienta intuitiva para encontrar información académica.",
     erischatbotRoleContent:
-      "Lideré cada etapa del proyecto, incluyendo: Branding e Identidad: Definí el nombre, concepto, logotipo y lenguaje de diseño inspirado en el sistema solar de ERIS. Diseño UI/UX: Creé una interfaz limpia y receptiva que garantiza claridad, enfoque y navegación intuitiva. Desarrollo: Construí la aplicación con React, Vite, Tailwind CSS y JavaScript para la lógica interactiva y las respuestas del chatbot. Implementación de accesibilidad: Aseguré el cumplimiento de WCAG 2.1 AA con navegación por teclado, HTML semántico, etiquetas ARIA y pautas de contraste. Despliegue y pruebas: Direccioné a Vercel para acceso rápido, probé la compatibilidad entre navegadores y la capacidad de respuesta en dispositivos.",
+      "Lideré cada etapa del proyecto, incluyendo: Branding e Identidad visual. Construí la aplicación con React, Vite, Tailwind CSS y JavaScript para la lógica interactiva.",
     erischatbotChallengeContent:
       "Crear una experiencia de marca inmersiva mientras se mantenían altos estándares de accesibilidad fue el desafío principal. Lo resolví mediante:",
     erischatbotChallengeContent_a:
@@ -269,12 +269,12 @@ const translations = {
       "• Fortalecimiento de las habilidades de marca para complementar la ejecución técnica.",
 
     jgsSummaryContent:
-      "JustGoodStuff es una tienda de productos online que construí como proyecto final del bootcamp. El objetivo era crear una aplicación web realista que también pudiera ser presentada a una agencia de desarrollo en Argentina, mostrando tanto las habilidades de front end, así como la integración con servicios externos.",
+      "JustGoodStuff es una tienda de productos online que construí íntegramente. El objetivo era crear una aplicación web para a una agencia de desarrollo en Argentina, mostrando tanto las habilidades de front end, así como la integración con servicios externos.",
     jgsGoalContent:
       "El principal reto consistía en crear una tienda online moderna, rápida y con capacidad de respuesta. El proyecto cuenta con un catálogo de productos dinámico, funcionalidad de carrito de compras, filtros de categorías y una experiencia de usuario fluida y sin recargas.",
 
     jgsRoleContent:
-      "He desarrollado todo el proyecto desde cero con diseño UI/UX y Desarrollo con ReactJS. He implementado el enrutamiento dinámico (/item/:itemId,/category/:categoryId). También he desarrollado la lógica global del carrito utilizando Context API e integrado Firebase para el almacenamiento de pedidos y la funcionalidad de pago.",
+      "He diseñado y desarrollado todo el proyecto con ReactJS. He implementado el enrutamiento dinámico. También he desarrollado la lógica global del carrito utilizando Context API e integrado Firebase para el almacenamiento de pedidos y la funcionalidad de pago.",
 
     jgsChallengeContent:
       "El principal reto fue mantener el enrutamiento dinámico de categorías y páginas de producto completamente sincronizado, a la vez que se mantenía un estado global del carrito consistente. Lo resolví usando React Router para rutas dinámicas y la API de contexto para la gestión del estado. También implementé un sistema de pago que almacena cada pedido en Firebase con un ID único.",
@@ -396,37 +396,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // para evitar valores negativos
   });
-
-  // const slider = document.querySelector('.card-inner');
-
-  // slider.addEventListener('wheel', (e) => {
-  //   if (e.deltaY !== 0) {
-  //     e.preventDefault();
-  //     slider.scrollBy({
-  //       left: e.deltaY * 8, // más lento
-  //       behavior: 'smooth'
-  //     });
-  //   }
-  // });
-
-  //let currentQuote = 0;
-
-  /* function showQuote() {
-    const quoteElement = document.getElementById("about-quote");
-
-    if (!quoteElement) return;
-
-    const lang = localStorage.getItem("language") || "en";
-    const quote = quotes[currentQuote];
-
-    quoteElement.textContent =
-        `"${quote[lang === "es" ? "es" : "en"]}" — ${quote.author}`;
-
-    currentQuote = (currentQuote + 1) % quotes.length;
-}
-
-showQuote();
-setInterval(showQuote, 10000); */
 
   const sections = document.querySelectorAll(
     "#projects, #about, #contact, #home",
@@ -632,80 +601,526 @@ setInterval(showQuote, 10000); */
   });
   
 
-  (function () {
-    if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return;
+  
+(function () {
+  if ("ontouchstart" in window || navigator.maxTouchPoints > 0) return;
 
-    document.documentElement.classList.add("custom-cursor-enabled");
+  document.documentElement.classList.add("custom-cursor-enabled");
 
-    const cursor = document.getElementById("custom-cursor");
-    const ring = cursor.querySelector(".cursor-ring");
-    const dot = cursor.querySelector(".cursor-dot");
+  const cursor = document.getElementById("custom-cursor");
 
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
-    let currentX = mouseX;
-    let currentY = mouseY;
-    let targetX = mouseX;
-    let targetY = mouseY;
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let currentX = mouseX;
+  let currentY = mouseY;
 
-    const speed = 0.75;
-    const magnetStrength = 0.35; // qué tan fuerte es el "imán" (0.1–0.5 es razonable)
-    let isMagnetActive = false;
-    let magnetElement = null;
+  const speed = 0.75;
 
-    function lerp(a, b, n) {
-      return (1 - n) * a + n * b;
-    }
+  function lerp(a, b, n) {
+    return (1 - n) * a + n * b;
+  }
 
-    function onMove(e) {
-      if (!isMagnetActive) {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-      }
-    }
-    window.addEventListener("mousemove", onMove, { passive: true });
+  function onMove(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  }
 
-    function render() {
-      // si hay imán activo, el cursor se mueve hacia el centro del elemento
-      if (isMagnetActive && magnetElement) {
-        const rect = magnetElement.getBoundingClientRect();
-        targetX = rect.left + rect.width / 2;
-        targetY = rect.top + rect.height / 2;
-        currentX = lerp(currentX, targetX, magnetStrength);
-        currentY = lerp(currentY, targetY, magnetStrength);
-      } else {
-        currentX = lerp(currentX, mouseX, speed);
-        currentY = lerp(currentY, mouseY, speed);
-      }
+  window.addEventListener("mousemove", onMove, { passive: true });
 
-      cursor.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
-      requestAnimationFrame(render);
-    }
-    render();
+  function render() {
+    currentX = lerp(currentX, mouseX, speed);
+    currentY = lerp(currentY, mouseY, speed);
 
-    // Hover detection + imán
-    const hoverElements = document.querySelectorAll(
-      ' a, button, input, textarea, select, [role="button"], .interactive',
-    );
-    hoverElements.forEach((el) => {
-      el.addEventListener("mouseenter", () => {
-        cursor.classList.add("hover");
-        isMagnetActive = true;
-        magnetElement = el;
-      });
-      el.addEventListener("mouseleave", () => {
-        cursor.classList.remove("hover");
-        isMagnetActive = false;
-        magnetElement = null;
-      });
-      el.addEventListener("focus", () => cursor.classList.add("hover"));
-      el.addEventListener("blur", () => cursor.classList.remove("hover"));
+    cursor.style.transform =
+      `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
+
+    requestAnimationFrame(render);
+  }
+
+  render();
+
+  // Hover: cambia el aspecto, sin magnetismo
+  const hoverElements = document.querySelectorAll(
+    'a, button, input, textarea, select, [role="button"], .interactive'
+  );
+
+  hoverElements.forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursor.classList.add("hover");
     });
 
-    // Click feedback
-    window.addEventListener("mousedown", () => cursor.classList.add("click"));
-    window.addEventListener("mouseup", () => cursor.classList.remove("click"));
-  })();
+    el.addEventListener("mouseleave", () => {
+      cursor.classList.remove("hover");
+    });
+
+    el.addEventListener("focus", () => {
+      cursor.classList.add("hover");
+    });
+
+    el.addEventListener("blur", () => {
+      cursor.classList.remove("hover");
+    });
+  });
+
+  // Feedback al hacer clic
+  window.addEventListener("mousedown", () => {
+    cursor.classList.add("click");
+  });
+
+  window.addEventListener("mouseup", () => {
+    cursor.classList.remove("click");
+  });
+})();
+
+
+(() => {
+
+  // ==========================================
+  // SCROLL REVEAL ANIMATIONS
+  // ==========================================
+
+  const revealTitle = document.querySelector(
+    ".portfolio__title, .interlude-box"
+  );
+
+  const revealCards = document.querySelectorAll(
+    ".cards-container"
+  );
+
+  // Animación del título
+  if (revealTitle) {
+    revealTitle.classList.add("scroll-title");
+  }
+
+  // Alternar entrada desde izquierda y derecha
+  revealCards.forEach((card, index) => {
+    card.classList.add(
+      index % 2 === 0 ? "reveal-left" : "reveal-right"
+    );
+  });
+
+  // Observer para las animaciones reveal
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+        } else {
+          entry.target.classList.remove("is-visible");
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "0px 0px -40px 0px",
+    }
+  );
+
+  // Observar tarjetas
+  revealCards.forEach((card) => {
+    revealObserver.observe(card);
+  });
+
+  // Observar título
+  if (revealTitle) {
+    revealObserver.observe(revealTitle);
+  }
+
+  // Animar elementos interiores
+  document
+    .querySelectorAll(".card-description, .card-inner")
+    .forEach((element, index) => {
+
+      element.classList.add("reveal-child");
+
+      element.style.setProperty(
+        "--reveal-delay",
+        `${(index % 4) * 120}ms`
+      );
+
+      revealObserver.observe(element);
+    });
+
+
+  // ==========================================
+  // TITLE: SCROLL PROGRESSIVE SCALE
+  // ==========================================
+
+  const scaleElements = document.querySelectorAll(
+    ".portfolio__title, .interlude-box"
+  );
+
+  if (scaleElements.length > 0) {
+
+    let ticking = false;
+
+    function updateElementsScale() {
+
+      const viewportHeight = window.innerHeight;
+
+      scaleElements.forEach((el) => {
+
+        const rect = el.getBoundingClientRect();
+
+        const start = viewportHeight * 0.45;
+        const end = -viewportHeight * 0.25;
+
+        let progress = (start - rect.top) / (start - end);
+
+        progress = Math.max(0, Math.min(1, progress));
+
+        const minScale = 0.8;
+        const maxScale = 1.25;
+
+        const scale =
+          minScale + (maxScale - minScale) * progress;
+
+        el.style.setProperty(
+          "--scroll-title-scale",
+          scale.toFixed(3)
+        );
+
+      });
+
+      ticking = false;
+    }
+
+    function requestElementsUpdate() {
+
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateElementsScale);
+      }
+
+    }
+
+    window.addEventListener("scroll", requestElementsUpdate, {
+      passive: true,
+    });
+
+    window.addEventListener("resize", requestElementsUpdate);
+
+    updateElementsScale();
+  }
+
+
+  // ==========================================
+  // PORTFOLIO / WORK / ABOUT: ASIDE VISIBILITY
+  // ==========================================
+
+  const portfolioMain = document.querySelector(".portfolio-mainPage");
+  const workContainer = document.querySelector("#work-container");
+
+  const aboutContainer =
+    document.querySelector("#about-container") ||
+    document.querySelector(".about-me-content");
+
+  const workAside = document.querySelector("#work-aside");
+  const aboutAside = document.querySelector("#about-aside");
+
+  const asideSections = [
+    {
+      name: "portfolio",
+      container: portfolioMain,
+      aside: null
+    },
+    {
+      name: "work",
+      container: workContainer,
+      aside: workAside
+    },
+    {
+      name: "about",
+      container: aboutContainer,
+      aside: aboutAside
+    }
+  ].filter(section => section.container);
+
+  const asideVisibility = new Map();
+
+  // Ocultar inicialmente
+  if (workAside) workAside.classList.remove("active");
+  if (aboutAside) aboutAside.classList.remove("active");
+
+  const asideObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+      asideVisibility.set(
+        entry.target,
+        entry.isIntersecting ? entry.intersectionRatio : 0
+      );
+    });
+
+    let currentSection = null;
+    let maxVisibility = 0;
+
+    asideSections.forEach(section => {
+
+      const ratio = asideVisibility.get(section.container) || 0;
+
+      if (ratio > maxVisibility) {
+        maxVisibility = ratio;
+        currentSection = section;
+      }
+
+    });
+
+    // PORTFOLIO no tiene aside: oculta los otros dos
+    if (!currentSection || currentSection.name === "portfolio") {
+
+      if (workAside) workAside.classList.remove("active");
+      if (aboutAside) aboutAside.classList.remove("active");
+
+    } else {
+
+      if (workAside) {
+        workAside.classList.toggle(
+          "active",
+          currentSection.name === "work"
+        );
+      }
+
+      if (aboutAside) {
+        aboutAside.classList.toggle(
+          "active",
+          currentSection.name === "about"
+        );
+      }
+
+    }
+
+  }, {
+    root: null,
+    threshold: [0, 0.1, 0.25, 0.5, 0.75, 1]
+  });
+
+  asideSections.forEach(section => {
+    asideVisibility.set(section.container, 0);
+    asideObserver.observe(section.container);
+  });
+
+  // ==========================================
+  // SCROLL NAVIGATION TO WORK
+  // ==========================================
+
+  let isScrolling = false;
+
+  if (portfolioMain && workContainer) {
+
+    portfolioMain.addEventListener("wheel", (e) => {
+
+      if (
+        e.deltaY > 0 &&
+        portfolioMain.scrollTop < 50 &&
+        !isScrolling
+      ) {
+
+        isScrolling = true;
+
+        workContainer.scrollIntoView({
+          behavior: "smooth"
+        });
+
+        setTimeout(() => {
+          isScrolling = false;
+        }, 1000);
+
+      }
+
+    });
+
+  }
+
+})();
+
+
+// ==========================================
+// HIDE ASIDES WHEN RETURNING TO PORTFOLIO
+// ==========================================
+
+function hideAllAsides() {
+  if (workAside) {
+    workAside.classList.remove("active");
+  }
+
+  if (aboutAside) {
+    aboutAside.classList.remove("active");
+  }
+}
+
+// Detectar cuando volvemos al inicio del portfolio
+if (portfolioMain) {
+  portfolioMain.addEventListener("scroll", () => {
+
+    if (portfolioMain.scrollTop < 50) {
+      hideAllAsides();
+    }
+
+  }, { passive: true });
+}
+
+
+
+
+  /* // ==========================================
+  // SCROLL REVEAL ANIMATIONS
+  // ==========================================
+
+  const revealTitle = document.querySelector(".portfolio__title, .interlude-box");
+
+  const revealCards = document.querySelectorAll(
+    ".cards-container"
+  );
+
+  // Animación del título
+  if (revealTitle) {
+    revealTitle.classList.add("scroll-title");
+  }
+
+  // Alternar entrada desde izquierda y derecha
+  revealCards.forEach((card, index) => {
+    card.classList.add(
+      index % 2 === 0 ? "reveal-left" : "reveal-right"
+    );
+  });
+
+  // Detectar cuándo los elementos entran y salen de la pantalla
+  const revealObserver = new IntersectionObserver(
+
+    
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Añade la clase cuando entra en pantalla
+          entry.target.classList.add("is-visible");
+        } else {
+          // Remueve la clase cuando sale de la pantalla para que se resetee
+          entry.target.classList.remove("is-visible");
+        }
+      });
+      
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "0px 0px -40px 0px",
+    }
+  );
+
+  // Observar las tarjetas
+  revealCards.forEach((card) => {
+    revealObserver.observe(card);
+  });
+
+  // Observar el título
+  if (revealTitle) {
+    revealObserver.observe(revealTitle);
+  }
+
+  // Animar también los elementos interiores
+  document
+    .querySelectorAll(".card-description, .card-inner")
+    .forEach((element, index) => {
+      element.classList.add("reveal-child");
+
+      element.style.setProperty(
+        "--reveal-delay",
+        `${(index % 4) * 120}ms`
+      );
+
+      revealObserver.observe(element);
+    });
+
+
+    
+
+
+
+    
+  // ==========================================
+  // TITLE: SCROLL PROGRESSIVE SCALE
+  // ==========================================
+
+  const scaleElements = document.querySelectorAll(".portfolio__title, .interlude-box, .about-me-content");
+
+if (scaleElements.length > 0) {
+  let ticking = false;
+
+  function updateElementsScale() {
+    const viewportHeight = window.innerHeight;
+
+    // Recorremos cada elemento para calcular su escala individual
+    scaleElements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+
+      // El efecto comienza y termina según la posición de cada elemento
+      const start = viewportHeight * 0.45;
+      const end = -viewportHeight * 0.25;
+
+      let progress = (start - rect.top) / (start - end);
+
+      // Limitar el progreso entre 0 y 1
+      progress = Math.max(0, Math.min(1, progress));
+
+      // Escala mínima y máxima
+      const minScale = 0.8;
+      const maxScale = 1.25;
+
+      const scale = minScale + (maxScale - minScale) * progress;
+
+      el.style.setProperty(
+        "--scroll-title-scale",
+        scale.toFixed(3)
+      );
+    });
+
+    ticking = false;
+  }
+
+  function requestElementsUpdate() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(updateElementsScale);
+    }
+  }
+
+  window.addEventListener("scroll", requestElementsUpdate, {
+    passive: true,
+  });
+
+  window.addEventListener("resize", requestElementsUpdate);
+
+  // Aplicar el estado inicial
+  updateElementsScale();
+}
+
+const portfolioMain = document.querySelector(".portfolio-mainPage");
+const workContainer = document.querySelector("#work-container");
+const workAside = document.querySelector("#work-aside");
+
+
+
+let isScrolling = false;
+
+portfolioMain.addEventListener("wheel", (e) => {
+  // Si hace scroll hacia abajo y estamos arriba, lo mandamos al work-container
+  if (e.deltaY > 0 && portfolioMain.scrollTop < 50 && !isScrolling) {
+    isScrolling = true;
+    workContainer.scrollIntoView({ behavior: "smooth" });
+    
+    
+    // Evitamos múltiples activaciones seguidas
+    setTimeout(() => { isScrolling = false; }, 1000);
+  }
+});
+
+
+
+
+
+
+ */
+
+
 
   
 });

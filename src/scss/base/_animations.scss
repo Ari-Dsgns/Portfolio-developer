@@ -438,15 +438,17 @@
 
 }
 
-@keyframes floating{
+@keyframes floating {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0) scale(1);
   }
+
   50% {
-    transform: translateY(-10px);
+    transform: translateY(0px) scale(1.5);
   }
+
   100% {
-    transform: translateY(0px);
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -557,13 +559,13 @@
 
 @keyframes cursor-pulse {
   0%, 100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 0 12px $ring-stroke;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(0px);
     
   }
   50% {
-    transform: scale(1.6);
+    transform: scale(1.2);
     box-shadow: 0 0 18px $ring-stroke;
     backdrop-filter: blur(0);
     
@@ -587,3 +589,27 @@
   100% { transform: translateX(0)     rotate(45deg); }
 }
 
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(40px);
+  }
+
+  50%{
+    transform: translateX(-40px);
+  }
+  100% {
+    /* Mueve exactamente la mitad del contenido (por eso se duplican las imágenes en el HTML) */
+    transform: translateX(40px);
+  }
+}
+
+@keyframes revealChar {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

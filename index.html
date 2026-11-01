@@ -78,7 +78,7 @@
 
       <nav class="navbar" aria-label="Main navigation">
         <div class="logo-container">
-          <a href="#home" class="home-btn" id="home-btn" aria-current="page" role="navigation" aria-label="Home link">Ari Portfolio</a>
+          <a href="#home" class="home-btn" id="home-btn" aria-current="page" role="navigation" aria-label="Home link">Ariwork</a>
           <svg width="30" height="30" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="149.2" width="100" height="100" rx="13" transform="rotate(-45 0 149.2)" fill="#6CB8C3"/>
             <rect x="78.4888" y="70.7104" width="100" height="100" rx="13" transform="rotate(-45 78.4888 70.7104)" fill="#2D4859"/>
@@ -106,49 +106,89 @@
 
       <div class="container" id="container">
 
+
+        
+
+
         <div class="portfolio-mainPage">
-            <div class="portfolio__title" id="home">
-              <div class="portfolio__text">
-                <h1 data-i18n="homeGreeting"></h1>
-                <h1 data-i18n="homeGreetingHead"></h1>
-  
-                <!-- <p data-i18n="homeWelcome"></p> -->
-                <!-- <p class="flip-text" >
-                  <span class="front" data-i18n="homeWelcome"></span>
-                  <span class="back" data-i18n="homeWelcomeBack"></span>
-                </p> -->
-                <div>
-                  <a data-i18n="viewProjectsBtn" href="#projects" id="viewProjectsBtn"><i class="bi bi-arrow-down-right"></i></a>
-                </div>
+
+          <!-- <div class="background-video" aria-hidden="true">
+            <video autoplay muted loop playsinline
+              preload="metadata"
+              poster="./assets/img/background-poster.webp">
+              <source src="./assets/video/background.webm" type="video/webm">
+              <source src="./assets/video/Video Project 2.mp4"video/mp4">
+            </video>4 type=
+          </div> -->
+
+          <div class="background-picture">
+            <img src="./assets/img/mjh_shikder-technology-6873010_1920.jpg" alt="">
+          </div>
+
+          <div class="portfolio__title" id="home">
+            <div class="portfolio__text">
+              <h1 data-i18n="homeGreeting"></h1>
+              <h1 data-i18n="homeGreetingHead"></h1>
+              <div>
+                <a data-i18n="viewProjectsBtn" href="#projects" id="viewProjectsBtn"><i class="bi bi-arrow-down-right"></i></a>
               </div>
-              <!-- <div class="img-box-home">
-                <img src="/assets/icons/pencil-svgrepo-com.svg" alt="">
-                <img src="/assets/icons/presentation-svgrepo-com.svg" alt="">
-                <img src="/assets/icons/laptop01-svgrepo-com.svg" alt="">
-              </div> -->
             </div>
+          </div>
+          <div class="chev-container">
             
+            <div>
+              <a href="#projects" class="chev-web"></a>
+            </div>
+          </div>
+
         </div>
+
 
         
 
         <div class="work-container" id="work-container">
+
+          <aside id="work-aside" class="work-aside" data-i18n="projectTag" >
+            WORK
+          </aside>
+
         <h1 id="projects"></h1>
 
-          <div class="cards-container">
-            
-              <div class="card-container">
-                <div class="readme-box">
-                  <div class="swipe-hint-2">
-                    <span class="swipe-text">SWIPE</span>
-                    <span class="swipe-chevrons">
-                      <span class="chev"></span>
-                      <span class="chev"></span>
-                      <span class="chev"></span>
-                    </span>
+
+          <div class="cards-container" id="card1">
+            <div class="card-container">
+
+              <div class="jgs-box">
+                <div class="card-description">
+                  <h1># 1</h1>
+                  <h2>Just Good Stuff | Website</h2>
+                  <p>Design & Development with React Js</p>
+                  
+                  <p data-i18n="jgsSummaryContent"></p>
+                  
+                  <p data-i18n="jgsGoalContent"></p>
+                  
+                  <p data-i18n="jgsRoleContent"></p>
+                  <div>
+                    <a href="https://justgoodstuff.vercel.app/" target="_blank" data-i18n="OpenDemo"></a>
                   </div>
+
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-inner">
+                  <img src="./assets/img/Group 80.png" alt="Project 2 Screenshot" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-container">
+              <div class="card-container"id="card2">
+                <div class="readme-box">
                   <div class="card-description">
-                    <h2>ReadmeApp | App</h2>
+                    <h1># 2</h1>
+                    <h2>ReadmeApp</h2>
                     <p>UX/UI | Case Study</p>
                     <p data-i18n="SummaryTitle"></p>
                     <p data-i18n="readmeappSummaryContent"></p>
@@ -172,17 +212,10 @@
           </div>
 
           <div class="cards-container">
-            <div class="card-container">
+            <div class="card-container"id="card3">
               <div class="vinyl-box">
-                <div class="swipe-hint-2">
-                  <span class="swipe-text ">SWIPE</span>
-                  <span class="swipe-chevrons">
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                  </span>
-                </div>
                 <div class="card-description">
+                  <h1># 3</h1>
                   <h2>Vinyl Shop | Website</h2>
                   <p>Design & Development with JavaScript</p>
                   <p data-i18n="SummaryTitle"></p>
@@ -204,41 +237,6 @@
             </div>
           </div>
 
-          <div class="cards-container">
-            <div class="card-container">
-              <div class="selvatika-box">
-                <div class="swipe-hint-2">
-                  <span class="swipe-text">SWIPE</span>
-                  <span class="swipe-chevrons">
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                  </span>
-                </div>
-              <div class="card-description">
-                <h2>Selvatika</h2>
-                <p>UX/UI | Case Study</p>
-                <p data-i18n="SummaryTitle"></p>
-                <p data-i18n="selvatikaSummaryContent"></p>
-                <p data-i18n="GoalTitle"></p>
-                <p data-i18n="selvatikaGoalContent"></p>
-                <p data-i18n="RoleTitle"></p>
-                <p data-i18n="selvatikaRoleContent"></p>
-                <div>
-                  <a href="#selvatika" data-i18n="OpenProject" class="openProject" data-project="/assets/img/selvatike.png" ></a>
-                  <a href="https://youtube.com/shorts/iZSUktMzNJ8" target="_blank" data-i18n="OpenReel"></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" id="card2" type="button" aria-label="Go to Selvatika project" data-project="/assets/img/selvatike.png">
-              <div class="card-inner">
-                <img src="/assets/img/Mockup minimalista de Selvatika.png" alt="Project 2 Screenshot" href="#selvatika" class="openProject" data-i18n="OpenProject">
-              </div>
-            </div>
-            </div>
-          </div>
-
-
           <div class="interlude-box">
             <h2 data-i18n="interludeText"></h2>
           </div>
@@ -246,15 +244,8 @@
           <div class="cards-container">
             <div class="card-container">
               <div class="destinea-box">
-                <div class="swipe-hint-2">
-                  <span class="swipe-text">SWIPE</span>
-                  <span class="swipe-chevrons">
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                  </span>
-                </div>
                 <div class="card-description">
+                  <h1># 4</h1>
                   <h2>Destinea | Website</h2>
                   <p>Web Design & Bootstrap</p>
                   <p data-i18n="SummaryTitle"></p>
@@ -277,52 +268,37 @@
           </div>
 
           <div class="cards-container">
-            <div class="card-container">
-              <div class="jgs-box">
-                <div class="swipe-hint-2">
-                  <span class="swipe-text">SWIPE</span>
-                  <span class="swipe-chevrons">
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                  </span>
-                </div>
-                <div class="card-description">
-                  <h2>Just Good Stuff | Website</h2>
-                  <p>Design & Development with React Js</p>
-                  <p data-i18n="SummaryTitle"></p>
-                  <p data-i18n="jgsSummaryContent"></p>
-                  <p data-i18n="GoalTitle"></p>
-                  <p data-i18n="jgsGoalContent"></p>
-                  <p data-i18n="RoleTitle"></p>
-                  <p data-i18n="jgsRoleContent"></p>
-                  <div>
-                    <a href="https://justgoodstuff.vercel.app/" target="_blank" data-i18n="OpenDemo"></a>
-                  </div>
-
+            <div class="card-container"id="card4">
+              <div class="selvatika-box">
+              <div class="card-description">
+                <h1># 5</h1>
+                <h2>Selvatika</h2>
+                <p>UX/UI | Case Study</p>
+                <p data-i18n="SummaryTitle"></p>
+                <p data-i18n="selvatikaSummaryContent"></p>
+                <p data-i18n="GoalTitle"></p>
+                <p data-i18n="selvatikaGoalContent"></p>
+                <p data-i18n="RoleTitle"></p>
+                <p data-i18n="selvatikaRoleContent"></p>
+                <div>
+                  <a href="#selvatika" data-i18n="OpenProject" class="openProject" data-project="/assets/img/selvatike.png" ></a>
+                  <a href="https://youtube.com/shorts/iZSUktMzNJ8" target="_blank" data-i18n="OpenReel"></a>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-inner">
-                  <img src="./assets/img/Portátil, interfaces y moneda tecnológica.png" alt="Project 2 Screenshot">
-                </div>
+            </div>
+            <div class="card" id="card2" type="button" aria-label="Go to Selvatika project" data-project="/assets/img/selvatike.png">
+              <div class="card-inner">
+                <img src="/assets/img/Mockup minimalista de Selvatika.png" alt="Project 2 Screenshot" href="#selvatika" class="openProject" data-i18n="OpenProject">
               </div>
+            </div>
             </div>
           </div>
 
           <div class="cards-container">
             <div class="card-container">
               <div class="eris-box">
-                <div class="swipe-hint-2">
-                  <span class="swipe-text ">SWIPE</span>
-                  <span class="swipe-chevrons">
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                    <span class="chev"></span>
-                  </span>
-
-                </div>
                 <div class="card-description">
+                  <h1># 6</h1>
                   <h2>Eris-Bot</h2>
                   <p>Design & Development with React and Tailwind CSS</p>
                   <p data-i18n="SummaryTitle"></p>
@@ -344,7 +320,7 @@
               </div>
           </div>
 
-          <div class="cards-container">
+          <!-- <div class="cards-container">
             <div class="card-container">
               <div class="saffvision-box">
                 <div class="swipe-hint-2">
@@ -356,6 +332,7 @@
                   </span>
                 </div>
                 <div class="card-description">
+                  <h1># 7</h1>
                   <h2>Saffvision</h2>
                   <p>Web Design & Development with WordPress</p>
                   <p data-i18n="SummaryTitle"></p>
@@ -375,9 +352,14 @@
               </div>
             </div>
 
-          </div>
+          </div> -->
 
         <div class="about-me-content">
+
+          <aside id="about-aside" class="section-aside" data-i18n="aboutTag" >
+            ABOUT
+          </aside>
+
           <div class="about-me-text-container">
             <div class="about-me-text1">
               <h1 data-i18n="ProjectsTitle" id="about"></h1>
@@ -391,6 +373,7 @@
           </div>
           <div class="about-me-inner">
             <div class="about-me-image-content">
+              <img src="/assets/img/mountain.jpg" alt="">
               <img  src="/assets/img/Imagen de WhatsApp 2025-10-27 a las 16.45.11_03308e1b.jpg" alt="" id="img1">
               <img  src="/assets/img/1.png" alt="" id="img2">
               <img  src="/assets/img/bike.jpg" alt="" id="img3">
@@ -402,9 +385,9 @@
         <div class="contact-me" id="contact">
           <h1 id="contact"></h1>
             <div class="contact-card">
+              <p data-i18n="contactMeText"></p>
               <h2>Email: arisanpala@gmail.com</h2>
               <h2>Phone: +34 664 094 007</h2>
-              <p data-i18n="contactMeText"></p>
               <a data-i18n="contactMeButton" href="mailto:arisanpala@gmail.com"></a>
               <div class="social-icons">
                 <a href="https://www.linkedin.com/in/ari-sanchez/" id="linkedin" target="_blank" aria-label="Linkedin profile"><i class="bi bi-linkedin"></i></a>
@@ -414,7 +397,7 @@
             </div>
             <div class="footer">
               <p>© 2026 ariwork.pro | All rights reserved.</p>
-          </div>       
+            </div>       
         </div>
       </div>
       <div id="projectModal" class="modal">

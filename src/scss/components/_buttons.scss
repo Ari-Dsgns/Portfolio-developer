@@ -16,6 +16,7 @@
   will-change: transform;
   user-select: none;
   display: block;
+  opacity: 0.8;
   
 
   .cursor-ring {
@@ -34,6 +35,7 @@
     // animation: cursor-pulse 1.5s ease-in-out infinite; // 💓 animación activa
     animation: rotate 0s linear infinite;
     
+    
   }
 
   
@@ -50,17 +52,21 @@
     background-color: $bittersweet;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0);
     transition: transform 160ms cubic-bezier(.2,.9,.3,1), background 160ms;
+    
   }
 
   // Hover state
   &.hover {
     .cursor-ring {
+      width: 30px;
+      height: 30px;
       transform: scale($hover-scale);
       box-shadow: 0 6px 20px rgba(0,0,0,0.35);
       animation: none;
       border-radius: 50%;
       background: transparent;
-      background-color: transparent;
+      background-color: $bittersweet;
+      opacity: 0.5;
       user-select: pointer;
     }
 

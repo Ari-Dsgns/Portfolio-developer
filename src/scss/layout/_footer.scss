@@ -76,12 +76,8 @@
   
   width: 100%;
   height:5%;
-  
-  background-color: transparent;
+  border-top: 1px solid black;
+  padding-top: 10px;
   
 
-  p{
-    font-size: 18px;
-    color: $fontColor-white;
-  }
 }

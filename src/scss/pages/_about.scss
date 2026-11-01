@@ -4,8 +4,6 @@
 
 
 .about-me-content {
-
-
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -15,48 +13,20 @@
   padding-left: 40px;
   height: 100%;
   z-index: 3;
-  
- 
   overflow: hidden;
-  
-  // border-bottom: solid 1px $button-petrol;
-  // border-bottom: solid 1px $button-petrol;
-  // border-left: solid 1px $button-petrol;
-  // border-right: solid 1px $button-petrol;
-  background-color: $platinum;
-  background-color: #E0EAE5;
-  background-color: #e9e9e9;
-
-  background-color: #F9FAFB;
-  
-  
-  
-    
-  
-  
+  background-color:transparent;
+  background-color:rgb(232, 232, 232);
 
   
 
 
-  
-  
-  
-
-  
   @include respond($breakpoint-xl) {
-    
     width: 100%;
-    
-    
   }
   @include respond($breakpoint-sm) {
       padding-left: 10px;
     }
-  
-  
-  
-  
-  
+
 }
 
 .about-me-inner{
@@ -65,12 +35,19 @@
   
   margin-top: 120px;
   width: 100%;
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0px;
   
   
  
 }
 
 .about-me-text-container{
+
+  
   display: flex;
   flex-direction: column;
   
@@ -90,34 +67,32 @@
 .about-me-image-content {
   display: flex;
   width: 100%;
+  width: max-content;
   justify-content:space-around;
   height: auto;
-  gap: 4px;
+  gap:4px;
   margin-bottom: 40px;
   overflow-x: auto;     /* scroll en eje X */
   overflow-y: hidden;   /* ocultar vertical */
-  padding: 10px;
+  padding: 0px;
   
   border: solid 0px black;
+
+  /* animation: scroll-infinite 60s linear infinite; */
   
   img{
-    
-    width: 450px;
-    height: 400px;
+    width: 340px;
+    height: 300px;
     object-fit: cover;
     position: relative;
-    
-    border-radius: 12px;
-    border: solid 0px transparent;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.298);
+    opacity: 1;
+    object-fit: cover;
+    position: relative;
     transition: 0.8s ease;
-
     &:hover {
-     transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-     
-   }
-    
+    opacity: 1; ;
+  } 
+
 
     @include respond($breakpoint-mobile-l) {
       width: 300px;
@@ -163,7 +138,8 @@
   h1{
     font-family: "inter", sans-serif;
     font-family: "Keania One", sans-serif;
-    color: $miami;
+    font-family: "Bebas Neue", sans-serif;
+    color:rgb(26, 26, 26);
     font-style: italic;
     font-size: 30px;
     font-weight: 400;
@@ -176,11 +152,12 @@
   span{
     font-family: 'Inter', sans-serif;
     font-family: "Keania One", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 22px;
     font-style: italic;
     margin-top: 6px;
     font-weight: 400;
-    color: $petrol;
+    color:rgb(26, 26, 26);
     
 
     @include respond($breakpoint-md) {
@@ -196,10 +173,13 @@
   p{
     font-family: 'Inter', sans-serif;
     font-family: "Montserrat", sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: $petrol;
+    font-family: "N27", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color:rgb(26, 26, 26);
     margin-top: 80px;
+    letter-spacing: 0.5px;
     
 
     @include respond($breakpoint-md) {
@@ -227,9 +207,12 @@
   p{
     font-family: 'Inter', sans-serif;
     font-family: "Montserrat", sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: $petrol;
+    font-family: "N27", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    color:rgb(26, 26, 26);
     
 
     @include respond($breakpoint-md) {
@@ -252,3 +235,24 @@
 }
 
 
+
+.about-aside {
+  border: solid 0px whitesmoke;
+  display: none;
+  width: 100%;
+  writing-mode: vertical-rl;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+ 
+
+  animation: appear 4s;
+  
+  
+  p{
+    
+    color: whitesmoke;
+  }
+  
+}

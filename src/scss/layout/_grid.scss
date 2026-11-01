@@ -148,16 +148,10 @@ html.custom-cursor-enabled {
 
 
 .container{
-   position: relative;
-  
-  
+  position: relative;
   display: flex;
   width: 100%;
- 
   height:100%;
-  padding-right: 0em;
-  padding-left: 0em;
-  
   flex-direction: column;
   gap: 0px;
   overflow-y: auto;
@@ -165,36 +159,24 @@ html.custom-cursor-enabled {
   align-items: center;
   align-content: center;
   border:none;
-  background-color: $platinum;
-  background-color: #E0EAE5;
-  background-color: #E0EAE5;
   background-color: #f3f4f3;
-  background-color: $honneydew;
-  background-color: $platinum;
   background-color: #e9e9e9;
-  background-color: #f0f0f0;
   background-color: #F9FAFB;
-  
+  background-color: #141414;
+  background-color: #030304;
+  padding-left: 0px ;
+  padding-right:  0px;
 
-  padding-left:  10px ;
-  padding-right:  10px;
-  
-  
-  
-  
-  
- 
+
+  isolation: isolate;
+
   @include respond($breakpoint-md) {
-    
     padding-right: 10px;
     padding-left: 10px;
-    
   }
 
-  
-
- 
 }
+
 
 .interlude-box{
   display: flex;
@@ -202,16 +184,19 @@ html.custom-cursor-enabled {
   justify-content: center;
   width: 90%;
   height:100%;
+  transform: scale(0.2);
   
   
-  background-color: #f1f1f3;
-  background-color: #F9FAFB;
+  background-color: transparent;
+  
   border-radius: 12px;
   border: dashed 0px $miami;
+  
 
   h2{
     font-family: "inter", sans-serif;
     font-family: "Keania One", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: $miami;
     font-size: 30px;
     font-weight: 400;
@@ -219,7 +204,7 @@ html.custom-cursor-enabled {
     margin-top: 200px;
     margin-bottom: 200px;
     padding-left: 40px;
-    
+    color: whitesmoke;
   }
 
   @include respond($breakpoint-sm) {
@@ -234,6 +219,23 @@ html.custom-cursor-enabled {
         
       }
     }
+}
+
+.background-picture-interlude{
+
+  
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.1;
+  
 }
 
 
@@ -287,3 +289,85 @@ html.custom-cursor-enabled {
   }
 }
 
+
+.background-video {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.background-video video {
+  width: 100dvw;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
+  
+
+ /*  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.1; */
+  
+  
+}
+
+.background-picture{
+
+  
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  opacity: 0.25;
+
+  img{
+    animation: floating 180s infinite;
+    animation: cursor-pulse 20s infinite;
+  }
+}
+
+
+/* Capa de color para integrar el vídeo */
+.background-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+}
+
+/* En móviles, priorizar rendimiento y batería */
+@media (max-width: 768px) {
+  .background-video video {
+    opacity: 0.2;
+  }
+}
+
+/* Respetar las preferencias de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .background-video video {
+    display: none;
+  }
+}

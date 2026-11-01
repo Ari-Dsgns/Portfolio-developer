@@ -1,61 +1,69 @@
 
 .portfolio-mainPage{
-  display: flex;
   
   
   
-  justify-content: center;
-  align-items: center;
   text-align: start;
   border: none;
   position: relative;
 
-  min-height: 80dvh;
+  min-height: 100dvh;
   max-width: 100%;
+
   
-   
-  border-bottom: 0px solid $petrol;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  
+  text-align: start;
+  border: none;
+  position: relative; /* Clave para que el chevron se posicione respecto a este div */
+  min-height: 100dvh;
+  max-width: 100%;
+  width: 100%;
+  
   padding: 20px;
-  
 
-  // &::before{
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-image: url(/assets/img/);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // opacity: 0.3;
-  
-  // }
+
+  overflow-y: scroll; /* Habilita el scroll vertical solo en este div */
+  scroll-snap-type: y mandatory; /* Fuerza a detenerse en cada sección */
+  scroll-behavior: smooth; /* Hace que el desplazamiento sea suave */
 
   
-
-  // &::before{
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 50%;
-  //   height: 100%;
-  //   background-color: $platinum;
-    
-  //   opacity: 1;
-  //   z-index: 0;
-  //   pointer-events: none;
-    
-
-    
-   
-  // }
-
-    
+  
 
 }
 
+.portfolio-mainPage::-webkit-scrollbar {
+ display: none;
+}
+
+
+
+
+@keyframes blinkAndPause {
+  /* Primeros 3 segundos (0% al 30%): 30 parpadeos muy rápidos (cada 0.1s) */
+  0%, 30%, 100% { opacity: 1; }
+  1%  { opacity: 0; }  2%  { opacity: 1; }
+  3%  { opacity: 0; }  4%  { opacity: 1; }
+  5%  { opacity: 0; }  6%  { opacity: 1; }
+  7%  { opacity: 0; }  8%  { opacity: 1; }
+  9%  { opacity: 0; }  10% { opacity: 1; }
+  11% { opacity: 0; } 12% { opacity: 1; }
+  13% { opacity: 0; } 14% { opacity: 1; }
+  15% { opacity: 0; } 16% { opacity: 1; }
+  17% { opacity: 0; } 18% { opacity: 1; }
+  19% { opacity: 0; } 20% { opacity: 1; }
+  21% { opacity: 0; } 22% { opacity: 1; }
+  23% { opacity: 0; } 24% { opacity: 1; }
+  25% { opacity: 0; } 26% { opacity: 1; }
+  27% { opacity: 0; } 28% { opacity: 1; }
+  29% { opacity: 0; }
+
+  /* Del 30% al 100% (7 segundos restantes): El texto descansa visible */
+}
 
 
 .portfolio__title{
@@ -65,83 +73,37 @@
     align-items: center;
     align-content: center;
     position: relative;
-    left: 0%;
-    gap: 0px;
-    
-    z-index: 2;
-    
     height: auto;
-
-
-    height: auto  ;
     overflow: hidden;
-    
-    padding-left: 0px;
-
-    animation: scaleDown 1.5s ease-in-out;
-    
-    border-radius: 12px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border: dashed 0px $petrol;
-
-    transition: 1s ease-in-out;
-    
-    
-    border-radius: 12px;
+    /* animation: scaleDown 1.5s ease-in-out ; */
     padding-top: 40px;
-    padding-bottom: 40px;
+    
+    transform: scale(var(--scroll-title-scale, 1.5));
+    transform-origin: center center;
+    will-change: transform;
 
-    /* -webkit-animation: jello-horizontal 0.9s both;
-	        animation: jello-horizontal 0.9s both;
-          animation-delay: 1s;
- 
-
-
-    --border-angle: 0turn; // For animation.
-    --main-bg: conic-gradient(
-        from var(--border-angle),
-        #F9FAFB ,
-        #F9FAFB 100%
-    );
-    border: solid 12px transparent;
-
-    border-radius:1px;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #FF6C58 99%, transparent);
-    background:
-      // padding-box clip this background in to the overall element except the border.
-      var(--main-bg) padding-box,
-      // border-box extends this background to the border space
-      var(--gradient-border) border-box,
-      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
-      var(--main-bg) border-box;
-    background-position: center center;
-    animation: bg-spin 6s  linear infinite; */
-
- @include respond($breakpoint-lg) {
-    a{
+    height: 100%;
+    scroll-snap-align: start;
+   
+    @include respond($breakpoint-lg) {
+      a{
       font-size: 30px;
-
+      }
     }
-  }
-  
-  @include respond($breakpoint-mobile-l) {
-    
+    @include respond($breakpoint-mobile-l) {
     height: 90dvh;
-    
     gap: 0px;
-
     a{
       font-size: 22px;
-
     }
   }
   @include respond($breakpoint-mobile-l) {
     padding: 10px;
-
   }
   
 }
+
+
 
 .portfolio__text {
   display: flex;
@@ -159,43 +121,41 @@
   
   
   h1{
-    font-family: "safiro", sans-serif;
-    font-family: "N27", sans-serif;
-    font-family: "Keania One", sans-serif;
-    
-    
-    font-size: 64px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 46px;
     line-height: 1.2;
     font-weight: 600;
     color: $petrol;
-
+    color: whitesmoke;
     width: 80%;
+    animation: blinkAndPause 3s infinite;
+    animation-delay: 1s ;
   }
   p{
     font-family: "inter", sans-serif;
-    
+    font-family: "Bebas Neue", sans-serif;
     font-size: 26px;
     font-weight: 500;
     color: $petrol;
   }
   a{
-     text-align: center;
+    text-align: center;
     text-decoration: none;
     color: $miami;
-    border-radius: 0;
+   
     font-size: 28px;
     font-weight: 600;
     margin-top: 40px;
     cursor: pointer;
     font-family: "Keania One", sans-serif;
-
+    font-family: "Bebas Neue", sans-serif;
     position: relative;
     display: inline-block;
     overflow: hidden;
     background-color: transparent;
     padding: 10px 20px;
+    padding-right: 50px;
     z-index: 1;
-
     transition: color 0.3s ease-in-out;
 
   }
@@ -224,39 +184,6 @@ a:hover {
     color: white;
 }
     
-    /* &:hover {
-      
-      transform: scale(1.2);
-      transition: 0.1s; */
-      
-      /* -webkit-animation: jello-horizontal 0.9s both;
-	        animation: jello-horizontal 0.9s both;
-          animation-delay: 0s;
- 
-
-
-    --border-angle: 0turn; // For animation.
-    --main-bg: conic-gradient(
-        from var(--border-angle),
-        #F9FAFB ,
-        #F9FAFB 100%
-    );
-    border: solid 2px transparent;
-
-    border-radius:1px;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,#FF6C58, #FF6C58 99%, transparent);
-    background:
-      // padding-box clip this background in to the overall element except the border.
-      var(--main-bg) padding-box,
-      // border-box extends this background to the border space
-      var(--gradient-border) border-box,
-      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
-      var(--main-bg) border-box;
-    background-position: center center;
-    animation: bg-spin 1s  linear ; */
-      
-   /*  }
-  } */
   div{
     display: flex;
     align-items: center;
@@ -310,193 +237,54 @@ a:hover {
   }
 }
 
-.portfolio__title.animate, .card-inner.animate {
-  animation: fadeInUp 0.2s ease forwards;
-}
-
-
-.flip-text {
-  position: relative;
-  display: inline-block;
-  perspective: 1000px;
-  width: 100%;
-  text-align: start;
+.chev-container{
   
-}
-
-.flip-text span {
-  display: block;
-  backface-visibility: hidden;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  width: 100%;
-  color: #523F38;
-  color: #5d636b;
+  bottom: 20px;
+
+  P{
+    font-family: "Bebas Neue", sans-serif;
+    color: whitesmoke;
+    font-weight: 100;
+  }
+}
+
+
+.chev-web {
+  display:flex;
+  
+  width: 20px;
+  height: 20px;
+  /* Creamos las líneas del chevron usando bordes */
+  border-right: 1px solid whitesmoke; /* O usa un color fijo como #ffffff o #333 */
+  border-bottom: 1px solid whitesmoke;
+  transform: rotate(45deg); /* Lo rotamos para que apunte hacia abajo */
+  animation: bounce-chevron 2s infinite ease-in-out;
+
+  align-self: auto;
+
   
   
   
 }
 
-.front {
-  transform: rotateX(0deg);
+/* Animación de rebote */
+@keyframes bounce-chevron {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  40% {
+    transform: translateY(10px) rotate(45deg);
+  }
+  60% {
+    transform: translateY(5px) rotate(45deg);
+  }
 }
 
-.back {
-  transform: rotateX(540deg);
-}
-
-.flip-text.flipped .front {
-  transform: rotateX(540deg);
-  
-}
-
-.flip-text.flipped .back {
-  transform: rotateX(0deg);
-  
-}
-
-// .portfolio__text::before {
-//   content: "";
-//   position: absolute;
-//   inset: 0; /* ocupa todo el contenedor */
-//   border: 2px solid transparent;
-//   background:
-//     linear-gradient(to right, white 1px, transparent 1px) top left,
-//     linear-gradient(to bottom, white 1px, transparent 1px) top left,
-
-//      linear-gradient(to left, white 1px, transparent 1px) top right,
-//     linear-gradient(to bottom, white 1px, transparent 1px) top right,
-
-//     linear-gradient(to right, white 1px, transparent 1px) bottom left,
-//     linear-gradient(to top, white 1px, transparent 1px) bottom left,
-
-//    linear-gradient(to left, white 1px, transparent 1px) bottom right,
-//     linear-gradient(to top, white 1px, transparent 1px) bottom right;
-
-//   background-size: 25px 25px; /* tamaño de las esquinas */
-//   background-repeat: no-repeat;
-//   pointer-events: none;
-// }
-
-
-
-
-
-
-
-// .dna {
-//   position: relative;
-//   width: 200px;
-//   height: 400px;
-//   margin: 50px auto;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   align-items: center;
-// }
-// .dna div {
-//   width: 20px;
-//   height: 20px;
-//   animation: spin 1.5s infinite linear;
-
-// }
-
-// .dna div:nth-child(n) {
-//   animation-delay: calc(var(--i) * 0.2s);
-// }
-
-// /* 4 colores del portfolio (ajústalos a tus hex) */
-// .dna div:nth-child(4n+1) { background: #ff595e; }
-// .dna div:nth-child(4n+2) { background: #1982c4; }
-// .dna div:nth-child(4n+3) { background: #8ac926; }
-// .dna div:nth-child(4n+4) { background: #ffca3a; }
-
-
-
-.spiral{
- position: absolute;
- display: none;
- left: 0px;
- top: 70px;
- transform: scale(0.5);
-}
-.spiral path {
-
-  stroke: #333e4d96; /* tu $button-petrol */
-  stroke-width: 10;
-  fill: transparent;
-  stroke-linecap: square;
-  stroke-linejoin: square;
-  stroke-dasharray: 5 20;   /* largo total del path */
-  stroke-dashoffset: 500;  /* empieza oculto */
-  animation: march 30s linear infinite;
-  z-index: 1;
-}
-
-// #spiral2 path{
-//   animation: march 15s linear infinite ;
-// }
-
-// #spiral3 path{
-//   animation: march 10s linear infinite;
-// }
-
-#dna {
-
-  position: absolute;
-  height: 240px;
-  top: 500px;
-  left: 10%;
-  width: 800px;
-  margin-top: -120px;
-  margin-left: -400px;
-  perspective: 1000px;
-  z-index: 1;
-  rotate: 90deg;
-  transform: scale(1) rotate(-10deg);
-}
-
-
-#dna div{
-  position: relative;
-  top: 50%;
-  left: 60px;
-  width: 0.5px;
-  height: 160px;
-  margin-top: -80px;
-  background-color: $lines-color;
-  float: left;
-  transform-style: preserve-3d;
-  margin-left: 20px;
-  animation: rotation $rotate-time linear infinite;
-}
-
-#dna div::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -4px;
-  right: -4px;
-  height: 10px;
-  background-color: $dots-color2;
-  border-radius: 1px;
-  animation: rotation $rotate-time linear infinite reverse;
-  z-index: 1;
-}
-
-#dna div::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: -4px;
-  right: -4px;
-  height: 10px;
-  background-color: $dots-color2;
-  border-radius: 5px;
-  animation: rotation $rotate-time linear infinite reverse;
-  z-index: 1;
-}
 
 
 
@@ -519,5 +307,86 @@ a:hover {
 .iframe-container.active {
   display: flex;
 }
+
+
+
+/* ==========================================
+   SCROLL REVEAL
+   ========================================== */
+
+/* Título: crece al entrar en pantalla */
+
+.portfolio__title.scroll-title, .about-me-text-container.scroll-title{
+  opacity: 0;
+  scale: 0.7;
+  transition:
+    opacity 0.8s ease,
+    scale 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio__title.scroll-title.is-visible, .about-me-text-container.scroll-title.is-visible {
+  opacity: 1;
+  scale: 1;
+}
+
+.portfolio__title,
+.interlude-box, .about-me-text-container {
+  transform: scale(var(--scroll-title-scale, 1));
+}
+
+/* Estado inicial de las cards */
+.cards-container.reveal-left, 
+.cards-container.reveal-right {
+  opacity: 0;
+  transition:
+    opacity 0.9s ease,
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Entradas laterales */
+.cards-container.reveal-left {
+  transform: translate3d(-100px, 35px, 0);
+}
+
+.cards-container.reveal-right{
+  transform: translate3d(100px, 35px, 0);
+}
+
+/* Estado visible */
+.cards-container.reveal-left.is-visible,
+.cards-container.reveal-right.is-visible  {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Textos e imágenes: entrada escalonada */
+.reveal-child {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal-child.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Evitar animaciones excesivas en dispositivos
+   con preferencia por movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .portfolio__title.scroll-title,
+  .cards-container.reveal-left,
+  .cards-container.reveal-right,
+  .reveal-child {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
 
 

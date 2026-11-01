@@ -1,6 +1,7 @@
 .work-container{
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -8,7 +9,11 @@
   background-color: #F9FAFB;
   overflow-x: hidden;
   z-index: 1;
-  gap:40px;
+  gap:0px;
+  background-color: transparent;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: solid white 0px;
 
   // --border-angle: 0turn; // For animation.
   //   --main-bg: conic-gradient(
@@ -32,6 +37,11 @@
   //   background-position: center center;
   //   animation: bg-spin 20s linear infinite;
 
+  @include respond ( $breakpoint-sm){
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
 }
 
 
@@ -41,21 +51,22 @@
 
 
 
-.cards-container{
+
+.cards-container {
   display: flex;
   width: 100%;
   height: 100%;
   gap: 32px;
-  border: 0px solid $fontColor-petrol-light;
-  outline: solid 0px $miami;
-  overflow-x: scroll; 
+  overflow-x: auto;
   overflow-y: hidden;
-  @include respond($breakpoint-mobile-l) {
-    gap: 20px;
-    padding: 0px;
+  scroll-behavior: smooth;
+
+  /* Ocultar scrollbar */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
-  
-  
 }
 
 
@@ -152,6 +163,57 @@
     }
   }
 }
+
+.work-aside,
+.section-aside {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  display: none;
+  padding: 20px 10px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  z-index: 9999;
+  color: $miami;
+
+  animation: appear 3s;
+
+  
+  
+}
+
+.work-aside.active,
+.section-aside.active {
+  display: flex;
+
+  @include respond ($breakpoint-mobile-l){
+    display: none;
+  }
+}
+
+/* .work-aside {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+ 
+  padding: 20px 10px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  z-index: 9999;
+  color: $miami;
+}
+
+.work-aside.active {
+  display:flex;
+} */
 
 
 
