@@ -905,6 +905,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let isScrolling = false;
 
+  const card1 = document.getElementById("card1");
+
+  // SCROLL HACIA ABAJO: portfolioMain → workContainer
+
   if (portfolioMain && workContainer) {
 
     portfolioMain.addEventListener("wheel", (e) => {
@@ -929,7 +933,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    
+
   }
+
+  // SCROLL HACIA ARRIBA: card1 → portfolioMain
+if (card1 && portfolioMain) {
+
+  card1.addEventListener("wheel", (e) => {
+
+    if (
+      e.deltaY < 0 &&
+      !isScrolling
+    ) {
+
+      isScrolling = true;
+
+      portfolioMain.scrollIntoView({
+        behavior: "smooth"
+      });
+
+      setTimeout(() => {
+        isScrolling = false;
+      }, 1000);
+
+    }
+
+  });
+
+}
 
 })();
 

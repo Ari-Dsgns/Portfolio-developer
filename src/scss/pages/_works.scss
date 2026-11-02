@@ -11,8 +11,8 @@
   z-index: 1;
   gap:0px;
   background-color: transparent;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   border: solid white 0px;
 
   // --border-angle: 0turn; // For animation.
@@ -38,8 +38,7 @@
   //   animation: bg-spin 20s linear infinite;
 
   @include respond ( $breakpoint-sm){
-    padding-left: 0px;
-    padding-right: 0px;
+    padding:10px
   }
 
 }
@@ -63,6 +62,9 @@
 
   /* Ocultar scrollbar */
   scrollbar-width: none;
+
+  
+ 
 
   &::-webkit-scrollbar {
     display: none;

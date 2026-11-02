@@ -1404,15 +1404,7 @@ html.custom-cursor-enabled * {
   background-color: #F9FAFB;
   background-color: #141414;
   background-color: #030304;
-  padding-left: 0px;
-  padding-right: 0px;
   isolation: isolate;
-}
-@media (max-width: 1024px) {
-  .container {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
 
 .interlude-box {
@@ -1695,6 +1687,12 @@ html.custom-cursor-enabled * {
   animation: translateIn 0.8s ease-out forwards;
 }
 
+.card-actions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
 .card-description {
   display: flex;
   flex-direction: column;
@@ -1706,8 +1704,14 @@ html.custom-cursor-enabled * {
   height: 100%;
   position: relative;
   background-color: transparent;
-  background-color: #EEEDE9;
-  background-color: transparent;
+  overflow: hidden;
+}
+.card-description .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  min-height: 0;
 }
 @media (max-width: 768px) {
   .card-description {
@@ -1716,11 +1720,11 @@ html.custom-cursor-enabled * {
     text-align: center;
     justify-content: start;
     gap: 10px;
+    padding: 40px;
   }
 }
 .card-description h1 {
   font-family: "N27", sans-serif;
-  color: #F76C5E;
   color: #0FA3B1;
   font-size: 80px;
 }
@@ -1745,14 +1749,10 @@ html.custom-cursor-enabled * {
   }
 }
 .card-description h2 {
-  font-family: "inter", system-ui;
-  font-family: "Keania One", sans-serif;
-  font-family: "rawest", sans-serif;
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
-  font-weight: 800;
-  color: #333E4D;
   color: whitesmoke;
+  color: #0FA3B1;
 }
 @media (max-width: 1280px) {
   .card-description h2 {
@@ -1775,18 +1775,17 @@ html.custom-cursor-enabled * {
   }
 }
 .card-description p {
-  font-family: "inter", system-ui;
-  font-family: "Montserrat", sans-serif;
-  font-family: "safiro", system-ui;
-  font-family: "rawest", sans-serif;
-  font-family: "inter", system-ui;
-  font-family: "Bebas Neue", sans-serif;
   font-family: "N27", sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
   font-weight: 300;
   color: #2F4858;
   color: whitesmoke;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (max-width: 768px) {
   .card-description p {
@@ -1842,11 +1841,6 @@ html.custom-cursor-enabled * {
 .card-description a:hover::before {
   transform: scaleX(1);
 }
-@media (max-width: 768px) {
-  .card-description {
-    padding: 10px;
-  }
-}
 
 .card {
   width: 100%;
@@ -1860,8 +1854,13 @@ html.custom-cursor-enabled * {
   height: 100%;
   border-radius: 0px;
   border: solid 0px transparent;
-  transform: scale(0.9);
+  transform: scale(0.8);
   transition: 0.8s ease;
+}
+@media (max-width: 768px) {
+  .card img {
+    transform: scale(1);
+  }
 }
 
 .readme-box, .selvatika-box, .destinea-box, .saffvision-box, .jgs-box, .eris-box, .vinyl-box {
@@ -2003,14 +2002,11 @@ html.custom-cursor-enabled * {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 0px;
-  border: none;
   width: 100%;
-  padding-left: 40px;
+  padding: 40px;
   height: 100%;
   z-index: 3;
   overflow: hidden;
-  background-color: transparent;
   background-color: rgb(232, 232, 232);
 }
 @media (max-width: 1440px) {
@@ -2028,11 +2024,11 @@ html.custom-cursor-enabled * {
   display: flex;
   flex-direction: column;
   margin-top: 120px;
+  margin-bottom: 0;
   width: 100%;
-  width: 100%;
-  overflow: hidden;
+  min-width: 0;
+  overflow: visible;
   position: relative;
-  margin-bottom: 0px;
 }
 
 .about-me-text-container {
@@ -2053,32 +2049,31 @@ html.custom-cursor-enabled * {
 .about-me-image-content {
   display: flex;
   width: 100%;
-  width: max-content;
-  justify-content: space-around;
-  height: auto;
+  min-width: 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 4px;
   margin-bottom: 40px;
-  overflow-x: auto; /* scroll en eje X */
-  overflow-y: hidden; /* ocultar vertical */
-  padding: 0px;
-  border: solid 0px black;
-  /* animation: scroll-infinite 60s linear infinite; */
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.about-me-image-content::-webkit-scrollbar {
+  display: none;
 }
 .about-me-image-content img {
+  flex: 0 0 340px;
   width: 340px;
   height: 300px;
   object-fit: cover;
-  position: relative;
-  opacity: 1;
-  object-fit: cover;
-  position: relative;
-  transition: 0.8s ease;
-}
-.about-me-image-content img:hover {
-  opacity: 1;
 }
 @media (max-width: 480px) {
   .about-me-image-content img {
+    flex-basis: 300px;
     width: 300px;
     height: 250px;
   }
@@ -2767,14 +2762,13 @@ html.custom-cursor-enabled * {
   z-index: 1;
   gap: 0px;
   background-color: transparent;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   border: solid white 0px;
 }
 @media (max-width: 768px) {
   .work-container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 10px;
   }
 }
 

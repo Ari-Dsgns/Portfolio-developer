@@ -164,16 +164,12 @@ html.custom-cursor-enabled {
   background-color: #F9FAFB;
   background-color: #141414;
   background-color: #030304;
-  padding-left: 0px ;
-  padding-right:  0px;
+  
 
 
   isolation: isolate;
 
-  @include respond($breakpoint-md) {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+  
 
 }
 
