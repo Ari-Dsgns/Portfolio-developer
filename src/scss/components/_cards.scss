@@ -101,19 +101,15 @@
   h1{
   font-family: "N27", sans-serif;
   color:$moonstone;
-  font-size: 80px;
-  @include respond ($breakpoint-lg){
-    font-size: 60px;
-  }
+  font-size: 60px;
+  
   @include respond ($breakpoint-md){
     font-size: 40px;
   }
   @include respond ($breakpoint-sm){
     font-size: 30px;
   }
-  @include respond ($breakpoint-mobile-l){
-    font-size: 24px;
-  }
+  
 
   }
   h2{
@@ -142,58 +138,78 @@
   
   
   a {
-    text-decoration: none;
-    background-color: transparent;
-    color: $miami;
-    border: solid 0px $miami;
+  text-decoration: none;
+  background-color: transparent;
+  color: $miami;
+  border: solid 0px $miami;
+  border-radius: 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  padding: 8px 16px;
+  font-size: 20px;
+  width: fit-content;
+
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+
+  transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: $miami;
     border-radius: 0px;
-    font-family: "Keania One", sans-serif;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 600;
-    padding: 8px 16px;
-    font-size: 20px;
-    width: fit-content;
 
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
 
-    transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+    z-index: -1;
+  }
 
-    
-
-    @include respond($breakpoint-sm) {
-        font-size: 20px;
-        border: solid 1px $miami;
-        padding: 4px;
-        margin-bottom: 10px;
-        
-    }
+  &:hover {
+    color: white;
+    transform: scale(1);
 
     &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: $miami;
-        border-radius: 0px;
+      transform: scaleX(1);
+    }
+  }
 
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.3s ease-in-out;
+  // A partir de sm
+  @include respond($breakpoint-sm) {
+    font-size: 20px;
+    border: solid 1px $miami;
+    padding: 4px;
+    margin-bottom: 10px;
 
-        z-index: -1;
+    // Fondo y texto permanentes
+    background-color: $miami;
+    color: white;
+
+    // Desactivar animaciones
+    transition: none;
+
+    &::before {
+      display: none;
+      content: none;
     }
 
     &:hover {
-        color: white;
-        transform: scale(1);
+      background-color: $miami;
+      color: white;
+      transform: none;
 
-        &::before {
-            transform: scaleX(1);
-        }
+      &::before {
+        display: none;
+        transform: none;
+      }
     }
   }
+}
 
 }
 

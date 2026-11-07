@@ -1729,12 +1729,7 @@ html.custom-cursor-enabled * {
 .card-description h1 {
   font-family: "N27", sans-serif;
   color: #0FA3B1;
-  font-size: 80px;
-}
-@media (max-width: 1280px) {
-  .card-description h1 {
-    font-size: 60px;
-  }
+  font-size: 60px;
 }
 @media (max-width: 1024px) {
   .card-description h1 {
@@ -1744,11 +1739,6 @@ html.custom-cursor-enabled * {
 @media (max-width: 768px) {
   .card-description h1 {
     font-size: 30px;
-  }
-}
-@media (max-width: 480px) {
-  .card-description h1 {
-    font-size: 24px;
   }
 }
 .card-description h2 {
@@ -1766,16 +1756,6 @@ html.custom-cursor-enabled * {
     font-size: 24px;
   }
 }
-@media (max-width: 768px) {
-  .card-description h2 {
-    font-size: 22px;
-  }
-}
-@media (max-width: 480px) {
-  .card-description h2 {
-    font-size: 18px;
-  }
-}
 .card-description p {
   font-family: "Bebas Neue", sans-serif;
   font-size: 18px;
@@ -1788,7 +1768,6 @@ html.custom-cursor-enabled * {
   color: #F76C5E;
   border: solid 0px #F76C5E;
   border-radius: 0px;
-  font-family: "Keania One", sans-serif;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   padding: 8px 16px;
@@ -1799,14 +1778,6 @@ html.custom-cursor-enabled * {
   overflow: hidden;
   z-index: 1;
   transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
-}
-@media (max-width: 768px) {
-  .card-description a {
-    font-size: 20px;
-    border: solid 1px #F76C5E;
-    padding: 4px;
-    margin-bottom: 10px;
-  }
 }
 .card-description a::before {
   content: "";
@@ -1825,6 +1796,30 @@ html.custom-cursor-enabled * {
 }
 .card-description a:hover::before {
   transform: scaleX(1);
+}
+@media (max-width: 768px) {
+  .card-description a {
+    font-size: 20px;
+    border: solid 1px #F76C5E;
+    padding: 4px;
+    margin-bottom: 10px;
+    background-color: #F76C5E;
+    color: white;
+    transition: none;
+  }
+  .card-description a::before {
+    display: none;
+    content: none;
+  }
+  .card-description a:hover {
+    background-color: #F76C5E;
+    color: white;
+    transform: none;
+  }
+  .card-description a:hover::before {
+    display: none;
+    transform: none;
+  }
 }
 
 .card {
