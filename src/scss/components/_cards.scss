@@ -127,12 +127,8 @@
     @include respond ($breakpoint-md){
     font-size: 24px;
     }
-    @include respond ($breakpoint-sm){
-    font-size: 22px;
-    }
-    @include respond ($breakpoint-mobile-l){
-    font-size: 18px;
-    }
+    
+    
    }
 
    p{
