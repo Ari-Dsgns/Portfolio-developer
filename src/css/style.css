@@ -1698,7 +1698,6 @@ html.custom-cursor-enabled * {
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  padding-left: 0px;
   cursor: default;
   width: 100%;
   height: 100%;
@@ -1712,15 +1711,20 @@ html.custom-cursor-enabled * {
   gap: 8px;
   overflow-y: auto;
   min-height: 0;
+  text-align: start;
+  /* @include respond ($breakpoint-mobile-l){
+  display:none;
+  } */
 }
 @media (max-width: 768px) {
   .card-description {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
     justify-content: start;
     gap: 10px;
-    padding: 40px;
+    padding-top: 10px;
+    border-top: solid 0.5px whitesmoke;
   }
 }
 .card-description h1 {
@@ -1751,7 +1755,6 @@ html.custom-cursor-enabled * {
 .card-description h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
-  color: whitesmoke;
   color: #0FA3B1;
 }
 @media (max-width: 1280px) {
@@ -1775,22 +1778,10 @@ html.custom-cursor-enabled * {
   }
 }
 .card-description p {
-  font-family: "N27", sans-serif;
-  letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 18px;
-  font-weight: 300;
-  color: #2F4858;
+  letter-spacing: 0.5px;
   color: whitesmoke;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media (max-width: 768px) {
-  .card-description p {
-    display: none;
-  }
 }
 .card-description a {
   text-decoration: none;
@@ -2769,6 +2760,7 @@ html.custom-cursor-enabled * {
 @media (max-width: 768px) {
   .work-container {
     padding: 10px;
+    gap: 50px;
   }
 }
 

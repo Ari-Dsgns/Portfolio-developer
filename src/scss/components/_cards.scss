@@ -64,13 +64,14 @@
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  padding-left: 0px; 
+   
   cursor:default;
   width: 100%;
   height: 100%;
   position: relative;
   background-color: transparent;
   overflow: hidden;
+  
 
   .card-content {
     display: flex;
@@ -79,18 +80,22 @@
 
     overflow-y: auto;
     min-height: 0;
+    text-align: start;
 
-    
+    /* @include respond ($breakpoint-mobile-l){
+    display:none;
+    } */
   }
   
 
   @include respond ($breakpoint-sm){
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
     justify-content: start;
     gap: 10px;
-    padding: 40px;
+    padding-top: 10px;
+    border-top: solid 0.5px whitesmoke;
   }
   
   h1{
@@ -114,43 +119,32 @@
   h2{
     font-family: "Bebas Neue", sans-serif;
     font-size: 28px;
-    color: whitesmoke;
     color:$moonstone;
+    
     @include respond ($breakpoint-lg){
     font-size: 26px;
-  }
-
-  @include respond ($breakpoint-md){
-    font-size: 24px;
-  }
-
-  @include respond ($breakpoint-sm){
-    font-size: 22px;
-  }
-  @include respond ($breakpoint-mobile-l){
-    font-size: 18px;
-  }
-  }
-  p{
-    font-family: "N27", sans-serif;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: 300;
-    color: $petrol;
-    color: whitesmoke;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-    @include respond ( $breakpoint-sm ){
-      display: none;
     }
-    
-  }
+    @include respond ($breakpoint-md){
+    font-size: 24px;
+    }
+    @include respond ($breakpoint-sm){
+    font-size: 22px;
+    }
+    @include respond ($breakpoint-mobile-l){
+    font-size: 18px;
+    }
+   }
+
+   p{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+   }
+   
+   
+  
+  
   a {
     text-decoration: none;
     background-color: transparent;
@@ -208,12 +202,12 @@
     }
   }
 
-  
+}
 
    // TABLET
   
     
-}
+
 
 
 
