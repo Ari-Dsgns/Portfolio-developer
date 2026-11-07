@@ -38,7 +38,7 @@
   //   animation: bg-spin 20s linear infinite;
 
   @include respond ( $breakpoint-sm){
-    padding:10px;
+    padding:0px;
     gap: 60px;
   }
 

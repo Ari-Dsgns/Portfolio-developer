@@ -1675,7 +1675,7 @@ html.custom-cursor-enabled * {
 @media (max-width: 768px) {
   .card-container {
     flex-direction: column;
-    padding: 0px;
+    padding: 10px;
     transform: scale(1);
   }
 }
@@ -1802,7 +1802,7 @@ html.custom-cursor-enabled * {
 }
 @media (max-width: 768px) {
   .card-description a {
-    font-size: 12px;
+    font-size: 20px;
     border: solid 1px #F76C5E;
     padding: 4px;
     margin-bottom: 10px;
@@ -2021,7 +2021,7 @@ html.custom-cursor-enabled * {
   flex-direction: column;
   width: 60%;
   height: auto;
-  margin-top: 120px;
+  margin-top: 10px;
   gap: 40px;
   border: solid 0px black;
 }
@@ -2753,7 +2753,7 @@ html.custom-cursor-enabled * {
 }
 @media (max-width: 768px) {
   .work-container {
-    padding: 10px;
+    padding: 0px;
     gap: 60px;
   }
 }
