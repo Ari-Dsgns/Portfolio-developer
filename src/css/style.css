@@ -1724,7 +1724,6 @@ html.custom-cursor-enabled * {
     justify-content: start;
     gap: 10px;
     padding-top: 10px;
-    border-top: solid 0.5px whitesmoke;
   }
 }
 .card-description h1 {
@@ -1805,13 +1804,8 @@ html.custom-cursor-enabled * {
   .card-description a {
     font-size: 12px;
     border: solid 1px #F76C5E;
-  }
-}
-@media (max-width: 768px) {
-  .card-description a {
-    font-size: 12px;
-    border: solid 1px #F76C5E;
     padding: 4px;
+    margin-bottom: 10px;
   }
 }
 .card-description a::before {
@@ -2760,7 +2754,7 @@ html.custom-cursor-enabled * {
 @media (max-width: 768px) {
   .work-container {
     padding: 10px;
-    gap: 50px;
+    gap: 60px;
   }
 }
 

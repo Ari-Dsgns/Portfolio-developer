@@ -95,7 +95,7 @@
     justify-content: start;
     gap: 10px;
     padding-top: 10px;
-    border-top: solid 0.5px whitesmoke;
+    
   }
   
   h1{
@@ -165,16 +165,13 @@
 
     transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
 
-    @include respond($breakpoint-sm) {
-        font-size: 12px;
-        border: solid 1px $miami;
-        
-    }
+    
 
     @include respond($breakpoint-sm) {
         font-size: 12px;
         border: solid 1px $miami;
         padding: 4px;
+        margin-bottom: 10px;
         
     }
 
